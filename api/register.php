@@ -112,8 +112,8 @@
 			 
 			$("#Submit").on("click",function(){
 			
-				//$("#Submit").hide();
-				//$("#preload").show();
+				$("#Submit").hide();
+				$("#preload").show();
 				var User = $("#username").val();
             	var Pass = $("#password").val();
 				 console.log(User);
