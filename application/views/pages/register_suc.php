@@ -8,7 +8,8 @@
 	<link rel="icon" type="image/png" href="https://rhz.webclient.me/assets/Login/images/icons/favicon.ico"/>
 <!--===============================================================================================-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+<!-------- --->
+	<script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="https://rhz.webclient.me/assets/Login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
@@ -28,6 +29,34 @@
 	<link rel="stylesheet" type="text/css" href="https://rhz.webclient.me/assets/Login/css/main.css">
 <!--===============================================================================================-->
 </head>
+
+
+<script>
+//init LIFF
+function initializeApp(data) {
+let urlParams = new URLSearchParams(window.location.search);
+$("#name").val(urlParams.toString());
+$("#userid").val(data.context.userId);
+
+$("#UserInfo").val(profile.displayName);
+}
+
+$(function () {
+//init LIFF
+liff.init(function (data) {
+initializeApp(data);
+});
+
+
+	$("#Submit").click(function () {
+	liff.getProfile().then(
+		profile=> { 
+			alert(profile.displayName);
+		}
+	);
+	});
+
+</script>
 <body>
 	
 	<div class="limiter">
@@ -91,12 +120,16 @@
 <script type="text/javascript">
 	
 
+
+
+
+
 	$(function(){
  
 	$("#preload").hide();
 	$("#Submit").show();
 
-	$("#Submit").on("click",function(){
+	$("#Submit1").on("click",function(){
 	
 		$("#Submit").hide();
 		$("#preload").show();
