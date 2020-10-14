@@ -16,14 +16,7 @@ class Member extends CI_Controller {
 		$this->load->view('pages/register');
 
 	}
-	public function summery()
-	{
-
-		$this->load->view('pages/register_suc');
-
-	}
-
-
+ 
 
 
 
