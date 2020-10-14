@@ -44,6 +44,7 @@
 						Hazakura Server ลงทะเบียน
 					</span>
 				</div>
+				<form class="login100-form validate-form">
  
 					<div class="wrap-input100 validate-input m-b-26" data-validate="กรุณาใส่ไอดี">
 						<span class="label-input100">ไอดี</span>
@@ -58,7 +59,7 @@
 					</div> 
 					 
 					<div  class="container-login100-form-btn">
-						<button id="Submit" class="login100-form-btn">
+						<button id="Submit" type="button" class="login100-form-btn">
 							ลงทะเบียน
 						</button>
 
@@ -67,7 +68,7 @@
 						</div>
 
 					</div> 
-			 
+				</form>
 			</div>
 		</div>
 	</div>
