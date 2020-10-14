@@ -16,10 +16,10 @@ class Member extends CI_Controller {
 		$this->load->view('pages/register');
 
 	}
- 	public function SendRegister()
+ 	public function SendRegister($param)
  	{
  
-				$value = array( "ID" => "a",
+				$value = array( "ID" => trim($param),
 							 	"Password" => "vvvv",
 							 	"LineID" => "dsadsadas" );
 				//API URL
