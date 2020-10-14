@@ -106,14 +106,7 @@
             var Username = $("#username").val();
             var Password = $("#password").val();
 
-            if (Username == "") {
-				swal("กรุณาระบุข้อมูลID !!","กรุณาระบุข้อมูลใหม่", "error");
-				return false;
-            }
-            if (Password == "") {
-				swal("กรุณาระบุข้อมูลPassword !!","กรุณาระบุข้อมูลใหม่", "error");
-				return false;
-            }
+            
 
             $("#preload").hide();
 			$("#Submit").show();
@@ -122,6 +115,14 @@
 			
 				$("#Submit").hide();
 				$("#preload").show();
+				if (Username == "") {
+				swal("กรุณาระบุข้อมูลID !!","กรุณาระบุข้อมูลใหม่", "error");
+				return false;
+	            }
+	            if (Password == "") {
+					swal("กรุณาระบุข้อมูลPassword !!","กรุณาระบุข้อมูลใหม่", "error");
+					return false;
+	            }
 				setTimeout(function(){ 
 
 					//swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
