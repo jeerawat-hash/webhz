@@ -97,13 +97,16 @@
 	$("#preload").hide();
 	$("#Submit").show();
 	
-	swal("Hello world!");
+			swal("ทดสอบ !!", "info");
+
 
 	$("#Submit").on("click",function(){
 	
 		$("#Submit").hide();
 		$("#preload").show();
 		setTimeout(function(){ 
+
+			swal("ผิดพลาดรหัสซ้ำซ้อน !!", "error");
 
 			$("#Submit").show();
 			$("#preload").hide();
