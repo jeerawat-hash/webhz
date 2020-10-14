@@ -130,30 +130,30 @@
 
 	            var myJSON = JSON.stringify(obj);
 
-				//setTimeout(function(){ 
-
-					//swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
-					//swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
-				   
+				setTimeout(function(){ 
+ 
 				   	$.post("register_api.php",myJSON,function(data,status,response){
-				   		console.log(data);
 				   		var obj = JSON.parse(data);
 				   		console.log( obj );
 
-				   		$("#Submit").show();
-						$("#preload").hide();
+				   		if (obj.is_success == 0) {
+				   			swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
+				   			$("#Submit").show();
+							$("#preload").hide();
+				   		}else{
+				   			swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
+				   			
+				   			setTimeout(function(){ 
+
+								liff.closeWindow();
+
+							}, 1800);
+
+				   		}
 
 				   	});
- 
- 
-//					setTimeout(function(){ 
-
-						//liff.closeWindow();
-
-//					}, 1800);
-
-
-				//}, 3000);
+  
+				}, 3000);
 
 			});
 
