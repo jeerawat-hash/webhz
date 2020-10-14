@@ -18,7 +18,7 @@ class Member extends CI_Controller {
 	}
  	public function SendRegister()
  	{
- 
+ 		/*
 				$value = array( "ID" => trim($_POST["Username"]),
 							 	"Password" => trim($_POST["Password"]),
 							 	"LineID" => trim($_POST["LineID"]) );
@@ -49,7 +49,9 @@ class Member extends CI_Controller {
 				curl_close($ch);
 
 				echo $result;
+		*/
 
+			print_r($_POST);
 
 
  	}
