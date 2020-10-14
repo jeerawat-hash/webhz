@@ -57,7 +57,7 @@
 							ลงทะเบียน
 						</button>
 
-						<div class="spinner-border text-success" role="status">
+						<div id="preload" class="spinner-border text-success" role="status">
 						  <span class="sr-only">Loading...</span>
 						</div>
 
@@ -72,8 +72,23 @@
 <script type="text/javascript">
 	
 
+	$("#preload").hide();
+	$("#Submit").show();
 
-	alert();
+	$("#Submit").on("click",function(){
+
+		$("#Submit").hide();
+		$("#preload").show();
+		setTimeout(function(){ 
+
+			$("#Submit").show();
+			$("#preload").hide();
+
+		}, 3000);
+
+
+
+	});
 
 
 
