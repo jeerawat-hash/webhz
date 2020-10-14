@@ -117,8 +117,7 @@
 <!--===============================================================================================-->
 	<script src="https://rhz.webclient.me/assets/Login/vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-	<script src="https://rhz.webclient.me/assets/Login/js/main.js"></script>
-
+ 
 </body>
 </html>
 
