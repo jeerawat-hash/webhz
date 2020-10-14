@@ -16,12 +16,12 @@ class Member extends CI_Controller {
 		$this->load->view('pages/register');
 
 	}
- 	public function SendRegister($param)
+ 	public function SendRegister()
  	{
  
-				$value = array( "ID" => trim($param),
-							 	"Password" => "vvvv",
-							 	"LineID" => "dsadsadas" );
+				$value = array( "ID" => trim($_POST["Username"]),
+							 	"Password" => trim($_POST["Password"]),
+							 	"LineID" => trim($_POST["LineID"]) );
 				//API URL
 				$url = "http://103.82.249.205:1234/api/register.php";
 

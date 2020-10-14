@@ -44,8 +44,7 @@
 						Hazakura Server ลงทะเบียน
 					</span>
 				</div>
-				<form class="login100-form validate-form">
- 
+				<form class="login100-form validate-form"> 
 					<div class="wrap-input100 validate-input m-b-26" data-validate="กรุณาใส่ไอดี">
 						<span class="label-input100">ไอดี</span>
 						<input class="input100" type="text" name="username" id="username" placeholder="กรอกไอดี" autocomplete="off">
@@ -103,7 +102,18 @@
             console.log(profile.displayName);
             console.log(profile.pictureUrl);
             console.log(profile.userId);
+            var Line = profile.userId;
+            var Username = $("#username").val();
+            var Password = $("#password").val();
 
+            if (Username == "") {
+				swal("กรุณาระบุข้อมูลID !!","กรุณาระบุข้อมูลใหม่", "error");
+				return false;
+            }
+            if (Password == "") {
+				swal("กรุณาระบุข้อมูลPassword !!","กรุณาระบุข้อมูลใหม่", "error");
+				return false;
+            }
 
             $("#preload").hide();
 			$("#Submit").show();
@@ -115,16 +125,26 @@
 				setTimeout(function(){ 
 
 					//swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
-					swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
+					//swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
 				   
+				   	$.post("https://rhz.webclient.me/index.php/member/SendRegister",{
+				   		Username : Username,
+				   		Password : Password,
+				   		LineID : Line
+				   	},function(data,status,response){
+
+				   		var obj = JSON.parse(data);
+				   		console.log( obj );
+
+				   		$("#Submit").show();
+						$("#preload").hide();
+
+				   	});
  
-
-					$("#Submit").show();
-					$("#preload").hide();
-
+ 
 					setTimeout(function(){ 
 
-						liff.closeWindow();
+						//liff.closeWindow();
 
 					}, 1800);
 
