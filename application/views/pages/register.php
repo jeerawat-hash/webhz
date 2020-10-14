@@ -116,7 +116,7 @@
 				$("#preload").show();
 				var User = $("#username").val();
             	var Pass = $("#password").val();
-				console.log(User);
+				 
 				if (User == "") {
 				swal("กรุณาระบุข้อมูลID !!","กรุณาระบุข้อมูลใหม่", "error");
 				return false;
@@ -125,7 +125,7 @@
 					swal("กรุณาระบุข้อมูลPassword !!","กรุณาระบุข้อมูลใหม่", "error");
 					return false;
 	            }
-				setTimeout(function(){ 
+				//setTimeout(function(){ 
 
 					//swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
 					//swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
@@ -145,14 +145,14 @@
 				   	});
  
  
-					setTimeout(function(){ 
+//					setTimeout(function(){ 
 
 						//liff.closeWindow();
 
-					}, 1800);
+//					}, 1800);
 
 
-				}, 3000);
+				//}, 3000);
 
 			});
 
