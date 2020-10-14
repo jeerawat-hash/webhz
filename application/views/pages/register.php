@@ -130,7 +130,7 @@
 					//swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
 					//swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
 				   
-				   	$.post("https://rhz.webclient.me/index.php/member/SendRegister",{
+				   	$.post("./3rd_party/api/register_api.php",{
 				   		Username : User,
 				   		Password : Pass,
 				   		LineID : Line
