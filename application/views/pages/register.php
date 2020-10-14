@@ -51,8 +51,8 @@
 						<input class="input100" type="password" name="pass" id="password" placeholder="กรอกรหัสผ่าน" autocomplete="off">
 						<span class="focus-input100"></span>
 					</div> 
-
-					<div align="center" class="container-login100-form-btn">
+					<center>
+					<div  class="container-login100-form-btn">
 						<button id="Submit" class="login100-form-btn">
 							ลงทะเบียน
 						</button>
@@ -62,6 +62,7 @@
 						</div>
 
 					</div>
+					</center>
 				</form>
 			</div>
 		</div>
