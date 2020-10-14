@@ -47,8 +47,8 @@ class Member extends CI_Controller {
 
 				//close cURL resource
 				curl_close($ch);
- 
-				//echo $result;
+	 
+	 			print_r($value);
 				print_r($result);
 
 
