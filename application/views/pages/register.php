@@ -41,20 +41,25 @@
 				<form class="login100-form validate-form">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="กรุณาใส่ไอดี">
 						<span class="label-input100">ไอดี</span>
-						<input class="input100" type="text" name="username" placeholder="กรอกไอดี">
+						<input class="input100" type="text" name="username" id="username" placeholder="กรอกไอดี" autocomplete="off">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "กรุณาใส่รหัสผ่าน">
 						<span class="label-input100">รหัสผ่าน</span>
-						<input class="input100" type="password" name="pass" placeholder="กรอกรหัสผ่าน">
+						<input class="input100" type="password" name="pass" id="password" placeholder="กรอกรหัสผ่าน" autocomplete="off">
 						<span class="focus-input100"></span>
 					</div> 
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button id="Submit" class="login100-form-btn">
 							ลงทะเบียน
 						</button>
+
+						<div class="spinner-border text-success" role="status">
+						  <span class="sr-only">Loading...</span>
+						</div>
+
 					</div>
 				</form>
 			</div>
