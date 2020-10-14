@@ -148,6 +148,12 @@
 				   			setTimeout(function(){ 
 
 								liff.closeWindow();
+								if ( liff.isInClient() == false ) {
+		                            liff.logout();
+		                            window.location.href = "https://rhz.webclient.me";
+		                        }else{
+		                            liff.closeWindow();
+		                        }
 
 							}, 1800);
 
