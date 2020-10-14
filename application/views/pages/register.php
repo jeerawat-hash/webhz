@@ -52,7 +52,7 @@
 						<span class="focus-input100"></span>
 					</div> 
 
-					<div class="container-login100-form-btn">
+					<div align="center" class="container-login100-form-btn">
 						<button id="Submit" class="login100-form-btn">
 							ลงทะเบียน
 						</button>
