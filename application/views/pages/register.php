@@ -44,8 +44,7 @@
 						Hazakura Server ลงทะเบียน
 					</span>
 				</div>
-
-				<form class="login100-form validate-form">
+ 
 					<div class="wrap-input100 validate-input m-b-26" data-validate="กรุณาใส่ไอดี">
 						<span class="label-input100">ไอดี</span>
 						<input class="input100" type="text" name="username" id="username" placeholder="กรอกไอดี" autocomplete="off">
@@ -68,7 +67,7 @@
 						</div>
 
 					</div> 
-				</form>
+			 
 			</div>
 		</div>
 	</div>
@@ -113,6 +112,11 @@
 
 			$("#Submit").show();
 			$("#preload").hide();
+
+
+			liff.closewindow();
+
+
 
 		}, 3000);
 
