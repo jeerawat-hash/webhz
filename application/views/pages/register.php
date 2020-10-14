@@ -116,19 +116,9 @@
 
 					//swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
 					swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
-					liff.sendMessages([
-					  {
-					    type: 'text',
-					    text: 'Hello, World!'
-					  }
-					])
-					  .then(() => {
-					    console.log('message sent');
-					  })
-					  .catch((err) => {
-					    console.log('error', err);
-					  });
-					  
+					liff.sendMessages("test");
+
+
 
 					$("#Submit").show();
 					$("#preload").hide();
