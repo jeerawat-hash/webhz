@@ -139,7 +139,7 @@
  
           }).catch(err => console.error(err));
         }
-        liff.init({ liffId: "1655100623-o43m9YD2" }, () => {
+        liff.init({ liffId: "1655100623-pRNmqX2D" }, () => {
           if (liff.isLoggedIn()) {
             runApp();
 
