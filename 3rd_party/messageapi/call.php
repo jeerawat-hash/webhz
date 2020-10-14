@@ -52,7 +52,13 @@ use LINE\LINEBot\MessageBuilder\TemplateBuilder\ImageCarouselColumnTemplateBuild
 
 
 
-$jsonFlex = '{
+$jsonFlex = '[
+
+     {
+      "type": "flex",
+      "altText": "This is a Flex Message",
+      "contents": 
+{
   "type": "bubble",
   "direction": "ltr",
   "body": {
@@ -69,6 +75,9 @@ $jsonFlex = '{
       }
     ]
   }
+}
+      }
+    ]
 }';
 
 
