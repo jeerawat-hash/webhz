@@ -30,33 +30,7 @@
 <!--===============================================================================================-->
 </head>
 
-
-<script>
-//init LIFF
-function initializeApp(data) {
-let urlParams = new URLSearchParams(window.location.search);
-$("#name").val(urlParams.toString());
-$("#userid").val(data.context.userId);
-
-$("#UserInfo").val(profile.displayName);
-}
-
-$(function () {
-//init LIFF
-liff.init(function (data) {
-initializeApp(data);
-});
-
-
-	$("#Submit").click(function () {
-	liff.getProfile().then(
-		profile=> { 
-			alert(profile.displayName);
-		}
-	);
-	});
-
-</script>
+ 
 <body>
 	
 	<div class="limiter">
@@ -149,6 +123,37 @@ initializeApp(data);
  
 
 </script>
+
+
+ 
+    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+      <script>
+
+  
+        function runApp() {
+          liff.getProfile().then(profile => {
+
+            //$("#displayname").attr("value",profile.displayName);
+            //$("#pictureUrl").attr("src",profile.pictureUrl);
+            //$("#userId").attr("value",profile.userId);
+
+      
+            console.log(profile.pictureUrl);
+
+
+ 
+
+          }).catch(err => console.error(err));
+        }
+        liff.init({ liffId: "1655100623-o43m9YD2" }, () => {
+          if (liff.isLoggedIn()) {
+            runApp();
+
+          } else {
+            liff.login();
+          }
+        }, err => console.error(err.code, error.message));
+  </script>
 
 
 
