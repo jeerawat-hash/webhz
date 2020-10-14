@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
  
-<link rel="Shortcut Icon" href="https://shop.ran-origin.com/favicon.ico" type="image/x-icon" />
+<!--<link rel="Shortcut Icon" href="https://shop.ran-origin.com/favicon.ico" type="image/x-icon" /> -->
+<link rel="icon" type="image/png" href="https://rhz.webclient.me/assets/login/images/icons/favicon.ico"/>
 
 <html>
 	<head>
