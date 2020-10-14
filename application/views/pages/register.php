@@ -97,7 +97,7 @@
 	$("#preload").hide();
 	$("#Submit").show();
 	
-			swal("ทดสอบ !!", "info");
+			swal("ทดสอบ !!","ระบบสมัครสมาชิก", "info");
 
 
 	$("#Submit").on("click",function(){
@@ -106,7 +106,7 @@
 		$("#preload").show();
 		setTimeout(function(){ 
 
-			swal("ผิดพลาดรหัสซ้ำซ้อน !!", "error");
+			swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
 
 			$("#Submit").show();
 			$("#preload").hide();
