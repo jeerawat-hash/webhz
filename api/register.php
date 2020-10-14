@@ -112,8 +112,7 @@
 			 
 			$("#Submit").on("click",function(){
 			
-				$("#Submit").hide();
-				$("#preload").show();
+				
 				var User = $("#username").val();
             	var Pass = $("#password").val();
 				 console.log(User);
@@ -125,7 +124,8 @@
 					swal("กรุณาระบุข้อมูลPassword !!","กรุณาระบุข้อมูลใหม่", "error");
 					return false;
 	            }
-
+				$("#Submit").hide();
+				$("#preload").show();
 	            var obj = { Username: User, Password: Pass, LineID: Line };
 
 	            var myJSON = JSON.stringify(obj);

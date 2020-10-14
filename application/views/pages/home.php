@@ -21,7 +21,6 @@
 				<h3>สแกน QRCODE เพื่อลงทะเบียนและเข้าสู่ระบบ SingleSignOn หรือ <a href="https://liff.line.me/1655100623-pRNmqX2D">คลิกที่นี้</a>  </h3>
 				<img src="https://qr-official.line.me/sid/L/466dnppm.png" width="150px" height="150px">
 				<a href="https://drive.google.com/file/d/1lhRkpBiC7E3K8ojtQr8vQ2ufo0Z90RZL/view?usp=sharing" target="_blank"><h1>ดาว์โหลดตัวเกมส์</h1></a>
-
 			</header>
  
 
