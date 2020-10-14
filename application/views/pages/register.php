@@ -8,7 +8,8 @@
 	<link rel="icon" type="image/png" href="https://rhz.webclient.me/assets/Login/images/icons/favicon.ico"/>
 <!--===============================================================================================-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+<!-------- ---> 
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="https://rhz.webclient.me/assets/Login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
@@ -28,6 +29,8 @@
 	<link rel="stylesheet" type="text/css" href="https://rhz.webclient.me/assets/Login/css/main.css">
 <!--===============================================================================================-->
 </head>
+
+ 
 <body>
 	
 	<div class="limiter">
@@ -66,8 +69,7 @@
 			</div>
 		</div>
 	</div>
- 
-	
+  
 <!--===============================================================================================-->
 	<script src="https://rhz.webclient.me/assets/Login/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -89,12 +91,12 @@
  
 
 <script type="text/javascript">
-	
-
+	 
 	$(function(){
  
 	$("#preload").hide();
 	$("#Submit").show();
+swal("Hello world!");
 
 	$("#Submit").on("click",function(){
 	
@@ -116,6 +118,32 @@
  
 
 </script>
+
+
+ 
+    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+      <script>
+ 
+        function runApp() {
+          liff.getProfile().then(profile => {
+ 
+      
+            console.log(profile.displayName);
+            console.log(profile.pictureUrl);
+            console.log(profile.userId);
+
+ 
+          }).catch(err => console.error(err));
+        }
+        liff.init({ liffId: "1655100623-o43m9YD2" }, () => {
+          if (liff.isLoggedIn()) {
+            runApp();
+
+          } else {
+            liff.login();
+          }
+        }, err => console.error(err.code, error.message));
+  </script>
 
 
 
