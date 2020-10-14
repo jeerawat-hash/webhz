@@ -91,47 +91,7 @@
 	<script src="https://rhz.webclient.me/assets/Login/js/main.js"></script>
 
 
- 
-
-<script type="text/javascript">
-	 
-	$(function(){
- 
-	$("#preload").hide();
-	$("#Submit").show();
-	
-	//swal("ทดสอบ !!","ระบบสมัครสมาชิก", "info");
-
-	$("#Submit").on("click",function(){
-	
-		$("#Submit").hide();
-		$("#preload").show();
-		setTimeout(function(){ 
-
-			//swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
-			swal("บันทึกข้อมูลสำเร็จ !!","หากท่านไม่สามารถจำรหัสผ่านได้สามารถเรียกดูข้อมูลได้จากเมนูหลัก", "success");
-
-			$("#Submit").show();
-			$("#preload").hide();
-
-
-			liff.closewindow();
-
-
-
-		}, 3000);
-
-	});
-
-
-
-
-	});
- 
-
-</script>
-
-
+  
  
     <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
       <script>
@@ -143,6 +103,37 @@
             console.log(profile.displayName);
             console.log(profile.pictureUrl);
             console.log(profile.userId);
+
+
+            $("#preload").hide();
+			$("#Submit").show();
+			 
+			$("#Submit").on("click",function(){
+			
+				$("#Submit").hide();
+				$("#preload").show();
+				setTimeout(function(){ 
+
+					//swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
+					swal("บันทึกข้อมูลสำเร็จ !!","หากท่านไม่สามารถจำรหัสผ่านได้สามารถเรียกดูข้อมูลได้จากเมนูหลัก", "success");
+
+					$("#Submit").show();
+					$("#preload").hide();
+
+
+					liff.closeWindow();
+
+
+
+				}, 3000);
+
+			});
+
+
+
+
+
+
 
  
           }).catch(err => console.error(err));
