@@ -7,7 +7,7 @@
 		<title>RanOnline - Hazakura ยินดีต้อนรับ Server จะเปิดให้บริการในเร็วๆนี้</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/webport/assets/css/main.css" />
+		<link rel="stylesheet" href="https://rhz.webclient.me/assets/webport/assets/css/main.css?ver=1" />
 	</head>
 	<body class="is-preload">
 
@@ -39,7 +39,7 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/webport/assets/js/main.js"></script>
+			<script src="https://rhz.webclient.me/assets/webport/assets/js/main.js?ver=1"></script>
 
 	</body>
 </html>
