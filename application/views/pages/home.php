@@ -17,6 +17,9 @@
 				<h1>Hazakura - RanOnline</h1>
 				<p>Hazakura GameServer ยินดีต้อนรับ<br />
 				Server จะเปิดให้บริการในเร็วๆนี้ (Server นี้ไม่มีระบบ ItemMall เพื่อหาประโยชน์แต่อย่างใดจัดทำขึ้นเพื่อทดสอบระบบให้บริการฐานข้อมูลและความสนุกเท่านั้น)</p>
+				<br>
+				<h1>สแกน QRCODE เพื่อลงทะเบียนเข้าสู่ระบบ SingleSignOn</h1>
+				<img src="https://qr-official.line.me/sid/L/466dnppm.png" width="50%">
 				<a href="https://drive.google.com/file/d/1lhRkpBiC7E3K8ojtQr8vQ2ufo0Z90RZL/view?usp=sharing" target="_blank"><h1>ดาว์โหลดตัวเกมส์</h1></a>
 
 			</header>
