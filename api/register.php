@@ -125,16 +125,17 @@
 					swal("กรุณาระบุข้อมูลPassword !!","กรุณาระบุข้อมูลใหม่", "error");
 					return false;
 	            }
+
+	            var obj = { Username: User, Password: Pass, LineID: Line };
+
+	            var myJSON = JSON.stringify(obj);
+
 				//setTimeout(function(){ 
 
 					//swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
 					//swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
 				   
-				   	$.post("register_api.php",{
-				   		Username : User,
-				   		Password : Pass,
-				   		LineID : Line
-				   	},function(data,status,response){
+				   	$.post("register_api.php",myJSON,function(data,status,response){
 				   		console.log(data);
 				   		var obj = JSON.parse(data);
 				   		console.log( obj );

@@ -41,7 +41,7 @@
 				echo $result;
 		*/
 
-				echo $data;
+				echo $pull;
 				print_r($_GET);
 
 
