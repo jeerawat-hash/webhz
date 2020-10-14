@@ -112,11 +112,11 @@
 			 
 			$("#Submit").on("click",function(){
 			
-				$("#Submit").hide();
-				$("#preload").show();
+				//$("#Submit").hide();
+				//$("#preload").show();
 				var User = $("#username").val();
             	var Pass = $("#password").val();
-				 
+				 console.log(User);
 				if (User == "") {
 				swal("กรุณาระบุข้อมูลID !!","กรุณาระบุข้อมูลใหม่", "error");
 				return false;
