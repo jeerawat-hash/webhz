@@ -115,6 +115,7 @@
 			
 				$("#Submit").hide();
 				$("#preload").show();
+				console.log(Username);
 				if (Username == "") {
 				swal("กรุณาระบุข้อมูลID !!","กรุณาระบุข้อมูลใหม่", "error");
 				return false;
