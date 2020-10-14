@@ -140,6 +140,8 @@
 				   			swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
 				   			$("#Submit").show();
 							$("#preload").hide();
+							var User = $("#username").val("");
+            				var Pass = $("#password").val("");
 				   		}else{
 				   			swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
 				   			
