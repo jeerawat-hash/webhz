@@ -42,6 +42,7 @@
 		*/
 
 				echo $data;
+				print_r($_GET);
 
 
  ?>
