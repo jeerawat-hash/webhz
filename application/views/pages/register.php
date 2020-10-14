@@ -72,11 +72,11 @@
 <script type="text/javascript">
 	
 
-	$("#preload").hide();
-	$("#Submit").show();
+//	$("#preload").hide();
+//	$("#Submit").show();
 
 	$("#Submit").on("click",function(){
-
+		/*
 		$("#Submit").hide();
 		$("#preload").show();
 		setTimeout(function(){ 
@@ -85,7 +85,8 @@
 			$("#preload").hide();
 
 		}, 3000);
-
+	*/
+	alert();
 
 
 	});
