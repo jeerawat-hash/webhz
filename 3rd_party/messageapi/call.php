@@ -52,24 +52,24 @@ use LINE\LINEBot\MessageBuilder\TemplateBuilder\ImageCarouselColumnTemplateBuild
 
 
 
-$jsonFlex = {
+$jsonFlex = [
   "type": "bubble",
   "direction": "ltr",
-  "body": {
+  "body": [
     "type": "box",
     "layout": "vertical",
     "contents": [
-      {
+      [
         "type": "text",
         "text": "อยู่ระหว่างพัฒนา..........",
         "weight": "bold",
         "size": "xl",
         "align": "center",
         "contents": []
-      }
+      ]
     ]
-  }
-};
+  ]
+];
 
 
 
