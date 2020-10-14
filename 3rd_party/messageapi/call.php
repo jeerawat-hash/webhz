@@ -68,7 +68,9 @@ if (!is_null($events['events'])) {
 
 
       if ($message == "MyUserInfo") {
-        menu_userinfo($access_token, $replyToken);
+      $a  =  menu_userinfo($access_token, $replyToken);
+         $return = new TextMessageBuilder("ทดสอบ".$a);
+                      $bot->replyMessage($replyToken,$return);
       }
 
 
