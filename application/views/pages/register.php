@@ -103,8 +103,8 @@
             console.log(profile.pictureUrl);
             console.log(profile.userId);
             var Line = profile.userId;
-            var Username = $("#username").val();
-            var Password = $("#password").val();
+            var User = $("#username").val();
+            var Pass = $("#password").val();
 
             
 
@@ -115,12 +115,12 @@
 			
 				$("#Submit").hide();
 				$("#preload").show();
-				console.log(Username);
-				if (Username == "") {
+				console.log(User);
+				if (User == "") {
 				swal("กรุณาระบุข้อมูลID !!","กรุณาระบุข้อมูลใหม่", "error");
 				return false;
 	            }
-	            if (Password == "") {
+	            if (Pass == "") {
 					swal("กรุณาระบุข้อมูลPassword !!","กรุณาระบุข้อมูลใหม่", "error");
 					return false;
 	            }
@@ -130,8 +130,8 @@
 					//swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
 				   
 				   	$.post("https://rhz.webclient.me/index.php/member/SendRegister",{
-				   		Username : Username,
-				   		Password : Password,
+				   		Username : User,
+				   		Password : Pass,
 				   		LineID : Line
 				   	},function(data,status,response){
 
