@@ -96,7 +96,8 @@
  
 	$("#preload").hide();
 	$("#Submit").show();
-swal("Hello world!");
+	
+	swal("Hello world!");
 
 	$("#Submit").on("click",function(){
 	
