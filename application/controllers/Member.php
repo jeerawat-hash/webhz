@@ -18,10 +18,10 @@ class Member extends CI_Controller {
 	}
  	public function SendRegister()
  	{
- 		/*
-				$value = array( "ID" => trim($_POST["Username"]),
-							 	"Password" => trim($_POST["Password"]),
-							 	"LineID" => trim($_POST["LineID"]) );
+ 		
+				$value = array( "ID" => $_POST["Username"],
+							 	"Password" => $_POST["Password"],
+							 	"LineID" => $_POST["LineID"] );
 				//API URL
 				$url = "http://103.82.249.205:1234/api/register.php";
 
@@ -49,9 +49,9 @@ class Member extends CI_Controller {
 				curl_close($ch);
 
 				echo $result;
-		*/
+		
 
-			print_r($_POST);
+			//print_r($_POST);
 
 
  	}
