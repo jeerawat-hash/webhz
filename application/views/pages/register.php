@@ -103,8 +103,7 @@
             console.log(profile.pictureUrl);
             console.log(profile.userId);
             var Line = profile.userId;
-            var User = $("#username").val();
-            var Pass = $("#password").val();
+
 
             
 
@@ -115,6 +114,8 @@
 			
 				$("#Submit").hide();
 				$("#preload").show();
+				var User = $("#username").val();
+            	var Pass = $("#password").val();
 				console.log(User);
 				if (User == "") {
 				swal("กรุณาระบุข้อมูลID !!","กรุณาระบุข้อมูลใหม่", "error");
