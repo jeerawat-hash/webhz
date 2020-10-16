@@ -13,7 +13,7 @@
 							 	"Password" => $data["Password"],
 							 	"LineID" => $data["LineID"] );
 							 	*/
-							 	$value = array( "ID" => "test",
+				/*			 	$value = array( "ID" => "test",
 							 	"Password" => "test",
 							 	"LineID" => "test" );
 				//API URL
@@ -42,7 +42,9 @@
 				//close cURL resource
 				curl_close($ch);
 
-				echo $result; 
+				echo $result; */
+
+			echo "dsadsa";
 
 
  ?>
