@@ -130,11 +130,11 @@
 
 	            var myJSON = JSON.stringify(obj);
 
-				//setTimeout(function(){ 
- 					
+				setTimeout(function(){ 
+ 
 				   	$.post("register_api.php",myJSON,function(data,status,response){
 				   		var obj = JSON.parse(data);
-				   		console.log( obj );
+				   		//console.log( obj );
 
 				   		if (obj.is_success == 0) {
 				   			swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
@@ -161,7 +161,7 @@
 
 				   	});
   
-				//}, 3000);
+				}, 3000);
 
 			});
 

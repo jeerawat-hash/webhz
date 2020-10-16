@@ -2,20 +2,16 @@
 
 	
 	///// Controller
-    //$pull = file_get_contents("php://input");
+    $pull = file_get_contents("php://input");
     ///// Controller
 
     ///// Model
-	//$data = json_decode($pull,true);
+	$data = json_decode($pull,true);
 
  
-				/*$value = array( "ID" => $data["Username"],
+				$value = array( "ID" => $data["Username"],
 							 	"Password" => $data["Password"],
 							 	"LineID" => $data["LineID"] );
-							 	*/
-							 	$value = array( "ID" => "test",
-							 	"Password" => "test",
-							 	"LineID" => "test" );
 				//API URL
 				$url = "http://103.82.249.205:1234/api/register.php";
 
@@ -42,9 +38,7 @@
 				//close cURL resource
 				curl_close($ch);
 
-				echo $result;  
-
- 
+				echo $result; 
 
 
  ?>
