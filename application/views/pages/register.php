@@ -133,9 +133,9 @@
 				setTimeout(function(){ 
  
 				   	$.post("https://rhz.webclient.me/3rd_party/api/register_api.php",myJSON,function(data,status,response){
-				   		//var obj = JSON.parse(data);
+				   		var obj = JSON.parse(data);
 				   		console.log( data );
-				   		/*
+				   		
 				   		if (obj.is_success == 0) {
 				   			swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
 				   			$("#Submit").show();
@@ -158,8 +158,7 @@
 							}, 1800);
 
 				   		}
-
-				   		*/
+ 
 
 				   	});
   

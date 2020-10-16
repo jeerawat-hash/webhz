@@ -8,10 +8,10 @@
     ///// Model
 	$data = json_decode($pull,true);
 
-	/*
-				$value = array( "ID" => $_POST["Username"],
-							 	"Password" => $_POST["Password"],
-							 	"LineID" => $_POST["LineID"] );
+ 
+				$value = array( "ID" => $data["Username"],
+							 	"Password" => $data["Password"],
+							 	"LineID" => $data["LineID"] );
 				//API URL
 				$url = "http://103.82.249.205:1234/api/register.php";
 
@@ -38,10 +38,7 @@
 				//close cURL resource
 				curl_close($ch);
 
-				echo $result;
-		*/
-
-			print_r($data);
+				echo $result; 
 
 
  ?>
