@@ -2,11 +2,11 @@
 
 	
 	///// Controller
-    $pull = file_get_contents("php://input");
+    //$pull = file_get_contents("php://input");
     ///// Controller
 
     ///// Model
-	$data = json_decode($pull,true);
+	//$data = json_decode($pull,true);
 
  
 				/*$value = array( "ID" => $data["Username"],
