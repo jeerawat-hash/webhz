@@ -52,7 +52,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "กรุณาใส่รหัสผ่าน">
-						<span class="label-input100">รหัสผ่าน</span>
+						<span class="label-input100">รหัสผ่าน+ลบตัวละคร</span>
 						<input class="input100" type="password" name="pass" id="password" placeholder="กรอกรหัสผ่าน" autocomplete="off">
 						<span class="focus-input100"></span>
 					</div> 
