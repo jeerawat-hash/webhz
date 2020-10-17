@@ -77,13 +77,21 @@
 
 			swal("Success !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
 
-			$.post("http://cac.webclient.me/api/getDataIDFromLineID.php",{
-				LineID : ""
-			},function(data){
 
-				console.log(data);
-				
+				$("#SelectOption").on("click",function(){
+					
+					$.post("http://cac.webclient.me/api/getDataIDFromLineID.php",{
+					LineID : ""
+				},function(data){
+
+					console.log(data);
+
+				});
+
 			});
+
+
+			
 
 		});
 
