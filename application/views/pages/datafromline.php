@@ -44,7 +44,7 @@
 			</div>
 			<div class="col-6">
 				
-				<button id="SelectOption">เลือก</button>
+				<button id="btn btn-primary SelectOption ">เลือก</button>
 
 			</div>
 
