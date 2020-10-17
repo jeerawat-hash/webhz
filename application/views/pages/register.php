@@ -125,14 +125,16 @@
 					return false;
 	            }
 				$("#Submit").hide();
-				$("#preload").show();
-	            var obj = { Username: User, Password: Pass, LineID: Line };
-
-	            var myJSON = JSON.stringify(obj);
+				$("#preload").show(); 
 
 				setTimeout(function(){ 
  
-				   	$.post("https://rhz.webclient.me/3rd_party/api/register_api.php",myJSON,function(data,status,response){
+				   	$.post("https://cac.webclient.me/api/register.php",
+				   		{ 
+				   			Username: User, 
+				   		  	Password: Pass, 
+				   		  	LineID: Line 
+				   		},function(data,status,response){
 				   		var obj = JSON.parse(data);
 				   		console.log( data );
 				   		
@@ -155,22 +157,17 @@
 		                            liff.closeWindow();
 		                        }
 
-							}, 1800);
+							}, 1500);
 
 				   		}
  
 
 				   	});
   
-				}, 3000);
+				}, 2000);
 
 			});
-
-
-
-
-
-
+ 
 
  
           }).catch(err => console.error(err));
