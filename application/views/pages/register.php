@@ -56,6 +56,12 @@
 						<input class="input100" type="password" name="pass" id="password" placeholder="กรอกรหัสผ่าน" autocomplete="off">
 						<span class="focus-input100"></span>
 					</div> 
+
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "กรุณาใส่รหัสผ่าน">
+						<span class="label-input100">รหัสลบตัวละคร</span>
+						<input class="input100" type="password" name="pass" id="password2" placeholder="กรอกรหัสผ่านลบตัวละคร" autocomplete="off">
+						<span class="focus-input100"></span>
+					</div> 
 					 
 					<div  class="container-login100-form-btn">
 						<button id="Submit" type="button" class="login100-form-btn">
@@ -115,6 +121,7 @@
 				
 				var User = $("#username").val();
             	var Pass = $("#password").val();
+            	var Pass2 = $("#password2").val();
 				 console.log(User);
 				if (User == "") {
 				swal("กรุณาระบุข้อมูลID !!","กรุณาระบุข้อมูลใหม่", "error");
@@ -122,6 +129,10 @@
 	            }
 	            if (Pass == "") {
 					swal("กรุณาระบุข้อมูลPassword !!","กรุณาระบุข้อมูลใหม่", "error");
+					return false;
+	            }
+	            if (Pass2 == "") {
+					swal("กรุณาระบุข้อมูลรหัสลบตัวละคร !!","กรุณาระบุข้อมูลใหม่", "error");
 					return false;
 	            }
 				$("#Submit").hide();
@@ -133,6 +144,7 @@
 				   		{ 
 				   			Username: User, 
 				   		  	Password: Pass, 
+				   		  	Password2: Pass2,
 				   		  	LineID: Line 
 				   		},function(data,status,response){
 				   			console.log(data)
