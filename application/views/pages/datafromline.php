@@ -25,7 +25,7 @@
 		<div class="row">
 			
 			<div class="col-6">
-				 
+				 <LABEL>เรียกดูข้อมูล ID</LABEL>
 			</div>
 			<div class="col-6">
 				 
