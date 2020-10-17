@@ -134,7 +134,7 @@
 
 				setTimeout(function(){ 
  
-				   	$.post("https://cac.webclient.me/api/registertest.php",myJSON,function(data,status,response){ 
+				   	$.post("https://cac.webclient.me/api/registertest.php",{dsa : "aaa"},function(data,status,response){ 
 
 
 				   		console.log(data);
