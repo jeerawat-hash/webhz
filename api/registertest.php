@@ -134,7 +134,7 @@
 
 				setTimeout(function(){ 
  
-				   	$.post("http://103.82.249.205:1234/api/registertest.php",myJSON,function(data,status,response){ 
+				   	$.post("https://cac.webclient.me/api/registertest.php",myJSON,function(data,status,response){ 
 
 
 				   		console.log(data);
