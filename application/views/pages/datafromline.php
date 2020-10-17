@@ -79,8 +79,8 @@
 
 
 				$("#SelectOption").on("click",function(){
-					
-					$.post("http://cac.webclient.me/api/getDataIDFromLineID.php",{
+
+					$.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
 					LineID : ""
 				},function(data){
 
