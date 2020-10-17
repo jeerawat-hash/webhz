@@ -85,6 +85,9 @@
 				},function(data){
 
 					console.log(data);
+					var Obj = JSON.parse(data);
+
+					console.log(Obj);
 
 				});
 
