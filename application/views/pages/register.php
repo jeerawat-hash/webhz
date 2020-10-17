@@ -135,6 +135,7 @@
 				   		  	Password: Pass, 
 				   		  	LineID: Line 
 				   		},function(data,status,response){
+				   			console.log(data)
 				   		var obj = JSON.parse(data);
 				   		console.log( data );
 				   		
