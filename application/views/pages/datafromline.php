@@ -19,15 +19,31 @@
  
 <body>
 
+ 
+	<div class="container">
 
+		<div class="row">
+			
+			<div class="col-6">
+				กรุณาเลือก ไอดีที่ต้องการ
+			</div>
+			<div class="col-6">
+				
+				<select id="UserID">
 
+				<option>----- Please Select -----</option>
 
-	 
-	<select id="UserID">
+				</select>
+				
+			</div>
 
-		<option>----- Please Select -----</option>
+		</div>
 
-	</select>
+		
+
+	</div>
+
+	
 
 
 
