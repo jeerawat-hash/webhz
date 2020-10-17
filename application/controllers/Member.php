@@ -16,12 +16,12 @@ class Member extends CI_Controller {
 		$this->load->view('pages/register');
 
 	}
- 	public function SendRegister()
+ 	public function getDataCharFromLineID()
  	{
  		
+ 		$this->load->view('pages/datafromline');
 				
-
-
+ 
  	}
 
 
