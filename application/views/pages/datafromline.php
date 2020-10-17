@@ -12,14 +12,6 @@
 <!--===============================================================================================-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!-------- ---> 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-
-<!-- (Optional) Latest compiled and minified JavaScript translation files -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
 
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
 
@@ -84,8 +76,14 @@
 		$(function(){
 
 			swal("Success !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
-			$('UserID').selectpicker();
 
+			$.post("http://cac.webclient.me/api/getDataIDFromLineID.php",{
+				LineID : ""
+			},function(data){
+
+				console.log(data);
+				
+			});
 
 		});
 
