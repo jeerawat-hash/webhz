@@ -147,9 +147,9 @@
 				   		  	Password2: Pass2,
 				   		  	LineID: Line 
 				   		},function(data,status,response){
-				   			console.log(data)
+				   			//console.log(data)
 				   		var obj = JSON.parse(data);
-				   		console.log( data );
+				   		//console.log( data );
 				   		
 				   		if (obj.is_success == 0) {
 				   			swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
