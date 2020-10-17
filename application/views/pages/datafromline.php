@@ -25,9 +25,20 @@
 		<div class="row">
 			
 			<div class="col-6">
+				 
+			</div>
+			<div class="col-6">
+				 
+			</div>
+
+		</div>
+
+		<div class="row">
+			
+			<div class="col-6">
 				<select id="UserID">
 
-				<option value="0">----- Please Select -----</option>
+				<option value="0">----- เลือก ID ที่ต้องการดูข้อมูล -----</option>
 
 				</select>
 			</div>
