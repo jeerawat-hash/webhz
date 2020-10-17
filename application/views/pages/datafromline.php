@@ -25,16 +25,16 @@
 		<div class="row">
 			
 			<div class="col-6">
-				กรุณาเลือก ไอดีที่ต้องการ
+				<select id="UserID">
+
+				<option value="0">----- Please Select -----</option>
+
+				</select>
 			</div>
 			<div class="col-6">
 				
-				<select id="UserID">
+				<button id="SelectOption">เลือก</button>
 
-				<option>----- Please Select -----</option>
-
-				</select>
-				
 			</div>
 
 		</div>
