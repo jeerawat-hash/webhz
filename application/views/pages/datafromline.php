@@ -84,7 +84,7 @@
 			</div> 
 			<div class="col-4"> 
  				
- 				<label>ยอดเงินที่สามารถถอนได้ : </label>
+ 				<label> <font color="red">ยอดเงินที่สามารถถอนได้</font> : </label>
  				<font color="green"><label class="MoneyPoint">0</label> </font> บาท
  				 
 			</div> 
