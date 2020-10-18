@@ -202,6 +202,11 @@
 			$("#SelectOption").on("click",function(){
  
 				$("#ChaTableContent").html("");
+
+				$("#MoneyLable").text("0");
+				$("#InvEmpty").text("");
+				$("#InvUse").text("");
+				
 				$("#ChaID").html('<option value="0">----- เลือก ตัวละคร ที่ต้องการดูข้อมูล -----</option>');
 
 				var IDRAN = $("#UserID option:selected").val(); 
@@ -246,6 +251,9 @@
  
  				//////////////// clear inven
 				$("#ChaTableContent").html(""); 
+				$("#MoneyLable").text("0");
+				$("#InvEmpty").text("");
+				$("#InvUse").text("");
  				//ChaNum
  				//////////////// clear inven
 				var ChaID = $("#ChaID option:selected").val(); 
