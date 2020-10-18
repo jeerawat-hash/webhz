@@ -160,7 +160,7 @@
 					var Obj = JSON.parse(data);
 					console.log(Obj);
 
-					for (var i = 0; i < Obj.UserName.length; i++) { 
+					for (var i = 0; i < Obj.UserNum.length; i++) { 
 
 						$("#ChaID").append(new Option(Obj.ChaName[i], Obj.ChaNum[i]));
 
