@@ -37,7 +37,7 @@
 		<div class="row">
 			
 			<div class="col-6">
-				<select id="UserID">
+				<select id="UserID" class="custom-select">
 
 				<option value="0">----- เลือก ID ที่ต้องการดูข้อมูล -----</option>
 
@@ -66,7 +66,7 @@
 		<div class="row">
 			
 			<div class="col-6">
-				<select id="ChaID">
+				<select id="ChaID" class="custom-select">
 
 				<option value="0">----- เลือก ตัวละคร ที่ต้องการดูข้อมูล -----</option>
 
