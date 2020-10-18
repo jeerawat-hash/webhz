@@ -83,13 +83,11 @@
             console.log(profile.userId);
             var Line = profile.userId;
 
-            swal("Success !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
+            //swal("Success !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
 
 
-			$("#SelectOption").on("click",function(){
-
-					$.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
-					LineID : ""
+            $.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
+					LineID : Line
 				},function(data){
 
 					console.log(data);
@@ -97,9 +95,26 @@
 
 					console.log(Obj);
 
-				});
+			});
+
+
+
+
+			$("#SelectOption").on("click",function(){
+
+
+				var IDRAN = $("#UserID option:selected").val();
+
+
+
+
+				
 
 			});
+
+
+
+
 
              
 
