@@ -161,7 +161,7 @@
 
 	<script type="text/javascript">
 			 
-			//document.addEventListener('contextmenu', event => event.preventDefault());
+			document.addEventListener('contextmenu', event => event.preventDefault());
 
 			setInterval(function(){
 			  var startTime = performance.now(), check, diff;
