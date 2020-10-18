@@ -255,6 +255,8 @@
 				$("#MoneyLable").text("0");
 				$("#InvEmpty").text("");
 				$("#InvUse").text("");
+				$("#UserID").attr('disabled','no');
+				$("#ChaID").attr('disabled','no');
  
 
             	$.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
@@ -291,6 +293,8 @@
 
 
  				$("#UserID").attr('disabled','disabled');
+
+
 				$("#ChaTableContent").html("");
 
 				$("#MoneyLable").text("0");
@@ -346,6 +350,7 @@
 				$("#MoneyLable").text("0");
 				$("#InvEmpty").text("");
 				$("#InvUse").text("");
+				$("#ChaID").attr('disabled','disabled');
  				//ChaNum
  				//////////////// clear inven
 				var ChaID = $("#ChaID option:selected").val(); 
