@@ -397,6 +397,15 @@
 
 
 
+			$("#ChaTable").on("click",".isSale",function(){
+
+				var itemInfo = $(this).attr("itemInfo");
+
+				alert(itemInfo);
+
+
+			});
+
 
 
              
