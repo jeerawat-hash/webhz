@@ -19,8 +19,7 @@
 </head>
 
 <script type="text/javascript">
-  
-  $(function(){
+   
 
     var speed = 5000;
     var canTick = true;
@@ -142,9 +141,7 @@
     canTick = true;
   });
 
-
-  });
-
+ 
 </script>
  
 <body>
