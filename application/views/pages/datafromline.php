@@ -90,12 +90,18 @@
 					LineID : Line
 				},function(data){
 
-					console.log(data);
-					var Obj = JSON.parse(data);
 
+					var Obj = JSON.parse(data);
 					console.log(Obj);
 
-					$("#UserID").append(new Option("option text", "value"));
+					for (var i = 0; i < Obj.UserName.length; i++) { 
+
+						$("#UserID").append(new Option("option text", "value"));
+						
+					}
+
+
+					//$("#UserID").append(new Option("option text", "value"));
 
 
 			});
