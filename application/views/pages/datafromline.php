@@ -143,6 +143,8 @@
 			$("#SelectOption").on("click",function(){
 
 
+				$("#ChaID").html('<option value="0">----- เลือก ตัวละคร ที่ต้องการดูข้อมูล -----</option>');
+
 				var IDRAN = $("#UserID option:selected").val(); 
 				swal("Success !!",IDRAN, "success");
 
