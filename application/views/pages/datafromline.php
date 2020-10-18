@@ -198,7 +198,7 @@
 
 
 
-
+/*
 			$("#SelectOption").on("click",function(){
  
 				$("#ChaTableContent").html("");
@@ -242,7 +242,51 @@
 				});
   
 			});
+*/
 
+			$("#ChaID").on("change",function(){
+ 
+				$("#ChaTableContent").html("");
+
+				$("#MoneyLable").text("0");
+				$("#InvEmpty").text("");
+				$("#InvUse").text("");
+
+				$("#ChaID").html('<option value="0">----- เลือก ตัวละคร ที่ต้องการดูข้อมูล -----</option>');
+
+				var IDRAN = $("#UserID option:selected").val(); 
+				
+
+
+				if (IDRAN.trim() == 0) {
+					swal("กรุณาระบุID !!","กรุณาระบุข้อมูลใหม่", "error");
+					return false;
+				}
+
+				$.post("https://cac.webclient.me/api/getDataChaFromUserNum.php",{
+					UserNum : IDRAN
+				},function(data){
+
+					
+					var Obj = JSON.parse(data);
+					console.log(Obj);
+
+					if (Obj.length == 0) {
+						swal("ไม่พบตัวละคร","ไม่พบตัวละคร", "error");
+						return false;
+					}
+					swal("Success !!","เรียกดูข้อมูลสำเร็จ", "success");
+					for (var i = 0; i < Obj.UserNum.length; i++) { 
+
+						$("#ChaID").append(new Option(Obj.ChaName[i], Obj.ChaNum[i]));
+
+					}
+
+					
+ 
+				});
+  
+			});
 
 
 
