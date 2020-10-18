@@ -68,7 +68,7 @@
 <!--===============================================================================================-->
 	<script src="https://rhz.webclient.me/assets/Login/vendor/jquery/jquery-3.2.1.min.js"></script> 
 	<script src="https://rhz.webclient.me/assets/Login/vendor/bootstrap/js/bootstrap.min.js"></script>
-
+	<script src="https://rhz.webclient.me/assets/Login/vendor/bootstrap/js/popper.js"></script>
  
  
     <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
