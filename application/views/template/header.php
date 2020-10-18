@@ -41,6 +41,10 @@
       <li class="nav-item">
         <a class="nav-link disabled" href="#">เติมพ้อย</a>
       </li>
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">ถอนเงิน</a>
+      </li>
  
 
     </ul> 

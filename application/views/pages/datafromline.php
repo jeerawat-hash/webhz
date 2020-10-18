@@ -70,16 +70,22 @@
 
 		<div class="row">
 			
-			<div class="col-6"> 
+			<div class="col-4"> 
  				
  				<label>ยอดเงินในเกม : </label>
  				<font color="red"><label id="MoneyLable">0</label> </font> เหรียญ
  				 
 			</div>
-			<div class="col-6"> 
+			<div class="col-4"> 
  				
  				<label>ยอดพ้อยแลกเปลี่ยน : </label>
- 				<font color="green"><label id="MoneyPoint">0</label> </font> พ้อย
+ 				<font color="green"><label class="MoneyPoint">0</label> </font> พ้อย
+ 				 
+			</div> 
+			<div class="col-4"> 
+ 				
+ 				<label>ยอดเงินที่สามารถถอนได้ : </label>
+ 				<font color="green"><label class="MoneyPoint">0</label> </font> บาท
  				 
 			</div> 
 
