@@ -96,13 +96,11 @@
 
 					for (var i = 0; i < Obj.UserName.length; i++) { 
 
-						$("#UserID").append(new Option("option text", "value"));
-						
+						$("#UserID").append(new Option(Obj.UserName[i], Obj.UserNum[i]));
+
 					}
 
-
-					//$("#UserID").append(new Option("option text", "value"));
-
+ 
 
 			});
 
