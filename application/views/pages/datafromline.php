@@ -194,7 +194,7 @@
   	
   							//console.log(data);
 							  
-							if (data = 1) {
+							if (data == 1) {
 								
 								swal("Login is Ready","Login is Ready", "error");
 
