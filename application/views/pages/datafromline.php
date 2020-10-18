@@ -47,6 +47,7 @@
 			<div class="col-6">
 				
 				<button id="SelectOption" class="btn btn-primary">เลือก</button>
+				<button id="ReloadPage" class="btn btn-danger">โหลดข้อมูลใหม่</button>
 
 			</div>
 
@@ -251,6 +252,36 @@
  
 			});
 
+
+            $("#ReloadPage").on("click",function(){
+
+
+            	$.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
+					LineID : Line
+					},function(data){
+
+
+						var Obj = JSON.parse(data);
+						console.log(Obj);
+
+						if (Obj.length == 0) {
+							swal("ไม่พบข้อมูล","ไม่พบข้อมูล", "error");
+							return false;
+						}
+
+						for (var i = 0; i < Obj.UserName.length; i++) { 
+
+							$("#UserID").append(new Option(Obj.UserName[i], Obj.UserNum[i]));
+
+						}
+						swal("ReloadPage","โหลดค่าใหม่สำเร็จ", "info");
+
+	 
+				});
+
+
+
+            });
 
 
 
