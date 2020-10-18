@@ -192,23 +192,15 @@
 							UserNum : StoreID
 						},function(data){
   	
-  							console.log(data);
-							var status = 0;
-
-							if (data == 1) {
-								status = 1;
-							}else{
-								status = 0;
-							}
-							/*
-							if (status = 1) {
+  							//console.log(data);
+							  
+							if (data = 1) {
 								
 								swal("Login is Ready","Login is Ready", "error");
 
 								location.href = 'https://rhz.webclient.me/index.php/member/mgmt';
 
-							}
-							*/
+							} 
  
   
 					});
