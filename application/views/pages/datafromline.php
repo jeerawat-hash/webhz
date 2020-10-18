@@ -412,7 +412,59 @@
 				var itemInfo = $(this).attr("itemInfo");
 				var IDRAN = $("#UserID option:selected").val(); 
 				var ChaID = $("#ChaID option:selected").val(); 
-				alert(IDRAN+" "+ChaID+" "+itemInfo);
+				//alert(IDRAN+" "+ChaID+" "+itemInfo);
+
+				$("#ChaTableContent").html("");
+				 
+				$.post("https://cac.webclient.me/api/addItemToShop.php",{
+					ChaNum : ChaID,
+					ItemMEM : itemInfo
+				},function(data){
+
+
+					console.log(data);
+
+					$.post("https://cac.webclient.me/api/getDataInvenFromUserNum.php",{
+					ChaNum : ChaID
+					},function(data){
+
+						swal("Success !!","เรียกดูข้อมูลภายในช่องเก็บของสำเร็จ", "success");
+						var Obj = JSON.parse(data); 
+						
+						$("#MoneyLable").text(Obj.gold);
+						$("#InvEmpty").text(Obj.tab1.INVEMPTY);
+						$("#InvUse").text(Obj.tab1.INVUSE);
+	 					 
+						var tablehtml = "";  
+						for (var i = 0; i < Obj.tab1.ItemID.length; i++) { 
+
+							var enhance = 0;
+
+							if (Obj.tab1.DMG_GRADE[i] == 0) {
+								enhance = Obj.tab1.DEF_GRADE[i];
+							}else
+							if (Obj.tab1.DEF_GRADE[i] == 0) {
+								enhance = Obj.tab1.DMG_GRADE[i];
+							}
+
+							tablehtml += "<tr>"+
+									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
+									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
+									      "<td> <font color='red'>"+Obj.tab1.QTY[i]+"</font> ชิ้น</td>"+
+									      "<td><button class='btn btn-success isSale' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
+									    "</tr> "; 
+						}
+
+						
+						
+						$("#ChaTableContent").html(tablehtml);
+	 
+					}); 
+
+ 
+					
+ 
+				});
 
 
 			});
