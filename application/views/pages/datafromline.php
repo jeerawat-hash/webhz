@@ -160,8 +160,7 @@
 
 
 	<script type="text/javascript">
-			
-			/*
+			 
 			document.addEventListener('contextmenu', event => event.preventDefault());
 
 			setInterval(function(){
@@ -176,8 +175,8 @@
 			    debugger;
 
 			  }
-			}, 500);
-			*/ 
+			}, 500); 
+			
 			setInterval(function(){ 
 
  				var StoreID = $("#StoreID").val();
