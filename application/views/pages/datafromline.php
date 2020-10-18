@@ -129,6 +129,11 @@
 					var Obj = JSON.parse(data);
 					console.log(Obj);
 
+					if (Obj.length == 0) {
+						swal("ไม่พบข้อมูล","ไม่พบข้อมูล", "error");
+						return false;
+					}
+
 					for (var i = 0; i < Obj.UserName.length; i++) { 
 
 						$("#UserID").append(new Option(Obj.UserName[i], Obj.UserNum[i]));
@@ -161,6 +166,11 @@
 
 					var Obj = JSON.parse(data);
 					console.log(Obj);
+
+					if (Obj.length == 0) {
+						swal("ไม่พบข้อมูล","ไม่พบข้อมูล", "error");
+						return false;
+					}
 
 					for (var i = 0; i < Obj.UserNum.length; i++) { 
 
