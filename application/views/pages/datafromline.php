@@ -287,7 +287,12 @@
 
 
 			$("#SelectOption").on("click",function(){
- 
+ 				
+
+
+ 				$("UserID").attr('disabled','disabled');
+
+ 				
 				$("#ChaTableContent").html("");
 
 				$("#MoneyLable").text("0");
