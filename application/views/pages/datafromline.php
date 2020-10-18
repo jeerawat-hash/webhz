@@ -269,9 +269,9 @@
 					ChaNum : ChaID
 				},function(data){
 
-					console.log(data);
-					var Obj = JSON.parse(data);
 					
+					var Obj = JSON.parse(data);
+					console.log(Obj);
 					$("#MoneyLable").text(Obj.gold);
 					$("#InvEmpty").text(Obj.tab1.INVEMPTY);
 					$("#InvUse").text(Obj.tab1.INVUSE);
