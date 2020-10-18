@@ -11,8 +11,9 @@
 	<link rel="icon" type="image/png" href="https://rhz.webclient.me/assets/Login/images/icons/favicon.ico"/>
 <!--===============================================================================================-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://rhz.webclient.me/assets/news/ticker.css">
 <!-------- ---> 
-
+  <script src="https://rhz.webclient.me/assets/news/ticker.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
 
 </head>
@@ -45,3 +46,26 @@
     </ul> 
   </div>
 </nav>
+
+<div class="ticker-container">
+  <div class="ticker-caption">
+    <p>Breaking News</p>
+  </div>
+  <ul>
+    <div>
+      <li><span>Breaking News 1 &ndash; <a href="#">read more</a></span></li>
+    </div>
+    <div>
+      <li><span>Breaking News 2 &ndash; <a href="#">read more</a></span></li>
+    </div>
+    <div>
+      <li><span>Breaking News 3 &ndash; <a href="#">read more</a></span></li>
+    </div>
+    <div>
+      <li><span>Breaking News 4 &ndash; <a href="#">read more</a></span></li>
+    </div>
+    <div>
+      <li><span>Breaking News 5 &ndash; <a href="#">read more</a></span></li>
+    </div>
+  </ul>
+</div>
