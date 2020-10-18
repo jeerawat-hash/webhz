@@ -81,7 +81,7 @@
 			</div>
 			<div class="col-6">
 				
-				<button id="SelectOption" class="btn btn-primary">เลือก</button>
+				<button id="SelectOption" class="btn btn-primary">เรียกดูข้อมูลช่องเก็บของ</button>
 
 			</div>
 
