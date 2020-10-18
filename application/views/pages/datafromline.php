@@ -147,6 +147,11 @@
 				swal("Success !!",IDRAN, "success");
 
 
+				if (IDRAN.trim() == 0) {
+					swal("กรุณาระบุเลือกID !!","กรุณาระบุข้อมูลใหม่", "error");
+					return false;
+				}
+
 				$.post("https://cac.webclient.me/api/getDataChaFromUserNum.php",{
 					UserNum : IDRAN
 				},function(data){
