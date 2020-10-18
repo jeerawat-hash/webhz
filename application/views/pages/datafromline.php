@@ -55,6 +55,42 @@
 
 	</div>
 
+
+
+	<div class="container">
+
+		<div class="row">
+			
+			<div class="col-6">
+				 <LABEL>ตัวละคร</LABEL>
+			</div>
+			<div class="col-6">
+				 
+			</div>
+
+		</div>
+
+		<div class="row">
+			
+			<div class="col-6">
+				<select id="ChaID">
+
+				<option value="0">----- เลือก ตัวละคร ที่ต้องการดูข้อมูล -----</option>
+
+				</select>
+			</div>
+			<div class="col-6">
+				
+				<button id="SelectOption" class="btn btn-primary">เลือก</button>
+
+			</div>
+
+		</div>
+
+		
+
+	</div>
+
 	
 
 
