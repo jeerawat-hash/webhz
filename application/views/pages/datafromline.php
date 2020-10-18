@@ -106,7 +106,7 @@
  
           }).catch(err => console.error(err));
         }
-        liff.init({ liffId: "1655100623-pRNmqX2D" }, () => {
+        liff.init({ liffId: "1655100623-YNaPAD2N" }, () => {
           if (liff.isLoggedIn()) {
             runApp();
 
@@ -120,4 +120,3 @@
 
  </body>
 
-1655100623-YNaPAD2N
