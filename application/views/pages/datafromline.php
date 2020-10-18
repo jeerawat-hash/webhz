@@ -410,8 +410,9 @@
 			$("#ChaTable").on("click",".isSale",function(){
 
 				var itemInfo = $(this).attr("itemInfo");
-
-				alert(itemInfo);
+				var IDRAN = $("#UserID option:selected").val(); 
+				var ChaID = $("#ChaID option:selected").val(); 
+				alert(IDRAN+" "+ChaID+" "+itemInfo);
 
 
 			});
