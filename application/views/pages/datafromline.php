@@ -206,7 +206,7 @@
 				$("#MoneyLable").text("0");
 				$("#InvEmpty").text("");
 				$("#InvUse").text("");
-				
+
 				$("#ChaID").html('<option value="0">----- เลือก ตัวละคร ที่ต้องการดูข้อมูล -----</option>');
 
 				var IDRAN = $("#UserID option:selected").val(); 
@@ -269,7 +269,7 @@
 					ChaNum : ChaID
 				},function(data){
 
-					
+					swal("Success !!","เรียกดูข้อมูลภายในช่องเก็บของสำเร็จ", "success");
 					var Obj = JSON.parse(data);
 					console.log(Obj);
 					$("#MoneyLable").text(Obj.gold);
@@ -277,14 +277,22 @@
 					$("#InvUse").text(Obj.tab1.INVUSE);
  					
 
-					var tablehtml = "";
-
+					var tablehtml = ""; 
 
 					for (var i = 0; i < Obj.tab1.ItemID.length; i++) { 
 
+						var enhance = 0;
+
+						if (Obj.tab1.DMG_GRADE[i] == 0) {
+							enhance = Obj.tab1.DEF_GRADE[i];
+						}else
+						if (Obj.tab1.DEF_GRADE[i] == 0) {
+							enhance = Obj.tab1.DMG_GRADE[i];
+						}
+
 						tablehtml += "<tr>"+
 								      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
-								      "<td>"+Obj.tab1.ItemName[i]+"</td>"+
+								      "<td>"+Obj.tab1.ItemName[i]+" ตีบวก "+enhance+"</td>"+
 								      "<td> <font color='red'>"+Obj.tab1.QTY[i]+"</font> ชิ้น</td>"+
 								      "<td><button class='btn btn-success isSale' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
 								    "</tr> "; 
