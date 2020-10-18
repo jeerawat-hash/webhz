@@ -418,13 +418,6 @@
 
 
 
-
-
-
-
-
-
-				
 				 
 				$.post("https://cac.webclient.me/api/addItemToShop.php",{
 					ChaNum : ChaID,
@@ -433,12 +426,14 @@
 
 
 					console.log(data);
+					var objs = JSON.parse(data);
+					console.log(objs);
 
 					$.post("https://cac.webclient.me/api/getDataInvenFromUserNum.php",{
 					ChaNum : ChaID
 					},function(data){
 						$("#ChaTableContent").html("");
-						swal("Success !!","ดำเนินการเพิ่มไอเทมเข้าระบบสำเร็จ", "success");
+						swal("Success !!","ดำเนินการเพิ่มไอเทมเข้าตลาดสำเร็จ", "success");
 						var Obj = JSON.parse(data); 
 
 						$("#MoneyLable").text(Obj.gold);
