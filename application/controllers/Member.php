@@ -16,7 +16,7 @@ class Member extends CI_Controller {
 		$this->load->view('pages/register');
 
 	}
- 	public function getDataIDFromLineID()
+ 	public function mgmt()
  	{
  		
  		$this->load->view('pages/datafromline');
