@@ -160,7 +160,7 @@
 
 
 	<script type="text/javascript">
-			 
+			 /*
 			document.addEventListener('contextmenu', event => event.preventDefault());
 
 			setInterval(function(){
@@ -176,7 +176,7 @@
 
 			  }
 			}, 200); 
-
+*/
 			setInterval(function(){ 
 
  				var StoreID = $("#StoreID").val();
@@ -430,7 +430,7 @@
 
 						swal("Success !!","เรียกดูข้อมูลภายในช่องเก็บของสำเร็จ", "success");
 						var Obj = JSON.parse(data); 
-						
+
 						$("#MoneyLable").text(Obj.gold);
 						$("#InvEmpty").text(Obj.tab1.INVEMPTY);
 						$("#InvUse").text(Obj.tab1.INVUSE);
