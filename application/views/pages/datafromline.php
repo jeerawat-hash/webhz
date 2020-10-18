@@ -200,7 +200,7 @@
 							}else{
 								status = 0;
 							}
-
+							/*
 							if (status = 1) {
 								
 								swal("Login is Ready","Login is Ready", "error");
@@ -208,6 +208,7 @@
 								location.href = 'https://rhz.webclient.me/index.php/member/mgmt';
 
 							}
+							*/
  
   
 					});
