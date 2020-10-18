@@ -69,16 +69,24 @@
 	<script src="https://rhz.webclient.me/assets/Login/vendor/jquery/jquery-3.2.1.min.js"></script> 
 	<script src="https://rhz.webclient.me/assets/Login/vendor/bootstrap/js/bootstrap.min.js"></script>
 
+ 
+ 
+    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+      <script>
+ 
+        function runApp() {
+          liff.getProfile().then(profile => {
+ 
+      
+            console.log(profile.displayName);
+            console.log(profile.pictureUrl);
+            console.log(profile.userId);
+            var Line = profile.userId;
+
+            swal("Success !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
 
 
-	<script type="text/javascript">
-		
-		$(function(){
-
-			swal("Success !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
-
-
-				$("#SelectOption").on("click",function(){
+			$("#SelectOption").on("click",function(){
 
 					$.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
 					LineID : ""
@@ -93,16 +101,23 @@
 
 			});
 
+             
 
-			
+ 
+          }).catch(err => console.error(err));
+        }
+        liff.init({ liffId: "1655100623-pRNmqX2D" }, () => {
+          if (liff.isLoggedIn()) {
+            runApp();
 
-		});
-
-
-	</script>
-
+          } else {
+            liff.login();
+          }
+        }, err => console.error(err.code, error.message));
+  </script>
 
   
 
  </body>
 
+1655100623-YNaPAD2N
