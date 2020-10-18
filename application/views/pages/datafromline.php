@@ -98,7 +98,7 @@
 			
 			<div class="col-12"> 
 
-				<table id="ChaTable" border="1">
+				<table id="ChaTable" border="1" width="100%">
 				  <thead>
 				    <tr>
 				      <th >ตำแหน่ง</th>
