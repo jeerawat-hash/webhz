@@ -290,9 +290,7 @@
  				
 
 
- 				$("UserID").attr('disabled','disabled');
-
- 				
+ 				$("#UserID").attr('disabled','disabled');
 				$("#ChaTableContent").html("");
 
 				$("#MoneyLable").text("0");
