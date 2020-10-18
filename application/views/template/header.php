@@ -31,7 +31,7 @@
     <ul class="navbar-nav mr-auto">
 
       <li class="nav-item active">
-        <a class="nav-link" href="#">ข้อมูลส่วนตัว</a>
+        <a class="nav-link" href="https://rhz.webclient.me/index.php/member/mgmt">ข้อมูลส่วนตัว</a>
       </li>
 
       <li class="nav-item">
