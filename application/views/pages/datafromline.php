@@ -95,6 +95,9 @@
 
 					console.log(Obj);
 
+					$("#UserID").append(new Option("option text", "value"));
+
+
 			});
 
 
