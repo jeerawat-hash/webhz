@@ -84,8 +84,7 @@
             var Line = profile.userId;
 
             //swal("Success !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
-
-
+ 
             $.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
 					LineID : Line
 				},function(data){
@@ -99,9 +98,7 @@
 						$("#UserID").append(new Option(Obj.UserName[i], Obj.UserNum[i]));
 
 					}
-
  
-
 			});
 
 
@@ -113,7 +110,7 @@
 				var IDRAN = $("#UserID option:selected").val();
 
 
-
+				swal("Success !!",IDRAN, "success");
 
 				
 
