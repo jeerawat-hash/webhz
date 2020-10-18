@@ -20,6 +20,7 @@
  
 <body>
 
+	<input type="text" readonly hidden id="StoreID">
  
 	<div class="container">
 
@@ -159,7 +160,55 @@
 	<script src="https://rhz.webclient.me/assets/Login/vendor/jquery/jquery-3.2.1.min.js"></script> 
 	<script src="https://rhz.webclient.me/assets/Login/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="https://rhz.webclient.me/assets/Login/vendor/bootstrap/js/popper.js"></script>
+ 	
+
+
+	<script type="text/javascript">
+			
+			/*
+			document.addEventListener('contextmenu', event => event.preventDefault());
+
+			setInterval(function(){
+			  var startTime = performance.now(), check, diff;
+			  for (check = 0; check < 1000; check++){
+			    console.log(check);
+			    console.clear();
+			  }
+			  diff = performance.now() - startTime;
+			  if (diff > 200){
  
+			    debugger;
+
+			  }
+			}, 500);
+			*/ 
+			setInterval(function(){ 
+
+ 				var StoreID = $("#StoreID").val();
+
+ 				if (StoreID != "") {
+ 
+ 					$.post("https://cac.webclient.me/api/getDataIsLogin.php",{
+							UserNum : StoreID
+						},function(data){
+  
+
+							console.log(data);
+ 
+
+ 
+					});
+
+
+
+ 				}
+ 
+
+			}, 500);
+
+	</script>
+
+
  
     <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
       <script>
@@ -174,7 +223,7 @@
             var Line = profile.userId;
 
             //swal("Success !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
- 
+ 			
             $.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
 					LineID : Line
 				},function(data){
@@ -230,6 +279,8 @@
 						swal("ไม่พบตัวละคร","ไม่พบตัวละคร", "error");
 						return false;
 					}
+
+					$("#StoreID").val(IDRAN);
 
 					for (var i = 0; i < Obj.UserNum.length; i++) { 
 
