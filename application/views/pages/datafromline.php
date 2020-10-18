@@ -414,7 +414,17 @@
 				var ChaID = $("#ChaID option:selected").val(); 
 				//alert(IDRAN+" "+ChaID+" "+itemInfo);
 
-				$("#ChaTableContent").html("");
+				
+
+
+
+
+
+
+
+
+
+				
 				 
 				$.post("https://cac.webclient.me/api/addItemToShop.php",{
 					ChaNum : ChaID,
@@ -427,8 +437,8 @@
 					$.post("https://cac.webclient.me/api/getDataInvenFromUserNum.php",{
 					ChaNum : ChaID
 					},function(data){
-
-						swal("Success !!","เรียกดูข้อมูลภายในช่องเก็บของสำเร็จ", "success");
+						$("#ChaTableContent").html("");
+						swal("Success !!","ดำเนินการเพิ่มไอเทมเข้าระบบสำเร็จ", "success");
 						var Obj = JSON.parse(data); 
 
 						$("#MoneyLable").text(Obj.gold);
