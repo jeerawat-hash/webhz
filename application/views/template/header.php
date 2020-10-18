@@ -21,7 +21,7 @@
 <body>
 
 	<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-  <a class="navbar-brand" href="#">ระบบจัดการสมาชิกและและเปลี่ยน</a>
+  <a class="navbar-brand" href="#">ระบบจัดการสมาชิกและเปลี่ยน</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -38,7 +38,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">อื่นๆ</a>
+        <a class="nav-link disabled" href="#">เติมพ้อย</a>
       </li>
  
 
