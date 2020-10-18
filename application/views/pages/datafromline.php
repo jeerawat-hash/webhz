@@ -87,7 +87,26 @@
 			<div class="col-12"> 
  				
  				<label>ยอดเงิน : </label>
- 				<font color="red"><label id="MoneyLable"></label> เหรียญ</font>
+ 				<font color="red"><label id="MoneyLable"></label> </font> เหรียญ
+ 				
+ 
+			</div> 
+
+		</div>
+
+		<div class="row">
+			
+			<div class="col-6"> 
+ 				
+ 				<label>ช่องเก็บของว่าง : </label>
+ 				<font color="green"><label id="InvEmpty"></label> </font> ช่อง
+ 				
+ 
+			</div> 
+			<div class="col-6"> 
+ 				
+ 				<label>ใช้งานช่อง : </label>
+ 				<font color="red"><label id="InvUse"></label> </font> ช่อง 
  				
  
 			</div> 
@@ -182,7 +201,7 @@
 
 			$("#SelectOption").on("click",function(){
  
-
+				$("#ChaTableContent").html("");
 				$("#ChaID").html('<option value="0">----- เลือก ตัวละคร ที่ต้องการดูข้อมูล -----</option>');
 
 				var IDRAN = $("#UserID option:selected").val(); 
@@ -226,8 +245,7 @@
 			$("#SelectInventory").on("click",function(){
  
  				//////////////// clear inven
-
-
+				$("#ChaTableContent").html(""); 
  				//ChaNum
  				//////////////// clear inven
 				var ChaID = $("#ChaID option:selected").val(); 
@@ -245,16 +263,26 @@
 
 					console.log(data);
 					var Obj = JSON.parse(data);
-					console.log(Obj);
-
+					
 					$("#MoneyLable").text(Obj.gold);
- 					console.log(Obj.gold);
-					var tablehtml = "<tr>"+
-								      "<td>1</td>"+
-								      "<td>2</td>"+
-								      "<td>3</td>"+
-								      "<td>4</td>"+
-								    "</tr> ";
+					$("#InvEmpty").text(Obj.tab1.INVEMPTY);
+					$("#InvUse").text(Obj.tab1.INVUSE);
+ 					
+
+					var tablehtml = "";
+
+
+					for (var i = 0; i < Obj.tab1.ItemID.length; i++) { 
+
+						tablehtml = "<tr>"+
+								      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
+								      "<td>"+Obj.tab1.ItemName[i]+"</td>"+
+								      "<td>"+Obj.tab1.QTY[i]+"</td>"+
+								      "<td><button class='btn btn-success isSale' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
+								    "</tr> "; 
+					}
+
+					
 					
 					$("#ChaTableContent").html(tablehtml);
  
