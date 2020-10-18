@@ -50,15 +50,8 @@
 			</div>
 
 		</div>
-
-		
-
-	</div>
-
-
-
-	<div class="container">
-
+		<!---------------------------- ------>
+ 
 		<div class="row">
 			
 			<div class="col-6">
@@ -87,10 +80,41 @@
 
 		</div>
 
+
+
+
+		<div class="row">
+			
+			<div class="col-12"> 
+
+				<table id="ChaTable" >
+				  <thead>
+				    <tr>
+				      <th >ตำแหน่ง</th>
+				      <th >ชื่อ</th>
+				      <th >จำนวน</th>
+				      <th >ดำเนินการ</th> 
+				    </tr>
+				  </thead>
+				  <tbody id="ChaTableContent">
+				    
+				  </tbody>
+				  
+				</table>
+
+
+
+			</div> 
+
+		</div>
 		
 
 	</div>
 
+
+ 
+		
+ 
 	
 
 
@@ -212,8 +236,14 @@
 					var Obj = JSON.parse(data);
 					console.log(Obj);
  
-
+					var tablehtml = "<tr>"+
+								      "<td>1</td>"+
+								      "<td>2</td>"+
+								      "<td>3</td>"+
+								      "<td>4</td>"+
+								    "</tr> ";
 					
+					$("#ChaTableContent").html(tablehtml);
  
 				}); 
 
