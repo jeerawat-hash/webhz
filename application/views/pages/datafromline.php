@@ -191,7 +191,8 @@
  					$.post("https://cac.webclient.me/api/getDataIsLogin.php",{
 							UserNum : StoreID
 						},function(data){
-  
+  	
+  							console.log(data);
 							var status = 0;
 
 							if (data == 1) {
