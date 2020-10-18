@@ -274,7 +274,7 @@
 
 					for (var i = 0; i < Obj.tab1.ItemID.length; i++) { 
 
-						tablehtml = "<tr>"+
+						tablehtml += "<tr>"+
 								      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
 								      "<td>"+Obj.tab1.ItemName[i]+"</td>"+
 								      "<td>"+Obj.tab1.QTY[i]+"</td>"+
