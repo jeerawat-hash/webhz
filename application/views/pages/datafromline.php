@@ -255,8 +255,8 @@
 				$("#MoneyLable").text("0");
 				$("#InvEmpty").text("");
 				$("#InvUse").text("");
-				$("#UserID").attr('disabled','no');
-				$("#ChaID").attr('disabled','no');
+				$("#UserID").attr('disabled',false);
+				$("#ChaID").attr('disabled',false);
  
 
             	$.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
