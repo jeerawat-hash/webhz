@@ -168,7 +168,7 @@
 					console.log(Obj);
 
 					if (Obj.length == 0) {
-						swal("ไม่พบข้อมูล","ไม่พบข้อมูล", "error");
+						swal("ไม่พบตัวละคร","ไม่พบตัวละคร", "error");
 						return false;
 					}
 
