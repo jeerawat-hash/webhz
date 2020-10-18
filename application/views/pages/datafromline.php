@@ -255,6 +255,13 @@
 
             $("#ReloadPage").on("click",function(){
 
+				$("#UserID").html('<option value="0">----- เลือก ID ที่ต้องการดูข้อมูล -----</option>');
+				$("#ChaID").html('<option value="0">----- เลือก ตัวละคร ที่ต้องการดูข้อมูล -----</option>');
+				$("#ChaTableContent").html(""); 
+				$("#MoneyLable").text("0");
+				$("#InvEmpty").text("");
+				$("#InvUse").text("");
+ 
 
             	$.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
 					LineID : Line
