@@ -292,7 +292,7 @@
 
 						tablehtml += "<tr>"+
 								      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
-								      "<td>"+Obj.tab1.ItemName[i]+" ตีบวก "+enhance+"</td>"+
+								      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
 								      "<td> <font color='red'>"+Obj.tab1.QTY[i]+"</font> ชิ้น</td>"+
 								      "<td><button class='btn btn-success isSale' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
 								    "</tr> "; 
