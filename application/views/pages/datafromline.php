@@ -143,10 +143,23 @@
 			$("#SelectOption").on("click",function(){
 
 
-				var IDRAN = $("#UserID option:selected").val();
-
-
+				var IDRAN = $("#UserID option:selected").val(); 
 				swal("Success !!",IDRAN, "success");
+
+
+				$.post("https://cac.webclient.me/api/getDataChaFromUserNum.php",{
+					UserNum : IDRAN
+				},function(data){
+
+
+					var Obj = JSON.parse(data);
+					console.log(Obj);
+
+					
+ 
+				});
+
+
 
 				
 
