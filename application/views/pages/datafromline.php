@@ -81,7 +81,7 @@
 			</div>
 			<div class="col-6">
 				
-				<button id="SelectOption" class="btn btn-primary">เรียกดูข้อมูลช่องเก็บของ</button>
+				<button id="SelectInventory" class="btn btn-success">เรียกดูข้อมูลช่องเก็บของ</button>
 
 			</div>
 
@@ -146,7 +146,7 @@
 
 
 			$("#SelectOption").on("click",function(){
-
+ 
 
 				$("#ChaID").html('<option value="0">----- เลือก ตัวละคร ที่ต้องการดูข้อมูล -----</option>');
 
@@ -181,10 +181,41 @@
 					
  
 				});
+  
+			});
 
 
 
-				
+
+
+			$("#SelectInventory").on("click",function(){
+ 
+ 				//////////////// clear inven
+
+
+ 				//ChaNum
+ 				//////////////// clear inven
+				var ChaID = $("#ChaID option:selected").val(); 
+				///swal("Success !!","เรียกดูข้อมูลสำเร็จ", "success");
+
+
+				if (ChaID.trim() == 0) {
+					swal("กรุณาระบุเลือกตัวละคร !!","กรุณาระบุข้อมูลใหม่", "error");
+					return false;
+				}
+ 
+				$.post("https://cac.webclient.me/api/getDataInvenFromUserNum.php",{
+					ChaNum : ChaID
+				},function(data){
+
+					console.log(data);
+					var Obj = JSON.parse(data);
+					console.log(Obj);
+ 
+
+					
+ 
+				}); 
 
 			});
 
