@@ -44,9 +44,9 @@
 				</select>
 			</div>
 			<div class="col-6">
-				
+				<!--
 				<button id="SelectOption" class="btn btn-primary">เลือก</button>
-
+				-->
 			</div>
 
 		</div>
@@ -267,7 +267,7 @@
 					UserNum : IDRAN
 				},function(data){
 
-					
+
 					var Obj = JSON.parse(data);
 					console.log(Obj);
 
