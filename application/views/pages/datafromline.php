@@ -82,6 +82,17 @@
 
 
 
+		<div class="row">
+			
+			<div class="col-12"> 
+ 				
+ 				<label>ยอดเงิน : </label>
+ 				<font color="red"><label class="MoneyLable"></label> เหรียญ</font>
+ 				
+ 
+			</div> 
+
+		</div>
 
 		<div class="row">
 			
@@ -235,7 +246,9 @@
 					console.log(data);
 					var Obj = JSON.parse(data);
 					console.log(Obj);
- 
+
+					$("#MoneyLable").text(Obj.gold);
+ 			
 					var tablehtml = "<tr>"+
 								      "<td>1</td>"+
 								      "<td>2</td>"+
