@@ -248,7 +248,7 @@
 					console.log(Obj);
 
 					$("#MoneyLable").text(Obj.gold);
- 			
+ 					console.log(Obj.gold);
 					var tablehtml = "<tr>"+
 								      "<td>1</td>"+
 								      "<td>2</td>"+
