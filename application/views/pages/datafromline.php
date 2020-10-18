@@ -89,7 +89,7 @@
 			<div class="col-12"> 
  				
  				<label>ยอดเงิน : </label>
- 				<font color="red"><label id="MoneyLable"></label> </font> เหรียญ
+ 				<font color="red"><label id="MoneyLable">0</label> </font> เหรียญ
  				
  
 			</div> 
