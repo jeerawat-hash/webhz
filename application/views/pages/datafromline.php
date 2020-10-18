@@ -112,9 +112,9 @@
 
 		<div class="row">
 			
-			<div class="col-12"> 
+			<div class="col-12" class="table-responsive">
 
-				<table id="ChaTable" border="1" width="100%">
+				<table id="ChaTable" width="100%" class="table">
 				  <thead>
 				    <tr>
 				      <th >ตำแหน่ง</th>
