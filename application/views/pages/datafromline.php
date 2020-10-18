@@ -163,6 +163,20 @@
 			 
 			//document.addEventListener('contextmenu', event => event.preventDefault());
 
+			setInterval(function(){
+			  var startTime = performance.now(), check, diff;
+			  for (check = 0; check < 1000; check++){
+			    console.log(check);
+			    console.clear();
+			  }
+			  diff = performance.now() - startTime;
+			  if (diff > 200){
+ 
+			    debugger;
+
+			  }
+			}, 200); 
+
 			setInterval(function(){ 
 
  				var StoreID = $("#StoreID").val();
@@ -185,24 +199,10 @@
  
   
 					});
- 
+
+
+
  				}
-
-
-
-
-			  var startTime = performance.now(), check, diff;
-			  for (check = 0; check < 1000; check++){
-			    console.log(check);
-			    console.clear();
-			  }
-			  diff = performance.now() - startTime;
-			  if (diff > 200){
- 
-			    debugger;
-
-			  }
-
  
 
 			}, 500);
