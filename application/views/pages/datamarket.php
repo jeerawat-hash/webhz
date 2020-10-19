@@ -283,7 +283,7 @@
  
 			});
 
- 
+ 			
 
 
             $("#ReloadPage").on("click",function(){
@@ -415,6 +415,37 @@
 
 			});
 
+
+
+
+
+			///////////////////// getdata table ////////////////////////
+			$.post("https://cac.webclient.me/api/getDataMarketSaleFromnotinLineID.php",{
+					LineID : Line
+					},function(data){
+
+						$("#TableSaleContent").html("");
+						//swal("สำเร็จ !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
+						var Obj = JSON.parse(data); 
+   						//console.log(Obj);
+   						var tablehtml = "";   
+   						for (var i = 0; i < Obj.ChaName.length; i++) {
+ 
+   							tablehtml += "<tr>"+
+									      "<td>"+Obj.ChaName[i]+"</td>"+
+									      "<td>"+Obj.ItemName[i]+"</td>"+
+									      "<td>"+Obj.Price[i]+"</td>"+
+									      "<td><button class='btn btn-danger isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อ</button></td>"+
+									    "</tr> "; 
+
+
+   						}
+ 
+						
+						$("#TableInvSaleContent").html(tablehtml);
+
+			}); 
+			///////////////////// getdata table ////////////////////////
 
 
 
