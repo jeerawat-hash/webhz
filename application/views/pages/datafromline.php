@@ -409,10 +409,21 @@
 			$("#TableInvSale").on("click",'.isReInv',function(){
 
 				var ShopMap = $(this).attr("ShopMapID");
-				var UserNum = $(this).attr("UserNum");
-				var ChaNum = $(this).attr("ChaNum");
+				var IDRAN = $(this).attr("UserNum");
+				var ChaID = $(this).attr("ChaNum");
 				
-				swal("Success !!",ShopMap +" "+ UserNum + " " + ChaNum, "info");
+				if (IDRAN.trim() == 0) {
+					swal("กรุณาเลือกID !!","กรุณาระบุข้อมูลใหม่", "error");
+					$("#UserID").attr('disabled',false);
+					return false;
+				}
+				if (ChaID.trim() == 0) {
+					swal("กรุณาเลือกตัวละคร !!","กรุณาระบุข้อมูลใหม่", "error");
+					$("#UserID").attr('disabled',false);
+					return false;
+				}
+				
+				swal("Success !!",ShopMap +" "+ IDRAN + " " + ChaID, "info");
 
 
 			});
