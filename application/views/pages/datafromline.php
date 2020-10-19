@@ -372,19 +372,35 @@
 
 				var IDRAN = $("#UserID option:selected").val(); 
 				var ChaID = $("#ChaID option:selected").val(); 
+ 
+/////////////////////////////////////////////////////////////////////////////////////////////
+				$.post("http://cac.webclient.me/api/getDataSaleFromLineID.php",{
+					LineID : Line
+					},function(data){
 
-				//Line
+						$("#TableInvSaleContent").html("");
+						//swal("Success !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
+						var Obj = JSON.parse(data); 
+   						
+   						console.log(Obj);
+   						
+						var tablehtml = "";   
 
+							tablehtml += "<tr>"+
+									      "<td></td>"+
+									      "<td></td>"+
+									      "<td></td>"+
+									      "<td></td>"+
+									    "</tr> "; 
+						  
+						
+						$("#TableInvSaleContent").html(tablehtml);
+ 
+	 
+					}); 
+/////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
-
-
-
-
+ 
 			});
 
 
