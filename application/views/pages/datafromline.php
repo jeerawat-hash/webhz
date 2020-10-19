@@ -110,7 +110,7 @@
 
 		</div>
 
-		<div class="row">
+		<div id="TableInventory" class="row">
 			
 			<div class="col-12" class="table-responsive">
 
@@ -124,6 +124,32 @@
 				    </tr>
 				  </thead>
 				  <tbody id="ChaTableContent">
+				    
+				  </tbody>
+				  
+				</table>
+
+
+
+			</div> 
+
+		</div>
+
+
+		<div id="TableInvSale" class="row">
+			
+			<div class="col-12" class="table-responsive">
+
+				<table id="ChaInvSaleTable" width="100%" class="table">
+				  <thead>
+				    <tr> 
+				      <th >ชื่อ</th>
+				      <th >จำนวน</th>
+				      <th >ยอดเงิน</th> 
+				      <th >ดำเนินการ</th> 
+				    </tr>
+				  </thead>
+				  <tbody id="ChaInvSaleTableContent">
 				    
 				  </tbody>
 				  
@@ -245,6 +271,9 @@
 					}
  
 			});
+
+
+			//$("#TableInvSale").hide();
 
 
             $("#ReloadPage").on("click",function(){
