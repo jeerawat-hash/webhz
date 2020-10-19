@@ -455,10 +455,14 @@
 				var ShopMap = $(this).attr("ShopMapID");  
 			  	var ChaID = $("#ChaID option:selected").val(); 
 				  
-
-				alert(ShopMap + ChaID);
+			  	if (ChaID.trim() == 0) {
+					swal("ERROR !!","ไม่พบตัวละครที่ต้องการซื้อไอเทม", "error");
+					$("#ChaID").attr('disabled',false);
+					return false;
+				}
  
-
+				alert(ShopMap + ChaID + Line);
+  
 			});
 
 
