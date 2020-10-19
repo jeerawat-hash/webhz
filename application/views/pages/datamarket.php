@@ -435,10 +435,10 @@
    						var tablehtml = "";   
    						for (var i = 0; i < Obj.ChaName.length; i++) {
  							
- 							var itemqty = "1";
+ 							var itemqty = "<font color='red'>1</font> ชิ้น";
 
  							if (Obj.ItemQTY[i] > 1) {
- 								itemqty = Obj.ItemQTY[i]+" (<font color='red'>ขายทั้งหมด</font>)";
+ 								itemqty = "<font color='red'>"+Obj.ItemQTY[i]+"</font> ชิ้น"+" (<font color='red'>ขายทั้งหมด</font>)";
  							}
 
    							tablehtml += "<tr>"+
