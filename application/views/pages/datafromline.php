@@ -374,7 +374,7 @@
 				var ChaID = $("#ChaID option:selected").val(); 
  
 /////////////////////////////////////////////////////////////////////////////////////////////
-				$.post("http://cac.webclient.me/api/getDataSaleFromLineID.php",{
+				$.post("https://cac.webclient.me/api/getDataSaleFromLineID.php",{
 					LineID : Line
 					},function(data){
 
@@ -383,7 +383,7 @@
 						var Obj = JSON.parse(data); 
    						
    						console.log(Obj);
-   						
+
 						var tablehtml = "";   
 
 							tablehtml += "<tr>"+
