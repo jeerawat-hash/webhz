@@ -390,7 +390,7 @@
 									      "<td>"+Obj.ChaName[i]+"</td>"+
 									      "<td>"+Obj.ItemName[i]+"</td>"+
 									      "<td>"+Obj.Price[i]+"</td>"+
-									      "<td><button class='btn btn-danger isReInv'  ShopMapID='"+Obj.ID[i]+"'>เรียกคืนไอเทม</button></td>"+
+									      "<td><button class='btn btn-danger isReInv' UserNum='"+IDRAN+"' ChaNum='"+ChaID+"' ShopMapID='"+Obj.ID[i]+"'>เรียกคืนไอเทม</button></td>"+
 									    "</tr> "; 
 
 
@@ -409,8 +409,10 @@
 			$("#TableInvSale").on("click",'.isReInv',function(){
 
 				var ShopMap = $(this).attr("ShopMapID");
+				var UserNum = $(this).attr("UserNum");
+				var ChaNum = $(this).attr("ChaNum");
 				
-				swal("Success !!",ShopMap, "info");
+				swal("Success !!",ShopMap +" "+ UserNum + " " + ChaNum, "info");
 
 
 			});
