@@ -402,9 +402,22 @@
 	 
 					}); 
 /////////////////////////////////////////////////////////////////////////////////////////////
-
- 
 			});
+
+
+
+			$("#TableInvSale").on("click",'.isReInv',function(){
+
+				var ShopMap = $(this).attr("ShopMapID");
+				
+				swal("Success !!",ShopMap, "info");
+
+
+			});
+
+
+
+
 
 
 
