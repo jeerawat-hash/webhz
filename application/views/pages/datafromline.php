@@ -321,7 +321,7 @@
 					ChaNum : ChaID
 					},function(data){
 						$("#ChaTableContent").html("");
-						swal("Success !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
+						//swal("Success !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
 						var Obj = JSON.parse(data); 
 
 						$("#MoneyLable").text(Obj.gold);
