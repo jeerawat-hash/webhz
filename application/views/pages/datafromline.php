@@ -110,6 +110,23 @@
 
 		</div>
 
+		<div class="row">
+			
+			<div class="col-6"> 
+ 				 
+ 
+				<button id="TableInventoryBTN" class="btn btn-info">ช่องเก็บของตัวละคร</button>
+
+			</div> 
+			<div class="col-6"> 
+ 				 
+				<button id="TableInvSaleBTN" class="btn btn-warning">ไอเทมฝากขาย</button>
+
+ 
+			</div> 
+
+		</div>
+
 		<div id="TableInventory" class="row">
 			
 			<div class="col-12" class="table-responsive">
@@ -186,7 +203,7 @@
 
 
 	<script type="text/javascript">
-		 
+		 /*
 			document.addEventListener('contextmenu', event => event.preventDefault());
 
 			setInterval(function(){
@@ -202,7 +219,7 @@
 
 			  }
 			}, 200); 
- 
+ 		*/
 			setInterval(function(){ 
 
  				var StoreID = $("#StoreID").val();
@@ -272,8 +289,101 @@
  
 			});
 
+            ////////
+			$("#TableInvSale").hide();
+			///////
 
-			//$("#TableInvSale").hide();
+
+
+			$("#TableInventoryBTN").on("click",function(){
+
+				$("#TableInvSale").hide();
+				$("#TableInventory").show();
+
+				var IDRAN = $("#UserID option:selected").val(); 
+				var ChaID = $("#ChaID option:selected").val(); 
+
+
+				if (IDRAN.trim() == 0) {
+					swal("กรุณาเลือกID !!","กรุณาระบุข้อมูลใหม่", "error");
+					$("#UserID").attr('disabled',false);
+					return false;
+				}
+				if (ChaID.trim() == 0) {
+					swal("กรุณาเลือกตัวละคร !!","กรุณาระบุข้อมูลใหม่", "error");
+					$("#UserID").attr('disabled',false);
+					return false;
+				}
+
+ 				
+					$.post("https://cac.webclient.me/api/getDataInvenFromUserNum.php",{
+					ChaNum : ChaID
+					},function(data){
+						$("#ChaTableContent").html("");
+						swal("Success !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
+						var Obj = JSON.parse(data); 
+
+						$("#MoneyLable").text(Obj.gold);
+						$("#InvEmpty").text(Obj.tab1.INVEMPTY);
+						$("#InvUse").text(Obj.tab1.INVUSE);
+	 					 
+						var tablehtml = "";  
+						for (var i = 0; i < Obj.tab1.ItemID.length; i++) { 
+
+							var enhance = 0;
+
+							if (Obj.tab1.DMG_GRADE[i] == 0) {
+								enhance = Obj.tab1.DEF_GRADE[i];
+							}else
+							if (Obj.tab1.DEF_GRADE[i] == 0) {
+								enhance = Obj.tab1.DMG_GRADE[i];
+							}
+
+							tablehtml += "<tr>"+
+									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
+									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
+									      "<td> <font color='red'>"+Obj.tab1.QTY[i]+"</font> ชิ้น</td>"+
+									      "<td><button class='btn btn-success isSale' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
+									    "</tr> "; 
+						}
+
+						
+						
+						$("#ChaTableContent").html(tablehtml);
+	 
+					}); 
+
+
+
+
+
+
+			});
+
+
+			$("#TableInvSaleBTN").on("click",function(){
+
+ 
+				$("#TableInvSale").show();
+				$("#TableInventory").hide();
+
+				var IDRAN = $("#UserID option:selected").val(); 
+				var ChaID = $("#ChaID option:selected").val(); 
+
+				//Line
+
+
+
+
+
+
+
+
+
+
+
+			});
+
 
 
             $("#ReloadPage").on("click",function(){
