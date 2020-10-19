@@ -370,9 +370,7 @@
 				$("#TableInvSaleContent").html("");
 				$("#TableInvSale").show();
 				$("#TableInventory").hide();
-
-				var IDRAN = $("#UserID option:selected").val(); 
-				var ChaID = $("#ChaID option:selected").val(); 
+  
  
 /////////////////////////////////////////////////////////////////////////////////////////////
 				$.post("https://cac.webclient.me/api/getDataSaleFromLineID.php",{
@@ -382,7 +380,7 @@
 						$("#TableInvSaleContent").html("");
 						//swal("Success !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
 						var Obj = JSON.parse(data); 
-   						 
+   						console.log(Obj);
    						var tablehtml = "";   
    						for (var i = 0; i < Obj.ChaName.length; i++) {
  
@@ -409,20 +407,8 @@
 			$("#TableInvSale").on("click",'.isReInv',function(){
 
 				var ShopMap = $(this).attr("ShopMapID");
-				var IDRAN = $(this).attr("UserNum");
-				var ChaID = $(this).attr("ChaNum");
-				
-				if (IDRAN.trim() == 0) {
-					swal("กรุณาเลือกID !!","กรุณาระบุข้อมูลใหม่", "error");
-					$("#UserID").attr('disabled',false);
-					return false;
-				}
-				if (ChaID.trim() == 0) {
-					swal("กรุณาเลือกตัวละคร !!","กรุณาระบุข้อมูลใหม่", "error");
-					$("#UserID").attr('disabled',false);
-					return false;
-				}
-				
+
+
 				swal("Success !!",ShopMap +" "+ IDRAN + " " + ChaID, "info");
 
 
