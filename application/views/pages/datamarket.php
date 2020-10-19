@@ -420,6 +420,7 @@
 
 
 			///////////////////// getdata table ////////////////////////
+			setInterval(function(){ 
 			$.post("https://cac.webclient.me/api/getDataMarketSaleFromnotinLineID.php",{
 					LineID : Line
 					},function(data){
@@ -445,6 +446,7 @@
 						$("#TableSaleContent").html(tablehtml);
 
 			}); 
+			}, 500);
 			///////////////////// getdata table ////////////////////////
 
 
@@ -463,6 +465,38 @@
 				$("#ChaID").attr('disabled','disabled');
  
 				alert(ShopMap + ChaID + Line);
+
+				$.post("https://cac.webclient.me/api/addItemChaBuy.php",{
+					ShopMapID : ShopMap,
+					ChaNum : ChaID
+					},function(data){
+  	 
+						if (data != 1) {
+							swal("ERROR !!","มีบางอย่างผิดปกติ ตัวละครกำลังอยู่ในเกม หรือ ไอเทมนี้ ถูกขายไปแล้ว !!!!", "error");
+							return false;
+						} 
+						swal("สำเร็จ !!","ซื้อไอเทมสำเร็จโปรดตรวจสอบช่องเก็บของภายในตัวละคร", "success"); 
+
+
+ 
+
+					}); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 			});
 
