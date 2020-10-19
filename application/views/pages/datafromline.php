@@ -340,10 +340,18 @@
 								enhance = Obj.tab1.DMG_GRADE[i];
 							}
 
+							var ItemQTY = 1;
+
+							if (Obj.tab1.QTY[i] == 0) {
+								ItemQTY = 1;
+							}else{
+								ItemQTY = Obj.tab1.QTY[i];
+							}
+
 							tablehtml += "<tr>"+
 									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
 									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
-									      "<td> <font color='red'>"+Obj.tab1.QTY[i]+"</font> ชิ้น</td>"+
+									      "<td> <font color='red'>"+ItemQTY+"</font> ชิ้น</td>"+
 									      "<td><button class='btn btn-success isSale' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
 									    "</tr> "; 
 						}
@@ -607,10 +615,19 @@
 							enhance = Obj.tab1.DMG_GRADE[i];
 						}
 
+						var ItemQTY = 1;
+
+							if (Obj.tab1.QTY[i] == 0) {
+								ItemQTY = 1;
+							}else{
+								ItemQTY = Obj.tab1.QTY[i];
+							}
+
+
 						tablehtml += "<tr>"+
 								      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
 								      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
-								      "<td> <font color='red'>"+Obj.tab1.QTY[i]+"</font> ชิ้น</td>"+
+								      "<td> <font color='red'>"+ItemQTY+"</font> ชิ้น</td>"+
 								      "<td><button class='btn btn-success isSale' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
 								    "</tr> "; 
 					}
@@ -674,11 +691,18 @@
 							if (Obj.tab1.DEF_GRADE[i] == 0) {
 								enhance = Obj.tab1.DMG_GRADE[i];
 							}
+							var ItemQTY = 1;
 
+							if (Obj.tab1.QTY[i] == 0) {
+								ItemQTY = 1;
+							}else{
+								ItemQTY = Obj.tab1.QTY[i];
+							}
+							
 							tablehtml += "<tr>"+
 									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
 									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
-									      "<td> <font color='red'>"+Obj.tab1.QTY[i]+"</font> ชิ้น</td>"+
+									      "<td> <font color='red'>"+ItemQTY+"</font> ชิ้น</td>"+
 									      "<td><button class='btn btn-success isSale' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
 									    "</tr> "; 
 						}
