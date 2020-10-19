@@ -421,7 +421,7 @@
 					},function(data){
   	 
 						if (data != 1) {
-							swal("ERROR !!","มีบางอย่างผิดปกติ หรือ ตัวละครกำลังอยู่ในเกม กรุณาออกจากเกมก่อนทำรายการ!!!!", "error");
+							swal("ERROR !!","มีบางอย่างผิดปกติ ตัวละครกำลังอยู่ในเกม หรือ ไอเทมนี้ ถูกขายไปแล้ว !!!!", "error");
 							return false;
 						}
 						swal("สำเร็จ !!","นำไอเทมกลับสู่ตัวละครสำเร็จ", "success"); 
@@ -698,7 +698,7 @@
 							}else{
 								ItemQTY = Obj.tab1.QTY[i];
 							}
-							
+
 							tablehtml += "<tr>"+
 									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
 									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
