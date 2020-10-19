@@ -567,7 +567,7 @@
 				$.post("https://cac.webclient.me/api/addItemToShop.php",{
 					ChaNum : ChaID,
 					ItemMEM : itemInfo,
-					ItemID : ItemIDa,
+					ItemCode : ItemIDa,
 					Enhance : enhance
 				},function(data){
 
