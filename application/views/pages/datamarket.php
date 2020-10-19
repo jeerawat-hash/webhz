@@ -441,9 +441,15 @@
  								itemqty = "<font color='red'>"+Obj.ItemQTY[i]+"</font> ชิ้น"+" (<font color='red'>ขายทั้งหมด</font>)";
  							}
 
+ 							var Enhance = "";
+
+ 							if (Obj.Enhance[i] != 0) {
+ 								Enhance = "<font color='red'> +"+Obj.Enhance[i]+"</font>";
+ 							}
+
    							tablehtml += "<tr>"+
 									      "<td>"+Obj.ChaName[i]+"</td>"+
-									      "<td>"+Obj.ItemName[i]+" "+itemqty+"</td>"+
+									      "<td>"+Obj.ItemName[i]+" "+itemqty+" "+Enhance+"</td>"+
 									      "<td> <font color='red'> "+Obj.Price[i]+" </font> พ้อย</td>"+
 									      "<td><button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อ</button></td>"+
 									    "</tr> "; 
