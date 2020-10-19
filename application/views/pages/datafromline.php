@@ -162,7 +162,7 @@
 				    <tr> 
 				      <th >ตัวละคร</th>
 				      <th >ชื่อ</th>
-				      <th >ยอดเงิน</th> 
+				      <th >ราคา</th> 
 				      <th >ดำเนินการ</th> 
 				    </tr>
 				  </thead>
@@ -383,7 +383,7 @@
 						var Obj = JSON.parse(data); 
    						
    						console.log(Obj); 
-   						
+
    						var tablehtml = "";   
    						for (var i = 0; i < Obj.ChaName.length; i++) {
  
