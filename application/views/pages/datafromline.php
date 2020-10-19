@@ -266,7 +266,7 @@
             console.log(profile.userId);
             var Line = profile.userId;
 
-            //swal("Success !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
+            //swal("สำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
  			
             $.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
 					LineID : Line
@@ -321,7 +321,7 @@
 					ChaNum : ChaID
 					},function(data){
 						$("#ChaTableContent").html("");
-						//swal("Success !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
+						//swal("สำเร็จ !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
 						var Obj = JSON.parse(data); 
 
 						$("#MoneyLable").text(Obj.gold);
@@ -378,7 +378,7 @@
 					},function(data){
 
 						$("#TableInvSaleContent").html("");
-						//swal("Success !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
+						//swal("สำเร็จ !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
 						var Obj = JSON.parse(data); 
    						console.log(Obj);
    						var tablehtml = "";   
@@ -412,15 +412,18 @@
 				$.post("https://cac.webclient.me/api/addReInvItem.php",{
 					ShopMapID : ShopMap
 					},function(data){
-  	
-
- 						
+  	 
+						if (data != 1) {
+							swal("ERROR !!","มีบางอย่างผิดปกติ!!!!", "danger");
+							return false;
+						}
+						swal("สำเร็จ !!","นำไอเทมกลับสู่ตัวละครสำเร็จ", "success"); 
 						$.post("https://cac.webclient.me/api/getDataSaleFromLineID.php",{
 							LineID : Line
 							},function(data){
 
 								$("#TableInvSaleContent").html("");
-								//swal("Success !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
+								//swal("สำเร็จ !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
 								var Obj = JSON.parse(data); 
 		   						 
 		   						var tablehtml = "";   
@@ -520,7 +523,7 @@
 				$("#ChaID").html('<option value="0">----- เลือก ตัวละคร ที่ต้องการดูข้อมูล -----</option>');
 
 				var IDRAN = $("#UserID option:selected").val(); 
-				swal("Success !!","เรียกดูข้อมูลสำเร็จ", "success");
+				swal("สำเร็จ !!","เรียกดูข้อมูลสำเร็จ", "success");
 
 
 				if (IDRAN.trim() == 0) {
@@ -571,7 +574,7 @@
  				//ChaNum
  				//////////////// clear inven
 				var ChaID = $("#ChaID option:selected").val(); 
-				///swal("Success !!","เรียกดูข้อมูลสำเร็จ", "success");
+				///swal("สำเร็จ !!","เรียกดูข้อมูลสำเร็จ", "success");
 
 
 				if (ChaID.trim() == 0) {
@@ -584,7 +587,7 @@
 					ChaNum : ChaID
 				},function(data){
 
-					swal("Success !!","เรียกดูข้อมูลภายในช่องเก็บของสำเร็จ", "success");
+					swal("สำเร็จ !!","เรียกดูข้อมูลภายในช่องเก็บของสำเร็จ", "success");
 					var Obj = JSON.parse(data);
 					console.log(Obj);
 					$("#MoneyLable").text(Obj.gold);
@@ -654,7 +657,7 @@
 					ChaNum : ChaID
 					},function(data){
 						$("#ChaTableContent").html("");
-						swal("Success !!","ดำเนินการเพิ่มไอเทมเข้าตลาดสำเร็จ", "success");
+						swal("สำเร็จ !!","ดำเนินการเพิ่มไอเทมเข้าตลาดสำเร็จ", "success");
 						var Obj = JSON.parse(data); 
 
 						$("#MoneyLable").text(Obj.gold);
