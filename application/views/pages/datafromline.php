@@ -388,7 +388,7 @@
 									      "<td>"+Obj.ChaName[i]+"</td>"+
 									      "<td>"+Obj.ItemName[i]+"</td>"+
 									      "<td>"+Obj.Price[i]+"</td>"+
-									      "<td><button class='btn btn-danger isReInv' UserNum='"+IDRAN+"' ChaNum='"+ChaID+"' ShopMapID='"+Obj.ID[i]+"'>เรียกคืนไอเทม</button></td>"+
+									      "<td><button class='btn btn-danger isReInv' UserNum=' ' ChaNum=' ' ShopMapID='"+Obj.ID[i]+"'>เรียกคืนไอเทม</button></td>"+
 									    "</tr> "; 
 
 
