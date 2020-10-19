@@ -351,8 +351,8 @@
 						
 						
 						$("#ChaTableContent").html(tablehtml);
-						
-						$("#UserID").attr('disabled','disabled');
+
+						$("#ChaID").attr('disabled','disabled');
 	 
 					}); 
 
