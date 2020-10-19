@@ -443,7 +443,7 @@
 
    							tablehtml += "<tr>"+
 									      "<td>"+Obj.ChaName[i]+"</td>"+
-									      "<td>"+itemqty+"</td>"+
+									      "<td>"+Obj.ItemName[i]+" "+itemqty+"</td>"+
 									      "<td> <font color='red'> "+Obj.Price[i]+" </font> พ้อย</td>"+
 									      "<td><button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อ</button></td>"+
 									    "</tr> "; 
