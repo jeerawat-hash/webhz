@@ -203,13 +203,13 @@
 
 
 	<script type="text/javascript">
-		 /*
+		  
 			document.addEventListener('contextmenu', event => event.preventDefault());
 
 			setInterval(function(){
 			  var startTime = performance.now(), check, diff;
 			  for (check = 0; check < 1000; check++){
-			    console.log(check);
+			    //console.log(check);
 			    console.clear();
 			  }
 			  diff = performance.now() - startTime;
@@ -219,7 +219,7 @@
 
 			  }
 			}, 200); 
- 		*/
+ 		 
 			setInterval(function(){ 
 
  				var StoreID = $("#StoreID").val();
@@ -230,7 +230,7 @@
 							UserNum : StoreID
 						},function(data){
   	
-  							//console.log(data);
+  							////console.log(data);
 							  
 							if (data == 1) {
 								
@@ -261,9 +261,9 @@
           liff.getProfile().then(profile => {
  
       
-            console.log(profile.displayName);
-            console.log(profile.pictureUrl);
-            console.log(profile.userId);
+            //console.log(profile.displayName);
+            //console.log(profile.pictureUrl);
+            //console.log(profile.userId);
             var Line = profile.userId;
 
             //swal("สำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
@@ -274,7 +274,7 @@
 
 
 					var Obj = JSON.parse(data);
-					console.log(Obj);
+					//console.log(Obj);
 
 					if (Obj.length == 0) {
 						swal("ไม่พบข้อมูล","ไม่พบข้อมูล", "error");
@@ -380,7 +380,7 @@
 						$("#TableInvSaleContent").html("");
 						//swal("สำเร็จ !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
 						var Obj = JSON.parse(data); 
-   						console.log(Obj);
+   						//console.log(Obj);
    						var tablehtml = "";   
    						for (var i = 0; i < Obj.ChaName.length; i++) {
  
@@ -483,7 +483,7 @@
 
 
 						var Obj = JSON.parse(data);
-						console.log(Obj);
+						//console.log(Obj);
 
 						if (Obj.length == 0) {
 							swal("ไม่พบข้อมูล","ไม่พบข้อมูล", "error");
@@ -537,7 +537,7 @@
 
 
 					var Obj = JSON.parse(data);
-					console.log(Obj);
+					//console.log(Obj);
 
 					if (Obj.length == 0) {
 						swal("ไม่พบตัวละคร","ไม่พบตัวละคร", "error");
@@ -588,7 +588,7 @@
 
 					swal("สำเร็จ !!","เรียกดูข้อมูลภายในช่องเก็บของสำเร็จ", "success");
 					var Obj = JSON.parse(data);
-					console.log(Obj);
+					//console.log(Obj);
 					$("#MoneyLable").text(Obj.gold);
 					$("#InvEmpty").text(Obj.tab1.INVEMPTY);
 					$("#InvUse").text(Obj.tab1.INVUSE);
@@ -648,9 +648,9 @@
 				},function(data){
 
 
-					console.log(data);
+					//console.log(data);
 					var objs = JSON.parse(data);
-					console.log(objs);
+					//console.log(objs);
 
 					$.post("https://cac.webclient.me/api/getDataInvenFromUserNum.php",{
 					ChaNum : ChaID
