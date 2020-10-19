@@ -435,20 +435,31 @@
 									      "<td>"+Obj.ChaName[i]+"</td>"+
 									      "<td>"+Obj.ItemName[i]+"</td>"+
 									      "<td>"+Obj.Price[i]+"</td>"+
-									      "<td><button class='btn btn-danger isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อ</button></td>"+
+									      "<td><button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อ</button></td>"+
 									    "</tr> "; 
 
 
    						}
  
 						
-						$("#TableInvSaleContent").html(tablehtml);
+						$("#TableSaleContent").html(tablehtml);
 
 			}); 
 			///////////////////// getdata table ////////////////////////
 
 
 
+
+			$("#TableSale").on("click",'.isBuyItem',function(){
+
+				var ShopMap = $(this).attr("ShopMapID");  
+			  	var ChaID = $("#ChaID option:selected").val(); 
+				  
+
+				alert(ShopMap + ChaID);
+ 
+
+			});
 
 
 
