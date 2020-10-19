@@ -406,8 +406,7 @@
 
 			$("#TableInvSale").on("click",'.isReInv',function(){
 
-				var ShopMap = $(this).attr("ShopMapID"); 
-				$("#TableInvSaleContent").html("");
+				var ShopMap = $(this).attr("ShopMapID");  
 			 
 				$.post("https://cac.webclient.me/api/addReInvItem.php",{
 					ShopMapID : ShopMap
