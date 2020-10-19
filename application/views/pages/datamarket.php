@@ -460,6 +460,7 @@
 					$("#ChaID").attr('disabled',false);
 					return false;
 				}
+				$("#ChaID").attr('disabled','disabled');
  
 				alert(ShopMap + ChaID + Line);
   
