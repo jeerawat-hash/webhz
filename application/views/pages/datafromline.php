@@ -299,6 +299,7 @@
 
 				$("#TableInvSale").hide();
 				$("#TableInventory").show();
+				$("#ChaTableContent").html("");
 
 				var IDRAN = $("#UserID option:selected").val(); 
 				var ChaID = $("#ChaID option:selected").val(); 
