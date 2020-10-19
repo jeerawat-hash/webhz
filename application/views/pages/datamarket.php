@@ -128,20 +128,14 @@
 
 
 		<div class="row">
-			
-			<div class="col-4"> 
- 				
- 				<label>ยอดเงินในเกม : </label>
- 				<font color="red"><label id="MoneyLable">0</label> </font> เหรียญ
- 				 
-			</div>
-			<div class="col-4"> 
+			 
+			<div class="col-6"> 
  				
  				<label>ยอดพ้อยแลกเปลี่ยน : </label>
  				<font color="green"><label class="MoneyPoint">0</label> </font> พ้อย
  				 
 			</div> 
-			<div class="col-4"> 
+			<div class="col-6"> 
  				
  				<label> <font color="red">ยอดเงินที่สามารถถอนได้</font> : </label>
  				<font color="green"><label class="MoneyPoint">0</label> </font> บาท
@@ -150,73 +144,14 @@
 
 		</div>
 
-		<div class="row">
-			
-			<div class="col-6"> 
- 				
- 				<label>ช่องเก็บของว่าง : </label>
- 				<font color="green"><label id="InvEmpty"></label> </font> ช่อง
- 				
  
-			</div> 
-			<div class="col-6"> 
- 				
- 				<label>ใช้งานช่อง : </label>
- 				<font color="red"><label id="InvUse"></label> </font> ช่อง 
- 				
- 
-			</div> 
 
-		</div>
 
-		<div class="row">
-			
-			<div class="col-6"> 
- 				 
- 
-				<button id="TableInventoryBTN" class="btn btn-info">ช่องเก็บของตัวละคร</button>
-
-			</div> 
-			<div class="col-6"> 
- 				 
-				<button id="TableInvSaleBTN" class="btn btn-warning">ไอเทมฝากขาย</button>
-
- 
-			</div> 
-
-		</div>
-
-		<div id="TableInventory" class="row">
+		<div id="TableSale" class="row">
 			
 			<div class="col-12" class="table-responsive">
 
-				<table id="ChaTable" width="100%" class="table">
-				  <thead>
-				    <tr>
-				      <th >ตำแหน่ง</th>
-				      <th >ชื่อ</th>
-				      <th >จำนวน</th>
-				      <th >ดำเนินการ</th> 
-				    </tr>
-				  </thead>
-				  <tbody id="ChaTableContent">
-				    
-				  </tbody>
-				  
-				</table>
-
-
-
-			</div> 
-
-		</div>
-
-
-		<div id="TableInvSale" class="row">
-			
-			<div class="col-12" class="table-responsive">
-
-				<table id="ChaInvSaleTable" width="100%" class="table">
+				<table id="TableSale" width="100%" class="table">
 				  <thead>
 				    <tr> 
 				      <th >ตัวละคร</th>
@@ -225,7 +160,7 @@
 				      <th >ดำเนินการ</th> 
 				    </tr>
 				  </thead>
-				  <tbody id="TableInvSaleContent">
+				  <tbody id="TableSaleContent">
 				    
 				  </tbody>
 				  
@@ -479,6 +414,31 @@
 				}); 
 
 			});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
