@@ -12,9 +12,12 @@
 <!--===============================================================================================-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="https://rhz.webclient.me/assets/news/ticker.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
 <!-------- ---> 
 <!--  <script src="https://rhz.webclient.me/assets/news/ticker.js"></script> -->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+	<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script> 
+	<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script> 
 
 </head>
  
@@ -444,7 +447,7 @@
  
 						
 						$("#TableSaleContent").html(tablehtml);
-
+						$("#TableSale").DataTable();
 			}); 
 			}, 500);
 			///////////////////// getdata table ////////////////////////
