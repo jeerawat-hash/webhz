@@ -407,8 +407,52 @@
 			$("#TableInvSale").on("click",'.isReInv',function(){
 
 				var ShopMap = $(this).attr("ShopMapID"); 
+				$("#TableInvSaleContent").html("");
+			 
+				$.post("https://cac.webclient.me/api/addReInvItem.php",{
+					ShopMapID : ShopMap
+					},function(data){
+  	
 
-				swal("Success !!",ShopMap, "info");
+ 						
+						$.post("https://cac.webclient.me/api/getDataSaleFromLineID.php",{
+							LineID : Line
+							},function(data){
+
+								$("#TableInvSaleContent").html("");
+								//swal("Success !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
+								var Obj = JSON.parse(data); 
+		   						 
+		   						var tablehtml = "";   
+		   						for (var i = 0; i < Obj.ChaName.length; i++) {
+		 
+		   							tablehtml += "<tr>"+
+											      "<td>"+Obj.ChaName[i]+"</td>"+
+											      "<td>"+Obj.ItemName[i]+"</td>"+
+											      "<td>"+Obj.Price[i]+"</td>"+
+											      "<td><button class='btn btn-danger isReInv' ChaNum='"+Obj.ChaNum[i]+"' ShopMapID='"+Obj.ID[i]+"'>เรียกคืนไอเทม</button></td>"+
+											    "</tr> "; 
+ 
+		   						}
+		 
+								
+								$("#TableInvSaleContent").html(tablehtml);
+		 
+			 
+							});
+
+
+
+
+
+
+					}); 
+
+
+
+
+
+
 
 
 			});
