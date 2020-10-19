@@ -366,7 +366,8 @@
 
 			$("#TableInvSaleBTN").on("click",function(){
 
- 
+ 				
+				$("#TableInvSaleContent").html("");
 				$("#TableInvSale").show();
 				$("#TableInventory").hide();
 
