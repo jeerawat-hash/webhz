@@ -160,8 +160,8 @@
 				<table id="ChaInvSaleTable" width="100%" class="table">
 				  <thead>
 				    <tr> 
+				      <th >ตัวละคร</th>
 				      <th >ชื่อ</th>
-				      <th >จำนวน</th>
 				      <th >ยอดเงิน</th> 
 				      <th >ดำเนินการ</th> 
 				    </tr>
@@ -344,7 +344,7 @@
 									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
 									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
 									      "<td> <font color='red'>"+Obj.tab1.QTY[i]+"</font> ชิ้น</td>"+
-									      "<td><button class='btn btn-success isSale' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
+									      "<td><button class='btn btn-success isSale' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
 									    "</tr> "; 
 						}
 
@@ -535,7 +535,7 @@
 								      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
 								      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
 								      "<td> <font color='red'>"+Obj.tab1.QTY[i]+"</font> ชิ้น</td>"+
-								      "<td><button class='btn btn-success isSale' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
+								      "<td><button class='btn btn-success isSale' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
 								    "</tr> "; 
 					}
 
@@ -554,6 +554,9 @@
 				var itemInfo = $(this).attr("itemInfo");
 				var IDRAN = $("#UserID option:selected").val(); 
 				var ChaID = $("#ChaID option:selected").val(); 
+				var ItemIDa = $(this).attr("ItemID");
+				var enhance = $(this).attr("enhance");
+
 				//alert(IDRAN+" "+ChaID+" "+itemInfo);
 
 				
@@ -563,7 +566,9 @@
 				 
 				$.post("https://cac.webclient.me/api/addItemToShop.php",{
 					ChaNum : ChaID,
-					ItemMEM : itemInfo
+					ItemMEM : itemInfo,
+					ItemID : ItemIDa,
+					Enhance : enhance
 				},function(data){
 
 
@@ -598,7 +603,7 @@
 									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
 									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
 									      "<td> <font color='red'>"+Obj.tab1.QTY[i]+"</font> ชิ้น</td>"+
-									      "<td><button class='btn btn-success isSale' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
+									      "<td><button class='btn btn-success isSale' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
 									    "</tr> "; 
 						}
 
