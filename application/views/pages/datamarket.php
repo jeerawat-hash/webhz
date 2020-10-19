@@ -16,9 +16,9 @@
 <!-------- ---> 
 <!--  <script src="https://rhz.webclient.me/assets/news/ticker.js"></script> -->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
-	<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script> 
-	<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script> 
-
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.css"/>
+ 
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.js"></script>
 </head>
  
  
@@ -447,7 +447,10 @@
  
 						
 						$("#TableSaleContent").html(tablehtml);
+						$('#TableSale').DataTable().clear();
+						$('#TableSale').DataTable().destroy();
 						$("#TableSale").DataTable();
+
 			}); 
 			}, 500);
 			///////////////////// getdata table ////////////////////////
