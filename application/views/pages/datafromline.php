@@ -382,9 +382,7 @@
 						$("#TableInvSaleContent").html("");
 						//swal("Success !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
 						var Obj = JSON.parse(data); 
-   						
-   						console.log(Obj); 
-
+   						 
    						var tablehtml = "";   
    						for (var i = 0; i < Obj.ChaName.length; i++) {
  
