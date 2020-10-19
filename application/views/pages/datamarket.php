@@ -434,11 +434,17 @@
    						console.log(Obj);
    						var tablehtml = "";   
    						for (var i = 0; i < Obj.ChaName.length; i++) {
- 
+ 							
+ 							var itemqty = "1";
+
+ 							if (Obj.ItemQTY[i] > 1) {
+ 								itemqty = Obj.ItemQTY[i]+" (<font color='red'>ขายทั้งหมด</font>)";
+ 							}
+
    							tablehtml += "<tr>"+
 									      "<td>"+Obj.ChaName[i]+"</td>"+
-									      "<td>"+Obj.ItemName[i]+"</td>"+
-									      "<td>"+Obj.Price[i]+"</td>"+
+									      "<td>"+itemqty+"</td>"+
+									      "<td> <font color='red'> "+Obj.Price[i]+" </font> พ้อย</td>"+
 									      "<td><button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อ</button></td>"+
 									    "</tr> "; 
 
