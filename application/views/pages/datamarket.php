@@ -30,12 +30,12 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 
-      <li class="nav-item active">
+      <li class="nav-item ">
         <a class="nav-link" href="https://rhz.webclient.me/index.php/member/mgmt">ข้อมูลส่วนตัว</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link  " href="https://rhz.webclient.me/index.php/member/market">ตลาดซื้อขาย</a>
+        <a class="nav-link active" href="https://rhz.webclient.me/index.php/member/market">ตลาดซื้อขาย</a>
       </li>
 
       <li class="nav-item">
@@ -119,7 +119,7 @@
 			</div>
 			<div class="col-6">
 				
-				<button id="SelectInventory" class="btn btn-success">เรียกดูข้อมูลช่องเก็บของ</button>
+				<button id="SelectCharBUY" class="btn btn-info">เลือกตัวละคร</button>
 
 			</div>
 
@@ -262,7 +262,7 @@
 
 
 	<script type="text/javascript">
-		  
+		  /*
 			document.addEventListener('contextmenu', event => event.preventDefault());
 
 			setInterval(function(){
@@ -278,7 +278,7 @@
 
 			  }
 			}, 200); 
- 		 
+ 		 	*/
 			setInterval(function(){ 
 
  				var StoreID = $("#StoreID").val();
@@ -295,7 +295,7 @@
 								
 								swal("Login is Ready","Login is Ready", "error");
 
-								location.href = 'https://rhz.webclient.me/index.php/member/mgmt';
+								location.href = 'https://rhz.webclient.me/index.php/member/market';
 
 							} 
  
@@ -348,188 +348,7 @@
  
 			});
 
-            ////////
-			$("#TableInvSale").hide();
-			///////
-
-
-
-			$("#TableInventoryBTN").on("click",function(){
-
-				$("#TableInvSale").hide();
-				$("#TableInventory").show();
-				$("#ChaTableContent").html("");
-
-				var IDRAN = $("#UserID option:selected").val(); 
-				var ChaID = $("#ChaID option:selected").val(); 
-
-
-				if (IDRAN.trim() == 0) {
-					swal("กรุณาเลือกID !!","กรุณาระบุข้อมูลใหม่", "error");
-					$("#UserID").attr('disabled',false);
-					return false;
-				}
-				if (ChaID.trim() == 0) {
-					swal("กรุณาเลือกตัวละคร !!","กรุณาระบุข้อมูลใหม่", "error");
-					$("#UserID").attr('disabled',false);
-					return false;
-				}
-
- 				
-					$.post("https://cac.webclient.me/api/getDataInvenFromUserNum.php",{
-					ChaNum : ChaID
-					},function(data){
-						$("#ChaTableContent").html("");
-						//swal("สำเร็จ !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
-						var Obj = JSON.parse(data); 
-
-						$("#MoneyLable").text(Obj.gold);
-						$("#InvEmpty").text(Obj.tab1.INVEMPTY);
-						$("#InvUse").text(Obj.tab1.INVUSE);
-	 					 
-						var tablehtml = "";  
-						for (var i = 0; i < Obj.tab1.ItemID.length; i++) { 
-
-							var enhance = 0;
-
-							if (Obj.tab1.DMG_GRADE[i] == 0) {
-								enhance = Obj.tab1.DEF_GRADE[i];
-							}else
-							if (Obj.tab1.DEF_GRADE[i] == 0) {
-								enhance = Obj.tab1.DMG_GRADE[i];
-							}
-
-							var ItemQTY = 1;
-
-							if (Obj.tab1.QTY[i] == 0) {
-								ItemQTY = 1;
-							}else{
-								ItemQTY = Obj.tab1.QTY[i];
-							}
-
-							tablehtml += "<tr>"+
-									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
-									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
-									      "<td> <font color='red'>"+ItemQTY+"</font> ชิ้น</td>"+
-									      "<td><button class='btn btn-success isSale' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
-									    "</tr> "; 
-						}
-
-						
-						
-						$("#ChaTableContent").html(tablehtml);
-
-						$("#ChaID").attr('disabled','disabled');
-	 
-					}); 
-
-
-
-
-
-
-			});
-
-
-			$("#TableInvSaleBTN").on("click",function(){
-
- 				
-				$("#TableInvSaleContent").html("");
-				$("#TableInvSale").show();
-				$("#TableInventory").hide();
-  
  
-/////////////////////////////////////////////////////////////////////////////////////////////
-				$.post("https://cac.webclient.me/api/getDataSaleFromLineID.php",{
-					LineID : Line
-					},function(data){
-
-						$("#TableInvSaleContent").html("");
-						//swal("สำเร็จ !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
-						var Obj = JSON.parse(data); 
-   						//console.log(Obj);
-   						var tablehtml = "";   
-   						for (var i = 0; i < Obj.ChaName.length; i++) {
- 
-   							tablehtml += "<tr>"+
-									      "<td>"+Obj.ChaName[i]+"</td>"+
-									      "<td>"+Obj.ItemName[i]+"</td>"+
-									      "<td>"+Obj.Price[i]+"</td>"+
-									      "<td><button class='btn btn-danger isReInv' ChaNum='"+Obj.ChaNum[i]+"' ShopMapID='"+Obj.ID[i]+"'>เรียกคืนไอเทม</button></td>"+
-									    "</tr> "; 
-
-
-   						}
- 
-						
-						$("#TableInvSaleContent").html(tablehtml);
- 
-	 
-					}); 
-/////////////////////////////////////////////////////////////////////////////////////////////
-			});
-
-
-
-			$("#TableInvSale").on("click",'.isReInv',function(){
-
-				var ShopMap = $(this).attr("ShopMapID");  
-			 
-				$.post("https://cac.webclient.me/api/addReInvItem.php",{
-					ShopMapID : ShopMap
-					},function(data){
-  	 
-						if (data != 1) {
-							swal("ERROR !!","มีบางอย่างผิดปกติ ตัวละครกำลังอยู่ในเกม หรือ ไอเทมนี้ ถูกขายไปแล้ว !!!!", "error");
-							return false;
-						}
-						swal("สำเร็จ !!","นำไอเทมกลับสู่ตัวละครสำเร็จ", "success"); 
-						$.post("https://cac.webclient.me/api/getDataSaleFromLineID.php",{
-							LineID : Line
-							},function(data){
-
-								$("#TableInvSaleContent").html("");
-								//swal("สำเร็จ !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
-								var Obj = JSON.parse(data); 
-		   						 
-		   						var tablehtml = "";   
-		   						for (var i = 0; i < Obj.ChaName.length; i++) {
-		 
-		   							tablehtml += "<tr>"+
-											      "<td>"+Obj.ChaName[i]+"</td>"+
-											      "<td>"+Obj.ItemName[i]+"</td>"+
-											      "<td>"+Obj.Price[i]+"</td>"+
-											      "<td><button class='btn btn-danger isReInv' ChaNum='"+Obj.ChaNum[i]+"' ShopMapID='"+Obj.ID[i]+"'>เรียกคืนไอเทม</button></td>"+
-											    "</tr> "; 
- 
-		   						}
-		 
-								
-								$("#TableInvSaleContent").html(tablehtml);
-		 
-			 
-							});
-
-
-
-
-
-
-					}); 
-
-
-
-
-
-
-
-
-			});
-
-
-
-
-
 
 
             $("#ReloadPage").on("click",function(){
@@ -627,9 +446,7 @@
 
 
 
-
-
-			$("#SelectInventory").on("click",function(){
+			$("#SelectCharBUY").on("click",function(){
  
  				//////////////// clear inven
 				$("#ChaTableContent").html(""); 
@@ -653,47 +470,11 @@
 					ChaNum : ChaID
 				},function(data){
 
-					swal("สำเร็จ !!","เรียกดูข้อมูลภายในช่องเก็บของสำเร็จ", "success");
+					swal("สำเร็จ !!","เลือกตัวละครสำเร็จ", "success");
 					var Obj = JSON.parse(data);
 					//console.log(Obj);
-					$("#MoneyLable").text(Obj.gold);
-					$("#InvEmpty").text(Obj.tab1.INVEMPTY);
-					$("#InvUse").text(Obj.tab1.INVUSE);
- 					
-
-					var tablehtml = ""; 
-
-					for (var i = 0; i < Obj.tab1.ItemID.length; i++) { 
-
-						var enhance = 0;
-
-						if (Obj.tab1.DMG_GRADE[i] == 0) {
-							enhance = Obj.tab1.DEF_GRADE[i];
-						}else
-						if (Obj.tab1.DEF_GRADE[i] == 0) {
-							enhance = Obj.tab1.DMG_GRADE[i];
-						}
-
-						var ItemQTY = 1;
-
-							if (Obj.tab1.QTY[i] == 0) {
-								ItemQTY = 1;
-							}else{
-								ItemQTY = Obj.tab1.QTY[i];
-							}
-
-
-						tablehtml += "<tr>"+
-								      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
-								      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
-								      "<td> <font color='red'>"+ItemQTY+"</font> ชิ้น</td>"+
-								      "<td><button class='btn btn-success isSale' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
-								    "</tr> "; 
-					}
-
-					
-					
-					$("#ChaTableContent").html(tablehtml);
+				  
+					 
  
 				}); 
 
@@ -701,84 +482,6 @@
 
 
 
-			$("#ChaTable").on("click",".isSale",function(){
-
-				var itemInfo = $(this).attr("itemInfo");
-				var IDRAN = $("#UserID option:selected").val(); 
-				var ChaID = $("#ChaID option:selected").val(); 
-				var ItemIDa = $(this).attr("ItemID");
-				var enhance = $(this).attr("enhance");
-
-				//alert(IDRAN+" "+ChaID+" "+itemInfo);
-
-				
-
-
-
-				 
-				$.post("https://cac.webclient.me/api/addItemToShop.php",{
-					ChaNum : ChaID,
-					ItemMEM : itemInfo,
-					ItemCode : ItemIDa,
-					Enhance : enhance
-				},function(data){
-
-
-					//console.log(data);
-					var objs = JSON.parse(data);
-					//console.log(objs);
-
-					$.post("https://cac.webclient.me/api/getDataInvenFromUserNum.php",{
-					ChaNum : ChaID
-					},function(data){
-						$("#ChaTableContent").html("");
-						swal("สำเร็จ !!","ดำเนินการเพิ่มไอเทมเข้าตลาดสำเร็จ", "success");
-						var Obj = JSON.parse(data); 
-
-						$("#MoneyLable").text(Obj.gold);
-						$("#InvEmpty").text(Obj.tab1.INVEMPTY);
-						$("#InvUse").text(Obj.tab1.INVUSE);
-	 					 
-						var tablehtml = "";  
-						for (var i = 0; i < Obj.tab1.ItemID.length; i++) { 
-
-							var enhance = 0;
-
-							if (Obj.tab1.DMG_GRADE[i] == 0) {
-								enhance = Obj.tab1.DEF_GRADE[i];
-							}else
-							if (Obj.tab1.DEF_GRADE[i] == 0) {
-								enhance = Obj.tab1.DMG_GRADE[i];
-							}
-							var ItemQTY = 1;
-
-							if (Obj.tab1.QTY[i] == 0) {
-								ItemQTY = 1;
-							}else{
-								ItemQTY = Obj.tab1.QTY[i];
-							}
-
-							tablehtml += "<tr>"+
-									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
-									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
-									      "<td> <font color='red'>"+ItemQTY+"</font> ชิ้น</td>"+
-									      "<td><button class='btn btn-success isSale' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
-									    "</tr> "; 
-						}
-
-						
-						
-						$("#ChaTableContent").html(tablehtml);
-	 
-					}); 
-
- 
-					
- 
-				});
-
-
-			});
 
 
 

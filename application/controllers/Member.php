@@ -18,10 +18,15 @@ class Member extends CI_Controller {
 	}
  	public function mgmt()
  	{
- 		$this->load->view('template/header');
+ 		//$this->load->view('template/header');
  		$this->load->view('pages/datafromline');
-				
- 
+		 
+ 	}
+ 	 public function market()
+ 	{
+ 		//$this->load->view('template/header');
+ 		$this->load->view('pages/datamarket');
+		 
  	}
 
 
