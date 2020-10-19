@@ -381,18 +381,20 @@
 						$("#TableInvSaleContent").html("");
 						//swal("Success !!","เรียกดูข้อมูลช่องเก็บของตัวละครสำเร็จ", "success");
 						var Obj = JSON.parse(data); 
-   						
-   						console.log(Obj);
-
-						var tablehtml = "";   
-
-							tablehtml += "<tr>"+
-									      "<td></td>"+
-									      "<td></td>"+
-									      "<td></td>"+
-									      "<td></td>"+
+   						 
+   						var tablehtml = "";   
+   						for (var i = 0; i < Obj.ChaName.length; i++) {
+ 
+   							tablehtml += "<tr>"+
+									      "<td>"+Obj.ChaName[i]+"</td>"+
+									      "<td>"+Obj.ItemName[i]+"</td>"+
+									      "<td>"+Obj.Price[i]+"</td>"+
+									      "<td><button class='btn btn-danger isReInv'  ShopMapID='"+Obj.ID[i]+"'>เรียกคืนไอเทม</button></td>"+
 									    "</tr> "; 
-						  
+
+
+   						}
+ 
 						
 						$("#TableInvSaleContent").html(tablehtml);
  
