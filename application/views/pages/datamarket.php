@@ -347,7 +347,7 @@
 
 
 				if (IDRAN.trim() == 0) {
-					swal("กรุณาเลือกID !!","กรุณาระบุข้อมูลใหม่", "error");
+					swal("กรุณาเลือก ID !!","กรุณาระบุข้อมูลใหม่", "error");
 					$("#UserID").attr('disabled',false);
 					return false;
 				}
@@ -396,7 +396,7 @@
 
 
 				if (ChaID.trim() == 0) {
-					swal("กรุณาระบุเลือกตัวละคร !!","กรุณาระบุข้อมูลใหม่", "error");
+					swal("ผิดพลาด !!","กรุณาเลือกตัวละคร", "error");
 					$("#ChaID").attr('disabled',false);
 					return false;
 				}
