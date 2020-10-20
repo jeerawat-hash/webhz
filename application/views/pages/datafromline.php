@@ -39,7 +39,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">เติมพ้อย</a>
+        <a class="nav-link disabled" href="#">เติมเงิน</a>
       </li>
 
       <li class="nav-item">
@@ -137,7 +137,7 @@
 			</div>
 			<div class="col-4"> 
  				
- 				<label>ยอดพ้อยแลกเปลี่ยน : </label>
+ 				<label>ยอดเงินแลกเปลี่ยน : </label>
  				<font color="green"><label class="MoneyPoint">0</label> </font> พ้อย
  				 
 			</div> 
