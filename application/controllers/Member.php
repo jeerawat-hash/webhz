@@ -28,6 +28,18 @@ class Member extends CI_Controller {
  		$this->load->view('pages/datamarket');
 		 
  	}
+ 	 public function topup()
+ 	{
+ 		//$this->load->view('template/header');
+ 		//$this->load->view('pages/datamarket');
+		 
+ 	}
+ 	 public function waitdraw()
+ 	{
+ 		//$this->load->view('template/header');
+ 		//$this->load->view('pages/datamarket');
+		 
+ 	}
 
 
 
