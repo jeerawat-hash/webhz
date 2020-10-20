@@ -34,11 +34,11 @@
     <ul class="navbar-nav mr-auto">
 
       <li class="nav-item ">
-        <a class="nav-link" href="https://rhz.webclient.me/index.php/member/mgmt">ข้อมูลส่วนตัว</a>
+        <a class="nav-link" href="https://liff.line.me/1655100623-YNaPAD2N">ข้อมูลส่วนตัว</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link active" href="https://rhz.webclient.me/index.php/member/market">ตลาดซื้อขาย</a>
+        <a class="nav-link active " href="https://liff.line.me/1655100623-qN5gyNKE">ตลาดซื้อขาย</a>
       </li>
 
       <li class="nav-item">
