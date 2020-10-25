@@ -273,7 +273,7 @@
 	      				<div class="col-12">
 	      					  <div class="custom-file">
 							    <input accept='image/*' type="file" class="custom-file-input" id="ItemIMG">
-							    <label class="custom-file-label" for="customFile">เลือกภาพ</label>
+							    <label id="ItemIMGLB" class="custom-file-label" for="customFile">เลือกภาพ</label>
 							  </div>
 
 	      				</div>
@@ -918,7 +918,9 @@
 				//swal("click","----", "info");
 
 				$("#SaleItemModal").find("#ItemIMG").val("");
-		
+				$("#SaleItemModal").find("#Price").val("0");
+				$("#SaleItemModal").find("#ItemIMGLB").text("เลือกภาพ");
+		 
 				var itemInfo = $(this).attr("itemInfo");
 				var IDRAN = $("#UserID option:selected").val(); 
 				var ChaID = $("#ChaID option:selected").val(); 
@@ -941,11 +943,7 @@
 				$('#SaleItemModal').find("#preload").hide();
  	 
 				$("#SaleItemModal").modal("show");
-  
-				//$("#ChaTable").find(this).text("กำลังดำเนินการ....");
-				//$("#ChaTable").find(this).attr("disabled", true);
-
-
+   
 
 			});
 
