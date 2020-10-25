@@ -736,7 +736,7 @@
 				//$("#ChaTable").find(".spdrawload").show();
 
 				$("#ChaTable").find(this).text("กำลังดำเนินการ....");
-				$("#ChaTable").find(this).attr("disable",true);
+				$("#ChaTable").find(this).attr("disable","disable");
 
 
 
