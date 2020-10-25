@@ -278,7 +278,7 @@
 							  <div class="input-group-prepend">
 							    <span class="input-group-text">฿</span>
 							  </div>
-							  <input type="number" min="0" class="form-control" aria-label="Amount (to the nearest baththai)">
+							  <input type="text"  pattern="^([0-9]?[0-9]?[0-9]?|)$"  class="form-control" aria-label="Amount (to the nearest baththai)">
 							  <div class="input-group-append">
 							    <span class="input-group-text">พ้อย</span>
 							  </div>
