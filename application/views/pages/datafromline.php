@@ -285,7 +285,7 @@
 							  <div class="input-group-prepend">
 							    <span class="input-group-text">฿</span>
 							  </div>
-							  <input type="text"  pattern="^([0-9]?[0-9]?[0-9]?|)$"  class="form-control" aria-label="Amount (to the nearest baththai)">
+							  <input type="text" id="Price" pattern="^([0-9]?[0-9]?[0-9]?|)$"  class="form-control" aria-label="Amount (to the nearest baththai)">
 							  <div class="input-group-append">
 							    <span class="input-group-text">พ้อย</span>
 							  </div>
@@ -823,16 +823,18 @@
 							var ItemIDa = $('#SaleItemModal').find("#ItemCode").val();
 							var enhance = $('#SaleItemModal').find("#Enhance").val();
 							var Itemqty = $('#SaleItemModal').find("#ItemQty").val();
+							var Price = $('#SaleItemModal').find("#Price").val();
 
 							var data = new FormData();          
 					        var ItemIMG = $('#ItemIMG').prop('files')[0]; 
-					        
+
 					        data.append('ItemIMG', ItemIMG);  
 					        data.append('ChaNum', ChaID);  
 					        data.append('ItemMEM', itemInfo);  
 					        data.append('ItemCode', ItemIDa);  
 					        data.append('Enhance', enhance);  
 					        data.append('ItemQty', Itemqty);  
+					        data.append('Price', Itemqty);  
 
 
 					        $.ajax({
