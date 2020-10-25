@@ -847,8 +847,56 @@
 					        	success : function(data){
  
 					        		console.log(data);
-					        		//var object = JSON.parse(data);
-					        		//console.log(object); 
+					        		
+					        		$.post("https://cac.webclient.me/api/getDataInvenFromUserNum.php",{
+									ChaNum : ChaID
+									},function(data){
+ 
+										$('#SaleItemModal').find("#SendData").show();
+										$('#SaleItemModal').find("#preload").hide();
+
+										$('#SaleItemModal').modal("hide");
+ 
+										swal("สำเร็จ !!","ดำเนินการเพิ่มไอเทมเข้าตลาดสำเร็จ", "success");
+										var Obj = JSON.parse(data); 
+
+										$("#MoneyLable").text(Obj.gold);
+										$("#InvEmpty").text(Obj.tab1.INVEMPTY);
+										$("#InvUse").text(Obj.tab1.INVUSE);
+					 					 
+										var tablehtml = "";  
+										for (var i = 0; i < Obj.tab1.ItemID.length; i++) { 
+
+											var enhance = 0;
+
+											if (Obj.tab1.DMG_GRADE[i] == 0) {
+												enhance = Obj.tab1.DEF_GRADE[i];
+											}else
+											if (Obj.tab1.DEF_GRADE[i] == 0) {
+												enhance = Obj.tab1.DMG_GRADE[i];
+											}
+											var ItemQTY = 1;
+
+											if (Obj.tab1.QTY[i] == 0) {
+												ItemQTY = 1;
+											}else{
+												ItemQTY = Obj.tab1.QTY[i];
+											}
+
+											tablehtml += "<tr>"+
+													      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
+													      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
+													      "<td> <font color='red'>"+ItemQTY+"</font> ชิ้น</td>"+
+													      "<td><button class='btn btn-success isSale' itemName='"+Obj.tab1.ItemName[i]+" ตีบวก "+enhance+"' itemqty='"+ItemQTY+"' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
+													    "</tr> "; 
+										}
+
+										
+										
+										$("#ChaTableContent").html(tablehtml);
+					 
+									}); 
+
 					 
 
 					        	},
@@ -858,19 +906,10 @@
 					        	}
 					        });
  
+ 
+				}, 1000);
 
-					$('#SaleItemModal').find("#SendData").show();
-					$('#SaleItemModal').find("#preload").hide();
-
-
-				}, 3000);
-
-
-
-
-
-
-
+  
 			});
 
 
@@ -906,69 +945,6 @@
 				//$("#ChaTable").find(this).text("กำลังดำเนินการ....");
 				//$("#ChaTable").find(this).attr("disabled", true);
 
- 	
-				/*			 
-				$.post("https://cac.webclient.me/api/addItemToShop.php",{
-					ChaNum : ChaID,
-					ItemMEM : itemInfo,
-					ItemCode : ItemIDa,
-					Enhance : enhance,
-					ItemQty : Itemqty
-				},function(data){
-
-
-					//console.log(data);
-					var objs = JSON.parse(data);
-					//console.log(objs);
-
-					$.post("https://cac.webclient.me/api/getDataInvenFromUserNum.php",{
-					ChaNum : ChaID
-					},function(data){
-						//$("#ChaTableContent").html("");
-						swal("สำเร็จ !!","ดำเนินการเพิ่มไอเทมเข้าตลาดสำเร็จ", "success");
-						var Obj = JSON.parse(data); 
-
-						$("#MoneyLable").text(Obj.gold);
-						$("#InvEmpty").text(Obj.tab1.INVEMPTY);
-						$("#InvUse").text(Obj.tab1.INVUSE);
-	 					 
-						var tablehtml = "";  
-						for (var i = 0; i < Obj.tab1.ItemID.length; i++) { 
-
-							var enhance = 0;
-
-							if (Obj.tab1.DMG_GRADE[i] == 0) {
-								enhance = Obj.tab1.DEF_GRADE[i];
-							}else
-							if (Obj.tab1.DEF_GRADE[i] == 0) {
-								enhance = Obj.tab1.DMG_GRADE[i];
-							}
-							var ItemQTY = 1;
-
-							if (Obj.tab1.QTY[i] == 0) {
-								ItemQTY = 1;
-							}else{
-								ItemQTY = Obj.tab1.QTY[i];
-							}
-
-							tablehtml += "<tr>"+
-									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
-									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
-									      "<td> <font color='red'>"+ItemQTY+"</font> ชิ้น</td>"+
-									      "<td><button class='btn btn-success isSale' itemName='"+Obj.tab1.ItemName[i]+" ตีบวก "+enhance+"' itemqty='"+ItemQTY+"' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
-									    "</tr> "; 
-						}
-
-						
-						
-						$("#ChaTableContent").html(tablehtml);
-	 
-					}); 
-
- 
-					
- 
-				}); */
 
 
 			});
