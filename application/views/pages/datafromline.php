@@ -15,7 +15,11 @@
 <!-------- ---> 
 <!--  <script src="https://rhz.webclient.me/assets/news/ticker.js"></script> -->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
-
+	<script src="https://rhz.webclient.me/assets/Login/vendor/jquery/jquery-3.2.1.min.js"></script> 
+	<script src="https://rhz.webclient.me/assets/Login/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://rhz.webclient.me/assets/Login/vendor/bootstrap/js/popper.js"></script>
+ 	
+ 	
 </head>
  
  
@@ -276,10 +280,7 @@
 
   
 <!--===============================================================================================-->
-	<script src="https://rhz.webclient.me/assets/Login/vendor/jquery/jquery-3.2.1.min.js"></script> 
-	<script src="https://rhz.webclient.me/assets/Login/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="https://rhz.webclient.me/assets/Login/vendor/bootstrap/js/popper.js"></script>
- 	
+
 
 
 	<script type="text/javascript">
@@ -769,7 +770,7 @@
 				var Itemqty = $(this).attr("itemqty");
 				
 				$('#SaleItemModal').modal({backdrop: 'static', keyboard: false});
-				
+
 				$("#SaleItemModal").modal("show");
   
 				//$("#ChaTable").find(this).text("กำลังดำเนินการ....");
