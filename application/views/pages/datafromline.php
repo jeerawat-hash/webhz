@@ -800,6 +800,13 @@
 			});
 
  
+
+
+
+
+
+
+
 			$('#SaleItemModal').find("#SendData").on("click",function(){
 
 
@@ -815,7 +822,7 @@
 							var data = new FormData();          
 					        var Slip_file = $('#ItemIMG').prop('files')[0]; 
 					        //data.append('CustomerID', CustomerID);  
-					        //data.append('Slipfile', Slip_file);  
+					        data.append('Slipfile', Slip_file);  
 
 
 					        $.ajax({
