@@ -451,7 +451,7 @@
 									      "<td>"+Obj.ChaName[i]+"</td>"+
 									      "<td>"+Obj.ItemName[i]+" "+itemqty+" "+Enhance+"</td>"+
 									      "<td> <font color='red'> "+Obj.Price[i]+" </font> พ้อย</td>"+
-									      "<td><button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อ</button></td>"+
+									      "<td><button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อไอเทม</button></td>"+
 									    "</tr> "; 
 
 
@@ -503,20 +503,6 @@
 						swal("สำเร็จ !!","ซื้อไอเทมสำเร็จโปรดตรวจสอบช่องเก็บของภายในตัวละคร", "success"); 
  
 					}); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   
