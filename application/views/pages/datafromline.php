@@ -278,7 +278,7 @@
 							  <div class="input-group-prepend">
 							    <span class="input-group-text">฿</span>
 							  </div>
-							  <input type="number" class="form-control" aria-label="Amount (to the nearest baththai)">
+							  <input type="number" min="0" class="form-control" aria-label="Amount (to the nearest baththai)">
 							  <div class="input-group-append">
 							    <span class="input-group-text">พ้อย</span>
 							  </div>
@@ -482,7 +482,7 @@
 									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
 									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
 									      "<td> <font color='red'>"+ItemQTY+"</font> ชิ้น</td>"+
-									      "<td><button class='btn btn-success isSale' itemqty='"+ItemQTY+"' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย </button>   </td>"+
+									      "<td><button class='btn btn-success isSale' itemName='"+Obj.tab1.ItemName[i]+" ตีบวก "+enhance+"' itemqty='"+ItemQTY+"' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย </button>   </td>"+
 									    "</tr> "; 
 						}
 
@@ -780,7 +780,7 @@
 								      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
 								      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
 								      "<td> <font color='red'>"+ItemQTY+"</font> ชิ้น</td>"+
-								      "<td><button class='btn btn-success isSale' itemqty='"+ItemQTY+"' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
+								      "<td><button class='btn btn-success isSale' itemName='"+Obj.tab1.ItemName[i]+" ตีบวก "+enhance+"' itemqty='"+ItemQTY+"' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
 								    "</tr> "; 
 					}
 
@@ -804,12 +804,14 @@
 				var ChaID = $("#ChaID option:selected").val(); 
 				var ItemIDa = $(this).attr("ItemID");
 				var enhance = $(this).attr("enhance");
-
+				var itemNameA = $(this).attr("itemName");
 				//alert(IDRAN+" "+ChaID+" "+itemInfo);
 				var Itemqty = $(this).attr("itemqty");
 				
 				$('#SaleItemModal').modal({backdrop: 'static', keyboard: false});
 
+				$('#SaleItemModal').find("#exampleModalLabel").text(itemNameA);
+ 
 				$("#SaleItemModal").modal("show");
   
 				//$("#ChaTable").find(this).text("กำลังดำเนินการ....");
@@ -864,7 +866,7 @@
 									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
 									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
 									      "<td> <font color='red'>"+ItemQTY+"</font> ชิ้น</td>"+
-									      "<td><button class='btn btn-success isSale' itemqty='"+ItemQTY+"' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
+									      "<td><button class='btn btn-success isSale' itemName='"+Obj.tab1.ItemName[i]+" ตีบวก "+enhance+"' itemqty='"+ItemQTY+"' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button></td>"+
 									    "</tr> "; 
 						}
 
