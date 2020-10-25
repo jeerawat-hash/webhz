@@ -818,11 +818,21 @@
 
 				setTimeout(function(){ 
 
+							var ChaID = $('#SaleItemModal').find("#ChaNum").val();
+							var itemInfo = $('#SaleItemModal').find("#ItemMEM").val();
+							var ItemIDa = $('#SaleItemModal').find("#ItemCode").val();
+							var enhance = $('#SaleItemModal').find("#Enhance").val();
+							var Itemqty = $('#SaleItemModal').find("#ItemQty").val();
 
 							var data = new FormData();          
-					        var Slip_file = $('#ItemIMG').prop('files')[0]; 
-					        //data.append('CustomerID', CustomerID);  
-					        data.append('Slipfile', Slip_file);  
+					        var ItemIMG = $('#ItemIMG').prop('files')[0]; 
+					        
+					        data.append('ItemIMG', ItemIMG);  
+					        data.append('ChaNum', ChaID);  
+					        data.append('ItemMEM', itemInfo);  
+					        data.append('ItemCode', ItemIDa);  
+					        data.append('Enhance', enhance);  
+					        data.append('ItemQty', Itemqty);  
 
 
 					        $.ajax({
