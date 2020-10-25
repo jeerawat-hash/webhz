@@ -446,8 +446,8 @@
    							tablehtml += "<tr>"+
 									      "<td>"+Obj.ChaName[i]+"</td>"+
 									      "<td>"+Obj.ItemName[i]+" "+itemqty+" "+Enhance+"</td>"+
-									      "<td> <font color='red'> "+Obj.Price[i]+" </font> พ้อย "+Obj.ImageURL[i]+"</td>"+
-									      "<td><button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อไอเทม</button></td>"+
+									      "<td> <font color='red'> "+Obj.Price[i]+" </font> พ้อย</td>"+
+									      "<td><button class='btn btn-warning isCheck' ShopMapIDIMG='"+Obj.ImageURL[i]+"'>ดูข้อมูล</button> <button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อไอเทม</button></td>"+
 									    "</tr> "; 
 
 
@@ -506,6 +506,19 @@
 
 
 
+			$("#TableSale").on("click",'.isCheck',function(){
+
+				var ShopMapIDIMG = $(this).attr("ShopMapIDIMG");   
+
+
+				swal("ERROR !!",ShopMapIDIMG, "error");
+
+
+
+
+
+  
+			});
 
 
 
