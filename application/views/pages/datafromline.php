@@ -243,7 +243,7 @@
 
  
 		
- 
+ <div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div>
 	
 
 
@@ -431,10 +431,7 @@
 			});
 
 
-
-
-			$(".spinner").html('<div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div>');
-
+ 
 
 
 
