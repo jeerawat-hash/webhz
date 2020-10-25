@@ -265,7 +265,7 @@
 	      			<div class="row">
 	      				<div class="col-12">
 	      					  <div class="custom-file">
-							    <input type="file" class="custom-file-input" id="customFile">
+							    <input accept='image/*' type="file" class="custom-file-input" id="customFile">
 							    <label class="custom-file-label" for="customFile">เลือกภาพ</label>
 							  </div>
 
