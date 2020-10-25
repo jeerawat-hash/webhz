@@ -25,6 +25,12 @@
 	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.js"></script>
 </head>
  
+ <style type="text/css">
+ 	.responsive {
+  width: 100%;
+  height: auto;
+}
+ </style>
  
 <body>
 
@@ -200,7 +206,7 @@
  			<div class="container">
  				<div class="row">
  					<div class="col-12">
- 						<img src="#" id="ImageURL" height="80%">
+ 						<img src="#" id="ImageURL" height="80%" class="responsive">
  					</div>
  				</div>
  			</div>
@@ -538,7 +544,7 @@
 
 				var ShopMapIDIMG = $(this).attr("ShopMapIDIMG");   
 				var ShopItemName = $(this).attr("ShopItemName");   
-				 
+
 				$("#SaleItemModal").find("#exampleModalLabel").attr("src",ShopItemName);
 				$("#SaleItemModal").find("#ImageURL").attr("src",ShopMapIDIMG);
 
