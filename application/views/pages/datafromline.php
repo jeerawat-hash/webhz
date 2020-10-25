@@ -421,7 +421,9 @@
 									      "<td>Row "+Obj.tab1.X[i]+" Col "+Obj.tab1.Y[i]+"</td>"+
 									      "<td>"+Obj.tab1.ItemName[i]+" <font color='red'>ตีบวก </font>"+enhance+"</td>"+
 									      "<td> <font color='red'>"+ItemQTY+"</font> ชิ้น</td>"+
-									      "<td><button class='btn btn-success isSale' itemqty='"+ItemQTY+"' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย</button>   </td>"+
+									      "<td><button class='btn btn-success isSale' itemqty='"+ItemQTY+"' enhance='"+enhance+"' ItemID='"+Obj.tab1.ItemID[i]+"' itemInfo='"+Obj.tab1.MEM[i]+"'>ฝากขาย   <div class='spinner-border text-success' role='status'>"
+  "<span class='sr-only'>Loading...</span>"+
+	"</div>    </button>   </td>"+
 									    "</tr> "; 
 						}
 
@@ -732,9 +734,10 @@
 				var Itemqty = $(this).attr("itemqty");
 				
  
-				$("#ChaTable").find(".spdrawload").show();
+				//$("#ChaTable").find(".spdrawload").show();
 
 				$("#ChaTable").find(this).hide();
+
 
 
 				/*
