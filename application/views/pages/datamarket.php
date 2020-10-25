@@ -434,7 +434,7 @@
  							var itemqty = "<font color='red'>1</font> ชิ้น";
 
  							if (Obj.ItemQTY[i] > 1) {
- 								itemqty = "<font color='red'>"+Obj.ItemQTY[i]+"</font> ชิ้น"+" (<font color='red'>ขายทั้งหมด</font>)";
+ 								itemqty = "<font color='red'>"+Obj.ItemQTY[i]+Obj.ImageURL[i]+"</font> ชิ้น"+" (<font color='red'>ขายทั้งหมด</font>)";
  							}
 
  							var Enhance = "";
