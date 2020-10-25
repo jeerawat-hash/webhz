@@ -263,23 +263,26 @@
 	      		
 	      		<div class="container">
 	      			<div class="row">
-	      				<div class="col-6">
+	      				<div class="col-12">
 	      					<input id="input-b1" name="input-b1" type="file" class="file" data-browse-on-zone-click="true">
 	      				</div>
-	      				<div class="col-6">
+	      			</div>
+	      			<div class="row">
+	      				<div class="col-12">
 	      						
 	      					<div class="input-group mb-3">
 							  <div class="input-group-prepend">
-							    <span class="input-group-text">$</span>
+							    <span class="input-group-text">฿</span>
 							  </div>
-							  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+							  <input type="text" class="form-control" aria-label="Amount (to the nearest baththai)">
 							  <div class="input-group-append">
-							    <span class="input-group-text">.00</span>
+							    <span class="input-group-text">บาท</span>
 							  </div>
 							</div>
 
 
 	      				</div>
+
 	      			</div>
 	      		</div>
 
