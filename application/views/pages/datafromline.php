@@ -717,9 +717,9 @@
 				var Itemqty = $(this).attr("itemqty");
 				
  
-				$(this).(".spdrawload").hide();
+				$("#ChaTable").(".spdrawload").hide();
 
-				$(this).(".isSale").hide();
+				$(this).hide();
 
 
 				/*
