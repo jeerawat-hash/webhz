@@ -504,9 +504,12 @@
 					},function(data){
   	 
 						if (data != 1) {
-							swal("ERROR !!","มีบางอย่างผิดปกติ ตัวละครกำลังอยู่ในเกม หรือ ไอเทมนี้ ถูกขายไปแล้ว !!!!", "error");
+							swal("ERROR !!","มีบางอย่างผิดปกติ ตัวละครกำลังอยู่ในเกม ,ไอเทมนี้ ถูกขายไปแล้ว หรือ ช่องเก็บของเต็มแล้ว !!!!", "error");
 							return false;
 						}
+
+
+
 						swal("สำเร็จ !!","นำไอเทมกลับสู่ตัวละครสำเร็จ", "success"); 
 						$.post("https://cac.webclient.me/api/getDataSaleFromLineID.php",{
 							LineID : Line
