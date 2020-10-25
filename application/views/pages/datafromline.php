@@ -299,7 +299,7 @@
 
 	      </div>
 	      <div class="modal-footer"> 
-	      	<div class="spinner-border text-success" role="status">
+	      	<div class="spinner-border text-success preload" role="status">
 			  <span class="sr-only">Loading...</span>
 			</div>
 	        <button type="button" class="btn btn-success">บันทึก</button>
@@ -824,6 +824,8 @@
 				$('#SaleItemModal').find("#ItemCode").val(ItemIDa);
 				$('#SaleItemModal').find("#Enhance").val(enhance);
 				$('#SaleItemModal').find("#ItemQty").val(Itemqty);
+				
+				$('#SaleItemModal').find("#preload").hide();
  	
 
 				$("#SaleItemModal").modal("show");
