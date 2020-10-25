@@ -264,10 +264,21 @@
 	      		<div class="container">
 	      			<div class="row">
 	      				<div class="col-6">
-	      					<center>ใส่ภาพ</center>
+	      					<input id="input-b1" name="input-b1" type="file" class="file" data-browse-on-zone-click="true">
 	      				</div>
 	      				<div class="col-6">
-	      					<center>ใส่ราคา</center>
+	      						
+	      					<div class="input-group mb-3">
+							  <div class="input-group-prepend">
+							    <span class="input-group-text">$</span>
+							  </div>
+							  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+							  <div class="input-group-append">
+							    <span class="input-group-text">.00</span>
+							  </div>
+							</div>
+
+
 	      				</div>
 	      			</div>
 	      		</div>
@@ -278,7 +289,7 @@
 			  <span class="sr-only">Loading...</span>
 			</div>
 	        <button type="button" class="btn btn-success">บันทึก</button>
-	        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-warning" data-dismiss="modal">ปิด</button>
 	      </div>
 	    </div>
 	  </div>
