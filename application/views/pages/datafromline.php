@@ -492,7 +492,13 @@
 			$("#TableInvSale").on("click",'.isReInv',function(){
 
 				var ShopMap = $(this).attr("ShopMapID");  
-			 
+			 	
+
+			 	$("#TableInvSale").find(this).text("กำลังดำเนินการ....");
+				$("#TableInvSale").find(this).attr("disabled", true);
+
+
+
 				$.post("https://cac.webclient.me/api/addReInvItem.php",{
 					ShopMapID : ShopMap
 					},function(data){
@@ -721,7 +727,7 @@
 
 			$("#ChaTable").on("click",".isSale",function(){
 
-				swal("click","----", "info");
+				//swal("click","----", "info");
 
 				var itemInfo = $(this).attr("itemInfo");
 				var IDRAN = $("#UserID option:selected").val(); 
@@ -732,15 +738,11 @@
 				//alert(IDRAN+" "+ChaID+" "+itemInfo);
 				var Itemqty = $(this).attr("itemqty");
 				
- 
-				//$("#ChaTable").find(".spdrawload").show();
-
+  
 				$("#ChaTable").find(this).text("กำลังดำเนินการ....");
 				$("#ChaTable").find(this).attr("disabled", true);
 
-
-
-				/*
+ 
 				 
 				$.post("https://cac.webclient.me/api/addItemToShop.php",{
 					ChaNum : ChaID,
@@ -758,7 +760,7 @@
 					$.post("https://cac.webclient.me/api/getDataInvenFromUserNum.php",{
 					ChaNum : ChaID
 					},function(data){
-						$("#ChaTableContent").html("");
+						//$("#ChaTableContent").html("");
 						swal("สำเร็จ !!","ดำเนินการเพิ่มไอเทมเข้าตลาดสำเร็จ", "success");
 						var Obj = JSON.parse(data); 
 
@@ -802,8 +804,7 @@
  
 					
  
-				});
-				*/
+				}); 
 
 
 			});
