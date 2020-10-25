@@ -810,7 +810,7 @@
 				
 				$('#SaleItemModal').modal({backdrop: 'static', keyboard: false});
 
-				$('#SaleItemModal').find("#exampleModalLabel").text(itemNameA);
+				$('#SaleItemModal').find("#exampleModalLabel").text("<font color='red'>"+itemNameA+"</font>");
  
 				$("#SaleItemModal").modal("show");
   
