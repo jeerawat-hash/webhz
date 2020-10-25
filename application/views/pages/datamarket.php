@@ -440,13 +440,13 @@
  							var Enhance = "";
 
  							if (Obj.Enhance[i] != 0) {
- 								Enhance = "<font color='red'> +"+Obj.Enhance[i]+Obj.ImageURL[i]+"</font>";
+ 								Enhance = "<font color='red'> +"+Obj.Enhance[i]+"</font>";
  							}
 
    							tablehtml += "<tr>"+
 									      "<td>"+Obj.ChaName[i]+"</td>"+
 									      "<td>"+Obj.ItemName[i]+" "+itemqty+" "+Enhance+"</td>"+
-									      "<td> <font color='red'> "+Obj.Price[i]+" </font> พ้อย</td>"+
+									      "<td> <font color='red'> "+Obj.Price[i]+" </font> พ้อย "+Obj.ImageURL[i]+"</td>"+
 									      "<td><button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อไอเทม</button></td>"+
 									    "</tr> "; 
 
