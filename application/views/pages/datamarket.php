@@ -206,7 +206,7 @@
  			<div class="container">
  				<div class="row">
  					<div class="col-12">
- 						<img src="#" id="ImageURL" height="80%" class="responsive">
+ 						<img src="#" id="ImageURL" class="responsive img-responsive">
  					</div>
  				</div>
  			</div>
