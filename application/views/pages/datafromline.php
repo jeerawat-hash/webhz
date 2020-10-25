@@ -498,7 +498,7 @@
 				$("#TableInvSale").find(this).attr("disabled", true);
 
 
-				/*
+
 				$.post("https://cac.webclient.me/api/addReInvItem.php",{
 					ShopMapID : ShopMap
 					},function(data){
@@ -539,7 +539,7 @@
 
 
 
-					}); */
+					}); 
 
 
 
