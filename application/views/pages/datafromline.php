@@ -325,6 +325,16 @@
             //console.log(profile.userId);
             var Line = profile.userId;
 
+
+
+
+
+
+
+
+
+
+
             //swal("สำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
  			
             $.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
@@ -420,6 +430,8 @@
 						$("#ChaTableContent").html(tablehtml);
 
 						$("#ChaID").attr('disabled','disabled');
+						//////////test
+						$(".spdrawload").hide();
 	 
 					}); 
 
@@ -432,9 +444,7 @@
 
 
 
-			//////////test
 
-			$(".spdrawload").hide();
 
  
 
@@ -711,6 +721,7 @@
 
 
 			$("#ChaTable").on("click",".isSale",function(){
+
 
 				var itemInfo = $(this).attr("itemInfo");
 				var IDRAN = $("#UserID option:selected").val(); 
