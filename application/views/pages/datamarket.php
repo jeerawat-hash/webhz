@@ -545,7 +545,7 @@
 				var ShopMapIDIMG = $(this).attr("ShopMapIDIMG");   
 				var ShopItemName = $(this).attr("ShopItemName");   
 
-				$("#SaleItemModal").find("#exampleModalLabel").attr("src",ShopItemName);
+				$("#SaleItemModal").find("#exampleModalLabel").text(ShopItemName);
 				$("#SaleItemModal").find("#ImageURL").attr("src",ShopMapIDIMG);
 
 				$("#SaleItemModal").modal("show");
