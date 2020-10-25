@@ -184,7 +184,35 @@
 
 
  
-		
+	
+		<!-- Modal Sale -->
+	<div class="modal fade" id="SaleItemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	       <font color="red"><h5 class="modal-title" id="exampleModalLabel">Modal title</h5></font> 
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+ 	
+ 			<div class="container">
+ 				<div class="row">
+ 					<div class="col-12">
+ 						<img src="#" id="ImageURL" height="80%">
+ 					</div>
+ 				</div>
+ 			</div>
+
+
+	      </div>
+	      <div class="modal-footer">   
+	        <button type="button" class="btn btn-warning" data-dismiss="modal">ปิด</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
  
 	
 
@@ -447,7 +475,7 @@
 									      "<td>"+Obj.ChaName[i]+"</td>"+
 									      "<td>"+Obj.ItemName[i]+" "+itemqty+" "+Enhance+"</td>"+
 									      "<td> <font color='red'> "+Obj.Price[i]+" </font> พ้อย</td>"+
-									      "<td><button class='btn btn-warning isCheck' ShopMapIDIMG='"+Obj.ImageURL[i]+"'>ดูข้อมูล</button> <button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อไอเทม</button></td>"+
+									      "<td><button class='btn btn-warning isCheck' ShopItemName='"+Obj.ItemName[i]+"' ShopMapIDIMG='"+Obj.ImageURL[i]+"'>ดูข้อมูล</button> <button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อไอเทม</button></td>"+
 									    "</tr> "; 
 
 
@@ -509,11 +537,12 @@
 			$("#TableSale").on("click",'.isCheck',function(){
 
 				var ShopMapIDIMG = $(this).attr("ShopMapIDIMG");   
+				var ShopItemName = $(this).attr("ShopItemName");   
+				 
+				$("#SaleItemModal").find("#exampleModalLabel").attr("src",ShopItemName);
+				$("#SaleItemModal").find("#ImageURL").attr("src",ShopMapIDIMG);
 
-
-				swal("ERROR !!",ShopMapIDIMG, "error");
-
-
+				$("#SaleItemModal").modal("show");
 
 
 
