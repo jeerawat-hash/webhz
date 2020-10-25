@@ -834,7 +834,7 @@
 					        data.append('ItemCode', ItemIDa);  
 					        data.append('Enhance', enhance);  
 					        data.append('ItemQty', Itemqty);  
-					        data.append('Price', Itemqty);  
+					        data.append('Price', Price);  
 
 
 					        $.ajax({
