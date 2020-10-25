@@ -754,6 +754,7 @@
 
 
 
+
 			$("#ChaTable").on("click",".isSale",function(){
 
 				//swal("click","----", "info");
@@ -767,7 +768,8 @@
 				//alert(IDRAN+" "+ChaID+" "+itemInfo);
 				var Itemqty = $(this).attr("itemqty");
 				
-
+				$('#SaleItemModal').modal({backdrop: 'static', keyboard: false});
+				
 				$("#SaleItemModal").modal("show");
   
 				//$("#ChaTable").find(this).text("กำลังดำเนินการ....");
