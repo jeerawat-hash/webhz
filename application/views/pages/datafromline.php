@@ -254,7 +254,7 @@
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	       <font color="red"><h5 class="modal-title" id="exampleModalLabel">Modal title</h5></font> 
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
@@ -810,7 +810,7 @@
 				
 				$('#SaleItemModal').modal({backdrop: 'static', keyboard: false});
 
-				$('#SaleItemModal').find("#exampleModalLabel").text("<font color='red'>"+itemNameA+"</font>");
+				$('#SaleItemModal').find("#exampleModalLabel").text(itemNameA);
  
 				$("#SaleItemModal").modal("show");
   
