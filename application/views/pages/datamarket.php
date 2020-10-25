@@ -479,7 +479,12 @@
 				}
 				$("#ChaID").attr('disabled','disabled');
  
-				alert(ShopMap + ChaID + Line);
+				//alert(ShopMap + ChaID + Line);
+
+				var btnA = $("#TableSale").find(this); 
+
+			 	btnA.text("กำลังทำรายการ....");
+				btnA.attr("disabled", true);
 
 				$.post("https://cac.webclient.me/api/addItemChaBuy.php",{
 					ShopMapID : ShopMap,
@@ -487,14 +492,16 @@
 					},function(data){
   	 
 						if (data != 1) {
-							swal("ERROR !!","มีบางอย่างผิดปกติ ตัวละครกำลังอยู่ในเกม หรือ ไอเทมนี้ ถูกขายไปแล้ว !!!!", "error");
+							swal("ERROR !!","มีบางอย่างผิดปกติ ตัวละครกำลังอยู่ในเกม,ไอเทมนี้ ถูกขายไปแล้ว,ช่องเก็บของตัวละครเต็ม,พ้อยไม่พอซื้อไอเทม !!!!", "error");
+
+							btnA.text("ซื้อไอเทม");
+							btnA.attr("disabled", false);
+
 							return false;
 						} 
+
 						swal("สำเร็จ !!","ซื้อไอเทมสำเร็จโปรดตรวจสอบช่องเก็บของภายในตัวละคร", "success"); 
-
-
  
-
 					}); 
 
 
