@@ -505,6 +505,10 @@
   	 
 						if (data != 1) {
 							swal("ERROR !!","มีบางอย่างผิดปกติ ตัวละครกำลังอยู่ในเกม ,ไอเทมนี้ ถูกขายไปแล้ว หรือ ช่องเก็บของเต็ม !!!!", "error");
+
+							$("#TableInvSale").find(this).text("เรียกคืนไอเทม");
+							$("#TableInvSale").find(this).attr("disabled", false);
+
 							return false;
 						}
 
