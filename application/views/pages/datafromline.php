@@ -264,7 +264,11 @@
 	      		<div class="container">
 	      			<div class="row">
 	      				<div class="col-12">
-	      					<input id="input-b1" name="input-b1" type="file" class="file" data-browse-on-zone-click="true">
+	      					  <div class="custom-file">
+							    <input type="file" class="custom-file-input" id="customFile">
+							    <label class="custom-file-label" for="customFile">เลือกภาพ</label>
+							  </div>
+
 	      				</div>
 	      			</div>
 	      			<div class="row">
