@@ -19,7 +19,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	<script src="https://rhz.webclient.me/assets/Login/vendor/bootstrap/js/popper.js"></script>
- 	 
+
 
 
 </head>
@@ -260,7 +260,18 @@
 	        </button>
 	      </div>
 	      <div class="modal-body">
-	        ...
+	      		
+	      		<div class="container">
+	      			<div class="row">
+	      				<div class="col-6">
+	      					<center>ใส่ภาพ</center>
+	      				</div>
+	      				<div class="col-6">
+	      					<center>ใส่ราคา</center>
+	      				</div>
+	      			</div>
+	      		</div>
+
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
