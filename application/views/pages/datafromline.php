@@ -431,6 +431,11 @@
 			});
 
 
+
+			//////////test
+
+			$(".spdrawload").hide();
+
  
 
 
@@ -717,7 +722,7 @@
 				var Itemqty = $(this).attr("itemqty");
 				
  
-				//$("#ChaTable").(".spdrawload").hide();
+				$("#ChaTable").find(".spdrawload").show();
 
 				$("#ChaTable").find(this).hide();
 
