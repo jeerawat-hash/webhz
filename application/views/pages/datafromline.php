@@ -719,7 +719,7 @@
  
 				//$("#ChaTable").(".spdrawload").hide();
 
-				$(this).find(".isSale").hide();
+				$("#ChaTable").find(this).hide();
 
 
 				/*
