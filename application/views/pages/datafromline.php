@@ -819,11 +819,11 @@
 
 				$('#SaleItemModal').find("#exampleModalLabel").text(itemNameA);
 
-				$('#SaleItemModal').find("#ChaNum").text(ChaID);
-				$('#SaleItemModal').find("#ItemMEM").text(itemInfo);
-				$('#SaleItemModal').find("#ItemCode").text(ItemIDa);
-				$('#SaleItemModal').find("#Enhance").text(enhance);
-				$('#SaleItemModal').find("#ItemQty").text(Itemqty);
+				$('#SaleItemModal').find("#ChaNum").val(ChaID);
+				$('#SaleItemModal').find("#ItemMEM").val(itemInfo);
+				$('#SaleItemModal').find("#ItemCode").val(ItemIDa);
+				$('#SaleItemModal').find("#Enhance").val(enhance);
+				$('#SaleItemModal').find("#ItemQty").val(Itemqty);
  	
 
 				$("#SaleItemModal").modal("show");
