@@ -273,9 +273,12 @@
 	      		</div>
 
 	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
+	      <div class="modal-footer"> 
+	      	<div class="spinner-border text-success" role="status">
+			  <span class="sr-only">Loading...</span>
+			</div>
+	        <button type="button" class="btn btn-success">บันทึก</button>
+	        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
 	      </div>
 	    </div>
 	  </div>
