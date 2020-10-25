@@ -722,7 +722,7 @@
 			$("#ChaTable").on("click",".isSale",function(){
 
 				swal("click","----", "info");
-				
+
 				var itemInfo = $(this).attr("itemInfo");
 				var IDRAN = $("#UserID option:selected").val(); 
 				var ChaID = $("#ChaID option:selected").val(); 
