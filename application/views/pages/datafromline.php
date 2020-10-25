@@ -272,7 +272,7 @@
 	      			<div class="row">
 	      				<div class="col-12">
 	      					  <div class="custom-file">
-							    <input accept='image/*' type="file" class="custom-file-input" id="customFile">
+							    <input accept='image/*' type="file" class="custom-file-input" id="ItemIMG">
 							    <label class="custom-file-label" for="customFile">เลือกภาพ</label>
 							  </div>
 
@@ -302,7 +302,7 @@
 	      	<div class="spinner-border text-success " id="preload" role="status">
 			  <span class="sr-only">Loading...</span>
 			</div>
-	        <button type="button" class="btn btn-success">บันทึก</button>
+	        <button type="button" class="btn btn-success" id="SendData">บันทึก</button>
 	        <button type="button" class="btn btn-warning" data-dismiss="modal">ปิด</button>
 	      </div>
 	    </div>
@@ -799,13 +799,68 @@
 
 			});
 
+ 
+			$('#SaleItemModal').find("#SendData").on("click",function(){
 
+
+				$('#SaleItemModal').find("#SendData").hide();
+				$('#SaleItemModal').find("#preload").show();
+
+
+
+
+				setTimeout(function(){ 
+
+
+							var data = new FormData();          
+					        var Slip_file = $('#ItemIMG').prop('files')[0]; 
+					        //data.append('CustomerID', CustomerID);  
+					        //data.append('Slipfile', Slip_file);  
+
+
+					        $.ajax({
+					        	url:"https://cac.webclient.me/api/addItemToShop.php",
+					        	type:"POST",
+					        	data:data,
+					        	contentType : false,
+					        	cache : false,
+					        	processData : false,
+					        	success : function(data){
+ 
+					        		console.log(data);
+					        		//var object = JSON.parse(data);
+					        		//console.log(object); 
+					 
+
+					        	},
+					        	error : function(){
+
+
+					        	}
+					        });
+ 
+
+					$('#SaleItemModal').find("#SendData").show();
+					$('#SaleItemModal').find("#preload").hide();
+
+
+				}, 3000);
+
+
+
+
+
+
+
+			});
 
 
 			$("#ChaTable").on("click",".isSale",function(){
 
 				//swal("click","----", "info");
 
+				$("#SaleItemModal").find("#ItemIMG").val("");
+		
 				var itemInfo = $(this).attr("itemInfo");
 				var IDRAN = $("#UserID option:selected").val(); 
 				var ChaID = $("#ChaID option:selected").val(); 
