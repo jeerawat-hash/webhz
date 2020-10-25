@@ -262,11 +262,11 @@
 	      <div class="modal-body">
  
 
-				<input type="text" readonly name="ChaNum" id="ChaNum">	
-				<input type="text" readonly name="ItemMEM" id="ItemMEM">	
-				<input type="text" readonly name="ItemCode" id="ItemCode">	
-				<input type="text" readonly name="Enhance" id="Enhance">	
-				<input type="text" readonly name="ItemQty" id="ItemQty"> 
+				<input type="text" hidden readonly name="ChaNum" id="ChaNum">	
+				<input type="text" hidden readonly name="ItemMEM" id="ItemMEM">	
+				<input type="text" hidden readonly name="ItemCode" id="ItemCode">	
+				<input type="text" hidden readonly name="Enhance" id="Enhance">	
+				<input type="text" hidden readonly name="ItemQty" id="ItemQty"> 
 	      		
 	      		<div class="container">
 	      			<div class="row">
@@ -826,8 +826,7 @@
 				$('#SaleItemModal').find("#ItemQty").val(Itemqty);
 
 				$('#SaleItemModal').find("#preload").hide();
- 	
-
+ 	 
 				$("#SaleItemModal").modal("show");
   
 				//$("#ChaTable").find(this).text("กำลังดำเนินการ....");
