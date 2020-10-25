@@ -260,6 +260,13 @@
 	        </button>
 	      </div>
 	      <div class="modal-body">
+ 
+
+				<input type="text" readonly name="ChaNum" id="ChaNum">	
+				<input type="text" readonly name="ItemMEM" id="ItemMEM">	
+				<input type="text" readonly name="ItemCode" id="ItemCode">	
+				<input type="text" readonly name="Enhance" id="Enhance">	
+				<input type="text" readonly name="ItemQty" id="ItemQty"> 
 	      		
 	      		<div class="container">
 	      			<div class="row">
@@ -811,7 +818,14 @@
 				$('#SaleItemModal').modal({backdrop: 'static', keyboard: false});
 
 				$('#SaleItemModal').find("#exampleModalLabel").text(itemNameA);
- 
+
+				$('#SaleItemModal').find("#ChaNum").text(ChaID);
+				$('#SaleItemModal').find("#ItemMEM").text(itemInfo);
+				$('#SaleItemModal').find("#ItemCode").text(ItemIDa);
+				$('#SaleItemModal').find("#Enhance").text(enhance);
+				$('#SaleItemModal').find("#ItemQty").text(Itemqty);
+ 	
+
 				$("#SaleItemModal").modal("show");
   
 				//$("#ChaTable").find(this).text("กำลังดำเนินการ....");
