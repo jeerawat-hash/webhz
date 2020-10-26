@@ -377,6 +377,8 @@
 
 			}, 500);
 
+
+
 	</script>
 
 
@@ -393,10 +395,20 @@
             //console.log(profile.userId);
             var Line = profile.userId;
 
+  
 
+            setInterval(function(){ 
+  
+ 					$.post("https://cac.webclient.me/api/getDataUserPointFromLine.php",{
+							LineID : Line
+						},function(data){
+  	
+  							console.log(data);
+							
+					});
+  
 
-
-            console.log(Line);
+			}, 500);
 
 
 
