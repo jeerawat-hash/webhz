@@ -293,9 +293,31 @@
             //console.log(profile.userId);
             var Line = profile.userId;
 
-            console.log(Line);
+            //console.log(Line);
             //swal("สำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
  			
+            setInterval(function(){ 
+  
+ 					$.post("https://cac.webclient.me/api/getDataUserPointFromLine.php",{
+							LineID : Line
+						},function(data){
+  	
+  							//console.log(data);
+  							var objectMoney = JSON.parse(data);
+  							console.log(objectMoney);
+							$(".MoneyPoint").text();
+					});
+  
+
+			}, 500);
+
+
+
+
+
+
+
+
             $.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
 					LineID : Line
 				},function(data){
