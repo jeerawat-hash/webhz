@@ -554,7 +554,7 @@
    							tablehtml += "<tr>"+
 									      "<td>"+Obj.ChaName[i]+"</td>"+
 									      "<td>"+Obj.ItemName[i]+"</td>"+
-									      "<td>"+Obj.Price[i]+"</td>"+
+									      "<td><font color='red'>"+Obj.Price[i]+"</font> พ้อย</td>"+
 									      "<td><button class='btn btn-danger isReInv' ChaNum='"+Obj.ChaNum[i]+"' ShopMapID='"+Obj.ID[i]+"'>เรียกคืนไอเทม</button></td>"+
 									    "</tr> "; 
 
