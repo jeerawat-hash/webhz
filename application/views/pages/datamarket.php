@@ -232,7 +232,7 @@
 	<script type="text/javascript">
 		 
 			document.addEventListener('contextmenu', event => event.preventDefault());
-
+			/*
 			setInterval(function(){
 			  var startTime = performance.now(), check, diff;
 			  for (check = 0; check < 1000; check++){
@@ -246,7 +246,7 @@
 
 			  }
 			}, 200); 
- 		  
+ 		  	*/
 			setInterval(function(){ 
 
  				var StoreID = $("#StoreID").val();
@@ -293,6 +293,7 @@
             //console.log(profile.userId);
             var Line = profile.userId;
 
+            console.log(Line);
             //swal("สำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
  			
             $.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
