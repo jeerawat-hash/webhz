@@ -861,7 +861,7 @@
 					        	processData : false,
 					        	success : function(data){
  
-					        		console.log(data);
+					        		//console.log(data);
 					        		
 					        		$.post("https://cac.webclient.me/api/getDataInvenFromUserNum.php",{
 									ChaNum : ChaID
