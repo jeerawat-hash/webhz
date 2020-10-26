@@ -1,246 +1,269 @@
-# true-wallet-crewler
+# True Wallet API Wrapper
 
-# เกี่ยวกับ
+True Wallet API PHP wrapper.
 
-โค๊ดดึงข้อมูลข้อทางการเงินของบัญชี True Wallet สามารถดึงข้อมูลทางการเงินย้อนหลังของบัญชีทรูวอลเลตได้ รวมไปถึงรายละเอียดเช่น วันที่ เวลา ที่โอน เบอร์โทร ชื่อผู้ทำรายการ รวมไปถึงหมายเลขอ้างอิง (Transaction ID)ซึ่งเป็นหมายเลขประจำรายการนั้นๆและเป็นเลขที่ไม่ซ้ำกับรายการอื่น
-ซึ่งเมื่อได้หมายเลขโทรศัพ และ หมายเลขอ้างอิงนี้แล้ว สามารถ นำไปประยุคสร้าง ระบบส่งของให้กับลูกค้าอัตโนมัติผ่านทางอีเมลได้
+## Overview
 
-เช่น ขาย ระหัสเกม ราคา 1500 บาท 
-เมื่อลูกค้าโอนเงินเข้ามาในบัญชีคุณ 1500 บาทแล้ว ให้ลูกค้ากดยืนยันการโอน
-และให้ลูกค้า กรอกหมายเลขอ้างอิงการโอน และเบอร์โทรศัพท์ที่โอน เพื่อยืนยันการโอนเงิน
-จากนั้นคุณก็เขียนโค๊ดให้ส่งระหัส ที่เป็นสินค้าของคุณให้กับลูกค้าได้โดยอัตโนมัติ
+PHP script using curl to get transaction data from True Wallet account.
 
-# การทำงาน
+## Usage
 
-การทำงานของโค๊ดชุดนี้ จะส่ง Request Login ไปยัง TrueWallet และดึงข้อออกมา โดยใช้ Curl  โดยโค๊ดนี้ไม่มีการเก็บข้อมูลของท่านแต่อย่างใด(ไม่เชื่อก็ลองไล่โค๊ดดูได้ครับแหะๆ)
+Include our class and login with your True Wallet account.
+```
+include_once('manager/TrueWallet.php');
+$wallet = new TrueWallet();
+$wallet->login(username,password);
+```
+See all functions down below, full example can be found in [example.php](https://github.com/popiazaza/truewallet-api-wrapper/blob/master/example.php)
 
-# วิธีใช้
-ที่ index.php จะมีตัวอย่างการใช้งานพร้อมคำอธิบายอยู่ แต่ผมจะอธิบายให้อีกรอบ
-แก้ไขตัวแปร username , password ให้ตรงามข้อมูลจริงของท่าน
+## Functions
 
-function get_transections() 
-จะดึงข้อมูลการโอน รับ เงินคร่าวทั้งหมดของท่านออกมา มากสุดที่ 50 รายการ
+### [function login(username,password)](https://github.com/popiazaza/truewallet-api-wrapper/blob/a18f800230301d229458a5937bb3fcd44629ed39/manager/TrueWallet.php#L14-L19)
 
-function get_retport() 
-ฟังก์ชั้นนี้จะดึง ข้อมูลการโอนอย่างละเอียด ของแต่ละรายการ ที่ได้จาก get_transections()
-ซึ่ง จำเป็นจะส่งเป็น reportID ให้กับฟังก์ชั้นนี้ ซึ่งผมที่ได้จาก ฟังก์ชั่นนี้จะละเอียดไปจนถึง วันเวลา ที่โอน ชื่อผู้โอน ข้อความจากผู้โอน รวมไปถึงหมายเลขอ้างอิงด้วย
+Login into True Wallet account with given username & password.
 
+return (string)login page data or (boolean)false if failed to login.
 
-# ตัวอย่างข้อมูล
+### [function logout()](https://github.com/popiazaza/truewallet-api-wrapper/blob/a18f800230301d229458a5937bb3fcd44629ed39/manager/TrueWallet.php#L21-L24)
 
-ตัวอย่างข้อมูลที่ได้จาก get_transactions()
+Logout from previous True Wallet account.
 
+return (string)logout page data.
+
+### [function get_profile()](https://github.com/popiazaza/truewallet-api-wrapper/blob/a18f800230301d229458a5937bb3fcd44629ed39/manager/TrueWallet.php#L26-L33)
+
+Get profile from current True Wallet account.
+
+return (array object)user profile or (boolean)false if not login yet.
+
+### [function get_transactions()](https://github.com/popiazaza/truewallet-api-wrapper/blob/a18f800230301d229458a5937bb3fcd44629ed39/manager/TrueWallet.php#L35-L43)
+
+Get 50 lastest transactions from current True Wallet account.
+
+return (array object)50 lastest transactions or (boolean)false if not login yet.
+
+### [function function get_report(reportID)](https://github.com/popiazaza/truewallet-api-wrapper/blob/a18f800230301d229458a5937bb3fcd44629ed39/manager/TrueWallet.php#L45-L53)
+
+Get full report of the transaction from given reportID.
+
+return (array object)full report of the transaction or (boolean)false if not login yet.
+
+## Data Example
+
+- get_profile()
+
+```
+stdClass Object
+(
+    [email] => youremail@domain.com
+    [password] => (blank)
+    [fullname] => Full Name
+    [firstnameEn] => (blank)
+    [lastnameEn] => (blank)
+    [thaiID] => 1234567890123
+    [mobileNumber] => 0812345678
+    [balance] => 0
+    [imageFileName] => (blank)
+    [hasPassword] => 0/1
+    [hasPin] => 0/1
+    [profileImageStatus] => 0/1
+    [profileType] => consumer
+    [verificationStatus] => unverified/verified
+    [purpose] => (blank)
+    [profileAddress] => (blank)
+    [profilePartner] => (blank)
+    [walletToken] => (blank)
+    [tmnId] => tmn.10000000000
+    [kycVerifyStatus] => (blank)
+    [dateOfBirth] => (blank)
+    [title] => (blank)
+    [occupation] => (blank)
+    [profileAddressList] => Array
+        (
+        (blank)
+        )
+
+)
+```
+
+- get_transactions()
+
+```
     [0] => stdClass Object
         (
-            [reportID] => 29013674
-            [logoURL] => https://s3-ap-southeast-1.amazonaws.com/mobile-resource.tewm/wallet-app/common/icon-transaction/m/images/logo_activity_type/transfer_debtor.png
-            [text1Th] => โอนเงิน
-            [text1En] => Transfer
-            [text2Th] => 11/11/16
-            [text2En] => 11/11/16
+            [reportID] => 12345678
+            [logoURL] => https://s3-ap-southeast-1.amazonaws.com/mobile-resource.tewm/wallet-app/common/icon-transaction/m/images/logo_activity_type/transfer_[text3En].png
+            **[text3En] is debtor/7-ELEVEN/ecash/campaign/creditor/etc.**
+            [text1Th] => โอนเงิน/เติมเงิน Wallet/ซื้อบัตรเงินสดทรูมันนี่/etc.
+            [text1En] => Add Money/Transfer/True Money Cash Card/etc.
+            [text2Th] => 31/01/17
+            [text2En] => 31/01/17
             [text3Th] => โอนเงินให้
-            [text3En] => debtor
-            [text4Th] => -4,500.00
-            [text4En] => -4,500.00
-            [text5Th] => 093-427-1147
-            [text5En] => 093-427-1147
+            [text3En] => debtor/7-ELEVEN/ecash/campaign/creditor/etc.
+            [text4Th] => +500.00/-1,500.00
+            [text4En] => +500.00/-1,500.00
+            [text5Th] => (blank)/081-234-5678
+            [text5En] => (blank)/081-234-5678
         )
-
-    [1] => stdClass Object
-        (
-            [reportID] => 1006447327
-            [logoURL] => https://s3-ap-southeast-1.amazonaws.com/mobile-resource.tewm/wallet-app/common/icon-transaction/m/images/logo_activity_type/add_money.png
-            [text1Th] => เติมเงิน Wallet
-            [text1En] => Add Money
-            [text2Th] => 11/11/16
-            [text2En] => 11/11/16
-            [text3Th] => 7-ELEVEN
-            [text3En] => 7-ELEVEN
-            [text4Th] => +1,000.00
-            [text4En] => +1,000.00
-            [text5Th] => 
-            [text5En] => 
-        )
-
-    [2] => stdClass Object
-        (
-            [reportID] => 1006447326
-            [logoURL] => https://s3-ap-southeast-1.amazonaws.com/mobile-resource.tewm/wallet-app/common/icon-transaction/m/images/logo_activity_type/add_money.png
-            [text1Th] => เติมเงิน Wallet
-            [text1En] => Add Money
-            [text2Th] => 11/11/16
-            [text2En] => 11/11/16
-            [text3Th] => 7-ELEVEN
-            [text3En] => 7-ELEVEN
-            [text4Th] => +2,000.00
-            [text4En] => +2,000.00
-            [text5Th] => 
-            [text5En] => 
-        )
-
-    [3] => stdClass Object
-        (
-            [reportID] => 1006447304
-            [logoURL] => https://s3-ap-southeast-1.amazonaws.com/mobile-resource.tewm/wallet-app/common/icon-transaction/m/images/logo_activity_type/add_money.png
-            [text1Th] => เติมเงิน Wallet
-            [text1En] => Add Money
-            [text2Th] => 11/11/16
-            [text2En] => 11/11/16
-            [text3Th] => 7-ELEVEN
-            [text3En] => 7-ELEVEN
-            [text4Th] => +2,000.00
-            [text4En] => +2,000.00
-            [text5Th] => 
-            [text5En] => 
-        )
-     [4]
+     [1]
       .
       .
       .
+```
 
+- get_report()
 
-ตัวอย่างข้อมูลที่ได้จาก get_report()
+```
+stdClass Object
+(
+    [amount] => 500/-1500
+    [ref1] => 0812345678
+    [section4] => stdClass Object
+        (
+            [column1] => stdClass Object
+                (
+                    [cell1] => stdClass Object
+                        (
+                            [titleTh] => วันที่-เวลา
+                            [titleEn] => Transaction date
+                            [value] => 31/01/17 23:59
+                        )
 
-object(stdClass)#3 (8) {
-  ["code"]=>
-  string(5) "20000"
-  ["namespace"]=>
-  string(11) "TMN-PRODUCT"
-  ["titleTh"]=>
-  string(0) ""
-  ["titleEn"]=>
-  string(0) ""
-  ["messageTh"]=>
-  string(178) "คุณสามารถเช็ครายการย้อนหลัง
-ได้ที่เมนูประวัติการทำรายการ
-[APR-20000]"
-  ["messageEn"]=>
-  string(178) "คุณสามารถเช็ครายการย้อนหลัง
-ได้ที่เมนูประวัติการทำรายการ
-[APR-20000]"
-  ["originalMessage"]=>
-  string(0) ""
-  ["data"]=>
-  object(stdClass)#54 (11) {
-    ["amount"]=>
-    int(-4500)
-    ["ref1"]=>
-    string(10) "0934271147"
-    ["section4"]=>
-    object(stdClass)#57 (2) {
-      ["column1"]=>
-      object(stdClass)#56 (1) {
-        ["cell1"]=>
-        object(stdClass)#55 (3) {
-          ["titleTh"]=>
-          string(31) "วันที่-เวลา"
-          ["titleEn"]=>
-          string(16) "Transaction date"
-          ["value"]=>
-          string(14) "11/11/16 22:06"
-        }
-      }
-      ["column2"]=>
-      object(stdClass)#59 (1) {
-        ["cell1"]=>
-        object(stdClass)#58 (3) {
-          ["titleTh"]=>
-          string(39) "เลขที่อ้างอิง"
-          ["titleEn"]=>
-          string(14) "Transaction ID"
-          ["value"]=>
-          string(10) "1706xxxxxxx"
-        }
-      }
-    }
-    ["serviceCode"]=>
-    string(6) "debtor"
-    ["section3"]=>
-    object(stdClass)#63 (2) {
-      ["column1"]=>
-      object(stdClass)#61 (2) {
-        ["cell2"]=>
-        object(stdClass)#60 (3) {
-          ["titleTh"]=>
-          string(30) "ยอดเงินรวม"
-          ["titleEn"]=>
-          string(12) "total amount"
-          ["value"]=>
-          string(8) "4,500.00"
-        }
-        ["cell1"]=>
-        object(stdClass)#62 (3) {
-          ["titleTh"]=>
-          string(45) "จำนวนเงินที่โอน"
-          ["titleEn"]=>
-          string(6) "amount"
-          ["value"]=>
-          string(8) "4,500.00"
-        }
-      }
-      ["column2"]=>
-      object(stdClass)#65 (1) {
-        ["cell1"]=>
-        object(stdClass)#64 (3) {
-          ["titleTh"]=>
-          string(36) "ค่าธรรมเนียม"
-          ["titleEn"]=>
-          string(9) "total fee"
-          ["value"]=>
-          string(4) "0.00"
-        }
-      }
-    }
-    ["personalMessage"]=>
-    object(stdClass)#66 (1) {
-      ["value"]=>
-      string(0) ""
-    }
-    ["section2"]=>
-    object(stdClass)#70 (2) {
-      ["column1"]=>
-      object(stdClass)#68 (2) {
-        ["cell2"]=>
-        object(stdClass)#67 (3) {
-          ["titleTh"]=>
-          string(30) "ชื่อผู้รับ"
-          ["titleEn"]=>
-          string(13) "account owner"
-          ["value"]=>
-          string(13) "name*** las***"
-        }
-        ["cell1"]=>
-        object(stdClass)#69 (3) {
-          ["titleTh"]=>
-          string(39) "หมายเลขผู้รับ"
-          ["titleEn"]=>
-          string(14) "account number"
-          ["value"]=>
-          string(12) "093-427-xxxx"
-        }
-      }
-      ["column2"]=>
-      object(stdClass)#71 (1) {
-        ["operator"]=>
-        string(3) "tmn"
-      }
-    }
-    ["section1"]=>
-    object(stdClass)#72 (2) {
-      ["titleTh"]=>
-      string(30) "โอนเงินให้"
-      ["titleEn"]=>
-      string(6) "debtor"
-    }
-    ["isFavorited"]=>
-    string(2) "no"
-    ["isFavoritable"]=>
-    string(2) "no"
-    ["serviceType"]=>
-    string(8) "transfer"
-  }
- }
+                )
 
-# ทิ้งทาย
-โค๊ดนี้ฟรีครับ
-ถ้าใช้แล้วถูกใจ แล้วกรุณาอยากสนับสนุนก็สามารถทำได้ที่ paypal : tkaewkunha@gmail.com จะถือเป็นความกรุณาอย่างสูงครับ
+            [column2] => stdClass Object
+                (
+                    [cell1] => stdClass Object
+                        (
+                            [titleTh] => เลขที่อ้างอิง
+                            [titleEn] => Transaction ID
+                            [value] => 1234567890
+                        )
+
+                )
+
+        )
+
+    [serviceCode] => creditor
+    [section3] => stdClass Object
+        (
+            [column1] => stdClass Object
+                (
+                    [cell2] => stdClass Object
+                        (
+                            [titleTh] => ยอดเงินรวม
+                            [titleEn] => total amount
+                            [value] => +500.00/-1,500.00
+                        )
+
+                    [cell1] => stdClass Object
+                        (
+                            [titleTh] => จำนวนเงินที่ได้รับ
+                            [titleEn] => amount
+                            [value] => +500.00/-1,500.00
+                        )
+
+                )
+
+            [column2] => stdClass Object
+                (
+                    [cell1] => stdClass Object
+                        (
+                            [titleTh] => ค่าธรรมเนียม
+                            [titleEn] => total fee
+                            [value] => 0.00
+                        )
+
+                )
+
+        )
+
+    [personalMessage] => stdClass Object
+        (
+            [value] => 
+        )
+
+    [section2] => stdClass Object
+        (
+            [column1] => stdClass Object
+                (
+                    [cell2] => stdClass Object
+                        (
+                            [titleTh] => ชื่อผู้ส่ง
+                            [titleEn] => account owner
+                            [value] => Full*** name***
+                        )
+
+                    [cell1] => stdClass Object
+                        (
+                            [titleTh] => หมายเลขผู้ส่ง
+                            [titleEn] => account number
+                            [value] => 081-234-5678
+                        )
+
+                )
+
+            [column2] => stdClass Object
+                (
+                    [operator] => tmn
+                )
+
+        )
+
+    [section1] => stdClass Object
+        (
+            [titleTh] => รับเงินจาก
+            [titleEn] => creditor
+        )
+
+    [isFavorited] => no
+    [isFavoritable] => no
+    [serviceType] => transfer
+)
+```
+
+## Trobleshooting
+
+- curl: (60) SSL certificate : unable to get local issuer certificate
+
+This error commonly found in local server, read how to fix it on [Stackoverflow](http://stackoverflow.com/a/31830614).
+
+- Other SSL/TLS problem
+
+Check your cURL version and openssl extension. If they're old or not enable yet, please fix it.
+
+- Login successful but can't get any data from APIs.
+
+Make sure your script can write cookie.txt, chmod 755 to fix it.
+
+- Can't login even enter right username/password
+
+If you failed too many attempt to login, your account might get banned. You have to contact True Wallet support directly for further assistance.
+
+## Milestones
+
+- Add shortcut functions to easier get data.
+- Format codes and create a composer package.
+- Create full functional system.
+
+## Contributors
+
+### [popiazaza](https://github.com/popiazaza)
+
+Donate via paypal: kingkitb@gmail.com or help us by write few lines of code into this github project!
+
+### [Tkaewkunha](https://github.com/Tkaewkunha)
+
+This code is free to use. If you like it, please consider support me via paypal: tkaewkunha@gmail.com thank you.
+
+## License
+
+True Wallet API Wrapper is 100% free and open-source.
+
+Copyright 2017 popiazaza
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
