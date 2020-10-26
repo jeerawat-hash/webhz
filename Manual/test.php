@@ -3,9 +3,10 @@
 
 $wallet = new Truewallet();
 
-echo $wallet->GetToken("p.jeerawat.th@live.com","jeerawatTH2019","email");
+$a =  $wallet->GetToken("p.jeerawat.th@live.com","jeerawatTH2019","email");
 
-
+	
+	print_r($a);
 
 
 
