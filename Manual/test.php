@@ -3,7 +3,7 @@
 
 $wallet = new Truewallet();
 
-$a =  $wallet->GetToken("0616619956","jeerawatTH2019","email");
+$a =  $wallet->GetToken("0616619956","jeerawatTH2019","phone"); 
 
 	
 	print_r($a);
