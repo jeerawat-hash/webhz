@@ -1,8 +1,6 @@
 
 <?php 
-
-
-use Maythiwat\walleTransfer; 
+ 
 $transfer = new walleTransfer();
 
 // Login with Email & Password
@@ -13,7 +11,7 @@ $token = $transfer->GetToken('0616619956', 'jeerawatTH2019', 'phone');
 echo $token;
 
 // Logout
-echo  $transfer->Logout($token);
+ $transfer->Logout($token);
 
 
 
@@ -28,8 +26,7 @@ echo  $transfer->Logout($token);
 
 
 <?php
-
-namespace Maythiwat;
+ 
 class walleTransfer {
     public function Request($method = 'GET', $url, $header = false, $data = false) {
         $ch = curl_init();
