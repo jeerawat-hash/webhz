@@ -403,7 +403,10 @@
 							LineID : Line
 						},function(data){
   	
-  							console.log(data);
+  							//console.log(data);
+  							var objectMoney = JSON.parse(data);
+  							//console.log(objectMoney);
+							$(".MoneyPoint").text(objectMoney.Point);
 							
 					});
   

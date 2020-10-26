@@ -304,8 +304,8 @@
   	
   							//console.log(data);
   							var objectMoney = JSON.parse(data);
-  							console.log(objectMoney);
-							$(".MoneyPoint").text();
+  							//console.log(objectMoney.Point);
+							$(".MoneyPoint").text(objectMoney.Point);
 					});
   
 
