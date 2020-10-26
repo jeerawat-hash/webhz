@@ -395,7 +395,7 @@
             //console.log(profile.userId);
             var Line = profile.userId;
 
-  
+  			console.log(Line);
 
             setInterval(function(){ 
   
