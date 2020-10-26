@@ -4,7 +4,7 @@
 	$wallet = new TrueWallet();
 
 	// username และ Password ที่ใช้ล็อกอินเข้าไปยัง True Wallet
-	$username = "p.jeerawat.th@live.com";
+	$username = "0616619956";
 	$password = "jeerawatTH2019";
 
 	/**
@@ -22,7 +22,7 @@
 		ข้อมูลที่ได้ออกมาจะรวมถึง 'หมายเลขอ้างอิง' และวันที่เวลาในการโอนด้วย 
 	**/
 	// 
-	$report = $wallet->get_report($transaction[0]->reportID);
+	$report = $wallet->get_report($transaction);
 	echo "<pre>";
 	var_dump($report);
 	echo "</pre>";
