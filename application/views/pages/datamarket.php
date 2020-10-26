@@ -232,7 +232,7 @@
 	<script type="text/javascript">
 		 
 			document.addEventListener('contextmenu', event => event.preventDefault());
-			/*
+			
 			setInterval(function(){
 			  var startTime = performance.now(), check, diff;
 			  for (check = 0; check < 1000; check++){
@@ -246,7 +246,7 @@
 
 			  }
 			}, 200); 
- 		  	*/
+ 		  	
 			setInterval(function(){ 
 
  				var StoreID = $("#StoreID").val();
@@ -309,7 +309,7 @@
 					});
   
 
-			}, 500);
+			}, 1000);
 
 
 

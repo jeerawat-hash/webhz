@@ -330,7 +330,6 @@
 		  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
 		});
 
-		  /*
 			document.addEventListener('contextmenu', event => event.preventDefault());
 
 			setInterval(function(){
@@ -346,7 +345,7 @@
 
 			  }
 			}, 200); 
- 		 */
+ 		 
 			setInterval(function(){ 
 
  				var StoreID = $("#StoreID").val();
@@ -411,7 +410,7 @@
 					});
   
 
-			}, 500);
+			}, 1000);
 
 
 
