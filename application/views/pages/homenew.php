@@ -47,7 +47,7 @@ $(document).ready(function(){
                 }
                 var Login = '<font style="color: #E03720">Offline</font>';
                 if (obj.Login == "Online") {
-                    Login = '<font style="color: #74E020">ผู้เล่นขณะนี้ '+obj.ChaOnline+' คน</font>';
+                    Login = '<font style="color: #1321DC">ผู้เล่นขณะนี้ '+obj.ChaOnline+' คน</font>';
                 }
 
 
