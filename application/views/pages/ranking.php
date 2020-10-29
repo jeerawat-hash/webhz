@@ -77,11 +77,8 @@ $(document).ready(function(){
             
         </div>
            
-        
-       	
-        <div style="position:absolute; margin-top:360px; margin-left:-10px;">
-        
-        <div class="leftContainer">
+         
+        <div class="leftContainerB">
         	
             <div id="Csquared" class="titleBar" style=" position:relative;">
             <div class="titleBartitle">ข่าวสาร</div></div>

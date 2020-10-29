@@ -36,6 +36,12 @@ src: url(../fonts/BigNoodleTitlin.ttf);
 	margin-left:10px;
 	float:left;
 }
+.leftContainerB{
+	width:970px;
+	height:auto;
+	margin-left:10px;
+	float:left;
+}
 
 .rightContainer{
 	width:320px;
