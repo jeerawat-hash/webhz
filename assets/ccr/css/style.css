@@ -39,7 +39,7 @@ src: url(../fonts/BigNoodleTitlin.ttf);
 .leftContainerB{
 	width:970px;
 	height:auto;
-	margin-left:10px;
+	margin-left:100px;
 	float:left;
 }
 
@@ -157,7 +157,7 @@ src: url(../fonts/BigNoodleTitlin.ttf);
 }
 .titleBarB {
 	background-image:url(../img/titleBar.png);
-	width:934px;
+	width:634px;
 	height:69px;
 	background-repeat:no-repeat;
 }
