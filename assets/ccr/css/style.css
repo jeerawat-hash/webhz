@@ -155,6 +155,12 @@ src: url(../fonts/BigNoodleTitlin.ttf);
 	height:69px;
 	background-repeat:no-repeat;
 }
+.titleBarB {
+	background-image:url(../img/titleBar.png);
+	width:934px;
+	height:69px;
+	background-repeat:no-repeat;
+}
 
 .titleBartitle {
 	font-family:BigNoodleTitling; font-size:36px; margin:15px 0px 0 10px; color:#FFF; float:left;text-shadow: 0px 0px 5px #000000;

@@ -77,10 +77,13 @@ $(document).ready(function(){
             
         </div>
            
-         
+        
+       	
+        <div style="position:absolute; margin-top:60px; margin-left:-10px;">
+        
         <div class="leftContainerB">
         	
-            <div id="Csquared" class="titleBar" style=" position:relative;">
+            <div id="Csquared" class="titleBarB" style=" position:relative;">
             <div class="titleBartitle">ข่าวสาร</div></div>
             
             <div id="CsquaredCon"  class="ContentNewsVis" >
@@ -96,7 +99,7 @@ $(document).ready(function(){
              </div>
             </div>
             
-            <div id="Csquared1" class="titleBar" style=" position:relative; margin-top:10px;">
+            <div id="Csquared1" class="titleBarB" style=" position:relative; margin-top:10px;">
             <div class="titleBartitle">ข้อมูลการอัพเดทแพชล่าสุด</div></div>
             <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
             <div id="CsquaredCon1" class="ContentNewsVis" style="">
