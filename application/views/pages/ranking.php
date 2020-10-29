@@ -99,6 +99,82 @@ $(document).ready(function(){
              </div>
             </div>
             
+
+            <div id="Csquared" class="titleBarB" style=" position:relative;">
+            <div class="titleBartitle">ข่าวสาร</div></div>
+            
+            <div id="CsquaredCon"  class="ContentNewsVis" >
+            <div  align="justify"  style="float:left; margin:10px;"> 
+
+
+                Hazakura  เป็นเซิฟเวอร์ที่เปิดเพื่อพัฒนาและทดสอบระบบฐานข้อมูลเต็มรูปแบบและทำวิจัยเกี่ยวกับระบบการให้บริการเกม RAN จึงไม่มี ITEM MALL หรือ SHOP ที่ Admin สามารถ Generate ของขายได้แต่จะเป็นการจัดทำระบบที่ผู้เล่นสามารถ สร้างไอเทมขึ้นมาขายเองได้ผ่านระบบที่ทาง Admin จัดทำขึ้นแทนเพื่อทำให้เกิดความสมดุลต่อการเล่นในสังคม RolePlay
+                <br>
+                <font color="red">คำเตือน </font>: Server นี้ไม่เหมาะกับผู้เล่นที่เน้นความเวอร์วังอลังการเพราะเป็น Server แนว Classic เน้นเสถียรภาพในการเล่นสูงและมีการควบคุมอัตราการเฟ้อของ Item และ ค่าเงินในเกม
+
+
+
+             </div>
+            </div>
+
+
+
+            <div id="Csquared" class="titleBarB" style=" position:relative;">
+            <div class="titleBartitle">ข่าวสาร</div></div>
+            
+            <div id="CsquaredCon"  class="ContentNewsVis" >
+            <div  align="justify"  style="float:left; margin:10px;"> 
+
+
+                Hazakura  เป็นเซิฟเวอร์ที่เปิดเพื่อพัฒนาและทดสอบระบบฐานข้อมูลเต็มรูปแบบและทำวิจัยเกี่ยวกับระบบการให้บริการเกม RAN จึงไม่มี ITEM MALL หรือ SHOP ที่ Admin สามารถ Generate ของขายได้แต่จะเป็นการจัดทำระบบที่ผู้เล่นสามารถ สร้างไอเทมขึ้นมาขายเองได้ผ่านระบบที่ทาง Admin จัดทำขึ้นแทนเพื่อทำให้เกิดความสมดุลต่อการเล่นในสังคม RolePlay
+                <br>
+                <font color="red">คำเตือน </font>: Server นี้ไม่เหมาะกับผู้เล่นที่เน้นความเวอร์วังอลังการเพราะเป็น Server แนว Classic เน้นเสถียรภาพในการเล่นสูงและมีการควบคุมอัตราการเฟ้อของ Item และ ค่าเงินในเกม
+
+
+
+             </div>
+            </div>
+
+
+
+
+
+            <div id="Csquared" class="titleBarB" style=" position:relative;">
+            <div class="titleBartitle">ข่าวสาร</div></div>
+            
+            <div id="CsquaredCon"  class="ContentNewsVis" >
+            <div  align="justify"  style="float:left; margin:10px;"> 
+
+
+                Hazakura  เป็นเซิฟเวอร์ที่เปิดเพื่อพัฒนาและทดสอบระบบฐานข้อมูลเต็มรูปแบบและทำวิจัยเกี่ยวกับระบบการให้บริการเกม RAN จึงไม่มี ITEM MALL หรือ SHOP ที่ Admin สามารถ Generate ของขายได้แต่จะเป็นการจัดทำระบบที่ผู้เล่นสามารถ สร้างไอเทมขึ้นมาขายเองได้ผ่านระบบที่ทาง Admin จัดทำขึ้นแทนเพื่อทำให้เกิดความสมดุลต่อการเล่นในสังคม RolePlay
+                <br>
+                <font color="red">คำเตือน </font>: Server นี้ไม่เหมาะกับผู้เล่นที่เน้นความเวอร์วังอลังการเพราะเป็น Server แนว Classic เน้นเสถียรภาพในการเล่นสูงและมีการควบคุมอัตราการเฟ้อของ Item และ ค่าเงินในเกม
+
+
+
+             </div>
+            </div>
+
+
+
+
+            <div id="Csquared" class="titleBarB" style=" position:relative;">
+            <div class="titleBartitle">ข่าวสาร</div></div>
+            
+            <div id="CsquaredCon"  class="ContentNewsVis" >
+            <div  align="justify"  style="float:left; margin:10px;"> 
+
+
+                Hazakura  เป็นเซิฟเวอร์ที่เปิดเพื่อพัฒนาและทดสอบระบบฐานข้อมูลเต็มรูปแบบและทำวิจัยเกี่ยวกับระบบการให้บริการเกม RAN จึงไม่มี ITEM MALL หรือ SHOP ที่ Admin สามารถ Generate ของขายได้แต่จะเป็นการจัดทำระบบที่ผู้เล่นสามารถ สร้างไอเทมขึ้นมาขายเองได้ผ่านระบบที่ทาง Admin จัดทำขึ้นแทนเพื่อทำให้เกิดความสมดุลต่อการเล่นในสังคม RolePlay
+                <br>
+                <font color="red">คำเตือน </font>: Server นี้ไม่เหมาะกับผู้เล่นที่เน้นความเวอร์วังอลังการเพราะเป็น Server แนว Classic เน้นเสถียรภาพในการเล่นสูงและมีการควบคุมอัตราการเฟ้อของ Item และ ค่าเงินในเกม
+
+
+
+             </div>
+            </div>
+
+
+
             <div id="Csquared1" class="titleBarB" style=" position:relative; margin-top:10px;">
             <div class="titleBartitle">ข้อมูลการอัพเดทแพชล่าสุด</div></div>
             <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
