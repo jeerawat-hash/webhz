@@ -26,8 +26,16 @@ $(document).ready(function(){
     $("#QuestDetail").slideToggle("fast");
   });
  
-
-
+  $("#Level").click(function(){
+    $("#LevelDetail").slideToggle("fast");
+  });
+  $("#EventTW").click(function(){
+    $("#EventTWDetail").slideToggle("fast");
+  });
+  $("#EventSW").click(function(){
+    $("#EventSWDetail").slideToggle("fast");
+  });
+ 
 
 });
 </script>
@@ -73,7 +81,39 @@ $(document).ready(function(){
 
              </div>
             </div>
+
+            <div id="Level" class="titleBarB" style=" position:relative;">
+            <div class="titleBartitle">แนวทางการเก็บเลเวล</div></div>
             
+            <div id="LevelDetail"  class="ContentNewsHid" >
+            <div  align="justify"  style="float:left; margin:10px;"> 
+
+ 
+
+             </div>
+            </div>
+            
+            <div id="EventTW" class="titleBarB" style=" position:relative;">
+            <div class="titleBartitle">กิจกรรม TyrannyWar</div></div>
+            
+            <div id="EventTWDetail"  class="ContentNewsHid" >
+            <div  align="justify"  style="float:left; margin:10px;"> 
+
+ 
+
+             </div>
+            </div>
+
+            <div id="EventSW" class="titleBarB" style=" position:relative;">
+            <div class="titleBartitle">กิจกรรม SuperiorWar</div></div>
+            
+            <div id="EventSWDetail"  class="ContentNewsHid" >
+            <div  align="justify"  style="float:left; margin:10px;"> 
+
+ 
+
+             </div>
+            </div>
   
            	 
         </div>
