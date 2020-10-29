@@ -19,11 +19,7 @@ $(document).ready(function(){
 
               
 
-
-
-
-
-
+ 
 
 
   $("#Csquared").click(function(){
@@ -80,8 +76,7 @@ $(document).ready(function(){
 
             
         </div>
-             
-        <img src="https://rhz.webclient.me/assets/ccr/img/logo4.png" style="margin-top:60px; margin-left:50px;" /> 
+           
         
        	
         <div style="position:absolute; margin-top:360px; margin-left:-10px;">
@@ -118,166 +113,7 @@ $(document).ready(function(){
             
            	 
         </div>
-        
-        <div class="rightContainer">
-        	
-       		<div id="Csquared1" class="minititleBar" style=" position:relative;">
-            <div class="titleBartitle">กิลครองบ้าน</div></div>
-            <div id="CsquaredCon"  class="miniContentNewsVis" style="height:300px;" >
-            <div  align="justify"  style="float:left; margin:10px;">
-                
-
- 
-
-            	<div style="min-width:315px;">
-            	<img src="https://rhz.webclient.me/assets/ccr/img/sg.png" style="float:left;" />
-                <div style="float:left; margin-left:5px;">
-                <div style="font-family:BigNoodleTitling; font-size:24px;">Sacred Gate</div>
-                <div style="font-family:Calibri; font-size:14px;">
-                ชื่อกิล : -<br />
-                หัวหน้ากิล : -<Br /> 
-                </div>
-                </div>
-            	</div>
-
-
-
-
-                <BR /><BR /><BR /><BR /><BR /><BR />
-
-
-
-                <div style="min-width:315px;">
-            	<img src="https://rhz.webclient.me/assets/ccr/img/ph.png" style="float:left;" />
-                <div style="float:left; margin-left:5px;">
-                <div style="font-family:BigNoodleTitling; font-size:24px;">Phoenix</div>
-                <div style="font-family:Calibri; font-size:14px;">
-                ชื่อกิล : -<br />
-                หัวหน้ากิล : -<Br /> 
-                </div>
-                </div>
-            	</div>
-
-
-                <BR /><BR /><BR /><BR /><BR /><BR />
-
-
-
-                <div style="min-width:315px;">
-            	<img src="https://rhz.webclient.me/assets/ccr/img/mp.png" style="float:left;" />
-                <div style="float:left; margin-left:5px;">
-                <div style="font-family:BigNoodleTitling; font-size:24px;">Mystic Peak</div>
-                <div style="font-family:Calibri; font-size:14px;">
-                ชื่อกิล : -<br />
-                หัวหน้ากิล : -<Br /> 
-                </div>
-                </div>
-            	</div>
-                
-            
-            </div>
-            </div>
-            
-            <div id="Csquared1" class="minititleBar" style=" position:relative; margin-top:10px;">
-            <div class="titleBartitle">ผู้เล่นติดอันดับ</div></div>
-            <div id="CsquaredCon"  class="miniContentNewsVis" style="height:400px;" >
-            <div  align="justify"  style="float:left; margin:0px;">
-            
-
-
-                <div style="margin-top:-30px; float:left;">
-                <p style="float:left; margin-top:46px; margin-left:10px; font-size:16px; width:100px; text-align:center;">
-                ชื่อ</p>
-                <p style="float:left; margin-top:46px; margin-left:10px; font-size:16px; width:75px text-align:center;;">อาชีพ</p>
-                
-                <p style="float:left; margin-top:46px; margin-left:10px; font-size:15px; width:110px; text-align:center;">ใช้อาวุธ</p>
-                </div>
-
-
-                <div id="RankingID"></div>
-            
-            
-            	 
-            </div>
-            </div>
-            
-        </div>
-        </div>
-        <img src="https://rhz.webclient.me/assets/ccr/img/content-pic.png" style="margin-top:-60px; margin-right:-110px; float:right;" >
-        <div style="margin-left:642px; position:absolute; float:right;">
- 
-        
-        </div>
-        
-        <div style="margin-top:117px; position:absolute; float:left;">
-        	<!-- Login -->
-
-            <!-- Server info -->
-            <div class="boxTransparent" style="margin-left:7px;">
-            	<div class="TitleForBox">รายละเอียด</div>
-                
-                <div align="justify" style="background-color:#212121; color:#FFF; font-family:Calibri; font-size:16px; padding:5px; width:290px; margin-left:7px; border-radius:5px; height:155px;">
-                
- <h7> <font style="color: #DC1381;font-size: 20px">[Hazakura]</font></h7> 
-   <br>Server ให้บริการ 24/7 มีจำนวน 2 Channel <br> <font color="red">Channel 0 [Event+PK]</font><br>FreePK และ กิจกรรมรายวันรวมถึงกิลวอ <br><br> <font style="color: #74E020">Channel 1 </font><br>NonPK และ กิจกรรมพิเศษที่ Admin จัด <br>  
-                </div>
-                
-            </div> 
-
-            <!-- Server Status -->
-            <div class="boxTransparent" style="margin-left:7px;">
-                <div class="TitleForBox">สถานะเซิฟเวอร์</div>
-                
-                <div style="margin-left:10px;">
-                
-                <div class="Fields3" style="margin-top:7px;">
-                    <p><h4> <label  id="TxtStatusCH0"> - </label>   </h4></p>
-                </div>
-                <img src="https://rhz.webclient.me/assets/ccr/img/Ch0.png" style="margin-left:-6px; margin-top:2px;" />
-                
-                <div class="Fields3" style="margin-top:7px;">
-                    <p><h4> <label  id="TxtStatusCH1"> - </label> </h4></p>
-                </div>
-                <img src="https://rhz.webclient.me/assets/ccr/img/ch1.png" style="margin-left:-6px; margin-top:2px;" />
-                
-
-                <div class="Fields3" style="margin-top:7px;">
-                    <p><h4> <label  id="TxtStatusLogin"> - </label> </h4></p>
-                </div>
-                <img src="https://rhz.webclient.me/assets/ccr/img/login.png" style="margin-left:-6px; margin-top:2px;" />
-                
-                
-                </div>
-
-                
-            </div> 
-
-            <!-- Server Rate -->
-            <div class="boxTransparent" style="margin-left:7px;">
-            	<div class="TitleForBox">ได้รับไอเทมและเลเวล</div>
-                
-                <div style="margin-left:10px;">
-                    <div class="Fields4" style="margin-top:7px;">
-                    <p><h4> <font style="color: #FF5733">ค่าประสบการณ์ 120% </font> </h4></p>
-                    </div>
-                    <img src="https://rhz.webclient.me/assets/ccr/img/exp.png" style="margin-left:-5px; margin-top:2px;" />
-                     
-                     <div class="Fields4" style="margin-top:7px;">
-                    <p><h4> <font style="color: #FF5733">อัตราการได้รับไอเทม 500%</font> </h4></p>
-                    </div>
-                    <img src="https://rhz.webclient.me/assets/ccr/img/Itema.png" style="margin-left:-5px; margin-top:2px;" />
-                     
-                     <div class="Fields4" style="margin-top:7px;">
-                    <p><h4> <font style="color: #FF5733">อัตราการได้รับเงิน 100% </font> </h4></p>
-                    </div>
-                    <img src="https://rhz.webclient.me/assets/ccr/img/money.png" style="margin-left:-5px; margin-top:2px;" />
-                     
-
-                </div>
-                
-            </div> 
-            
-        </div>
+         
         
     <div style="margin-top:900px;">
              <img src="https://rhz.webclient.me/assets/ccr/img/footer.png"/>
