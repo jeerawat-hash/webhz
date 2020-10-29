@@ -159,18 +159,18 @@ $(document).ready(function(){
     
         <div class="navigation" style="font-size:20px; color:#fff;">
        		 
+             <div style="margin-top:30px; margin-left:70px; float:left;" >
+            <a href="https://rhz.webclient.me/" class="navItem">หน้าแรก</a></div>
              <div style="margin-top:30px; margin-left:70px; float:left;">
             <a href="https://liff.line.me/1655100623-pRNmqX2D"  class="navItem">ลงทะเบียน</a></div> 
             <div style="margin-top:30px; margin-left:70px; float:left;">
             <a href="https://drive.google.com/file/d/1lhRkpBiC7E3K8ojtQr8vQ2ufo0Z90RZL/view?usp=sharing" target="_blank" class="navItem">ดาว์โหลด</a></div>
             <div style="margin-top:30px; margin-left:70px; float:left;">
             <a href="https://liff.line.me/1655100623-YNaPAD2N" target="_blank" class="navItem">ตลาดซื้อขาย</a></div>
-            <div style="margin-top:30px; margin-left:70px; float:left;" >
-            <a href="#" class="navItem">บริจาค</a></div>
             <div style="margin-top:30px; margin-left:70px; float:left;">
            	<a href="#" class="navItem">สถิติผู้เล่น</a></div> 
             <div style="margin-top:30px; margin-left:70px; float:left;">
-           	<a href="#" class="navItem">แนะนำการเล่น</a></div> 
+           	<a href="#" class="navItem">แนะนำ</a></div> 
 
             
         </div>
