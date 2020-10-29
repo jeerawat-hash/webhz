@@ -168,7 +168,7 @@ $(document).ready(function(){
             <div style="margin-top:30px; margin-left:70px; float:left;">
             <a href="https://liff.line.me/1655100623-YNaPAD2N" target="_blank" class="navItem">ตลาดซื้อขาย</a></div>
             <div style="margin-top:30px; margin-left:70px; float:left;">
-           	<a href="#" class="navItem">สถิติผู้เล่น</a></div> 
+           	<a href="https://rhz.webclient.me/index.php/home/rank" class="navItem">สถิติผู้เล่น</a></div> 
             <div style="margin-top:30px; margin-left:70px; float:left;">
            	<a href="#" class="navItem">แนะนำ</a></div> 
 
