@@ -22,34 +22,26 @@ $(document).ready(function(){
  
 
 
-  $("#Csquared").click(function(){
-    $("#CsquaredCon").slideToggle("fast");
+  $("#RankMoney").click(function(){
+    $("#RankMoneyDetail").slideToggle("fast");
   });
   
-  $("#Csquared1").click(function(){
-    $("#CsquaredCon1").slideToggle("fast");
+  $("#RankLevel").click(function(){
+    $("#RankLevelDetail").slideToggle("fast");
   });
-  
-    $("#dialog").dialog({
-		autoOpen: false,
-      show: {
-        effect: "fadeIn",
-        duration: 1000
-      },
-      hide: {
-        effect: "fadeOut",
-        duration: 1000
-      }
-		});
-  
-  $( "#Register" ).click(function() {
-      $( "#dialog" ).dialog( "open" );
-    });
-  
-  $( "#close" ).click(function() {
-      $( "#dialog" ).dialog( "close" );
-    });
-	
+   
+
+  $("#RankPk").click(function(){
+    $("#RankPkDetail").slideToggle("fast");
+  });
+
+
+
+
+
+
+
+
 });
 </script>
 </head>
@@ -83,10 +75,10 @@ $(document).ready(function(){
         
         <div class="leftContainerB">
         	
-            <div id="Csquared" class="titleBarB" style=" position:relative;">
-            <div class="titleBartitle">ข่าวสาร</div></div>
+            <div id="RankMoney" class="titleBarB" style=" position:relative;">
+            <div class="titleBartitle">TOP 50 อันดับผู้ที่รวยที่สุด</div></div>
             
-            <div id="CsquaredCon"  class="ContentNewsVis" >
+            <div id="RankMoneyDetail"  class="ContentNewsVis" >
             <div  align="justify"  style="float:left; margin:10px;"> 
 
 
@@ -99,86 +91,23 @@ $(document).ready(function(){
              </div>
             </div>
             
-
-            <div id="Csquared" class="titleBarB" style=" position:relative;">
-            <div class="titleBartitle">ข่าวสาร</div></div>
-            
-            <div id="CsquaredCon"  class="ContentNewsVis" >
-            <div  align="justify"  style="float:left; margin:10px;"> 
-
-
-                Hazakura  เป็นเซิฟเวอร์ที่เปิดเพื่อพัฒนาและทดสอบระบบฐานข้อมูลเต็มรูปแบบและทำวิจัยเกี่ยวกับระบบการให้บริการเกม RAN จึงไม่มี ITEM MALL หรือ SHOP ที่ Admin สามารถ Generate ของขายได้แต่จะเป็นการจัดทำระบบที่ผู้เล่นสามารถ สร้างไอเทมขึ้นมาขายเองได้ผ่านระบบที่ทาง Admin จัดทำขึ้นแทนเพื่อทำให้เกิดความสมดุลต่อการเล่นในสังคม RolePlay
-                <br>
-                <font color="red">คำเตือน </font>: Server นี้ไม่เหมาะกับผู้เล่นที่เน้นความเวอร์วังอลังการเพราะเป็น Server แนว Classic เน้นเสถียรภาพในการเล่นสูงและมีการควบคุมอัตราการเฟ้อของ Item และ ค่าเงินในเกม
-
-
-
-             </div>
-            </div>
-
-
-
-            <div id="Csquared" class="titleBarB" style=" position:relative;">
-            <div class="titleBartitle">ข่าวสาร</div></div>
-            
-            <div id="CsquaredCon"  class="ContentNewsVis" >
-            <div  align="justify"  style="float:left; margin:10px;"> 
-
-
-                Hazakura  เป็นเซิฟเวอร์ที่เปิดเพื่อพัฒนาและทดสอบระบบฐานข้อมูลเต็มรูปแบบและทำวิจัยเกี่ยวกับระบบการให้บริการเกม RAN จึงไม่มี ITEM MALL หรือ SHOP ที่ Admin สามารถ Generate ของขายได้แต่จะเป็นการจัดทำระบบที่ผู้เล่นสามารถ สร้างไอเทมขึ้นมาขายเองได้ผ่านระบบที่ทาง Admin จัดทำขึ้นแทนเพื่อทำให้เกิดความสมดุลต่อการเล่นในสังคม RolePlay
-                <br>
-                <font color="red">คำเตือน </font>: Server นี้ไม่เหมาะกับผู้เล่นที่เน้นความเวอร์วังอลังการเพราะเป็น Server แนว Classic เน้นเสถียรภาพในการเล่นสูงและมีการควบคุมอัตราการเฟ้อของ Item และ ค่าเงินในเกม
-
-
-
-             </div>
-            </div>
-
-
-
-
-
-            <div id="Csquared" class="titleBarB" style=" position:relative;">
-            <div class="titleBartitle">ข่าวสาร</div></div>
-            
-            <div id="CsquaredCon"  class="ContentNewsVis" >
-            <div  align="justify"  style="float:left; margin:10px;"> 
-
-
-                Hazakura  เป็นเซิฟเวอร์ที่เปิดเพื่อพัฒนาและทดสอบระบบฐานข้อมูลเต็มรูปแบบและทำวิจัยเกี่ยวกับระบบการให้บริการเกม RAN จึงไม่มี ITEM MALL หรือ SHOP ที่ Admin สามารถ Generate ของขายได้แต่จะเป็นการจัดทำระบบที่ผู้เล่นสามารถ สร้างไอเทมขึ้นมาขายเองได้ผ่านระบบที่ทาง Admin จัดทำขึ้นแทนเพื่อทำให้เกิดความสมดุลต่อการเล่นในสังคม RolePlay
-                <br>
-                <font color="red">คำเตือน </font>: Server นี้ไม่เหมาะกับผู้เล่นที่เน้นความเวอร์วังอลังการเพราะเป็น Server แนว Classic เน้นเสถียรภาพในการเล่นสูงและมีการควบคุมอัตราการเฟ้อของ Item และ ค่าเงินในเกม
-
-
-
-             </div>
-            </div>
-
-
-
-
-            <div id="Csquared" class="titleBarB" style=" position:relative;">
-            <div class="titleBartitle">ข่าวสาร</div></div>
-            
-            <div id="CsquaredCon"  class="ContentNewsVis" >
-            <div  align="justify"  style="float:left; margin:10px;"> 
-
-
-                Hazakura  เป็นเซิฟเวอร์ที่เปิดเพื่อพัฒนาและทดสอบระบบฐานข้อมูลเต็มรูปแบบและทำวิจัยเกี่ยวกับระบบการให้บริการเกม RAN จึงไม่มี ITEM MALL หรือ SHOP ที่ Admin สามารถ Generate ของขายได้แต่จะเป็นการจัดทำระบบที่ผู้เล่นสามารถ สร้างไอเทมขึ้นมาขายเองได้ผ่านระบบที่ทาง Admin จัดทำขึ้นแทนเพื่อทำให้เกิดความสมดุลต่อการเล่นในสังคม RolePlay
-                <br>
-                <font color="red">คำเตือน </font>: Server นี้ไม่เหมาะกับผู้เล่นที่เน้นความเวอร์วังอลังการเพราะเป็น Server แนว Classic เน้นเสถียรภาพในการเล่นสูงและมีการควบคุมอัตราการเฟ้อของ Item และ ค่าเงินในเกม
-
-
-
-             </div>
-            </div>
-
-
-
-            <div id="Csquared1" class="titleBarB" style=" position:relative; margin-top:10px;">
-            <div class="titleBartitle">ข้อมูลการอัพเดทแพชล่าสุด</div></div>
+ 
+            <div id="RankLevel" class="titleBarB" style=" position:relative; margin-top:10px;">
+            <div class="titleBartitle">TOP 50 อันดับผู้ที่มีเลเวลมากที่สุด</div></div>
             <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
-            <div id="CsquaredCon1" class="ContentNewsVis" style="">
+            <div id="RankLevelDetail" class="ContentNewsVis" style="">
+            <div  align="justify"  style="float:left; margin:10px;"> 
+            Hazakura PatchInfo
+            <br>
+            <font color="red">1.0.0 </font> : แก้ไขดรอปและปัญหาบัคต่างๆและอัพเดทกิจกรรมกล่องสุ่มไอเทมหลัง Tyranny , SW 
+                </div>
+            </div>
+
+
+            <div id="RankPk" class="titleBarB" style=" position:relative; margin-top:10px;">
+            <div class="titleBartitle">TOP 50 ฆาตกรของเซิฟ</div></div>
+            <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
+            <div id="RankPkDetail" class="ContentNewsVis" style="">
             <div  align="justify"  style="float:left; margin:10px;"> 
             Hazakura PatchInfo
             <br>
