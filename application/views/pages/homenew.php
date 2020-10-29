@@ -326,7 +326,7 @@ $(document).ready(function(){
                 <div class="Fields3" style="margin-top:7px;">
                     <p><h4> <label  id="TxtStatusCH0"> - </label>   </h4></p>
                 </div>
-                <img src="https://rhz.webclient.me/assets/ccr/img/ch0.png" style="margin-left:-6px; margin-top:2px;" />
+                <img src="https://rhz.webclient.me/assets/ccr/img/Ch0.png" style="margin-left:-6px; margin-top:2px;" />
                 
                 <div class="Fields3" style="margin-top:7px;">
                     <p><h4> <label  id="TxtStatusCH1"> - </label> </h4></p>
