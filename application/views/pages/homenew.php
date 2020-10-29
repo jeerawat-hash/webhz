@@ -175,7 +175,7 @@ $(document).ready(function(){
             
         </div>
              
-        <img src="https://rhz.webclient.me/assets/ccr/img/logo1.png" style="margin-top:60px; margin-left:50px;" /> 
+        <img src="https://rhz.webclient.me/assets/ccr/img/logo2.png" style="margin-top:60px; margin-left:50px;" /> 
         
        	
         <div style="position:absolute; margin-top:360px; margin-left:-10px;">
