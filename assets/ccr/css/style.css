@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	background-color:#171717;
+	background-image:url(../img/bg.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	overflow-x:hidden;
+}
+/* Fonts */
+@font-face
+{
+font-family: Calibri;
+src: url(../fonts/calibri.ttf);
+}
+
+@font-face
+{
+font-family: BigNoodleTitling;
+src: url(../fonts/BigNoodleTitlin.ttf);
+}
+
+/* Important Part Of CSS */
+.container {
+	width:970px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+}
+
+.leftContainer{
+	width:640px;
+	height:auto;
+	margin-left:10px;
+	float:left;
+}
+
+.rightContainer{
+	width:320px;
+	height:auto;
+	float:right;
+}
+
+
+.navigation {
+	background-image:url(../img/overlay.png);
+	background-color:#212121;
+	width:960px;
+	height:115px;
+	border-radius:5px;
+}
+
+.navItem {
+	color:#fff;
+	text-decoration:none;
+}
+
+.navItem:hover {
+	color:#06F;	
+	text-decoration:none;
+}
+/* the 3 boxes below the register */
+.boxTransparent{
+	background-image:url(../img/box.png);
+	background-repeat:no-repeat;
+	width:314px;
+	height:226px;
+	float:left;	
+}
+.TitleForBox {
+	font-family:BigNoodleTitling; font-size:26px; color:#FFF; margin:10px 0 0 10px;
+	text-shadow: 0px 0px 5px #000000;
+}
+
+.Fields {
+	font-family:Calibri;
+	font-size:16px;
+	padding-left:10px;
+	background-color:#FFF;
+	height:48px;
+	width:190px;
+	border:none;
+	outline:none;
+	border-bottom-left-radius:5px;	
+	border-top-left-radius:5px;
+}
+
+.Fields2 {
+	background-image:url(../img/overlay.png);
+	font-family:Calibri;
+	font-size:16px;
+	padding-left:10px;
+	background-color:#FFF;
+	height:50px;
+	width:190px;
+	border:none;
+	outline:none;
+	border-bottom-left-radius:5px;	
+	border-top-left-radius:5px;
+	float:left;
+}
+
+ .Fields3 {
+ 
+	font-family:Calibri;
+	font-size:16px;
+	padding-left:10px;
+	background-color:#FFF;
+	height:50px;
+	width:190px;
+	border:none;
+	outline:none;
+	border-bottom-left-radius:5px;	
+	border-top-left-radius:5px;
+	float:left;
+}
+
+
+ .Fields4 {
+ 
+	font-family:Calibri;
+	font-size:14px;
+	padding-left:10px;
+	background-color:#FFF;
+	height:50px;
+	width:190px;
+	border:none;
+	outline:none;
+	border-bottom-left-radius:5px;	
+	border-top-left-radius:5px;
+	float:left;
+}
+ 
+
+.LoginBtn {
+	background-image:url(../img/loginbtn.png);
+	border:none;
+	background-repeat:none;
+	width:88px;
+	height:51px;margin-top:5px; margin-left:5px;
+	background-color:transparent;
+}
+
+.titleBar {
+	background-image:url(../img/titleBar.png);
+	width:634px;
+	height:69px;
+	background-repeat:no-repeat;
+}
+
+.titleBartitle {
+	font-family:BigNoodleTitling; font-size:36px; margin:15px 0px 0 10px; color:#FFF; float:left;text-shadow: 0px 0px 5px #000000;
+}
+
+.ContentNewsHid {
+	display:none; max-height:500px; background-color:#262424; width:634px; min-height:200px; margin-top:-5px; color:#FFF; font-family:Calibri; font-size:14px; border-bottom-left-radius:5px; border-bottom-right-radius:5px;
+}
+
+.ContentNewsVis {
+	background-color:#262424; max-height:500px; width:634px; min-height:200px; margin-top:-5px; color:#FFF; font-family:Calibri; font-size:14px; border-bottom-left-radius:5px; border-bottom-right-radius:5px;
+}
+
+.minititleBar {
+	background-image:url(../img/miniTItleBar.png);
+	width:315px;
+	height:69px;
+	background-repeat:no-repeat;
+}
+
+.miniContentNewsVis {
+	background-color:#262424;  max-height:500px; width:315px; min-height:200px; margin-top:-5px; color:#FFF; font-family:Calibri; font-size:14px; border-bottom-left-radius:5px; border-bottom-right-radius:5px;
+}
+
+.registerField {
+	height:30px; width:200px; outline:none; border:none; border-radius:5px;
+}
+
+.ui-dialog {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .2em;
+	outline: 0;
+	width:400px;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: .4em 1em;
+	position: relative;
+	display:none;
+	width:400px;
+}
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	padding: .5em 1em;
+	background: none;
+	width:400px;
+	margin-left:-100px;
+	
+}
+.ui-dialog .ui-dialog-buttonpane {
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin-top: .5em;
+	padding: .3em 1em .5em .4em;
+	width:400px;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: right;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+}
+.ui-dialog .ui-resizable-se {
+	width: 100px;
+	height: 12px;
+	right: -5px;
+	bottom: -5px;
+	background-position: 16px 16px;
+}
+.ui-draggable .ui-dialog-titlebar {
+	cursor: move;
+}
+
+#Register {
+	cursor:pointer;
+}
