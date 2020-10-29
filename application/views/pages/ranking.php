@@ -38,7 +38,10 @@ $(document).ready(function(){
   $("#RankGrean").click(function(){
     $("#RankGreanDetail").slideToggle("fast");
   });
-
+  
+  $("#RankGameTime").click(function(){
+    $("#RankGameTimeDetail").slideToggle("fast");
+  });
 
 
 
@@ -76,21 +79,7 @@ $(document).ready(function(){
         <div style="position:absolute; margin-top:60px; margin-left:-10px;">
         
         <div class="leftContainerB">
-        	
-            <div id="RankOnline" class="titleBarB" style=" position:relative; margin-top:10px;">
-            <div class="titleBartitle">TOP 50 ผู้ที่มีเวลาเล่นมากที่สุด</div></div>
-            <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
-            <div id="RankOnlineDetail" class="ContentNewsHid" style="">
-            <div  align="justify"  style="float:left; margin:10px;"> 
-            
-             
-
-
-            </div>
-
-            </div>
-
-
+        	 
 
             <div id="RankMoney" class="titleBarB" style=" position:relative;">
             <div class="titleBartitle">TOP 50 อันดับผู้ที่รวยที่สุด</div></div>
@@ -135,12 +124,18 @@ $(document).ready(function(){
             <div  align="justify"  style="float:left; margin:10px;"> 
             
           
-
+            </div>
+            </div>
+            
+            <div id="RankGameTime" class="titleBarB" style=" position:relative; margin-top:10px;">
+            <div class="titleBartitle">TOP 50 ผู้ที่มีเวลาเล่นมากที่สุด</div></div>
+            <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
+            <div id="RankGameTimeDetail" class="ContentNewsHid" style="">
+            <div  align="justify"  style="float:left; margin:10px;"> 
+            
           
             </div>
             </div>
-            
-            
            	 
         </div>
          
