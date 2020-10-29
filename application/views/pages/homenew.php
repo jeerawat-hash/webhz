@@ -170,7 +170,7 @@ $(document).ready(function(){
             <div style="margin-top:30px; margin-left:70px; float:left;">
            	<a href="https://rhz.webclient.me/index.php/home/rank" class="navItem">สถิติผู้เล่น</a></div> 
             <div style="margin-top:30px; margin-left:70px; float:left;">
-           	<a href="#" class="navItem">แนะนำ</a></div> 
+           	<a href="https://rhz.webclient.me/index.php/home/guide" class="navItem">แนะนำ</a></div> 
 
             
         </div>

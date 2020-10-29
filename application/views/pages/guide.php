@@ -22,28 +22,10 @@ $(document).ready(function(){
  
 
 
-  $("#RankMoney").click(function(){
-    $("#RankMoneyDetail").slideToggle("fast");
+  $("#Quest").click(function(){
+    $("#QuestDetail").slideToggle("fast");
   });
-  
-  $("#RankLevel").click(function(){
-    $("#RankLevelDetail").slideToggle("fast");
-  });
-   
-
-  $("#RankPk").click(function(){
-    $("#RankPkDetail").slideToggle("fast");
-  });
-
-  $("#RankGrean").click(function(){
-    $("#RankGreanDetail").slideToggle("fast");
-  });
-
-  $("#RankGameTime").click(function(){
-    $("#RankGameTimeDetail").slideToggle("fast");
-  });
-
-
+ 
 
 
 
@@ -81,10 +63,10 @@ $(document).ready(function(){
         <div class="leftContainerB">
         	 
 
-            <div id="RankMoney" class="titleBarB" style=" position:relative;">
-            <div class="titleBartitle">TOP 50 อันดับผู้ที่รวยที่สุด</div></div>
+            <div id="Quest" class="titleBarB" style=" position:relative;">
+            <div class="titleBartitle">เควสเริ่มต้น</div></div>
             
-            <div id="RankMoneyDetail"  class="ContentNewsHid" >
+            <div id="QuestDetail"  class="ContentNewsHid" >
             <div  align="justify"  style="float:left; margin:10px;"> 
 
  
@@ -92,50 +74,7 @@ $(document).ready(function(){
              </div>
             </div>
             
- 
-            <div id="RankLevel" class="titleBarB" style=" position:relative; margin-top:10px;">
-            <div class="titleBartitle">TOP 50 อันดับผู้ที่มีเลเวลมากที่สุด</div></div>
-            <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
-            <div id="RankLevelDetail" class="ContentNewsHid" style="">
-            <div  align="justify"  style="float:left; margin:10px;"> 
-             
-
-
-
-            </div>
-            </div>
-
-
-            <div id="RankPk" class="titleBarB" style=" position:relative; margin-top:10px;">
-            <div class="titleBartitle">TOP 50 ฆาตกรของเซิฟ</div></div>
-            <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
-            <div id="RankPkDetail" class="ContentNewsHid" style="">
-            <div  align="justify"  style="float:left; margin:10px;"> 
-            
-
-
-            </div>
-            </div>
-
-            <div id="RankGrean" class="titleBarB" style=" position:relative; margin-top:10px;">
-            <div class="titleBartitle">TOP 50 ผู้ที่โดน Report มากที่สุด</div></div>
-            <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
-            <div id="RankGreanDetail" class="ContentNewsHid" style="">
-            <div  align="justify"  style="float:left; margin:10px;"> 
-            
-          
-            </div>
-            </div>
-            
-            <div id="RankGameTime" class="titleBarB" style=" position:relative; margin-top:10px;">
-            <div class="titleBartitle">TOP 50 ผู้ที่มีเวลาเล่นมากที่สุด</div></div>
-            <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
-            <div id="RankGameTimeDetail" class="ContentNewsHid" style="">
-            <div  align="justify"  style="float:left; margin:10px;"> 
-            
-          
-            </div>
-            </div>
+  
            	 
         </div>
          
