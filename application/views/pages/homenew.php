@@ -358,7 +358,7 @@ $(document).ready(function(){
                      <div class="Fields4" style="margin-top:7px;">
                     <p><h4> <font style="color: #FF5733">อัตราการได้รับไอเทม 500%</font> </h4></p>
                     </div>
-                    <img src="https://rhz.webclient.me/assets/ccr/img/itema.png" style="margin-left:-5px; margin-top:2px;" />
+                    <img src="https://rhz.webclient.me/assets/ccr/img/Itema.png" style="margin-left:-5px; margin-top:2px;" />
                      
                      <div class="Fields4" style="margin-top:7px;">
                     <p><h4> <font style="color: #FF5733">อัตราการได้รับเงิน 100% </font> </h4></p>
