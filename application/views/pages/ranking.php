@@ -35,7 +35,9 @@ $(document).ready(function(){
     $("#RankPkDetail").slideToggle("fast");
   });
 
-
+  $("#RankGrean").click(function(){
+    $("#RankGreanDetail").slideToggle("fast");
+  });
 
 
 
@@ -75,18 +77,28 @@ $(document).ready(function(){
         
         <div class="leftContainerB">
         	
+            <div id="RankOnline" class="titleBarB" style=" position:relative; margin-top:10px;">
+            <div class="titleBartitle">TOP 50 ผู้ที่มีเวลาเล่นมากที่สุด</div></div>
+            <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
+            <div id="RankOnlineDetail" class="ContentNewsHid" style="">
+            <div  align="justify"  style="float:left; margin:10px;"> 
+            
+             
+
+
+            </div>
+
+            </div>
+
+
+
             <div id="RankMoney" class="titleBarB" style=" position:relative;">
             <div class="titleBartitle">TOP 50 อันดับผู้ที่รวยที่สุด</div></div>
             
-            <div id="RankMoneyDetail"  class="ContentNewsVis" >
+            <div id="RankMoneyDetail"  class="ContentNewsHid" >
             <div  align="justify"  style="float:left; margin:10px;"> 
 
-
-                Hazakura  เป็นเซิฟเวอร์ที่เปิดเพื่อพัฒนาและทดสอบระบบฐานข้อมูลเต็มรูปแบบและทำวิจัยเกี่ยวกับระบบการให้บริการเกม RAN จึงไม่มี ITEM MALL หรือ SHOP ที่ Admin สามารถ Generate ของขายได้แต่จะเป็นการจัดทำระบบที่ผู้เล่นสามารถ สร้างไอเทมขึ้นมาขายเองได้ผ่านระบบที่ทาง Admin จัดทำขึ้นแทนเพื่อทำให้เกิดความสมดุลต่อการเล่นในสังคม RolePlay
-                <br>
-                <font color="red">คำเตือน </font>: Server นี้ไม่เหมาะกับผู้เล่นที่เน้นความเวอร์วังอลังการเพราะเป็น Server แนว Classic เน้นเสถียรภาพในการเล่นสูงและมีการควบคุมอัตราการเฟ้อของ Item และ ค่าเงินในเกม
-
-
+ 
 
              </div>
             </div>
@@ -95,24 +107,37 @@ $(document).ready(function(){
             <div id="RankLevel" class="titleBarB" style=" position:relative; margin-top:10px;">
             <div class="titleBartitle">TOP 50 อันดับผู้ที่มีเลเวลมากที่สุด</div></div>
             <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
-            <div id="RankLevelDetail" class="ContentNewsVis" style="">
+            <div id="RankLevelDetail" class="ContentNewsHid" style="">
             <div  align="justify"  style="float:left; margin:10px;"> 
-            Hazakura PatchInfo
-            <br>
-            <font color="red">1.0.0 </font> : แก้ไขดรอปและปัญหาบัคต่างๆและอัพเดทกิจกรรมกล่องสุ่มไอเทมหลัง Tyranny , SW 
-                </div>
+             
+
+
+
+            </div>
             </div>
 
 
             <div id="RankPk" class="titleBarB" style=" position:relative; margin-top:10px;">
             <div class="titleBartitle">TOP 50 ฆาตกรของเซิฟ</div></div>
             <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
-            <div id="RankPkDetail" class="ContentNewsVis" style="">
+            <div id="RankPkDetail" class="ContentNewsHid" style="">
             <div  align="justify"  style="float:left; margin:10px;"> 
-            Hazakura PatchInfo
-            <br>
-            <font color="red">1.0.0 </font> : แก้ไขดรอปและปัญหาบัคต่างๆและอัพเดทกิจกรรมกล่องสุ่มไอเทมหลัง Tyranny , SW 
-                </div>
+            
+
+
+            </div>
+            </div>
+
+            <div id="RankGrean" class="titleBarB" style=" position:relative; margin-top:10px;">
+            <div class="titleBartitle">TOP 50 ผู้ที่โดน Report มากที่สุด</div></div>
+            <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
+            <div id="RankGreanDetail" class="ContentNewsHid" style="">
+            <div  align="justify"  style="float:left; margin:10px;"> 
+            
+          
+
+          
+            </div>
             </div>
             
             
