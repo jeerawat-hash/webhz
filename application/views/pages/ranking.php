@@ -118,10 +118,10 @@ $(document).ready(function(){
               <table id="TableRankLevel"  >
                 <thead>
                   <tr>  
-                    <th ><font color="white">ชื่อ</th>
-                    <th ><font color="white">สาย</th> 
-                    <th ><font color="white">เลเวล</th> 
-                    <th ><font color="white">กิล</th> 
+                    <th >ชื่อ</th>
+                    <th >สาย</th> 
+                    <th >เลเวล</th> 
+                    <th >กิล</th> 
                   </tr>
                 </thead>
                 <tbody id="TableRankLevelContent">
