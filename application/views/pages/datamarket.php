@@ -591,32 +591,18 @@
 				$.post("https://cac.webclient.me/api/getDataItemDetailFromBuffer.php",{
 					ShopMapID : ShopMapID 
 					},function(data){
-  	 
-						if (data != 1) {
-							swal("ERROR !!","มีบางอย่างผิดปกติ ตัวละครกำลังอยู่ในเกม,ไอเทมนี้ ถูกขายไปแล้ว,ช่องเก็บของตัวละครเต็ม,พ้อยไม่พอซื้อไอเทม !!!!", "error");
+  	  					
 
-							btnA.text("ซื้อไอเทม");
-							btnA.attr("disabled", false);
+						console.log(data);
 
-							return false;
-						} 
-
-						swal("สำเร็จ !!","ซื้อไอเทมสำเร็จโปรดตรวจสอบช่องเก็บของภายในตัวละคร", "success"); 
- 
+						$("#SaleItemModal").modal("show");
+						
 					});
 
 
+ 
 
-
-
-
-
-
-
-
-
-
-				$("#SaleItemModal").modal("show");
+				
 
 
 
