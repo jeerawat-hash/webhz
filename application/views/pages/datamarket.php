@@ -211,17 +211,26 @@
  					</div>
  					-->
 
+ 					<div  class="col-12">
+ 						 	
+ 						 	<table width="100%" class="table">
+	 						 
+	 						 <thead>
+							    <tr> 
+							      <th>เรท</th>
+							      <th>ค่า</th> 
+							    </tr>
+							 </thead>
 
+							  <tbody id="TableItemDetail">
+							    	
+							    	
 
+							  </tbody>
+							  
+							</table>
 
-
-
-
-
-
-
-
-
+ 					</div>
 
  				</div>
  			</div>
@@ -595,6 +604,79 @@
 						//console.log(data);
 						var obj = JSON.parse(data);
 						console.log(obj);
+
+
+						var html = "";
+
+
+						html += "<tr>"+
+										"<td>ความแรง</td>"+
+										"<td>+"+obj.DMG+"</td>"+
+									"</tr>";
+
+						html += "<tr>"+
+										"<td>ป้องกัน</td>"+
+										"<td>+"+obj.DEF+"</td>"+
+									"</tr>";
+
+						html += "<tr>"+
+										"<td>ไฟฟ้า</td>"+
+										"<td>+"+obj.ELEC+"</td>"+
+									"</tr>";
+
+						html += "<tr>"+
+										"<td>ไฟ</td>"+
+										"<td>+"+obj.FIRE+"</td>"+
+									"</tr>";
+
+						html += "<tr>"+
+										"<td>น้ำแข็ง</td>"+
+										"<td>+"+obj.ICE+"</td>"+
+									"</tr>";
+
+						html += "<tr>"+
+										"<td>พิษ</td>"+
+										"<td>+"+obj.POISON+"</td>"+
+									"</tr>";
+
+						html += "<tr>"+
+										"<td>เวทย์</td>"+
+										"<td>+"+obj.WIND+"</td>"+
+									"</tr>";
+
+
+
+						if (obj.OptName1 != "NULL") {
+							html += "<tr>"+
+										"<td>"+obj.OptName1+"</td>"+
+										"<td>"+obj.OptVal1+"</td>"+
+									"</tr>";
+						}
+						if (obj.OptName2 != "NULL") {
+							html += "<tr>"+
+										"<td>"+obj.OptName2+"</td>"+
+										"<td>"+obj.OptVal2+"</td>"+
+									"</tr>";
+						}
+						if (obj.OptName3 != "NULL") {
+							html += "<tr>"+
+										"<td>"+obj.OptName3+"</td>"+
+										"<td>"+obj.OptVal3+"</td>"+
+									"</tr>";
+						}
+						if (obj.OptName4 != "NULL") {
+							html += "<tr>"+
+										"<td>"+obj.OptName4+"</td>"+
+										"<td>"+obj.OptVal4+"</td>"+
+									"</tr>";
+						}
+
+
+
+						$("#TableItemDetail").html(html);
+
+ 
+
 
 						$("#SaleItemModal").modal("show");
 
