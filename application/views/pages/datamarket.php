@@ -594,7 +594,7 @@
   	  					 
 						//console.log(data);
 						var obj = JSON.parse(data);
-						console.log(data);
+						console.log(obj);
 
 						$("#SaleItemModal").modal("show");
 
