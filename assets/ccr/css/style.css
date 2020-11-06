@@ -245,3 +245,6 @@ src: url(../fonts/BigNoodleTitlin.ttf);
 .th .td {
 	color: white;
 }
+.table {
+	align-content: center;
+}

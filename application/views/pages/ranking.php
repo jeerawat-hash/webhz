@@ -112,7 +112,7 @@ $(document).ready(function(){
             <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
             <div id="RankLevelDetail" class="ContentNewsHid" style="">
             <div  align="justify"  style="float:left; margin:10px;"> 
-              กหฟฟหก
+               
               <table id="TableRankLevel" width="100%" class="table">
                 <thead>
                   <tr>  
