@@ -111,7 +111,7 @@ $(document).ready(function(){
             <div class="titleBartitle">TOP 50 อันดับผู้ที่มีเลเวลมากที่สุด</div></div>
             <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
             <div id="RankLevelDetail" class="ContentNewsHid" style="">
-            <div  align="justify"  style="float:left; margin:10px;"> 
+            <div  align="justify"  style="float:left; margin:10px;color: white;"> 
               
               <font color="white">
                 <center>
