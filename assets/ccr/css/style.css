@@ -242,9 +242,7 @@ src: url(../fonts/BigNoodleTitlin.ttf);
 	cursor:pointer;
 }
 
-.th .td {
-	color: white;
-}
-.table {
-	align-content: center;
+table, th, td {
+  border: 1px solid white; 
+  font-size: 20;
 }
