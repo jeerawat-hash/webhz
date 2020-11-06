@@ -241,3 +241,7 @@ src: url(../fonts/BigNoodleTitlin.ttf);
 #Register {
 	cursor:pointer;
 }
+
+.th .td {
+	color: white;
+}
