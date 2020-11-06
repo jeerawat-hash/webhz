@@ -113,7 +113,20 @@ $(document).ready(function(){
             <div id="RankLevelDetail" class="ContentNewsHid" style="">
             <div  align="justify"  style="float:left; margin:10px;"> 
              
-
+              <table id="TableRankLevel" width="100%" class="table">
+                <thead>
+                  <tr>  
+                    <th >ชื่อ</th>
+                    <th >สาย</th> 
+                    <th >เลเวล</th> 
+                    <th >กิล</th> 
+                  </tr>
+                </thead>
+                <tbody id="TableRankLevelContent">
+                  
+                </tbody>
+                
+              </table>
 
 
             </div>
