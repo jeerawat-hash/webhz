@@ -101,7 +101,20 @@ $(document).ready(function(){
             <div id="RankMoneyDetail"  class="ContentNewsHid" >
             <div  align="justify"  style="float:left; margin:10px;"> 
 
- 
+                <table id="TableRankMoney">
+                  <thead>
+                    <tr>  
+                      <th >ชื่อ</th>
+                      <th >สาย</th> 
+                      <th >เลเวล</th> 
+                      <th >กิล</th> 
+                    </tr>
+                  </thead>
+                  <tbody >
+                    
+                  </tbody>
+                  
+                </table>
 
              </div>
             </div>
@@ -115,7 +128,7 @@ $(document).ready(function(){
               
               
                 
-              <table id="TableRankLevel"   >
+              <table id="TableRankLevel">
                 <thead>
                   <tr>  
                     <th >ชื่อ</th>
@@ -141,7 +154,20 @@ $(document).ready(function(){
             <div id="RankPkDetail" class="ContentNewsHid" style="">
             <div  align="justify"  style="float:left; margin:10px;"> 
             
-
+                <table id="TableRankPK">
+                  <thead>
+                    <tr>  
+                      <th >ชื่อ</th>
+                      <th >สาย</th> 
+                      <th >เลเวล</th> 
+                      <th >กิล</th> 
+                    </tr>
+                  </thead>
+                  <tbody >
+                    
+                  </tbody>
+                  
+                </table>
 
             </div>
             </div>
@@ -151,7 +177,21 @@ $(document).ready(function(){
             <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
             <div id="RankGreanDetail" class="ContentNewsHid" style="">
             <div  align="justify"  style="float:left; margin:10px;"> 
-            
+                
+                <table id="TableRankReport">
+                  <thead>
+                    <tr>  
+                      <th >ชื่อ</th>
+                      <th >สาย</th> 
+                      <th >เลเวล</th> 
+                      <th >กิล</th> 
+                    </tr>
+                  </thead>
+                  <tbody >
+                    
+                  </tbody>
+                  
+                </table>
           
             </div>
             </div>
@@ -161,7 +201,21 @@ $(document).ready(function(){
             <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
             <div id="RankGameTimeDetail" class="ContentNewsHid" style="">
             <div  align="justify"  style="float:left; margin:10px;"> 
-            
+                  
+                  <table id="TableRankReport">
+                  <thead>
+                    <tr>  
+                      <th >ชื่อ</th>
+                      <th >สาย</th> 
+                      <th >เลเวล</th> 
+                      <th >กิล</th> 
+                    </tr>
+                  </thead>
+                  <tbody >
+                    
+                  </tbody>
+                  
+                </table>
           
             </div>
             </div>
