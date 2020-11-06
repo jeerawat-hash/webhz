@@ -611,7 +611,7 @@
 
 						html += "<tr>"+
 										"<td>ความแรง</td>"+
-										"<td><font color='red'>'+"+obj.DMG+"</font></td>"+
+										"<td><font color='red'>+"+obj.DMG+"</font></td>"+
 									"</tr>";
 
 						html += "<tr>"+
