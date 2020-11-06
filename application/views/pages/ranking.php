@@ -112,7 +112,9 @@ $(document).ready(function(){
             <!--  <div id="CsquaredCon1" class="ContentNewsHid" style=""> -->
             <div id="RankLevelDetail" class="ContentNewsHid" style="">
             <div  align="justify"  style="float:left; margin:10px;"> 
-               
+              
+              <font color="white">
+                <center>
               <table id="TableRankLevel" width="100%" class="table">
                 <thead>
                   <tr>  
@@ -127,7 +129,8 @@ $(document).ready(function(){
                 </tbody>
                 
               </table>
-
+              </center>
+              </font>
 
             </div>
             </div>
