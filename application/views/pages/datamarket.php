@@ -591,12 +591,13 @@
 				$.post("https://cac.webclient.me/api/getDataItemDetailFromBuffer.php",{
 					ShopMapID : ShopMapID 
 					},function(data){
-  	  					
-
+  	  					 
+						//console.log(data);
+						var obj = JSON.parse(data);
 						console.log(data);
 
 						$("#SaleItemModal").modal("show");
-						
+
 					});
 
 
