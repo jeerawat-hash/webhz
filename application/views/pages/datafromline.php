@@ -270,7 +270,7 @@
 	      		
 	      		<div class="container">
 	      			<div class="row">
-	      				<div class="col-12">
+	      				<div hidden class="col-12">
 	      					  <div class="custom-file">
 							    <input accept='image/*' type="file" class="custom-file-input" id="ItemIMG">
 							    <label id="ItemIMGLB" class="custom-file-label" for="customFile">เลือกภาพ</label>
