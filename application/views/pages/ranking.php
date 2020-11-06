@@ -115,7 +115,7 @@ $(document).ready(function(){
               
               
                 <center>
-              <table id="TableRankLevel"  >
+              <table id="TableRankLevel"  style="float:left; margin:20px"  >
                 <thead>
                   <tr>  
                     <th >ชื่อ</th>
