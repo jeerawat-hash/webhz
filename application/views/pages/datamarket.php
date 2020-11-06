@@ -611,37 +611,37 @@
 
 						html += "<tr>"+
 										"<td>ความแรง</td>"+
-										"<td>+"+obj.DMG+"</td>"+
+										"<td><font color='red>'+"+obj.DMG+"</font></td>"+
 									"</tr>";
 
 						html += "<tr>"+
 										"<td>ป้องกัน</td>"+
-										"<td>+"+obj.DEF+"</td>"+
+										"<td><font color='red>+"+obj.DEF+"</font></td>"+
 									"</tr>";
 
 						html += "<tr>"+
 										"<td>ไฟฟ้า</td>"+
-										"<td>+"+obj.ELEC+"</td>"+
+										"<td><font color='red>+"+obj.ELEC+"</font></td>"+
 									"</tr>";
 
 						html += "<tr>"+
 										"<td>ไฟ</td>"+
-										"<td>+"+obj.FIRE+"</td>"+
+										"<td><font color='red>+"+obj.FIRE+"</font></td>"+
 									"</tr>";
 
 						html += "<tr>"+
 										"<td>น้ำแข็ง</td>"+
-										"<td>+"+obj.ICE+"</td>"+
+										"<td><font color='red>+"+obj.ICE+"</font></td>"+
 									"</tr>";
 
 						html += "<tr>"+
 										"<td>พิษ</td>"+
-										"<td>+"+obj.POISON+"</td>"+
+										"<td><font color='red>+"+obj.POISON+"</font></td>"+
 									"</tr>";
 
 						html += "<tr>"+
 										"<td>เวทย์</td>"+
-										"<td>+"+obj.WIND+"</td>"+
+										"<td><font color='red>+"+obj.WIND+"</font></td>"+
 									"</tr>";
 
 
@@ -649,25 +649,25 @@
 						if (obj.OptName1 != "NULL") {
 							html += "<tr>"+
 										"<td>"+obj.OptName1+"</td>"+
-										"<td>"+obj.OptVal1+"</td>"+
+										"<td><font color='red>"+obj.OptVal1+"</font></td>"+
 									"</tr>";
 						}
 						if (obj.OptName2 != "NULL") {
 							html += "<tr>"+
 										"<td>"+obj.OptName2+"</td>"+
-										"<td>"+obj.OptVal2+"</td>"+
+										"<td><font color='red>"+obj.OptVal2+"</font></td>"+
 									"</tr>";
 						}
 						if (obj.OptName3 != "NULL") {
 							html += "<tr>"+
 										"<td>"+obj.OptName3+"</td>"+
-										"<td>"+obj.OptVal3+"</td>"+
+										"<td><font color='red>"+obj.OptVal3+"</font></td>"+
 									"</tr>";
 						}
 						if (obj.OptName4 != "NULL") {
 							html += "<tr>"+
 										"<td>"+obj.OptName4+"</td>"+
-										"<td>"+obj.OptVal4+"</td>"+
+										"<td><font color='red>"+obj.OptVal4+"</font></td>"+
 									"</tr>";
 						}
 
