@@ -610,12 +610,12 @@
 
 
 						html += "<tr>"+
-										"<td>ความแรง</td>"+
+										"<td>เสริมความแรง</td>"+
 										"<td><font color='red'>+"+obj.DMG+"</font></td>"+
 									"</tr>";
 
 						html += "<tr>"+
-										"<td>ป้องกัน</td>"+
+										"<td>เสริมป้องกัน</td>"+
 										"<td><font color='red'>+"+obj.DEF+"</font></td>"+
 									"</tr>";
 
