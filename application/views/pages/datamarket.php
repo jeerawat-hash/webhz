@@ -205,9 +205,24 @@
  	
  			<div class="container">
  				<div class="row">
- 					<div class="col-12">
- 						<img src="#" id="ImageURL" class="responsive img-responsive">
+ 					<!--
+ 					<div  class="col-12">
+ 						<img hidden src="#" id="ImageURL" class="responsive img-responsive">
  					</div>
+ 					-->
+
+
+
+
+
+
+
+
+
+
+
+
+
  				</div>
  			</div>
 
@@ -230,7 +245,7 @@
  
 
 	<script type="text/javascript">
-		 
+		 /*
 			document.addEventListener('contextmenu', event => event.preventDefault());
 			
 			setInterval(function(){
@@ -246,7 +261,7 @@
 
 			  }
 			}, 200); 
- 		  	
+ 		  	*/
 			setInterval(function(){ 
 
  				var StoreID = $("#StoreID").val();
@@ -504,7 +519,7 @@
 									      "<td>"+Obj.ChaName[i]+"</td>"+
 									      "<td>"+Obj.ItemName[i]+" "+itemqty+" "+Enhance+"</td>"+
 									      "<td> <font color='red'> "+Obj.Price[i]+" </font> พ้อย</td>"+
-									      "<td><button class='btn btn-warning isCheck' ShopItemName='"+Obj.ItemName[i]+"' ShopMapIDIMG='"+Obj.ImageURL[i]+"'>ดูข้อมูล</button> <button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อไอเทม</button></td>"+
+									      "<td><button class='btn btn-warning isCheck' ShopItemName='"+Obj.ItemName[i]+"' ShopMapID='"+Obj.ID[i]+"' ShopMapIDIMG='"+Obj.ImageURL[i]+"'>ดูข้อมูล</button> <button class='btn btn-success isBuyItem' ShopMapID='"+Obj.ID[i]+"'>ซื้อไอเทม</button></td>"+
 									    "</tr> "; 
 
 
@@ -567,11 +582,47 @@
 
 				var ShopMapIDIMG = $(this).attr("ShopMapIDIMG");   
 				var ShopItemName = $(this).attr("ShopItemName");   
+				var ShopMapID = $(this).attr("ShopMapID");   
+ 
+				$("#SaleItemModal").find("#exampleModalLabel").text(ShopItemName); 
 
-				$("#SaleItemModal").find("#exampleModalLabel").text(ShopItemName);
-				$("#SaleItemModal").find("#ImageURL").attr("src",ShopMapIDIMG);
+
+
+				$.post("https://cac.webclient.me/api/getDataItemDetailFromBuffer.php",{
+					ShopMapID : ShopMapID 
+					},function(data){
+  	 
+						if (data != 1) {
+							swal("ERROR !!","มีบางอย่างผิดปกติ ตัวละครกำลังอยู่ในเกม,ไอเทมนี้ ถูกขายไปแล้ว,ช่องเก็บของตัวละครเต็ม,พ้อยไม่พอซื้อไอเทม !!!!", "error");
+
+							btnA.text("ซื้อไอเทม");
+							btnA.attr("disabled", false);
+
+							return false;
+						} 
+
+						swal("สำเร็จ !!","ซื้อไอเทมสำเร็จโปรดตรวจสอบช่องเก็บของภายในตัวละคร", "success"); 
+ 
+					});
+
+
+
+
+
+
+
+
+
+
+
 
 				$("#SaleItemModal").modal("show");
+
+
+
+
+
+
 
 
 

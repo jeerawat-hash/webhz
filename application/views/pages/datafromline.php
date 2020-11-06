@@ -839,6 +839,11 @@
 							var Itemqty = $('#SaleItemModal').find("#ItemQty").val();
 							var Price = $('#SaleItemModal').find("#Price").val();
 
+							if (Price <= 0) {
+								swal("ผิดพลาด !!","กรุณาระบุยอดพ้อยที่ต้องการขาย", "error");
+								return false;
+							}
+
 							var data = new FormData();          
 					        var ItemIMG = $('#ItemIMG').prop('files')[0]; 
 
