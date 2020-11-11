@@ -106,9 +106,8 @@
  				 
 
 				<button id="TopUPModal" class="btn btn-success" style="width: 100%;">เติมเงิน</button>
-
-
-
+ 
+ 
 			</div> 
 
 		</div>
