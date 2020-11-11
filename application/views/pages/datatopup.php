@@ -352,8 +352,16 @@
 					        	processData : false,
 					        	success : function(data){
  
-					        			console.log(data);
-					        	 
+					        			//console.log(data);
+					        	 		
+					        			if (data == 0) {
+					        				$("#TopUPModal").find("#preload").hide(); 
+											$("#TopUPModal").find("#SendData").show();
+											swal("ผิดพลาด !!","กรุณาอัพโหลดหลักฐาน", "error");
+					        				return false;
+					        			}
+
+
 					 	 				$("#TopUPModal").find("#preload").hide(); 
 										$("#TopUPModal").find("#SendData").show();
             							$("#TopUPModal").modal("hide");
