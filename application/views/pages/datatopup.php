@@ -328,7 +328,7 @@
  				$("#TopUPModal").find("#preload").show();
 				$("#TopUPModal").find("#SendData").hide();
 
-				setInterval(function(){ 
+				setTimeout(function(){ 
 				 $.ajax({
 					        	url:"https://cac.webclient.me/api/addReciptTopup.php",
 					        	type:"POST",
