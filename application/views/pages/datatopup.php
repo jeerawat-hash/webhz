@@ -328,6 +328,20 @@
  				$("#TopUPModal").find("#preload").show();
 				$("#TopUPModal").find("#SendData").hide();
 
+
+				if (Point <= 0) {
+
+					$("#TopUPModal").find("#preload").hide(); 
+					$("#TopUPModal").find("#SendData").show();
+					swal("ผิดพลาด !!","กรุณาระบุยอดพ้อย", "error");
+					return false;
+
+				}
+
+
+
+
+
 				setTimeout(function(){ 
 				 $.ajax({
 					        	url:"https://cac.webclient.me/api/addReciptTopup.php",
@@ -342,6 +356,11 @@
 					        	 
 					 	 				$("#TopUPModal").find("#preload").hide(); 
 										$("#TopUPModal").find("#SendData").show();
+            							$("#TopUPModal").modal("hide");
+
+
+										swal("สำเร็จ !!","รายการอยู่ระหว่างดำเนินการตรวจสอบ..", "info");
+
 
 					        	},
 					        	error : function(){
