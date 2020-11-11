@@ -321,7 +321,10 @@
 				data.append('Point', Point);  
 				data.append('LineID', Line);  
 					 
- 
+ 				
+ 				$("#TopUPModal").find("#preload").show();
+
+				$("#TopUPModal").find("#SendData").hide();
 
 
 				 $.ajax({
@@ -335,7 +338,9 @@
  
 					        		console.log(data);
 					        	 
-					 
+					 	 				$("#TopUPModal").find("#preload").hide();
+
+										$("#TopUPModal").find("#SendData").show();
 
 					        	},
 					        	error : function(){
