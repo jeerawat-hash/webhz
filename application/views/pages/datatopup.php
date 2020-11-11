@@ -300,6 +300,9 @@
 
 				$("#TopUPModal").find("#exampleModalLabel").text("ยันยันข้อมูลเติมเงิน");
 				$("#TopUPModal").find("#preload").hide();
+				$("#TopUPModal").find("#SlipIMG").val("");
+				$("#TopUPModal").find("#ItemIMGLB").text("เลือกภาพ");
+				$("#TopUPModal").find("#Point").val("0");
             	$("#TopUPModal").modal("show");
  
 				  
@@ -323,10 +326,9 @@
 					 
  				
  				$("#TopUPModal").find("#preload").show();
-
 				$("#TopUPModal").find("#SendData").hide();
 
-
+				setInterval(function(){ 
 				 $.ajax({
 					        	url:"https://cac.webclient.me/api/addReciptTopup.php",
 					        	type:"POST",
@@ -336,10 +338,9 @@
 					        	processData : false,
 					        	success : function(data){
  
-					        		console.log(data);
+					        			console.log(data);
 					        	 
-					 	 				$("#TopUPModal").find("#preload").hide();
-
+					 	 				$("#TopUPModal").find("#preload").hide(); 
 										$("#TopUPModal").find("#SendData").show();
 
 					        	},
@@ -348,7 +349,7 @@
 
 					        	}
 					        });
-
+				 }, 2000);
 
 
 
