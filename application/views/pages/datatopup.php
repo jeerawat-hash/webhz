@@ -299,35 +299,23 @@
  					$.post("https://cac.webclient.me/api/getDataStatusTopup.php",{
 							LineID : Line
 						},function(data){
-  	 
-  							 
-
+  	  
 							var obj = JSON.parse(data);
+ 
+ 
+  							var html = "";
 
+  							for (var i = 0; i < obj.ID.length; i++) {
+  								html += "<tr> "+
+									      "<td >"+obj.ID[i]+"</td>"+
+									      "<td >"+obj.TopUpIMG[i]+"</td>"+
+									      "<td >"+obj.Point[i]+"</td> "+
+									      "<td >"+obj.StatusTXT[i]+"</td> "+
+									    "</tr>";
+  							}
 
-							console.log(obj);
-
-
-
-  							 //var html = "";
-
-
-
-
-/*
-
-
-							 <tr> 
-				      <th >ลำดับ</th>
-				      <th >หลักฐาน</th>
-				      <th >ยอด</th> 
-				      <th >สถานะ</th> 
-				    </tr>
-TableTopupContent
-
-	*/
-
-
+  							$("#TableTopupContent").html(html);
+ 
 							
 					});
   
