@@ -105,9 +105,9 @@
 			<div class="col-6"> 
  				 
 
-				<button id="TopUPModal" class="btn btn-success" style="width: 100%;">เติมเงิน</button>
+				<button id="TopUPModalBTn" class="btn btn-success" style="width: 100%;">เติมเงิน</button>
  
- 
+
 			</div> 
 
 		</div>
@@ -166,7 +166,7 @@
  
 	
 		<!-- Modal Sale -->
-	<div class="modal fade" id="SaleItemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="TopUPModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
@@ -179,32 +179,24 @@
  	
  			<div class="container">
  				<div class="row">
- 					<!--
+ 					
+ 					
  					<div  class="col-12">
- 						<img hidden src="#" id="ImageURL" class="responsive img-responsive">
- 					</div>
- 					-->
+ 						 	 
 
- 					<div  class="col-12">
- 						 	
- 						 	<table width="100%" class="table">
-	 						 
-	 						 <thead>
-							    <tr> 
-							      <th>เรท</th>
-							      <th>ค่า</th> 
-							    </tr>
-							 </thead>
 
-							  <tbody id="TableItemDetail">
-							    	
-							    	
 
-							  </tbody>
-							  
-							</table>
+
+
+
+
+
+
 
  					</div>
+
+
+
 
  				</div>
  			</div>
@@ -212,7 +204,8 @@
 
 	      </div>
 	      <div class="modal-footer">   
-	        <button type="button" class="btn btn-warning" data-dismiss="modal">ปิด</button>
+	      	 <button type="button" class="btn btn-success" >ส่งข้อมูล</button>
+	        <button type="button" class="btn btn-danger" data-dismiss="modal">ปิด</button>
 	      </div>
 	    </div>
 	  </div>
@@ -279,6 +272,35 @@
   
 
 			}, 1000);
+
+
+
+
+            $("#TopUPModalBTn").on("click",function(){
+
+
+				$("#TopUPModal").find("#exampleModalLabel").text("ยันยันข้อมูลเติมเงิน");
+            	$("#TopUPModal").modal("show");
+
+
+            	
+
+
+
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
    
