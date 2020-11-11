@@ -306,10 +306,12 @@
   							var html = "";
 
   							for (var i = 0; i < obj.ID.length; i++) {
+
+
   								html += "<tr> "+
 									      "<td >"+obj.ID[i]+"</td>"+
 									      "<td >"+obj.TopUpIMG[i]+"</td>"+
-									      "<td >"+obj.Point[i]+"</td> "+
+									      "<td >"+obj.Point[i]+" <font color='red'>พ้อย</font></td> "+
 									      "<td >"+obj.StatusTXT[i]+"</td> "+
 									    "</tr>";
   							}
