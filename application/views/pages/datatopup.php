@@ -180,18 +180,29 @@
  			<div class="container">
  				<div class="row">
  					
- 					
- 					<div  class="col-12">
- 						 	 
 
+ 					<div  class="col-6">
+ 						 	  
+ 							<div class="input-group mb-3">
+							  <div class="input-group-prepend">
+							    <span class="input-group-text">ยอดเงิน</span>
+							  </div>
+							  <input type="text" id="Price" pattern="^([0-9]?[0-9]?[0-9]?|)$"  class="form-control" aria-label="Amount (to the nearest baththai)">
+							  <div class="input-group-append">
+							    <span class="input-group-text">พ้อย</span>
+							  </div>
+							</div>
+ 
 
+ 					</div>
+ 					<div  class="col-6">
+ 						 	  
 
-
-
-
-
-
-
+ 							<div class="custom-file">
+							    <input accept='image/*' type="file" class="custom-file-input" id="ItemIMG">
+							    <label id="ItemIMGLB" class="custom-file-label" for="customFile">เลือกภาพ</label>
+							  </div>
+ 
 
  					</div>
 
@@ -281,9 +292,12 @@
 
 				$("#TopUPModal").find("#exampleModalLabel").text("ยันยันข้อมูลเติมเงิน");
             	$("#TopUPModal").modal("show");
+ 
+				var data = new FormData();          
+				var ItemIMG = $('#SlipIMG').prop('files')[0]; 
+				data.append('SlipIMG', ItemIMG);  
+					 
 
-
-            	
 
 
 
