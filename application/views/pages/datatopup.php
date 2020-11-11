@@ -79,6 +79,22 @@
 	<div class="container">
 
 
+
+		<div class="row">
+			 
+			<div class="col-6"> 
+ 				
+ 				<label><h2>บัญชี : 406-178417-0 (SCB)</h2></label> 
+
+			</div>    
+			<div class="col-6"> 
+ 				
+ 				<label><h2>TrueWallet : 0616619956</h2></label> 
+
+			</div>   
+
+		</div>
+
 		<div class="row">
 			 
 			<div class="col-6"> 
