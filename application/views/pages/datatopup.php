@@ -294,6 +294,48 @@
 
 
 
+			setInterval(function(){ 
+  
+ 					$.post("https://cac.webclient.me/api/getDataStatusTopup.php",{
+							LineID : Line
+						},function(data){
+  	 
+  							 
+
+							var obj = JSON.parse(data);
+
+
+							console.log(obj);
+
+
+
+  							 //var html = "";
+
+
+
+
+/*
+
+
+							 <tr> 
+				      <th >ลำดับ</th>
+				      <th >หลักฐาน</th>
+				      <th >ยอด</th> 
+				      <th >สถานะ</th> 
+				    </tr>
+TableTopupContent
+
+	*/
+
+
+							
+					});
+  
+
+			}, 1000);
+
+
+
 
             $("#TopUPModalBTn").on("click",function(){
 
