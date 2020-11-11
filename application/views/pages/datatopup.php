@@ -83,13 +83,13 @@
 			 
 			<div class="col-6"> 
  				
- 				<label>ทำรายการเติมเงิน : </label> 
+ 				<label><h2>ทำรายการเติมเงิน :</h2></label> 
 
 			</div>   
 			<div class="col-6"> 
  				 
 
-				<button id="TopUPModal" class="btn btn-success">เติมเงิน</button>
+				<button id="TopUPModal" class="btn btn-success" style="width: 100%;">เติมเงิน</button>
 
 
 
