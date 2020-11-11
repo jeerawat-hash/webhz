@@ -260,7 +260,7 @@
 
 	</script>
 
-
+ 
 
  
     <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
@@ -293,7 +293,7 @@
 
 			}, 1000);
 
-
+ 
 
 			setInterval(function(){ 
   
@@ -311,7 +311,7 @@
 
   								html += "<tr> "+
 									      "<td >"+obj.ID[i]+"</td>"+
-									      "<td > <a href='"+obj.TopUpIMG[i]+"'><img src='"+obj.TopUpIMG[i]+"' width='10%'></a> </td>"+
+									      "<td > <a target='_blank' href='"+obj.TopUpIMG[i]+"'><img src='"+obj.TopUpIMG[i]+"' width='10%'></a> </td>"+
 									      "<td >"+obj.Point[i]+" <font color='red'>พ้อย</font></td> "+
 									      "<td >"+obj.StatusTXT[i]+"</td> "+
 									    "</tr>";
