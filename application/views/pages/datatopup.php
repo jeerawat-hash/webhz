@@ -75,10 +75,28 @@
   </ul>
 </div>
 
- 
-	<input type="text" readonly hidden id="StoreID">
- 
+  
 	<div class="container">
+
+
+		<div class="row">
+			 
+			<div class="col-6"> 
+ 				
+ 				<label>ทำรายการเติมเงิน : </label> 
+
+			</div>   
+			<div class="col-6"> 
+ 				 
+
+				<button id="TopUPModal" class="btn btn-success">เติมเงิน</button>
+
+
+
+			</div> 
+
+		</div>
+
 
  
 		<div class="row">
