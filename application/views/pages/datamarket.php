@@ -35,7 +35,7 @@
 <body>
 
 	<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-  <a class="navbar-brand" href="#">ระบบจัดการสมาชิกและแลกเปลี่ยน</a>
+  <a class="navbar-brand" href="#">ตลาดแลกเปลี่ยน</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -52,11 +52,11 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">เติมเงิน</a>
+        <a class="nav-link " href="https://liff.line.me/1655100623-4LqV1zJ2">เติมเงิน</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">ถอนเงิน</a>
+        <a class="nav-link " href="https://liff.line.me/1655100623-PK7LaMGz">ถอนเงิน</a>
       </li>
  
 

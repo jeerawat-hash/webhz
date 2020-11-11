@@ -31,13 +31,13 @@ class Member extends CI_Controller {
  	 public function topup()
  	{
  		//$this->load->view('template/header');
- 		//$this->load->view('pages/datamarket');
+ 		$this->load->view('pages/datatopup');
 		 
  	}
  	 public function waitdraw()
  	{
  		//$this->load->view('template/header');
- 		//$this->load->view('pages/datamarket');
+ 		$this->load->view('pages/datawithdraw');
 		 
  	}
 
