@@ -187,7 +187,7 @@
 							  <div class="input-group-prepend">
 							    <span class="input-group-text">ยอดเงิน</span>
 							  </div>
-							  <input type="text" id="Price" pattern="^([0-9]?[0-9]?[0-9]?|)$"  class="form-control" aria-label="Amount (to the nearest baththai)">
+							  <input type="text" id="Point" pattern="^([0-9]?[0-9]?[0-9]?|)$"  class="form-control" aria-label="Amount (to the nearest baththai)">
 							  <div class="input-group-append">
 							    <span class="input-group-text">พ้อย</span>
 							  </div>
@@ -199,7 +199,7 @@
  						 	  
 
  							<div class="custom-file">
-							    <input accept='image/*' type="file" class="custom-file-input" id="ItemIMG">
+							    <input accept='image/*' type="file" class="custom-file-input" id="SlipIMG">
 							    <label id="ItemIMGLB" class="custom-file-label" for="customFile">เลือกภาพ</label>
 							  </div>
  
@@ -215,7 +215,10 @@
 
 	      </div>
 	      <div class="modal-footer">   
-	      	 <button type="button" class="btn btn-success" >ส่งข้อมูล</button>
+	      	<div class="spinner-border text-success " id="preload" role="status">
+			  <span class="sr-only">Loading...</span>
+			</div>
+	      	 <button type="button" class="btn btn-success" id="SendData" >ส่งข้อมูล</button>
 	        <button type="button" class="btn btn-danger" data-dismiss="modal">ปิด</button>
 	      </div>
 	    </div>
@@ -237,7 +240,7 @@
 		  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
 		});
 
- 
+ /*
 			document.addEventListener('contextmenu', event => event.preventDefault());
 			
 			setInterval(function(){
@@ -253,7 +256,7 @@
 
 			  }
 			}, 200); 
-  
+  	*/
 
 	</script>
 
@@ -296,17 +299,58 @@
 
 
 				$("#TopUPModal").find("#exampleModalLabel").text("ยันยันข้อมูลเติมเงิน");
+				$("#TopUPModal").find("#preload").hide();
             	$("#TopUPModal").modal("show");
  
+				  
+            });
+
+
+
+            $("#TopUPModal").find("#SendData").on("click",function(){
+
+
+
+
+
+
 				var data = new FormData();          
 				var ItemIMG = $('#SlipIMG').prop('files')[0]; 
+				var Point = $("#TopUPModal").find("#Point").val();
 				data.append('SlipIMG', ItemIMG);  
+				data.append('Point', Point);  
+				data.append('LineID', Line);  
 					 
+ 
+
+
+				 $.ajax({
+					        	url:"https://cac.webclient.me/api/addReciptTopup.php",
+					        	type:"POST",
+					        	data:data,
+					        	contentType : false,
+					        	cache : false,
+					        	processData : false,
+					        	success : function(data){
+ 
+					        		console.log(data);
+					        	 
+					 
+
+					        	},
+					        	error : function(){
+
+
+					        	}
+					        });
+
 
 
 
 
             });
+
+
 
 
 
