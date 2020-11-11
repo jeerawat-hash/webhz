@@ -84,12 +84,12 @@
 			 
 			<div class="col-6"> 
  				
- 				<label><h2>บัญชี : <font color="red">406-178417-0</font>  (SCB)</h2></label> 
+ 				<label><h4>บัญชี : <font color="red">406-178417-0</font>  (SCB)</h4></label> 
 
 			</div>    
 			<div class="col-6"> 
  				
- 				<label><h2>TrueWallet : <font color="red">0616619956</font> </h2></label> 
+ 				<label><h4>TrueWallet : <font color="red">0616619956</font> </h4></label> 
 
 			</div>   
 
