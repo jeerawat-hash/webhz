@@ -353,10 +353,10 @@ $(document).ready(function(){
                 <img src="https://rhz.webclient.me/assets/ccr/img/ch1.png" style="margin-left:-6px; margin-top:2px;" />
                 
 
-                <div class="Fields3" style="margin-top:7px;">
+                <div hidden class="Fields3" style="margin-top:7px;">
                     <p><h4> <label  id="TxtStatusLogin"> - </label> </h4></p>
                 </div>
-                <img src="https://rhz.webclient.me/assets/ccr/img/login.png" style="margin-left:-6px; margin-top:2px;" />
+                <img hidden src="https://rhz.webclient.me/assets/ccr/img/login.png" style="margin-left:-6px; margin-top:2px;" />
                 
                 
                 </div>
