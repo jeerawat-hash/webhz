@@ -59,7 +59,7 @@
         <a class="nav-link " href="https://liff.line.me/1655100623-4LqV1zJ2">เติมเงิน</a>
       </li>
 
-      <li class="nav-item">
+      <li hidden class="nav-item">
         <a class="nav-link active " href="https://liff.line.me/1655100623-PK7LaMGz">ถอนเงิน</a>
       </li>
  

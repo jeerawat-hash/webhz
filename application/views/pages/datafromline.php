@@ -53,7 +53,7 @@ body {
       <li class="nav-item">
         <a class="nav-link  " href="https://liff.line.me/1655100623-qN5gyNKE">ตลาดซื้อขาย</a>
       </li>
-	  
+
       <li class="nav-item active">
         <a class="nav-link" href="https://liff.line.me/1655100623-YNaPAD2N">ฝากขายไอเทม</a>
       </li>
@@ -62,7 +62,7 @@ body {
         <a class="nav-link " href="https://liff.line.me/1655100623-4LqV1zJ2">เติมเงิน</a>
       </li>
 
-      <li class="nav-item">
+      <li hidden class="nav-item">
         <a class="nav-link " href="https://liff.line.me/1655100623-PK7LaMGz">ถอนเงิน</a>
       </li>
  
