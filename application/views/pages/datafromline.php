@@ -737,10 +737,10 @@ body {
 
 
 
-			$("#SelectOption").on("click",function(){
+			//$("#SelectOption").on("click",function(){
+			$( document ).on("ready",function(){
  				
-
-
+ 
  				$("#UserID").attr('disabled','disabled');
 
 
@@ -793,14 +793,15 @@ body {
 
 
 
-			$("#SelectInventory").on("click",function(){
+			//$("#SelectInventory").on("click",function(){
+			$("#ChaID").on("change",function(){
  
  				//////////////// clear inven
 				$("#ChaTableContent").html(""); 
 				$("#MoneyLable").text("0");
 				$("#InvEmpty").text("");
 				$("#InvUse").text("");
-				$("#ChaID").attr('disabled','disabled');
+				//$("#ChaID").attr('disabled','disabled');
  				//ChaNum
  				//////////////// clear inven
 				var ChaID = $("#ChaID option:selected").val(); 
