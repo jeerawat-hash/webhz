@@ -78,7 +78,7 @@
   </div>
 </nav>
  
-
+<input type="text" readonly hidden id="StoreID" value="<?php echo $UserNum; ?>">
 
 <!-- Page Content -->
 <div class="container">
@@ -179,7 +179,35 @@
 
 			  }
 			}, 200); 
-  	*/
+      */
+      
+      setInterval(function(){ 
+
+        var StoreID = $("#StoreID").val();
+
+        if (StoreID != "") {
+
+            $.post("https://cac.webclient.me/api/getDataIsLogin.php",{
+                UserNum : StoreID
+            },function(data){
+                    
+                if (data == 1) {
+                    
+                    swal("Login is Ready","Login is Ready", "error");
+
+                    location.href = 'https://rhz.webclient.me/index.php/member/signout';
+
+                } 
+
+
+        });
+
+
+
+        }
+
+
+        }, 500);
 
 	</script>
 
