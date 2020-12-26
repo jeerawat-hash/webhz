@@ -75,7 +75,12 @@
   <div class="card border-0 shadow my-5">
     <div class="card-body p-5">
 
- 
+    <?php
+
+    echo $UserNum."    ".$UserName;
+
+
+    ?>
 
 
 
@@ -172,8 +177,25 @@
     <script>
         $(function(){
 
+ 
+
+            $.get("https://cac.webclient.me/api/validate.php",function(data){
+
+                if(data != "1"){
+                    $('#LoginModal').modal({backdrop: 'static', keyboard: false});
+                }else{
+                    //// is logon
+
+
+                    //// is logon
+                }
+
+
+            });
+
+
+
             $("#LoginModal").find("#Preload").hide();
-            $('#LoginModal').modal({backdrop: 'static', keyboard: false});
             $("#LoginModal").find("#Save").on("click",function(){
 
                 $(this).hide();
@@ -210,15 +232,24 @@
 
                         
                         var obj = JSON.parse(data);
-
                         console.log(obj);
 
-                        $("#LoginModal").find("#Preload").hide();
-                        $("#LoginModal").find("#Save").show();
+                        $.post("https://cac.webclient.me/api/signin.php",{
+                            UserNum : obj.UserNum[0],
+                            UserName : obj.UserName[0]
+                        },function(data){
+                            //// is logon
 
 
 
 
+
+                            //// is logon
+                        });
+                        
+                        //$("#LoginModal").find("#Preload").hide();
+                        //$("#LoginModal").find("#Save").show();
+  
                     }
 
 

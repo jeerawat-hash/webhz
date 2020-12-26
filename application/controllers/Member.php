@@ -21,9 +21,32 @@ class Member extends CI_Controller {
 		
 		//$this->load->view('pages/register');
 
-		//echo  $this->session->userdata("UserNum"); 
-		$this->load->view('pages/memberhome');
+		$UserNum = $this->session->userdata("UserNum");
+		$UserName = $this->session->userdata("UserNum");
 
+		if($UserNum == ""){
+			$UserNum = "null";
+		}
+		if($UserName == ""){
+			$UserName = "null";
+		}
+
+		$sess["UserNum"] = $UserNum;
+		$sess["UserName"] = $UserName;
+ 
+		$this->load->view('pages/memberhome',$sess);
+
+	}
+	public function	validate()
+	{  
+
+			$sess = $this->session->userdata("UserNum");
+			if($sess != ""){
+				echo 1;
+			}else{
+				echo 0;
+			}
+ 
 	}
 	public function	signin()
 	{  
@@ -31,9 +54,7 @@ class Member extends CI_Controller {
 			//$userdata = array('UserNum' => $_POST["UserNum"]);
 			$userdata = array('UserNum' => $_POST["UserNum"],'UserName' => $_POST["UserName"]);
 			$this->session->set_userdata($userdata);
-
-
-   
+ 
 	}
 	public function signout()
 	{
