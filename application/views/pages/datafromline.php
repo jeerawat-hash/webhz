@@ -27,7 +27,7 @@
 <style type="text/css">
  
 body {
-  background: url('https://www.wallpaperup.com/uploads/wallpapers/2015/03/20/641752/f3665753b2003cb766707090965ae050.jpg') no-repeat center center fixed;
+  background: url('https://vistapointe.net/images/ran-online-1.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
