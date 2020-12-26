@@ -51,7 +51,7 @@ body {
     <ul class="navbar-nav mr-auto">
 
 	<li class="nav-item ">
-        <a class="nav-link" href="#">ไอเทมช็อป</a>
+        <a class="nav-link" href="https://rhz.webclient.me/index.php/member/itemmall">ไอเทมช็อป</a>
       </li>
   
       <li class="nav-item">
