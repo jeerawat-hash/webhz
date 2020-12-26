@@ -86,6 +86,9 @@ body {
 
 
 <div class="container">
+<div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+
     <div class="row">
 
         <div class="col-3">
@@ -105,7 +108,7 @@ body {
         </div>
         <div class="col-9">
         
-                
+
 
 
 
@@ -119,8 +122,8 @@ body {
 
 
 
-
-
+    </div>
+    </div>
 </div>
  
 <!-- Page Content -->
