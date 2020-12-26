@@ -22,7 +22,7 @@ class Member extends CI_Controller {
 		//$this->load->view('pages/register');
 
 		$UserNum = $this->session->userdata("UserNum");
-		$UserName = $this->session->userdata("UserNum");
+		$UserName = $this->session->userdata("UserName");
 
 		if($UserNum == ""){
 			$UserNum = "null";
