@@ -27,7 +27,7 @@
 <style type="text/css">
  
 body {
-  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  background: url('https://www.wallpaperup.com/uploads/wallpapers/2015/03/20/641752/f3665753b2003cb766707090965ae050.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -73,7 +73,7 @@ body {
   </div>
   <ul>
     <div>
-      <li><span>ข่าวสารแจ้งเตือน &ndash; <a href="#">เพิ่มเติม</a></span></li>
+      <li><span> อยู่ระหว่างปรับปรุงระบบ </span></li>
     </div> 
   </ul>
 </div>
