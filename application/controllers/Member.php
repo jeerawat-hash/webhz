@@ -16,6 +16,12 @@ class Member extends CI_Controller {
 		//$this->load->view('pages/register');
 
 	}
+	public function itemmall()
+	{
+		//$this->load->view('template/header');
+		$this->load->view('pages/itemmall');
+		
+	}
  	public function mgmt()
  	{
  		//$this->load->view('template/header');
