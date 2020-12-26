@@ -62,7 +62,7 @@ class Member extends CI_Controller {
 	{
 
 		$this->session->sess_destroy();
-		redirect("member");
+		header( "location: https://rhz.webclient.me/index.php/member" );
 
 	}
 	public function itemmall()
