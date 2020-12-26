@@ -374,7 +374,7 @@ body {
 		  var fileName = $(this).val().split("\\").pop();
 		  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
 		});
-
+/*
 			document.addEventListener('contextmenu', event => event.preventDefault());
 
 			setInterval(function(){
@@ -389,7 +389,7 @@ body {
 			    debugger;
 
 			  }
-			}, 200); 
+			}, 200); */
  		 
 			setInterval(function(){ 
 
@@ -432,20 +432,11 @@ body {
 	</script>
 
 
- 
-    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+  
       <script>
  
-        function runApp() {
-          liff.getProfile().then(profile => {
- 
-      
-            //console.log(profile.displayName);
-            //console.log(profile.pictureUrl);
-            //console.log(profile.userId);
-            //var Line = profile.userId;
+		$(function(){
 
-  			//console.log(Line);
 /*
             setInterval(function(){ 
   
@@ -1019,22 +1010,10 @@ body {
    
 
 			});
-
-
-
-             
-
  
-          }).catch(err => console.error(err));
-        }
-        liff.init({ liffId: "1655100623-YNaPAD2N" }, () => {
-          if (liff.isLoggedIn()) {
-            runApp();
 
-          } else {
-            liff.login();
-          }
-        }, err => console.error(err.code, error.message));
+		});
+              
   </script>
 
   
