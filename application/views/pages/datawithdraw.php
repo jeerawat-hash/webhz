@@ -63,7 +63,7 @@
     </ul> 
   </div>
 </nav>
-
+<!--
 <div class="ticker-container">
   <div class="ticker-caption">
     <p>ข่าวสาร</p>
@@ -74,7 +74,7 @@
     </div> 
   </ul>
 </div>
-
+-->
  
 	<input type="text" readonly hidden id="StoreID">
  

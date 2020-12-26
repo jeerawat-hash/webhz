@@ -67,16 +67,18 @@ body {
   </div>
 </nav>
 
+<!--
 <div class="ticker-container">
   <div class="ticker-caption">
     <p>ข่าวสาร</p>
   </div>
   <ul>
     <div>
-      <li><span> อยู่ระหว่างปรับปรุงระบบ </span></li>
+      <li><span>ข่าวสารแจ้งเตือน &ndash; <a href="#">เพิ่มเติม</a></span></li>
     </div> 
   </ul>
 </div>
+-->
 
 
 
