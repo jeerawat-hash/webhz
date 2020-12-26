@@ -30,6 +30,13 @@
   width: 100%;
   height: auto;
 }
+body {
+  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
  </style>
  
 <body>
@@ -74,6 +81,18 @@
     </div> 
   </ul>
 </div>
+
+
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+
+
+
 
  
 	<input type="text" readonly hidden id="StoreID">
@@ -189,7 +208,11 @@
 	</div>
 
 
- 
+	</div>
+  </div>
+</div>
+
+
 	
 		<!-- Modal Sale -->
 	<div class="modal fade" id="SaleItemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
