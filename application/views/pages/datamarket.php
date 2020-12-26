@@ -31,7 +31,7 @@
   height: auto;
 }
 body {
-  background: url('https://vistapointe.net/images/ran-online-1.jpg') no-repeat center center fixed;
+  background: url('https://www.mmobomb.com/file/2011/03/RAN-Online-wallpaper.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
