@@ -290,7 +290,7 @@ body {
 
 	<script type="text/javascript">
 
-    $('#example').DataTable();
+    //$('#example').DataTable();
 
     ///////////////////////////////
 
