@@ -193,9 +193,15 @@
                     
                 if (data == 1) {
                     
-                    swal("Login is Ready","Login is Ready", "error");
+                    swal("Error","ตรวจพบการ Login ภายในเกมกรุณาออกจากเกมก่อนใช้งานระบบ", "warning");
+                    
+                    setTimeout(function(){ 
+                        
+                        location.href = 'https://rhz.webclient.me/index.php/member/signout';
+                    
+                    }, 2000);
 
-                    location.href = 'https://rhz.webclient.me/index.php/member/signout';
+                    
 
                 } 
 
