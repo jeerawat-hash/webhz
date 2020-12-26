@@ -71,6 +71,14 @@ body {
  
 
     </ul> 
+    <form class="form-inline my-2 my-lg-0"> 
+
+    <span class="navbar-text">
+    <?php echo $UserName ;?>
+    </span>
+    <a class="btn btn-sm btn-outline-secondary" href="https://rhz.webclient.me/index.php/member/signout"  >ออกจากระบบ</a>
+
+    </form>
   </div>
 </nav>
 

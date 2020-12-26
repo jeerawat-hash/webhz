@@ -68,31 +68,98 @@ class Member extends CI_Controller {
 	public function itemmall()
 	{
 		//$this->load->view('template/header');
-		$this->load->view('pages/itemmall');
+		$UserNum = $this->session->userdata("UserNum");
+		$UserName = $this->session->userdata("UserName");
+
+		if($UserNum == ""){
+			$UserNum = "null";
+		}
+		if($UserName == ""){
+			$UserName = "null";
+		}
+
+		$sess["UserNum"] = $UserNum;
+		$sess["UserName"] = $UserName;
+
+		$this->load->view('pages/itemmall',$sess);
 		
 	}
  	public function mgmt()
  	{
- 		//$this->load->view('template/header');
- 		$this->load->view('pages/datafromline');
+		 //$this->load->view('template/header');
+		 
+		 $UserNum = $this->session->userdata("UserNum");
+		 $UserName = $this->session->userdata("UserName");
+ 
+		 if($UserNum == ""){
+			 $UserNum = "null";
+		 }
+		 if($UserName == ""){
+			 $UserName = "null";
+		 }
+ 
+		 $sess["UserNum"] = $UserNum;
+		 $sess["UserName"] = $UserName;
+
+ 		$this->load->view('pages/datafromline',$sess);
 		 
  	}
  	 public function market()
  	{
- 		//$this->load->view('template/header');
- 		$this->load->view('pages/datamarket');
+		 //$this->load->view('template/header');
+		 
+		 $UserNum = $this->session->userdata("UserNum");
+		 $UserName = $this->session->userdata("UserName");
+ 
+		 if($UserNum == ""){
+			 $UserNum = "null";
+		 }
+		 if($UserName == ""){
+			 $UserName = "null";
+		 }
+ 
+		 $sess["UserNum"] = $UserNum;
+		 $sess["UserName"] = $UserName;
+
+ 		$this->load->view('pages/datamarket',$sess);
 		 
  	}
  	 public function topup()
  	{
- 		//$this->load->view('template/header');
- 		$this->load->view('pages/datatopup');
+		 //$this->load->view('template/header');
+		 $UserNum = $this->session->userdata("UserNum");
+		 $UserName = $this->session->userdata("UserName");
+ 
+		 if($UserNum == ""){
+			 $UserNum = "null";
+		 }
+		 if($UserName == ""){
+			 $UserName = "null";
+		 }
+ 
+		 $sess["UserNum"] = $UserNum;
+		 $sess["UserName"] = $UserName;
+
+ 		$this->load->view('pages/datatopup',$sess);
 		 
  	}
  	 public function waitdraw()
  	{
- 		//$this->load->view('template/header');
- 		$this->load->view('pages/datawithdraw');
+		 //$this->load->view('template/header');
+		 $UserNum = $this->session->userdata("UserNum");
+		 $UserName = $this->session->userdata("UserName");
+ 
+		 if($UserNum == ""){
+			 $UserNum = "null";
+		 }
+		 if($UserName == ""){
+			 $UserName = "null";
+		 }
+ 
+		 $sess["UserNum"] = $UserNum;
+		 $sess["UserName"] = $UserName;
+
+ 		$this->load->view('pages/datawithdraw',$sess);
 		 
  	}
 
