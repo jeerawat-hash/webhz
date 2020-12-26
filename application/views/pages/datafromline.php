@@ -38,7 +38,7 @@ body {
 <body>
 
 	<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-  <a class="navbar-brand" href="#">หน้าแรก</a>
+  <a class="navbar-brand" href="https://rhz.webclient.me/index.php/member">หน้าแรก</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -47,7 +47,7 @@ body {
     <ul class="navbar-nav mr-auto">
 
       <li class="nav-item active">
-        <a class="nav-link" href="https://liff.line.me/1655100623-YNaPAD2N">ข้อมูลส่วนตัว</a>
+        <a class="nav-link" href="https://liff.line.me/1655100623-YNaPAD2N">ฝากขายไอเทม</a>
       </li>
 
       <li class="nav-item">
