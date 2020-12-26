@@ -218,29 +218,66 @@ body {
     <script type="text/javascript">
         $(function(){
             
-            $("#menucosh").on("click",function(){
-
+            $("#menucosh").on("click",function(event){
+                event.preventDefault();
+                $(".list-group-item").removeClass("active");
                 $(this).addClass("active");
 
-            });
-            $("#menuweapon").on("click",function(){
-                
-                $(this).addClass("active");
 
-            });
-            $("#menuaccess").on("click",function(){
-                
-                $(this).addClass("active");
+
+
+
 
             });
-            $("#menucard").on("click",function(){
-                
+            $("#menuweapon").on("click",function(event){
+                event.preventDefault();
+                $(".list-group-item").removeClass("active");
                 $(this).addClass("active");
 
+
+
+
+
+
+
             });
-            $("#menuother").on("click",function(){
-                
+            $("#menuaccess").on("click",function(event){
+                event.preventDefault();
+                $(".list-group-item").removeClass("active");
                 $(this).addClass("active");
+
+
+
+
+
+
+
+
+            });
+            $("#menucard").on("click",function(event){
+                event.preventDefault();
+                $(".list-group-item").removeClass("active");
+                $(this).addClass("active");
+
+
+
+
+
+
+
+            });
+            $("#menuother").on("click",function(event){
+                event.preventDefault();
+                $(".list-group-item").removeClass("active");
+                $(this).addClass("active");
+
+
+
+
+
+
+
+
 
             });
 
