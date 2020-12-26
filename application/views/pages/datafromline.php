@@ -112,7 +112,7 @@ body {
 	<input type="text" readonly hidden id="StoreID" value="<?php echo $UserNum; ?>">
  
 	<div class="container">
-
+	<!--
 		<div class="row">
 			
 			<div class="col-6">
@@ -123,23 +123,24 @@ body {
 			</div>
 
 		</div>
-
-		<div class="row">
+	-->
+		<div hidden class="row">
 			
-			<div class="col-6">
+			<div class="col-12">
 				<select disabled id="UserID" class="custom-select">
 
 				<option value="<?php echo $UserNum; ?>"><?php echo $UserName; ?></option>
 
 				</select>
 			</div>
+		<!--
 			<div class="col-6">
 				
 				<button id="SelectOption" class="btn btn-primary">เลือก</button>
 				<button id="ReloadPage" class="btn btn-danger">โหลดข้อมูลใหม่</button>
 
 			</div>
-
+		-->
 		</div>
 		<!---------------------------- ------>
  
@@ -156,19 +157,20 @@ body {
 
 		<div class="row">
 			
-			<div class="col-6">
+			<div class="col-12">
 				<select id="ChaID" class="custom-select">
 
 				<option value="0">----- เลือก ตัวละคร ที่ต้องการดูข้อมูล -----</option>
 
 				</select>
 			</div>
+			<!--
 			<div class="col-6">
 				
 				<button id="SelectInventory" class="btn btn-success">เรียกดูข้อมูลช่องเก็บของ</button>
 
 			</div>
-
+			-->
 		</div>
 
 
