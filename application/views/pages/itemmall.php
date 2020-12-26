@@ -97,6 +97,72 @@ body {
 
 <input type="text" readonly hidden id="StoreID" value="<?php echo $UserNum; ?>">
  
+
+
+
+
+<div class="container">
+<div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+
+    <div class="row">
+
+        <div class="col-3">
+        
+        
+        <div class="list-group">
+            <a href="#" id="menucosh" class="list-group-item list-group-item-action">เครื่องแต่งกาย</a>
+            <a href="#" id="menuweapon" class="list-group-item list-group-item-action">อาวุธ</a>
+            <a href="#" id="menuaccess" class="list-group-item list-group-item-action">สร้อย</a>
+            <a href="#" id="menucard" class="list-group-item list-group-item-action">บัตรต่างๆ</a>
+            <a href="#" id="menuother" class="list-group-item list-group-item-action ">อื่นๆ</a>
+        </div>
+ 
+
+        </div>
+        <div class="col-9">
+        
+            <table class="table">
+            <thead>
+                <tr>
+                    <th>หมวด</th>
+                    <th>ชื่อ</th>
+                    <th>ดำเนินการ</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>000000</td>
+                    <td>ดาบเทพ</td>
+                    <td><button type="button" class="btn btn-warning">ซื้อ/ข้อมูล</button></td> 
+                </tr>
+                 
+            </tbody> 
+        </table>
+    
+
+
+
+        
+        </div>
+    
+    </div>
+
+
+
+
+
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
 <!-- Page Content -->
 <div class="container">
   <div class="card border-0 shadow my-5">
@@ -163,60 +229,6 @@ body {
 </div>
 
 
-<div class="container">
-<div class="card border-0 shadow my-5">
-    <div class="card-body p-5">
-
-    <div class="row">
-
-        <div class="col-3">
-        
-        
-        <div class="list-group">
-            <a href="#" id="menucosh" class="list-group-item list-group-item-action">เครื่องแต่งกาย</a>
-            <a href="#" id="menuweapon" class="list-group-item list-group-item-action">อาวุธ</a>
-            <a href="#" id="menuaccess" class="list-group-item list-group-item-action">สร้อย</a>
-            <a href="#" id="menucard" class="list-group-item list-group-item-action">บัตรต่างๆ</a>
-            <a href="#" id="menuother" class="list-group-item list-group-item-action ">อื่นๆ</a>
-        </div>
- 
-
-        </div>
-        <div class="col-9">
-        
-            <table class="table">
-            <thead>
-                <tr>
-                    <th>หมวด</th>
-                    <th>ชื่อ</th>
-                    <th>ดำเนินการ</th> 
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>000000</td>
-                    <td>ดาบเทพ</td>
-                    <td><button type="button" class="btn btn-warning">ซื้อ/ข้อมูล</button></td> 
-                </tr>
-                 
-            </tbody> 
-        </table>
-    
-
-
-
-        
-        </div>
-    
-    </div>
-
-
-
-
-
-    </div>
-    </div>
-</div>
 
 
 
@@ -259,7 +271,7 @@ body {
         }, 500);
 
     </script>
-    
+
     <script type="text/javascript">
         $(function(){
 
