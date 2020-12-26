@@ -99,8 +99,8 @@ body {
         <div class="col-12"> 
 
         <div class="jumbotron text-center" style="margin-bottom:0">
-        <h1>แนะนำไอเทม</h1>
-        <p>Resize this responsive page to see the effect!</p> 
+        <h1>ไอเทมแนะนำวันนี้</h1>
+        <p>ได้รับส่วนลดพิเศษ30%</p> 
         </div> 
         </div>
 
