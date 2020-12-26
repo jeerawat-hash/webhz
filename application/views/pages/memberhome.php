@@ -125,16 +125,16 @@
                 <div class="col-6" >
 
                     <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">UserID</label>
-                        <input type="text" class="form-control" id="username">
+                        <label for="recipient-name" class="col-form-label">ไอดี</label>
+                        <input type="text" class="form-control" id="username" autocomplete="off">
                     </div>
 
                 </div>
                 <div class="col-6" >
                 
                     <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Password</label>
-                        <input type="password" class="form-control" id="password">
+                        <label for="recipient-name" class="col-form-label">รหัสผ่าน</label>
+                        <input type="password" class="form-control" id="password" autocomplete="off">
                     </div>
 
                 </div>
