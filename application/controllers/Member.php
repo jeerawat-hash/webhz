@@ -6,7 +6,13 @@ class Member extends CI_Controller {
 	 function __construct()
 	 {
 		parent::__construct(); 
-	
+		$this->load->library("session");
+		/*
+		if ( $this->session->userdata("memberID") != "" ) {
+				
+			redirect("home");	
+
+		}*/
 
 	 }
 
@@ -14,6 +20,22 @@ class Member extends CI_Controller {
 	{
 		
 		//$this->load->view('pages/register');
+		
+		echo  $this->session->userdata("UserNum");
+			 
+	}
+	public function	signin()
+	{  
+
+			//$userdata = array('UserNum' => $_POST["UserNum"]);
+			$userdata = array('UserNum' => 6,'UserName' => "jeerawat1");
+			$this->session->set_userdata($userdata);
+   
+	}
+	public function signout()
+	{
+
+		$this->session->sess_destroy();
 
 	}
 	public function itemmall()
