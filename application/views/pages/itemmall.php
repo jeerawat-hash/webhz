@@ -12,6 +12,7 @@
 <!--===============================================================================================-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="https://rhz.webclient.me/assets/news/ticker.css">
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
 <!-------- ---> 
 <!--  <script src="https://rhz.webclient.me/assets/news/ticker.js"></script> -->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
@@ -20,7 +21,9 @@
 
 	<script src="https://rhz.webclient.me/assets/Login/vendor/bootstrap/js/popper.js"></script>
 
+    <script src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 
+    
 
 </head>
 
@@ -95,20 +98,34 @@ body {
         
         
         <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action active">
-                Cras justo odio
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-            <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+            <a href="#" class="list-group-item list-group-item-action active">เครื่องแต่งกาย</a>
+            <a href="#" class="list-group-item list-group-item-action">อาวุธ</a>
+            <a href="#" class="list-group-item list-group-item-action">สร้อย</a>
+            <a href="#" class="list-group-item list-group-item-action">บัตรต่างๆ</a>
+            <a href="#" class="list-group-item list-group-item-action disabled">อื่นๆ</a>
         </div>
  
 
         </div>
         <div class="col-9">
         
-
+            <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>หมวด</th>
+                    <th>ชื่อ</th>
+                    <th>ดำเนินการ</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>000000</td>
+                    <td>ดาบเทพ</td>
+                    <td><button type="button" class="btn btn-warning">ซื้อ/ข้อมูล</button></td> 
+                </tr>
+                 
+            </tbody> 
+        </table>
 
 
 
@@ -245,6 +262,11 @@ body {
 
 
 	<script type="text/javascript">
+
+    $('#example').DataTable();
+
+    ///////////////////////////////
+
 		$(".custom-file-input").on("change", function() {
 		  var fileName = $(this).val().split("\\").pop();
 		  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
