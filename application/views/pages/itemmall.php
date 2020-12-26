@@ -85,10 +85,50 @@ body {
 -->
 
 
-
-
-
 <div class="container">
+    <div class="row">
+
+        <div class="col-3">
+        
+        
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+                Cras justo odio
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+        </div>
+ 
+
+        </div>
+        <div class="col-9">
+        
+                
+
+
+
+
+        
+        </div>
+    
+    </div>
+
+
+
+
+
+
+
+</div>
+ 
+<!-- Page Content -->
+<div class="container">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+
+
     <div class="row">
         <div class="col-12"> 
 
@@ -99,16 +139,6 @@ body {
         </div>
 
     </div>
-</div>
-
-
-
-
-<!-- Page Content -->
-<div class="container">
-  <div class="card border-0 shadow my-5">
-    <div class="card-body p-5">
-     
     <br>
     <div class="row">
  
