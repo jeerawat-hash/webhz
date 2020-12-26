@@ -139,9 +139,6 @@
   </div>
 </div>
 
-
-
-
  
 
 	<script type="text/javascript">
@@ -169,6 +166,16 @@
   	*/
 
 	</script>
+
+
+    <script>
+        $(function(){
+
+            $('#LoginModal').modal({backdrop: 'static', keyboard: false});
+
+
+        });
+    </script>
 
  
 
