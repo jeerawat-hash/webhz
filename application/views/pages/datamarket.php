@@ -50,12 +50,16 @@ body {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 
-      <li class="nav-item ">
-        <a class="nav-link" href="https://liff.line.me/1655100623-YNaPAD2N">ฝากขายไอเทม</a>
+	<li class="nav-item ">
+        <a class="nav-link" href="#">ไอเทมช็อป</a>
       </li>
-
+  
       <li class="nav-item">
         <a class="nav-link active " href="https://liff.line.me/1655100623-qN5gyNKE">ตลาดซื้อขาย</a>
+      </li>
+
+      <li class="nav-item ">
+        <a class="nav-link" href="https://liff.line.me/1655100623-YNaPAD2N">ฝากขายไอเทม</a>
       </li>
 
       <li class="nav-item">
