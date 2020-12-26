@@ -48,15 +48,15 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link  " href="https://liff.line.me/1655100623-qN5gyNKE">ตลาดซื้อขาย</a>
+        <a class="nav-link  " href="https://rhz.webclient.me/index.php/member/market">ตลาดซื้อขาย</a>
       </li>
 
       <li class="nav-item ">
-        <a class="nav-link" href="https://liff.line.me/1655100623-YNaPAD2N">ฝากขายไอเทม</a>
+        <a class="nav-link" href="https://rhz.webclient.me/index.php/member/mgmt">ฝากขายไอเทม</a>
       </li>
   
       <li class="nav-item">
-        <a class="nav-link " href="https://liff.line.me/1655100623-4LqV1zJ2">เติมเงิน</a>
+        <a class="nav-link " href="https://rhz.webclient.me/index.php/member/topup">เติมเงิน</a>
       </li>
 
       <li hidden class="nav-item">
