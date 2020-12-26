@@ -179,9 +179,9 @@
 
  
 
-            $.get("https://cac.webclient.me/api/validate.php",function(data){
+            $.get("https://rhz.webclient.me/index.php/member/validate",function(data){
 
-                if(data != "1"){
+                if(data == "0"){
                     $('#LoginModal').modal({backdrop: 'static', keyboard: false});
                 }else{
                     //// is logon
