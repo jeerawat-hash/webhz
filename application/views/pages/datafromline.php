@@ -27,7 +27,7 @@
 <style type="text/css">
  
 body {
-  background: url('https://www.mmobomb.com/file/2011/03/RAN-Online-wallpaper.jpg') no-repeat center center fixed;
+  background: url('https://newran.playpark.com/en-sea/wp-content/uploads/2019/06/illust11.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
