@@ -179,22 +179,49 @@
                 $(this).hide();
                 var UserName = $("#LoginModal").find("#username").val();
                 var Password = $("#LoginModal").find("#password").val();
-    
-                $("#LoginModal").find("#Preload").show();
-
-                setTimeout(function(){ 
-               
+                if(UserName == ""){
+                    swal("alert","กรุณาระบุ UserID", "error");
                     $("#LoginModal").find("#Preload").hide();
                     $("#LoginModal").find("#Save").show();
+                    return false;
+                }
+                if(Password == ""){
+                    swal("alert","กรุณาระบุ Password", "error");
+                    $("#LoginModal").find("#Preload").hide();
+                    $("#LoginModal").find("#Save").show();
+                    return false;
+                }
+                $("#LoginModal").find("#Preload").show();
 
-                    swal("alert",UserName+"  "+Password, "error");
-                
-                }, 3000);
+            
+                $.post("https://cac.webclient.me/api/validateDataUserID.php",{
+                    UserName : UserName,
+                    Password : Password
+                },function(data){
 
-				
+                    if(data == 0){
+
+                        swal("alert","ข้อมูลผิดพลาด...", "error");
+                        $("#LoginModal").find("#Preload").hide();
+                        $("#LoginModal").find("#Save").show();
+                        return false;
+
+                    }else{
+
+                        
+                        var obj = JSON.parse(data);
+
+                        console.log(obj);
 
 
-                //$.post("https://cac.webclient.me/api/validateDataUserID.php");
+
+
+
+
+                    }
+
+
+                });
 
 
             });
