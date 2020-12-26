@@ -119,7 +119,7 @@
                 
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Password</label>
-                        <input type="text" class="form-control" id="password">
+                        <input type="password" class="form-control" id="password">
                     </div>
 
                 </div>
@@ -213,7 +213,8 @@
 
                         console.log(obj);
 
-
+                        $("#LoginModal").find("#Preload").hide();
+                        $("#LoginModal").find("#Save").show();
 
 
 
