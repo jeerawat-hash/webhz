@@ -68,7 +68,7 @@
 
     <form class="form-inline my-2 my-lg-0">
         <label><?php echo $UserName ;?></label>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ออกจากระบบ</button>
+      <a class="btn btn-outline-success my-2 my-sm-0" href="https://rhz.webclient.me/index.php/member/signout"  >ออกจากระบบ</a>
     </form>
 
   </div>
