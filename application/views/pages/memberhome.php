@@ -193,13 +193,13 @@
                     
                 if (data == 1) {
                     
-                    swal("Error","ตรวจพบการ Login ภายในเกมกรุณาออกจากเกมก่อนใช้งานระบบ", "warning");
+                    swal("Alert","ตรวจพบการ Login ภายในเกมกรุณาออกจากเกมก่อนใช้งานระบบ", "warning");
                     
                     setTimeout(function(){ 
                         
                         location.href = 'https://rhz.webclient.me/index.php/member/signout';
                     
-                    }, 2000);
+                    }, 3000);
 
                     
 

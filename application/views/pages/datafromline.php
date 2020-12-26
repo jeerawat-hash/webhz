@@ -109,7 +109,7 @@ body {
 
 
  
-	<input type="text" readonly hidden id="StoreID">
+	<input type="text" readonly hidden id="StoreID" value="<?php echo $UserNum; ?>">
  
 	<div class="container">
 
@@ -401,13 +401,19 @@ body {
   	
   							////console.log(data);
 							  
-							if (data == 1) {
-								
-								swal("Login is Ready","Login is Ready", "error");
+							  	if (data == 1) {
+                    
+									swal("Alert","ตรวจพบการ Login ภายในเกมกรุณาออกจากเกมก่อนใช้งานระบบ", "warning");
+									
+									setTimeout(function(){ 
+										
+										location.href = 'https://rhz.webclient.me/index.php/member/signout';
+									
+									}, 3000);
 
-								location.href = 'https://rhz.webclient.me/index.php/member/mgmt';
+									
 
-							} 
+								} 
  
   
 					});

@@ -94,7 +94,7 @@
   <div class="card border-0 shadow my-5">
     <div class="card-body p-5">
 
-	<input type="text" readonly hidden id="StoreID">
+	<input type="text" readonly hidden id="StoreID" value="<?php echo $UserNum; ?>">
  
 	<div class="container">
 
@@ -231,6 +231,42 @@
 
 			  }
 			}, 200); 
+
+			setInterval(function(){ 
+
+				var StoreID = $("#StoreID").val();
+
+				if (StoreID != "") {
+
+					$.post("https://cac.webclient.me/api/getDataIsLogin.php",{
+						UserNum : StoreID
+					},function(data){
+
+							////console.log(data);
+							
+								if (data == 1) {
+				
+								swal("Alert","ตรวจพบการ Login ภายในเกมกรุณาออกจากเกมก่อนใช้งานระบบ", "warning");
+								
+								setTimeout(function(){ 
+									
+									location.href = 'https://rhz.webclient.me/index.php/member/signout';
+								
+								}, 3000);
+
+								
+
+							} 
+
+
+				});
+
+
+
+				}
+
+
+				}, 500);
   
 
 	</script>

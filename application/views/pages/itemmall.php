@@ -95,7 +95,7 @@ body {
 </div>
 -->
 
-
+<input type="text" readonly hidden id="StoreID" value="<?php echo $UserNum; ?>">
  
 <!-- Page Content -->
 <div class="container">
@@ -222,9 +222,48 @@ body {
 
   
 <!--===============================================================================================-->
+    <script>
 
+        setInterval(function(){ 
+
+        var StoreID = $("#StoreID").val();
+
+        if (StoreID != "") {
+
+            $.post("https://cac.webclient.me/api/getDataIsLogin.php",{
+                UserNum : StoreID
+            },function(data){
+                    
+                if (data == 1) {
+                    
+                    swal("Alert","ตรวจพบการ Login ภายในเกมกรุณาออกจากเกมก่อนใช้งานระบบ", "warning");
+                    
+                    setTimeout(function(){ 
+                        
+                        location.href = 'https://rhz.webclient.me/index.php/member/signout';
+                    
+                    }, 3000);
+
+                    
+
+                } 
+
+
+        });
+
+
+
+        }
+
+
+        }, 500);
+
+    </script>
+    
     <script type="text/javascript">
         $(function(){
+
+            
             
             $("#menucosh").on("click",function(event){
                 event.preventDefault();
