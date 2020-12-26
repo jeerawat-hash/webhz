@@ -738,9 +738,10 @@ body {
 
 
 			//$("#SelectOption").on("click",function(){
-			$( document ).on("ready",function(){
+			$( document ).ready(function(){
  				
- 
+
+
  				$("#UserID").attr('disabled','disabled');
 
 
