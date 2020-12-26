@@ -127,9 +127,9 @@ body {
 		<div class="row">
 			
 			<div class="col-6">
-				<select id="UserID" class="custom-select">
+				<select disabled id="UserID" class="custom-select">
 
-				<option value="0">----- เลือก ID ที่ต้องการดูข้อมูล -----</option>
+				<option value="<?php echo $UserNum; ?>"><?php echo $UserName; ?></option>
 
 				</select>
 			</div>
@@ -441,10 +441,10 @@ body {
             //console.log(profile.displayName);
             //console.log(profile.pictureUrl);
             //console.log(profile.userId);
-            var Line = profile.userId;
+            //var Line = profile.userId;
 
   			//console.log(Line);
-
+/*
             setInterval(function(){ 
   
  					$.post("https://cac.webclient.me/api/getDataUserPointFromLine.php",{
@@ -460,14 +460,14 @@ body {
   
 
 			}, 1000);
-
+*/
 
 
 
 
 
             //swal("สำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
- 			
+ 			/*
             $.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
 					LineID : Line
 				},function(data){
@@ -488,7 +488,7 @@ body {
 					}
  
 			});
-
+*/
             ////////
 			$("#TableInvSale").hide();
 			///////
@@ -504,15 +504,15 @@ body {
 				var IDRAN = $("#UserID option:selected").val(); 
 				var ChaID = $("#ChaID option:selected").val(); 
 
-
+				/*
 				if (IDRAN.trim() == 0) {
 					swal("กรุณาเลือกID !!","กรุณาระบุข้อมูลใหม่", "error");
 					$("#UserID").attr('disabled',false);
 					return false;
-				}
+				}*/
 				if (ChaID.trim() == 0) {
 					swal("กรุณาเลือกตัวละคร !!","กรุณาระบุข้อมูลใหม่", "error");
-					$("#UserID").attr('disabled',false);
+					//$("#UserID").attr('disabled',false);
 					return false;
 				}
 
@@ -589,6 +589,7 @@ body {
   
  
 /////////////////////////////////////////////////////////////////////////////////////////////
+
 				$.post("https://cac.webclient.me/api/getDataSaleFromLineID.php",{
 					LineID : Line
 					},function(data){
@@ -774,7 +775,7 @@ body {
 						return false;
 					}
 
-					$("#StoreID").val(IDRAN);
+					//$("#StoreID").val(IDRAN);
 
 					for (var i = 0; i < Obj.UserNum.length; i++) { 
 
