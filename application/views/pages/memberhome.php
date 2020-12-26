@@ -100,9 +100,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">กรุณาเข้าสู่ระบบ</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <h5 class="modal-title" id="exampleModalLongTitle">กรุณาเข้าสู่ระบบ</h5>  
         </button>
       </div>
       <div class="modal-body"> 
@@ -112,28 +110,31 @@
                 <div class="col-6" >
 
                     <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">UserID:</label>
-                        <input type="text" class="form-control" id="recipient-name">
+                        <label for="recipient-name" class="col-form-label">UserID</label>
+                        <input type="text" class="form-control" id="username">
                     </div>
 
                 </div>
                 <div class="col-6" >
                 
                     <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Password:</label>
-                        <input type="text" class="form-control" id="recipient-name">
+                        <label for="recipient-name" class="col-form-label">Password</label>
+                        <input type="text" class="form-control" id="password">
                     </div>
 
                 </div>
             </div>
-        
-        
+         
         </div>
 
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="modal-footer"> 
+      
+        <div class="spinner-border text-primary" role="status" id="Preload">
+        <span class="sr-only">Loading...</span>
+        </div>
+
+        <button type="button" class="btn btn-primary" id="Save">เข้าสู่ระบบ</button>
       </div>
     </div>
   </div>
@@ -171,8 +172,32 @@
     <script>
         $(function(){
 
+            $("#LoginModal").find("Preload").hide();
             $('#LoginModal').modal({backdrop: 'static', keyboard: false});
+            $("#LoginModal").find("#Save").on("click",function(){
 
+                $(this).hide();
+                var UserName = $("#LoginModal").find("username").val();
+                var Password = $("#LoginModal").find("password").val();
+    
+                $("#LoginModal").find("Preload").show();
+
+                setTimeout(function(){ 
+               
+                    $("#LoginModal").find("Preload").hide();
+                    $("#LoginModal").find("Save").show();
+
+                    swal("alert",UserName+"  "+Password, "error");
+                
+                }, 3000);
+
+				
+
+
+                //$.post("https://cac.webclient.me/api/validateDataUserID.php");
+
+
+            });
 
         });
     </script>
