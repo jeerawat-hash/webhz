@@ -172,20 +172,20 @@
     <script>
         $(function(){
 
-            $("#LoginModal").find("Preload").hide();
+            $("#LoginModal").find("#Preload").hide();
             $('#LoginModal').modal({backdrop: 'static', keyboard: false});
             $("#LoginModal").find("#Save").on("click",function(){
 
                 $(this).hide();
-                var UserName = $("#LoginModal").find("username").val();
-                var Password = $("#LoginModal").find("password").val();
+                var UserName = $("#LoginModal").find("#username").val();
+                var Password = $("#LoginModal").find("#password").val();
     
-                $("#LoginModal").find("Preload").show();
+                $("#LoginModal").find("#Preload").show();
 
                 setTimeout(function(){ 
                
-                    $("#LoginModal").find("Preload").hide();
-                    $("#LoginModal").find("Save").show();
+                    $("#LoginModal").find("#Preload").hide();
+                    $("#LoginModal").find("#Save").show();
 
                     swal("alert",UserName+"  "+Password, "error");
                 
