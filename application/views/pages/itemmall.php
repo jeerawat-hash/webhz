@@ -88,25 +88,27 @@ body {
 
 
 
-
-
-<!-- Page Content -->
 <div class="container">
-  <div class="card border-0 shadow my-5">
-    <div class="card-body p-5">
-    
-
     <div class="row">
         <div class="col-12"> 
 
         <div class="jumbotron text-center" style="margin-bottom:0">
         <h1>แนะนำไอเทม</h1>
         <p>Resize this responsive page to see the effect!</p> 
-        </div>
-
+        </div> 
         </div>
 
     </div>
+</div>
+
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+     
     <br>
     <div class="row">
  
