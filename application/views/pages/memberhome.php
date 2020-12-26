@@ -234,7 +234,7 @@
                         var obj = JSON.parse(data);
                         console.log(obj);
 
-                        $.post("https://cac.webclient.me/api/signin.php",{
+                        $.post("https://rhz.webclient.me/index.php/member/signin",{
                             UserNum : obj.UserNum[0],
                             UserName : obj.UserName[0]
                         },function(data){
