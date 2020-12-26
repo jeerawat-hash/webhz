@@ -97,14 +97,17 @@ body {
     
 
     <div class="row">
-    
-    <div class="jumbotron text-center" style="margin-bottom:0">
+        <div class="col-12"> 
+
+        <div class="jumbotron text-center" style="margin-bottom:0">
         <h1>แนะนำไอเทม</h1>
         <p>Resize this responsive page to see the effect!</p> 
-    </div>
-     
-    </div>
+        </div>
 
+        </div>
+
+    </div>
+    <br>
     <div class="row">
  
         <div class="col-4"> 
