@@ -176,7 +176,7 @@ body {
         </div>
         <div class="col-9">
         
-            <table id="example" class="display" style="width:100%">
+            <table class="table">
             <thead>
                 <tr>
                     <th>หมวด</th>
