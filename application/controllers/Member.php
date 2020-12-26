@@ -20,16 +20,19 @@ class Member extends CI_Controller {
 	{
 		
 		//$this->load->view('pages/register');
-		
-		echo  $this->session->userdata("UserNum");
-			 
+
+		//echo  $this->session->userdata("UserNum"); 
+		$this->load->view('pages/memberhome');
+
 	}
 	public function	signin()
 	{  
 
 			//$userdata = array('UserNum' => $_POST["UserNum"]);
-			$userdata = array('UserNum' => 6,'UserName' => "jeerawat1");
+			$userdata = array('UserNum' => $_POST["UserNum"],'UserName' => $_POST["UserName"]);
 			$this->session->set_userdata($userdata);
+
+
    
 	}
 	public function signout()
