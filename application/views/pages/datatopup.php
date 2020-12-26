@@ -77,6 +77,13 @@
 </div>
 -->
 
+
+<!-- Page Content -->
+<div class="container">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+
+
   
 	<div class="container">
 
@@ -164,7 +171,9 @@
 
 	</div>
 
-
+	</div>
+  </div>
+</div>
  
 	
 		<!-- Modal Sale -->
