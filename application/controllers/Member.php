@@ -60,6 +60,7 @@ class Member extends CI_Controller {
 	{
 
 		$this->session->sess_destroy();
+		redirect("member");
 
 	}
 	public function itemmall()
