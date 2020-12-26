@@ -560,7 +560,7 @@ body {
 						
 						$("#ChaTableContent").html(tablehtml);
 
-						$("#ChaID").attr('disabled','disabled');
+						//$("#ChaID").attr('disabled','disabled');
 						 
 	 
 					}); 
