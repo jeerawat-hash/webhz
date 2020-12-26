@@ -27,7 +27,7 @@
 <style type="text/css">
  
 body {
-  background: url('https://newran.playpark.com/en-sea/wp-content/uploads/2019/06/illust11.jpg') no-repeat center center fixed;
+  background: url('https://img.techpowerup.org/101021/NCapture1946.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
