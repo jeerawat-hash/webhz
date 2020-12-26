@@ -23,12 +23,22 @@
 
 
 </head>
+
+<style type="text/css">
  
+body {
+  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+ </style>
  
 <body>
 
 	<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-  <a class="navbar-brand" href="#">จัดการตัวละครแลพฝากขาย</a>
+  <a class="navbar-brand" href="#">จัดการตัวละครและฝากขาย</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -67,6 +77,22 @@
     </div> 
   </ul>
 </div>
+
+
+
+
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+    
+
+
+
+
 
  
 	<input type="text" readonly hidden id="StoreID">
@@ -246,6 +272,9 @@
 
 	</div>
 
+	</div>
+  </div>
+</div>
 
  
 	
