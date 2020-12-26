@@ -186,6 +186,7 @@
                 }else{
                     //// is logon
 
+                   
 
                     //// is logon
                 }
@@ -240,9 +241,7 @@
                         },function(data){
                             //// is logon
 
-
-
-
+                            location.href = "https://rhz.webclient.me/index.php/member";
 
                             //// is logon
                         });
