@@ -580,11 +580,12 @@ body {
 				$("#TableInvSale").show();
 				$("#TableInventory").hide();
   
- 
+				var IDRAN = $("#UserID option:selected").val(); 
+				
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-				$.post("https://cac.webclient.me/api/getDataSaleFromLineID.php",{
-					LineID : Line
+				$.post("https://cac.webclient.me/api/getDataSaleFromUserNum.php",{
+					UserNum : IDRAN
 					},function(data){
 
 						$("#TableInvSaleContent").html("");
@@ -623,6 +624,7 @@ body {
 			 	btnA.text("กำลังดำเนินการ....");
 				btnA.attr("disabled", true);
 
+				var IDRAN = $("#UserID option:selected").val(); 
 
 
 				$.post("https://cac.webclient.me/api/addReInvItem.php",{
@@ -641,8 +643,8 @@ body {
 
 
 						swal("สำเร็จ !!","นำไอเทมกลับสู่ตัวละครสำเร็จ", "success"); 
-						$.post("https://cac.webclient.me/api/getDataSaleFromLineID.php",{
-							LineID : Line
+						$.post("https://cac.webclient.me/api/getDataSaleFromUserNum.php",{
+							UserNum : IDRAN
 							},function(data){
 
 								$("#TableInvSaleContent").html("");
