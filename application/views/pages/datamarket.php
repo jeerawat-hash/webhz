@@ -183,10 +183,10 @@ body {
  				<font color="green"><label class="MoneyPoint">0</label> </font> พ้อย
  				 
 			</div> 
-			<div class="col-6"> 
+			<div hidden class="col-6"> 
  				
- 				<label hidden > <font color="red">ยอดเงินที่สามารถถอนได้</font> : </label>
- 				<font color="green"><label class="MoneyPoint">0</label> </font> บาท
+ 				<label  > <font color="red">ยอดเงินที่สามารถถอนได้</font> : </label>
+ 				<font  color="green"><label class="MoneyPoint">0</label> </font> บาท
  				 
 			</div> 
 
