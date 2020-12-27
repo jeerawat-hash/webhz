@@ -30,7 +30,7 @@
 <style type="text/css">
  
 body {
-  background: url('https://s1.dmcdn.net/v/DEpN81MfbEERcM6eO/x1080') no-repeat center center fixed;
+  background: url('https://vistapointe.net/images/ran-online-wallpaper-8.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
