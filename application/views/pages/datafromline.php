@@ -690,7 +690,7 @@ body {
 
 
 
-
+			/*
             $("#ReloadPage").on("click",function(){
 
 				$("#UserID").html('<option value="0">----- เลือก ID ที่ต้องการดูข้อมูล -----</option>');
@@ -728,7 +728,7 @@ body {
 
 
 
-            });
+            });*/
 
 
 

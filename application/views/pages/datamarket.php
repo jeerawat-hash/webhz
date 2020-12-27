@@ -348,9 +348,7 @@ body {
 
 	</script>
 
-
  
-    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
       <script>
 		  
 		  $(function(){
@@ -448,9 +446,7 @@ body {
 
 			//$("#SelectOption").on("click",function(){
 			$( document ).ready(function(){
- 				
-
-
+ 				 
  				$("#UserID").attr('disabled','disabled');
 
 
@@ -542,8 +538,11 @@ body {
 
 			///////////////////// getdata table ////////////////////////
 			setInterval(function(){ 
-			$.post("https://cac.webclient.me/api/getDataMarketSaleFromnotinLineID.php",{
-					LineID : Line
+
+				var IDRAN = $("#UserID option:selected").val(); 
+
+			$.post("https://cac.webclient.me/api/getDataMarketSaleFromnotinUserID.php",{
+				UserNum : IDRAN
 					},function(data){
 
 						$("#TableSaleContent").html("");
