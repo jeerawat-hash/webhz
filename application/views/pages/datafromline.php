@@ -147,7 +147,7 @@ body {
 		<div class="row">
 			
 			<div class="col-6">
-				 <LABEL>ตัวละคร</LABEL>
+				 <LABEL>เลือกตัวละคร</LABEL>
 			</div>
 			<div class="col-6">
 				 

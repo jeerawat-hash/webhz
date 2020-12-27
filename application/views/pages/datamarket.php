@@ -147,7 +147,7 @@ body {
 		<div class="row">
 			
 			<div class="col-6">
-				 <LABEL>ตัวละคร</LABEL>
+				 <LABEL>เลือกตัวละครที่ต้องการซื้อไอเทม</LABEL>
 			</div>
 			<div class="col-6">
 				 
