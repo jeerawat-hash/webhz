@@ -61,7 +61,7 @@ body {
         <a class="nav-link" href="https://rhz.webclient.me/index.php/member/mgmt">ฝากขายไอเทม</a>
       </li>
 
-      <li class="nav-item">
+      <li hidden class="nav-item">
         <a class="nav-link " href="https://rhz.webclient.me/index.php/member/topup">เติมเงิน</a>
       </li>
 
