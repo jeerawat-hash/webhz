@@ -28,14 +28,14 @@
 </head>
 
 <style type="text/css">
- /*
+ 
 body {
-  background: url('https://img.techpowerup.org/101021/NCapture1946.jpg') no-repeat center center fixed;
+  background: url('https://s1.dmcdn.net/v/DEpN81MfbEERcM6eO/x1080') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-}*/
+} 
  </style>
  
 <body>
