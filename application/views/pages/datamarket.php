@@ -462,7 +462,7 @@ body {
 				$("#ChaID").html('<option value="0">----- เลือก ตัวละคร ที่ต้องการดูข้อมูล -----</option>');
 
 				var IDRAN = $("#UserID option:selected").val(); 
-				swal("สำเร็จ !!","เรียกดูข้อมูลสำเร็จ", "success");
+				//swal("สำเร็จ !!","เรียกดูข้อมูลสำเร็จ", "success");
 
 
 				if (IDRAN.trim() == 0) {
