@@ -161,7 +161,18 @@ class Member extends CI_Controller {
 
  		$this->load->view('pages/datawithdraw',$sess);
 		 
- 	}
+	 }
+	 public function addallItem()
+	 {
+		/*
+		  INSERT INTO ShopPurchase (UserUID,ProductNum,PurPrice,PurFlag,PurDate)
+			SELECT UserName ,
+			(SELECT ProductNum FROM ShopItemMap WHERE ItemMain = 121 AND ItemSub = 8),'0','0',GETDATE() 
+			FROM RanUser.dbo.UserInfo WHERE UserLoginState = 1
+			*/
+
+
+	 }
 
 
 
