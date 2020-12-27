@@ -26,8 +26,8 @@
 
 <style type="text/css">
   
-body {
-  background: url('https://img.techpowerup.org/101021/NCapture1946.jpg') no-repeat center center fixed;
+  body {
+  background: url('https://www.wallpaperup.com/uploads/wallpapers/2015/03/20/641752/f3665753b2003cb766707090965ae050.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -71,7 +71,7 @@ body {
 	<form class="form-inline my-2 my-lg-0"> 
 
 	<span class="navbar-text">
-	<?php echo $UserName ;?> &nbsp ยอดคงเหลือ<label class="MoneyPoint"></label> พ้อย
+	<?php echo $UserName ;?> 
 	</span>
 	<a class="btn btn-sm btn-outline-secondary" href="https://rhz.webclient.me/index.php/member/signout"  >ออกจากระบบ</a>
 
