@@ -590,7 +590,7 @@ body {
 			  	var ChaID = $("#ChaID option:selected").val(); 
 				  
 			  	if (ChaID.trim() == 0) {
-					swal("ERROR !!","ไม่พบตัวละครที่ต้องการซื้อไอเทม", "error");
+					swal("ERROR !!","กรุณาเลือกตัวละครที่ต้องการรับไอเทม", "error");
 					$("#ChaID").attr('disabled',false);
 					return false;
 				}
