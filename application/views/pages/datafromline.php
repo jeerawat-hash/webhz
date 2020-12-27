@@ -191,7 +191,7 @@ body {
 			</div> 
 			<div class="col-4"> 
  				
- 				<label> <font color="red">ยอดเงินที่สามารถถอนได้</font> : </label>
+ 				<label hidden> <font color="red">ยอดเงินที่สามารถถอนได้</font> : </label>
  				<font color="green"><label class="MoneyPoint">0</label> </font> บาท
  				 
 			</div> 
@@ -437,7 +437,7 @@ body {
  
 		$(function(){
 
-/*
+/* /// line 
             setInterval(function(){ 
   
  					$.post("https://cac.webclient.me/api/getDataUserPointFromLine.php",{
@@ -453,8 +453,23 @@ body {
   
 
 			}, 1000);
-*/
+*/	 /// line 
 
+			setInterval(function(){ 
+
+			var IDRAN = $("#UserID option:selected").val(); 
+				$.post("https://cac.webclient.me/api/getDataUserPointFromUserNum.php",{
+						UserNum : IDRAN
+					},function(data){
+
+						//console.log(data);
+						var objectMoney = JSON.parse(data);
+						//console.log(objectMoney.Point);
+						$(".MoneyPoint").text(objectMoney.Point);
+				});
+
+
+			}, 1000);
 
 
 

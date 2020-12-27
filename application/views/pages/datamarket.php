@@ -185,7 +185,7 @@ body {
 			</div> 
 			<div class="col-6"> 
  				
- 				<label> <font color="red">ยอดเงินที่สามารถถอนได้</font> : </label>
+ 				<label hidden > <font color="red">ยอดเงินที่สามารถถอนได้</font> : </label>
  				<font color="green"><label class="MoneyPoint">0</label> </font> บาท
  				 
 			</div> 
@@ -355,11 +355,12 @@ body {
 
  
             //swal("สำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
- 			/*
+ 			
             setInterval(function(){ 
-  
- 					$.post("https://cac.webclient.me/api/getDataUserPointFromLine.php",{
-							LineID : Line
+
+				var IDRAN = $("#UserID option:selected").val(); 
+ 					$.post("https://cac.webclient.me/api/getDataUserPointFromUserNum.php",{
+							UserNum : IDRAN
 						},function(data){
   	
   							//console.log(data);
@@ -370,7 +371,7 @@ body {
   
 
 			}, 1000);
-			*/
+			
 
 
 
