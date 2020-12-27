@@ -71,7 +71,7 @@ body {
 	<form class="form-inline my-2 my-lg-0"> 
 
 	<span class="navbar-text">
-	<?php echo $UserName ;?>
+	<?php echo $UserName ;?> &nbsp ยอดคงเหลือ<label class="MoneyPoint"></label> พ้อย
 	</span>
 	<a class="btn btn-sm btn-outline-secondary" href="https://rhz.webclient.me/index.php/member/signout"  >ออกจากระบบ</a>
 

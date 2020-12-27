@@ -74,7 +74,7 @@ body {
     <form class="form-inline my-2 my-lg-0"> 
 
     <span class="navbar-text">
-    <?php echo $UserName ;?>
+    <?php echo $UserName ;?> &nbsp ยอดคงเหลือ<label class="MoneyPoint"></label> พ้อย
     </span>
     <a class="btn btn-sm btn-outline-secondary" href="https://rhz.webclient.me/index.php/member/signout"  >ออกจากระบบ</a>
 
@@ -238,6 +238,25 @@ body {
   
 <!--===============================================================================================-->
     <script>
+
+
+      setInterval(function(){ 
+
+      var IDRAN = $("#StoreID").val();
+        $.post("https://cac.webclient.me/api/getDataUserPointFromUserNum.php",{
+            UserNum : IDRAN
+          },function(data){
+
+              //console.log(data);
+              var objectMoney = JSON.parse(data);
+              //console.log(objectMoney.Point);
+            $(".MoneyPoint").text(objectMoney.Point);
+        });
+
+
+      }, 1000);
+
+
 
         setInterval(function(){ 
 
