@@ -127,12 +127,13 @@ body {
 		<div class="row">
 			
 			<div class="col-6">
-				<select id="UserID" class="custom-select">
+				<select disabled id="UserID" class="custom-select">
 
-				<option value="0">----- เลือก ID ที่ต้องการดูข้อมูล -----</option>
+				<option value="<?php echo $UserNum; ?>"><?php echo $UserName; ?></option>
 
 				</select>
 			</div>
+			
 			<div class="col-6">
 				
 				<button id="SelectOption" class="btn btn-primary">เลือก</button>
@@ -350,19 +351,12 @@ body {
  
     <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
       <script>
- 
-        function runApp() {
-          liff.getProfile().then(profile => {
- 
-      
-            //console.log(profile.displayName);
-            //console.log(profile.pictureUrl);
-            //console.log(profile.userId);
-            var Line = profile.userId;
+		  
+		  $(function(){
 
-            //console.log(Line);
+ 
             //swal("สำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
- 			
+ 			/*
             setInterval(function(){ 
   
  					$.post("https://cac.webclient.me/api/getDataUserPointFromLine.php",{
@@ -377,13 +371,14 @@ body {
   
 
 			}, 1000);
+			*/
 
 
 
 
 
 
-
+/*
 
             $.post("https://cac.webclient.me/api/getDataIDFromLineID.php",{
 					LineID : Line
@@ -405,10 +400,10 @@ body {
 					}
  
 			});
-
+*/
  			
 
-
+/*
             $("#ReloadPage").on("click",function(){
 
 				$("#UserID").html('<option value="0">----- เลือก ID ที่ต้องการดูข้อมูล -----</option>');
@@ -447,10 +442,11 @@ body {
 
 
             });
+*/
 
 
-
-			$("#SelectOption").on("click",function(){
+			//$("#SelectOption").on("click",function(){
+			$( document ).ready(function(){
  				
 
 
@@ -488,7 +484,7 @@ body {
 						return false;
 					}
 
-					$("#StoreID").val(IDRAN);
+					//$("#StoreID").val(IDRAN);
 
 					for (var i = 0; i < Obj.UserNum.length; i++) { 
 
@@ -742,41 +738,9 @@ body {
 			});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-             
-
  
-          }).catch(err => console.error(err));
-        }
-        liff.init({ liffId: "1655100623-qN5gyNKE" }, () => {
-          if (liff.isLoggedIn()) {
-            runApp();
 
-          } else {
-            liff.login();
-          }
-        }, err => console.error(err.code, error.message));
+		});
   </script>
 
   
