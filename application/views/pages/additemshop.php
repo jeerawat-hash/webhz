@@ -43,7 +43,7 @@
       <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <label>เลือกไอเทมที่ต้องการ : </label>
+                        <label>ค้นหาไอเทมที่ต้องการ : </label>
                     </div>
                     
                     <div class="col-6 form-group"> 
@@ -55,6 +55,20 @@
                             </datalist> 
   
 
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label>ค้นหาไอเทมที่ต้องการ : </label>
+                    </div>
+                    
+                    <div class="col-6 form-group"> 
+    
+                        <select name="ItemSelect" class="form-control" id="ItemSelect">
+                        <option value="cloth" data-mid="A" data-sid="B" >TEST</option>  
+                        </select>
+                     
                     </div>
                 </div>
 
@@ -176,11 +190,10 @@
 
 
         $("#ModalFindItemToShop").find("#Save").on("click",function(){
-  
-            $("input[name=ItemNameSearch]").focusout(function(){
-                alert($(this).val());
-            });
+   
+            var a = $("#ItemSelect option:selected").attr("data-mid");
 
+            alert(a);
 
 
         });
