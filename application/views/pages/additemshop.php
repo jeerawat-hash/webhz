@@ -53,12 +53,11 @@
                     
                     <div class="col-6 ">
  
-                        <input type="text" list="item" />
-                            <datalist id="item">
-                            <option>Volvo</option>
-                            <option>Saab</option>
-                            <option>Mercedes</option>
-                            <option>Audi</option>
+                        <input type="text" list="itemdata" id="ItemNameSearch" />
+                            <datalist id="itemdata">
+
+                            <option value="cloth">เครื่องแต่งกาย</option> 
+                            
                             </datalist> 
   
 
@@ -72,15 +71,54 @@
                     
                     <div class="col-6">
 
-                        <select name="cars" id="cars">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
+                        <select name="categoty" id="categoty">
+                        <option value="cloth">เครื่องแต่งกาย</option> 
+                        <option value="weapon">อาวุธ</option> 
+                        <option value="access">สร้อย</option> 
+                        <option value="card">บัตร</option> 
+                        <option value="other">อื่นๆ</option> 
                         </select>
  
                     </div>
                 </div>
+                
+                <div class="row">
+                    <div class="col-6">
+                        <label>ราคา(พ้อย) : </label>
+                    </div>
+                    
+                    <div class="col-6">
+                        
+                        <input type="text"  id="Price" />
+ 
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label>คำอธิบาย : </label>
+                    </div>
+                    
+                    <div class="col-6">
+                        
+                        <input type="text"  id="Descript" />
+ 
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label>ภาพ : </label>
+                    </div>
+                    
+                    <div class="col-6">
+                        
+                        <input type="file"  id="ImageFile" />
+ 
+                    </div>
+                </div>
+
+ 
 
             </div>
 
