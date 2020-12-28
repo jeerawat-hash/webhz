@@ -132,7 +132,7 @@ body {
 
         <div class="col-3 text-center"> 
           
-        <a href="#" class="btn btn-secondary active" role="button" aria-pressed="true">เปลี่ยนรหัสผ่าน</a>
+        <a href="#" class="btn btn-primary active" role="button" aria-pressed="true">เปลี่ยนรหัสผ่าน</a>
 
         </div>
 
