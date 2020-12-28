@@ -48,10 +48,9 @@
                     
                     <div class="col-6 form-group"> 
     
-                        <input type="text" list="itemdata" class="form-control" id="ItemNameSearch" />
+                        <input type="text" list="itemdata" autocomplete="off" class="form-control" id="ItemNameSearch" />
                             <datalist id="itemdata">
-
-                            <!-- <option value="cloth">เครื่องแต่งกาย</option> -->
+ 
                             
                             </datalist> 
   
