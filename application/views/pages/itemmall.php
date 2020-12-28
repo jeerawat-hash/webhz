@@ -35,12 +35,7 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-} 
-.jumbotron { 
-    background-size: cover; 
-    padding: -2em inherit;
-    height: 30px;
-}
+}  
  </style>
  
 <body>
