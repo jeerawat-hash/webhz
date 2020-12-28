@@ -37,10 +37,9 @@ body {
   -o-background-size: cover;
 } 
 .jumbotron {
-   /* background: url('http://placekitten.com/800/500') no-repeat center center; */
-    background-size: cover;
-    color: #fff;
-    padding: 5em inherit;
+    background: url('http://placekitten.com/800/500') no-repeat center center; 
+    background-size: cover; 
+    padding: 2em inherit;
 }
  </style>
  
