@@ -116,7 +116,7 @@
 	<div class="row">
         <div class="col-12"> 
 
-        <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2015/03/20/641745/c4f825b2e617ea446f5d5058574ee733.jpg');" >
+        <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://cdn.hipwallpaper.com/i/18/17/DSk135.jpg');" >
         <h1>ฝากขายไอเทมตลาดกลาง</h1>
         <p></p> 
         </div> 
