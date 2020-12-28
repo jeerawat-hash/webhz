@@ -44,12 +44,11 @@
         </div>
         <div class="modal-body">
 
-
-            <div class="container">
+ 
                 <div class="row">
                     <div class="col-6">
-                        <label>เลือกไอเทมที่ต้องการ : </label>
-                    </div>
+                        เลือกไอเทมที่ต้องการ : 
+                    </div> 
                     <div class="col-6 ">
  
                         <input type="text" list="item" />
@@ -63,15 +62,8 @@
 
                     </div>
                 </div>
-
-            </div>
-
-        
-
-
-
-
-
+ 
+ 
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-primary" id="Save">Save</button>
