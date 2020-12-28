@@ -142,7 +142,7 @@ body {
         <div class="col-12"> 
 
         <div class="jumbotron text-center" style="margin-bottom:0">
-        <h1>ไอเทมอื่นๆ</h1>
+        <h1>ไอเทมพิเศษ</h1>
         <p></p> 
         </div> 
         </div>

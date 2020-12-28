@@ -112,6 +112,19 @@
 	<input type="text" readonly hidden id="StoreID" value="<?php echo $UserNum; ?>">
  
 	<div class="container">
+
+	<div class="row">
+        <div class="col-12"> 
+
+        <div class="jumbotron text-center" >
+        <h1>ฝากขายไอเทมตลาดกลาง</h1>
+        <p></p> 
+        </div> 
+        </div>
+
+	</div>
+
+
 	<!--
 		<div class="row">
 			
