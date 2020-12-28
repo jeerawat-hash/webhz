@@ -302,7 +302,10 @@ body {
           $.post("https://cac.webclient.me/api/getDataUserInfo.php",{
             UserNum : StoreID
           },function(data){
- 
+
+            var obj = JSON.parse();
+            console.log(obj);
+
             var html = "";
 
             for (var i = 0; i < /*array.length*/3; i++) {
