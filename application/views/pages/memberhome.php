@@ -312,13 +312,13 @@ body {
               
               html += '<div class="col-4 mb-3">'+
                       '<div class="card ">'+
-                          '<img class="card-img-top" width="286" height="180" src="http://heaven-webshop.com/api/b81-1.jpg" alt="Card image cap">'+
+                          '<img class="card-img-top" width="286" height="180" src="'+obj.Class[i]+'" alt="Card image cap">'+
                           '<div class="card-body">'+
-                          '<h5 class="card-title">ชื่อตัวละคร</h5>'+
-                          '<p class="card-text">เลเวล : <font color="red" id="level"></font>  PlayerKILL : <font color="red" id="pk"></font> </p> '+  
+                          '<h5 class="card-title">'+obj.ChaName[i]+'</h5>'+
+                          '<p class="card-text">เลเวล : <font color="green" id="level">'+obj.ChaLevel[i]+'</font>  PlayerKILL : <font color="red" id="pk">'+obj.ChaKills[i]+'</font> </p> '+  
                           '</div> '+
                           '<div class="card-footer">'+
-                          '<small class="text-muted">ยอดเงิน : <font color="red" id="money"></font></small>'+
+                          '<small class="text-muted">ยอดเงิน : <font color="red" id="money">'+obj.ChaMoney[i]+'</font></small>'+
                           '</div>'+
                       '</div> '+
                     '</div>';
