@@ -148,9 +148,10 @@
 
 
         $("#ModalFindItemToShop").find("#ItemNameSearch").on("change",function(){
- 
+            var Item = $(this).val();
+
             $.post("https://cac.webclient.me/api/getdataallitemserver.php",{
-                ItemName : "ดาบ"
+                ItemName : Item
             },function(data){ 
                 $("#ModalFindItemToShop").find("#itemdata").empty();
  
