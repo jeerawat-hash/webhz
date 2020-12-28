@@ -38,7 +38,7 @@ body {
 } 
 .jumbotron { 
     background-size: cover; 
-    padding: 2em inherit;
+    padding: -2em inherit;
     height: 30px;
 }
  </style>
