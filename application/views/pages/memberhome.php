@@ -103,7 +103,7 @@ body {
     <div class="row">
         <div class="col-12"> 
 
-        <div class="jumbotron text-center" style="margin-bottom:0 ;  background-size: cover; background-image: url('https://rhz.webclient.me/assets/Login/images/bg-01.jpg');">
+        <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://rhz.webclient.me/assets/Login/images/bg-01.jpg');">
         <h1>ยินดีต้อนรับ <?php echo $UserName; ?></h1>
         <p>เข้าสู่ระบบจัดการตัวละคร Hazakura GameServer</p> 
         </div> 
