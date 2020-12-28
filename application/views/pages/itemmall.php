@@ -264,7 +264,7 @@ body {
         }, 500);
 
     </script>
-
+  
     <script type="text/javascript">
         $(function(){
 
@@ -289,7 +289,7 @@ body {
                                     '<p class="card-text">'+obj.ItemComment[i]+'</p>'+
                                     '</div>'+ 
                                     '<div class="card-footer">'+
-                                    '<small class="text-muted">ราคา '+obj.ItemPrice[i]+'</small>'+
+                                    '<small class="text-muted">ราคา  <font>'+obj.ItemPrice[i]+'</font> พ้อย</small>'+
                                     '</div>'+
                                 '</div>'+ 
                               '</div>';
