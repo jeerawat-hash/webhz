@@ -64,9 +64,9 @@
                         <label>หมวดไอเทม : </label>
                     </div>
                     
-                    <div class="col-6">
-
-                        <select name="categoty" id="categoty">
+                    <div class="col-6 form-group"> 
+       
+                        <select name="categoty" class="form-control" id="categoty">
                         <option value="cloth">เครื่องแต่งกาย</option> 
                         <option value="weapon">อาวุธ</option> 
                         <option value="access">สร้อย</option> 
@@ -82,9 +82,9 @@
                         <label>ราคา(พ้อย) : </label>
                     </div>
                     
-                    <div class="col-6">
+                    <div class="col-6 form-group">
                         
-                        <input type="text"  id="Price" />
+                        <input type="text" class="form-control"  id="Price" />
  
                     </div>
                 </div>
@@ -94,9 +94,9 @@
                         <label>คำอธิบาย : </label>
                     </div>
                     
-                    <div class="col-6">
+                    <div class="col-6 form-group">
                         
-                        <input type="text"  id="Descript" />
+                        <input type="text" class="form-control" id="Descript" />
  
                     </div>
                 </div>
@@ -106,9 +106,9 @@
                         <label>ภาพ : </label>
                     </div>
                     
-                    <div class="col-6">
+                    <div class="col-6 form-group">
                         
-                        <input type="file"  id="ImageFile" />
+                        <input type="file" class="form-control-file"  id="ImageFile" />
  
                     </div>
                 </div>
