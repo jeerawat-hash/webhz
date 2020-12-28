@@ -66,7 +66,7 @@
                     <div class="col-6 form-group"> 
     
                         <select name="ItemSelect" class="form-control" id="ItemSelect">
-                        <option value="cloth" data-mid="A" data-sid="B" >TEST</option>  
+                        <option  data-mid="A" data-sid="B" >--- กรุณาเลือกไอเทม ---</option>  
                         </select>
                      
                     </div>
@@ -191,9 +191,10 @@
 
         $("#ModalFindItemToShop").find("#Save").on("click",function(){
    
-            var a = $("#ItemSelect option:selected").attr("data-mid");
+            var mid = $("#ItemSelect option:selected").attr("data-mid");
+            var sid = $("#ItemSelect option:selected").attr("data-sid");
 
-            alert(a);
+            alert(mid+" "+sid);
 
 
         });
