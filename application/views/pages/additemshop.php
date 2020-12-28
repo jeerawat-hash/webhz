@@ -164,7 +164,7 @@
                     
                 }
 
-                $("#ModalFindItemToShop").find("#itemdata").append(html);
+                $("#ModalFindItemToShop").find("#itemdata").html(html);
                  
             });
               
