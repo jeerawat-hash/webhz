@@ -13,7 +13,7 @@
 <div class="container">
   <h2>เพิ่มไอเทม</h2>
   <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" >เพิ่มไอเทม</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" id="additem" >เพิ่มไอเทม</button>
 
 
 
@@ -33,7 +33,7 @@
 
   
   <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal fade" id="ModalFindItemToShop" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -55,6 +55,7 @@
 
         </div>
         <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="Save">Save</button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
@@ -72,7 +73,42 @@
 
 
 
+<script>
 
+    $(function(){
+
+        $("#additem").on("click",function(){
+
+
+            $("#ModalFindItemToShop").modal();
+
+
+        });
+
+
+        $("#ModalFindItemToShop").find("#Save").on("click",function(){
+
+            alert();
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+    });
+
+
+</script>
 
 
 
