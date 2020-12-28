@@ -147,13 +147,26 @@
         });
 
 
+        $("#ModalFindItemToShop").find("#ItemNameSearch").on("change",function(){
+
+        alert();
+        $("#ModalFindItemToShop").find("#itemdata").empty();
+        
+
+
+        });
+
+
+
+
+
         $("#ModalFindItemToShop").find("#Save").on("click",function(){
 
             alert();
 
 
         });
-
+       // https://cac.webclient.me/api/getdataallitemserver.php
 
 
 
