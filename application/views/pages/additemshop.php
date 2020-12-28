@@ -176,8 +176,13 @@
 
 
         $("#ModalFindItemToShop").find("#Save").on("click",function(){
+  
+            $("#ModalFindItemToShop").find("#itemdata").focusout(function(){
+                
+                alert($(this).val());
 
-            alert();
+            });
+
 
 
         });
