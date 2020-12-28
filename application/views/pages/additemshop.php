@@ -177,9 +177,9 @@
 
         $("#ModalFindItemToShop").find("#Save").on("click",function(){
   
-            $("input[name=ItemNameSearch]").focusout(function(){
-                alert($(this).text());
-            });
+            //$("#SelectEntityPrimaryName option:selected").val();
+            var a =  $("#ItemNameSearch option:selected").attr('value');
+            alert(a);
 
 
 
