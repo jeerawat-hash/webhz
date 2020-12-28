@@ -45,9 +45,32 @@
         <div class="modal-body">
 
 
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <label>เลือกไอเทมที่ต้องการ : </label>
+                    </div>
+                    <div class="col-6">
+
+                    <div class="form-group">  
+
+                        <input type="text" class="form-control" list="item" />
+                            <datalist id="item">
+                            <option>Volvo</option>
+                            <option>Saab</option>
+                            <option>Mercedes</option>
+                            <option>Audi</option>
+                            </datalist> 
+                            
+                    </div>
 
 
-          <p>Some text in the modal.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        
 
 
 
