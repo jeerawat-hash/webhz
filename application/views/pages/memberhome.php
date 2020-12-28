@@ -165,6 +165,33 @@ body {
 
 
 
+<!-- Page Content -->
+<div class="container">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+
+
+    <div class="row">
+        <div class="col-12"> 
+
+        <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>ไอเทมแนะนำวันนี้</h1>
+        <p>ได้รับส่วนลดพิเศษ30%</p> 
+        </div> 
+        </div>
+
+    </div>
+    <br>
+    <div id="RecommendItem" class="row">
+ 
+ 
+
+
+    </div>
+ 
+	</div>
+  </div>
+</div>
 
 
 
@@ -285,6 +312,38 @@ body {
         $(function(){
 
 
+
+
+          $.get("https://cac.webclient.me/api/getDataItemShopRecomment.php",function(data){
+
+
+          var obj = JSON.parse(data);
+          console.log(obj);
+
+          var html = "";
+
+          for (var i = 0; i < obj.ProductNum.length; i++) {
+                  
+                  html += '<div class="col-4 mb-3">'+
+                          '<div class="card ">'+
+                              '<img class="card-img-top" width="286" height="180" src="https://cac.webclient.me/img/ItemShop291220201221105fea0f5f52b77.png" alt="Card image cap">'+
+                                '<div class="card-body">'+
+                                '<h5 class="card-title">'+obj.ItemName[i]+'</h5>'+
+                                '<p class="card-text">'+obj.ItemComment[i]+'</p>'+
+                                '</div>'+ 
+                                '<div class="card-footer">'+
+                                '<small class="text-muted">ราคา  <font>'+obj.ItemPrice[i]+'</font> พ้อย</small>'+
+                                '</div>'+
+                            '</div>'+ 
+                          '</div>';
+                
+              }
+
+
+
+          $("#RecommendItem").html(html);
+
+          });
 
 
 

@@ -102,6 +102,7 @@ body {
 
 
 <!-- Page Content -->
+<!--
 <div class="container">
   <div class="card border-0 shadow my-5">
     <div class="card-body p-5">
@@ -128,7 +129,7 @@ body {
 	</div>
   </div>
 </div>
-
+-->
 
 
 
@@ -282,7 +283,7 @@ body {
 
 
 
-
+/*
           $.get("https://cac.webclient.me/api/getDataItemShopRecomment.php",function(data){
 
 
@@ -314,7 +315,7 @@ body {
 
           });
 
-
+*/
 
 
           
