@@ -66,11 +66,11 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-6">
                         <label>หมวดไอเทม : </label>
                     </div>
                     
-                    <div class="col-md-6 ">
+                    <div class="col-6">
 
                         <select name="cars" id="cars">
                         <option value="volvo">Volvo</option>
