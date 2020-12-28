@@ -148,21 +148,22 @@
 
 
         $("#ModalFindItemToShop").find("#ItemNameSearch").on("change",function(){
-
-            
-            
+ 
             $.post("https://cac.webclient.me/api/getdataallitemserver.php",{
                 ItemName : "ดาบ"
             },function(data){ 
                 $("#ModalFindItemToShop").find("#itemdata").empty();
-                //$("#ModalFindItemToShop").find("#itemdata").append();
+ 
                 var obj = JSON.parse(data);
-
-                console.log(obj);
-
+                
+                for (var i = 0; i < obj.length; i++) {
+                    
+                    $("#ModalFindItemToShop").find("#itemdata").append(' <option value="cloth" data-mid="'+obj.MID[i]+'" data-sid="'+obj.SID[i]+'" >'+obj.ItemName[i]+'</option> --> ');
+                    
+                }
+                 
             });
-             
-
+              
         });
 
 
