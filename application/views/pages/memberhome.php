@@ -112,18 +112,25 @@ body {
     </div>
     <br>
     <div class="row">
-        <div class="col-4 text-center"> 
+        <div class="col-3 text-center"> 
 
         <a href="#" class="btn btn-success active" role="button" aria-pressed="true">แลกพ้อยเวลาออนไลน์</a>
   
         </div>
-        <div class="col-4 text-center"> 
+
+        <div class="col-3 text-center"> 
+
+        <a href="#" class="btn btn-success dark" role="button" aria-pressed="true">แลกไอเทมจาก PK</a>
+
+        </div>
+
+        <div class="col-3 text-center"> 
           
         <a href="#" class="btn btn-danger active" role="button" aria-pressed="true">แก้ตัวละครค้าง</a>
 
         </div>
 
-        <div class="col-4 text-center"> 
+        <div class="col-3 text-center"> 
           
         <a href="#" class="btn btn-secondary active" role="button" aria-pressed="true">เปลี่ยนรหัสผ่าน</a>
 
@@ -283,18 +290,28 @@ body {
 
 
 
-          $("#menuother").on("click",function(event){
-                event.preventDefault();
-                $(".list-group-item").removeClass("active");
-                $(this).addClass("active");
+            $("#exchangepoint").on("click",function(event){
+                event.preventDefault(); 
+
+ 
+
+
+            });
+ 
+
+            $("#changepass").on("click",function(event){
+                event.preventDefault(); 
+
+ 
 
 
 
+            });
+ 
+            $("#fixonline").on("click",function(event){
+                event.preventDefault(); 
 
-
-
-
-
+ 
 
             });
 
