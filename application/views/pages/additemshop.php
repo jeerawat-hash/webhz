@@ -166,18 +166,18 @@
             $.post("https://cac.webclient.me/api/getdataallitemserver.php",{
                 ItemName : Item
             },function(data){ 
-                //$("#ModalFindItemToShop").find("#itemdata").empty();
+                $("#ModalFindItemToShop").find("#ItemSelect").empty();
  
                 var obj = JSON.parse(data);
                 console.log(obj);
                 var html = "";
                 for (var i = 0; i < obj.ItemName.length; i++) {
                     
-                    html += ' <option id="'+i+'" value="'+obj.ItemName[i]+'"  >a</option> ';
+                    html += ' <option data-mid="'+obj.MID[i]+'" data-sid="'+obj.SID[i]+'" >'+obj.ItemName[i]+'</option>   ';
                     
                 }
 
-                $("#ModalFindItemToShop").find("#itemdata").html(html);
+                $("#ModalFindItemToShop").find("#ItemSelect").html(html);
                 
 
 
