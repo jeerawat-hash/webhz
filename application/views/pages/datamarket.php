@@ -113,6 +113,20 @@ body {
  
 	<div class="container">
 
+
+
+	<div class="row">
+        <div class="col-12"> 
+
+        <div class="jumbotron text-center" >
+        <h1>ตลาดซื้อขายกลาง</h1>
+        <p></p> 
+        </div> 
+        </div>
+
+	</div>
+	
+
 		<div hidden class="row">
 			
 			<div class="col-6">
