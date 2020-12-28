@@ -79,7 +79,7 @@
                     
                     <div class="col-6 form-group"> 
        
-                        <select name="categoty" class="form-control" id="categoty">
+                        <select name="categoty" class="form-control"  id="categoty">
                         <option value="cloth">เครื่องแต่งกาย</option> 
                         <option value="weapon">อาวุธ</option> 
                         <option value="access">สร้อย</option> 
@@ -97,7 +97,7 @@
                     
                     <div class="col-6 form-group">
                         
-                        <input type="text" class="form-control"  id="Price" />
+                        <input type="text" class="form-control" autocomplete="off" id="Price" />
  
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                     
                     <div class="col-6 form-group">
                         
-                        <input type="text" class="form-control" id="Descript" />
+                        <input type="text" class="form-control" autocomplete="off" id="Descript" />
  
                     </div>
                 </div>
@@ -191,6 +191,7 @@
    
             var mid = $("#ModalFindItemToShop").find("#ItemSelect option:selected").attr("data-mid");
             var sid = $("#ModalFindItemToShop").find("#ItemSelect option:selected").attr("data-sid");
+            var categoty = $("#ModalFindItemToShop").find("#categoty option:selected").val();
             var name = $("#ModalFindItemToShop").find("#ItemSelect option:selected").attr("data-name"); 
             var price = $("#ModalFindItemToShop").find("#Price").val();
             var desc = $("#ModalFindItemToShop").find("#Descript").val();
@@ -205,6 +206,7 @@
 				data.append('Name', name);   
 				data.append('Price', price);   
 				data.append('Desc', desc);   
+				data.append('categoty', categoty);   
 					  
 				setTimeout(function(){ 
 				 $.ajax({
