@@ -104,7 +104,7 @@ body {
         <div class="col-12"> 
 
         <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://rhz.webclient.me/assets/Login/images/bg-01.jpg');">
-        <h1>ยินดีต้อนรับ <?php echo $UserName; ?></h1>
+        <h1 id="Welcome">ยินดีต้อนรับ <?php echo $UserName; ?></h1>
         <p>เข้าสู่ระบบจัดการตัวละคร Hazakura GameServer</p> 
         </div> 
         </div>
@@ -296,8 +296,15 @@ body {
 
     <script>
         $(function(){
-
+          
           var StoreID = $("#StoreID").val();
+
+          if(StoreID == "null"){
+
+            $("#Welcome").hide();
+
+          }
+
 
           $.post("https://cac.webclient.me/api/getDataUserInfo.php",{
             UserNum : StoreID
