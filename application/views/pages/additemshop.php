@@ -195,8 +195,7 @@
             var price = $("#ModalFindItemToShop").find("#Price").val();
             var desc = $("#ModalFindItemToShop").find("#Descript").val();
             
-            alert(mid+" "+sid+" "+name);
-
+            $("#ModalFindItemToShop").find("#Save").hide();
 
             var data = new FormData();          
 				var ItemIMG = $('#ImageFile').prop('files')[0];  
@@ -216,10 +215,12 @@
 					        	cache : false,
 					        	processData : false,
 					        	success : function(data){
- 
+
 					        			console.log(data);
 					        	 		 
 										//swal("สำเร็จ !!","รายการอยู่ระหว่างดำเนินการตรวจสอบ..", "info");
+                                        $("#ModalFindItemToShop").find("#Save").show();
+                                        $("#ModalFindItemToShop").modal("hide");
 
 
 					        	},
