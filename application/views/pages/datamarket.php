@@ -118,7 +118,7 @@ body {
 	<div class="row">
         <div class="col-12"> 
 
-        <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://vistapointe.net/images/ran-online-2.jpg');">
+        <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://www.pingbooster.com/upload/img/content/blog_tawa/Ran/20170816jz7ic6sowa4qaygx.jpg?1502880449197');">
         <h1>ตลาดซื้อขายกลาง</h1>
         <p></p> 
         </div> 
