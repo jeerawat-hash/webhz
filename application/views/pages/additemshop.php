@@ -159,7 +159,7 @@
                 var html = "";
                 for (var i = 0; i < obj.ItemName.length; i++) {
                     
-                    html += ' <option value="'+obj.ItemName[i]+'"  >a</option> ';
+                    html += ' <option id="'+i+'" value="'+obj.ItemName[i]+'"  >a</option> ';
                     
                 }
 
@@ -177,9 +177,9 @@
 
         $("#ModalFindItemToShop").find("#Save").on("click",function(){
   
-            //$("#SelectEntityPrimaryName option:selected").val();
-            var a =  $("#ItemNameSearch option:selected").attr('value');
-            alert(a);
+            $("input[name=ItemNameSearch]").focusout(function(){
+                alert($(this).val());
+            });
 
 
 
