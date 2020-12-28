@@ -169,9 +169,9 @@ body {
             <table class="table" id="TableItem">
             <thead>
                 <tr>
-                    <th>หมวด</th>
-                    <th>ชื่อ</th>
-                    <th>ดำเนินการ</th> 
+                    <th class="col-xs-2">หมวด</th>
+                    <th class="col-xs-6">ชื่อ</th>
+                    <th class="col-xs-2">ดำเนินการ</th> 
                 </tr>
             </thead>
             <tbody id="TableItemDetail" >
