@@ -164,8 +164,12 @@
                     
                 }
 
-                $("#ModalFindItemToShop").find("#itemdata").html(html);
+                //$("#ModalFindItemToShop").find("#itemdata").html(html);
                  
+                var my_list=document.getElementById("itemdata");
+                    my_list.innerHTML = html;
+
+
             });
               
         });
