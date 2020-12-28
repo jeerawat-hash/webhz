@@ -170,7 +170,7 @@ body {
             <thead>
                 <tr>
                     <th class="col-xs-2">หมวด</th>
-                    <th class="col-xs-6">ชื่อ</th>
+                    <th class="col-xs-8">ชื่อ</th>
                     <th class="col-xs-2">ดำเนินการ</th> 
                 </tr>
             </thead>
@@ -354,7 +354,7 @@ body {
                       
                         html += '<tr>'+
                                     '<td class="col-xs-2">เครื่องแต่งกาย</td>'+
-                                    '<td class="col-xs-6">'+obj.ItemName[i]+'</td>'+
+                                    '<td class="col-xs-8">'+obj.ItemName[i]+'</td>'+
                                     '<td class="col-xs-2"><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
                                 '</tr>';
                       
@@ -393,7 +393,7 @@ body {
                       
                         html += '<tr>'+
                                     '<td class="col-xs-2">อาวุธ</td>'+
-                                    '<td class="col-xs-6">'+obj.ItemName[i]+'</td>'+
+                                    '<td class="col-xs-8">'+obj.ItemName[i]+'</td>'+
                                     '<td class="col-xs-2"><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
                                 '</tr>';
                       
@@ -426,7 +426,7 @@ body {
                       
                         html += '<tr>'+
                                     '<td class="col-xs-2">สร้อย</td>'+
-                                    '<td class="col-xs-6">'+obj.ItemName[i]+'</td>'+
+                                    '<td class="col-xs-8">'+obj.ItemName[i]+'</td>'+
                                     '<td class="col-xs-2"><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
                                 '</tr>';
                       
@@ -462,7 +462,7 @@ body {
                       
                         html += '<tr>'+
                                     '<td class="col-xs-2">บัตร</td>'+
-                                    '<td class="col-xs-6">'+obj.ItemName[i]+'</td>'+
+                                    '<td class="col-xs-8">'+obj.ItemName[i]+'</td>'+
                                     '<td class="col-xs-2"><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
                                 '</tr>';
                       
@@ -499,7 +499,7 @@ body {
                       
                         html += '<tr>'+
                                     '<td class="col-xs-2">อื่นๆ</td>'+
-                                    '<td class="col-xs-6">'+obj.ItemName[i]+'</td>'+
+                                    '<td class="col-xs-8">'+obj.ItemName[i]+'</td>'+
                                     '<td class="col-xs-2"><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
                                 '</tr>';
                       
