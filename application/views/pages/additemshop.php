@@ -157,11 +157,14 @@
  
                 var obj = JSON.parse(data);
                 console.log(obj);
-               // for (var i = 0; i < obj.length; i++) {
+                var html = "";
+                for (var i = 0; i < obj.length; i++) {
                     
-                    $("#ModalFindItemToShop").find("#itemdata").append(' <option value="0" ></option> ');
+                    html = ' <option value="'+i+'" >'+i+'</option> ';
                     
-                //}
+                }
+
+                $("#ModalFindItemToShop").find("#itemdata").append(html);
                  
             });
               
