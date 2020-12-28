@@ -138,21 +138,7 @@ body {
 
     </div>
     <br>
-    <div class="row">
- 
-        <div class="col-4 mb-3"> 
-                <div class="card ">
-                    <img class="card-img-top" width="286" height="180" src="http://heaven-webshop.com/api/b81-1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h5 class="card-title">ชื่อตัวละคร</h5>
-                    <p class="card-text">เลเวล :</p>    
-                    </div> 
-                    <div class="card-footer">
-                    <small class="text-muted">ยอดเงิน : </small>
-                    </div>
-                </div> 
-        </div>
- 
+    <div class="row" id="Charinfo">
  
  
     </div>
@@ -310,6 +296,38 @@ body {
 
     <script>
         $(function(){
+
+          var StoreID = $("#StoreID").val();
+
+          $.post("https://cac.webclient.me/api/getDataUserInfo.php",{
+            UserNum : StoreID
+          },function(data){
+ 
+            var html = "";
+
+            for (var i = 0; i < /*array.length*/3; i++) {
+              
+              html += '<div class="col-4 mb-3">'+
+                      '<div class="card ">'+
+                          '<img class="card-img-top" width="286" height="180" src="http://heaven-webshop.com/api/b81-1.jpg" alt="Card image cap">'+
+                          '<div class="card-body">'+
+                          '<h5 class="card-title">ชื่อตัวละคร</h5>'+
+                          '<p class="card-text">เลเวล : <font color="red" id="level"></font>  PlayerKILL : <font color="red" id="pk"></font> </p> '+  
+                          '</div> '+
+                          '<div class="card-footer">'+
+                          '<small class="text-muted">ยอดเงิน : <font color="red" id="money"></font></small>'+
+                          '</div>'+
+                      '</div> '+
+                    '</div>';
+            
+            }
+
+            $("#Charinfo").html(html);
+
+
+          });
+
+
 
 
 
