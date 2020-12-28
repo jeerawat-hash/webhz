@@ -50,7 +50,7 @@
                     <div class="col-6">
                         <label>เลือกไอเทมที่ต้องการ : </label>
                     </div>
-                    <div class="col-6 .col-md-6 .ml-auto">
+                    <div class="col-6 ">
  
                         <input type="text" list="item" />
                             <datalist id="item">
