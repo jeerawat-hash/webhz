@@ -117,10 +117,8 @@ body {
 
     </div>
     <br>
-    <div class="row">
+    <div id="RecommendItem" class="row">
  
-
-      <div id="RecommendItem"></div>
  
 
 
@@ -283,7 +281,7 @@ body {
 
               for (var i = 0; i < obj.ProductNum.length; i++) {
                       
-                      html += ' <div class="col-4 mb-3">'+
+                      html += '<div class="col-4 mb-3">'+
                               '<div class="card ">'+
                                    '<img class="card-img-top" width="286" height="180" src="https://cac.webclient.me/img/ItemShop291220201221105fea0f5f52b77.png" alt="Card image cap">'+
                                     '<div class="card-body">'+
