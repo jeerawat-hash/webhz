@@ -54,14 +54,14 @@
 
                     <div class="form-group">  
 
-                        <input type="text" class="form-control" list="item" />
+                        <input type="text" class="form-control .col-md-6 .ml-auto" list="item" />
                             <datalist id="item">
                             <option>Volvo</option>
                             <option>Saab</option>
                             <option>Mercedes</option>
                             <option>Audi</option>
                             </datalist> 
-                            
+
                     </div>
 
 
