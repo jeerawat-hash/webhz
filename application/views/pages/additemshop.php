@@ -46,9 +46,9 @@
                         <label>เลือกไอเทมที่ต้องการ : </label>
                     </div>
                     
-                    <div class="col-6 ">
- 
-                        <input type="text" list="itemdata" id="ItemNameSearch" />
+                    <div class="col-6 form-group"> 
+    
+                        <input type="text" list="itemdata" class="form-control" id="ItemNameSearch" />
                             <datalist id="itemdata">
 
                             <option value="cloth">เครื่องแต่งกาย</option> 
