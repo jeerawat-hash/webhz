@@ -159,7 +159,7 @@
                 var html = "";
                 for (var i = 0; i < obj.ItemName.length; i++) {
                     
-                    html += ' <option data-mid="'+obj.MID[i]+'" data-sid="'+obj.SID[i]+'"  >'+obj.ItemName[i]+'</option> ';
+                    html += ' <option value="'+obj.ItemCode[i]+'"  >'+obj.ItemName[i]+'</option> ';
                     
                 }
 
@@ -177,9 +177,9 @@
 
         $("#ModalFindItemToShop").find("#Save").on("click",function(){
   
-            $("#ModalFindItemToShop").find("#ItemNameSearch").focusout(function(){
+            $("#ModalFindItemToShop").find("#itemdata").focusout(function(){
                 
-                alert($(this).attr("data-mid"));
+                alert($(this).val());
 
             });
 
