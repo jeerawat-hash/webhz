@@ -160,7 +160,7 @@
                 var html = "";
                 for (var i = 0; i < obj.length; i++) {
                     
-                    html = ' <option value="'+i+'" >'+i+'</option> ';
+                    html += ' <option value="'+i+'" >'+i+'</option> ';
                     
                 }
 
