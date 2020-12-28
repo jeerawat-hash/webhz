@@ -179,7 +179,7 @@ body {
         
         
         <div class="list-group">
-            <a href="#" id="menucosh" class="list-group-item list-group-item-action">เครื่องแต่งกาย</a>
+            <a href="#" id="menucloth" class="list-group-item list-group-item-action">เครื่องแต่งกาย</a>
             <a href="#" id="menuweapon" class="list-group-item list-group-item-action">อาวุธ</a>
             <a href="#" id="menuaccess" class="list-group-item list-group-item-action">สร้อย</a>
             <a href="#" id="menucard" class="list-group-item list-group-item-action">บัตรต่างๆ</a>
@@ -306,7 +306,7 @@ body {
 
             
             
-            $("#menucosh").on("click",function(event){
+            $("#menucloth").on("click",function(event){
                 event.preventDefault();
                 $(".list-group-item").removeClass("active");
                 $(this).addClass("active");
