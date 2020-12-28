@@ -307,7 +307,7 @@ body {
             console.log(obj);
 
             var html = "";
-            /*
+            
             for (var i = 0; i < obj.ChaName.length; i++) {
               
               html += '<div class="col-4 mb-3">'+
@@ -324,7 +324,7 @@ body {
                     '</div>';
             
             }
-            */
+            
             $("#Charinfo").html(html);
 
 
