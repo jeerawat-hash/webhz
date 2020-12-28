@@ -112,15 +112,21 @@ body {
     </div>
     <br>
     <div class="row">
-        <div class="col-6 text-center"> 
+        <div class="col-4 text-center"> 
 
-        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">รหัสค้างเข้าเกมไม่ได้</a>
-          
+        <a href="#" class="btn btn-success active" role="button" aria-pressed="true">แลกพ้อยเวลาออนไลน์</a>
+  
         </div>
-        <div class="col-6 text-center"> 
+        <div class="col-4 text-center"> 
           
-        <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">เปลี่ยนรหัสผ่าน</a>
+        <a href="#" class="btn btn-danger active" role="button" aria-pressed="true">แก้ตัวละครค้าง</a>
+
+        </div>
+
+        <div class="col-4 text-center"> 
           
+        <a href="#" class="btn btn-secondary active" role="button" aria-pressed="true">เปลี่ยนรหัสผ่าน</a>
+
         </div>
 
     </div>
@@ -270,6 +276,31 @@ body {
 
     <script>
         $(function(){
+
+
+
+
+
+
+
+          $("#menuother").on("click",function(event){
+                event.preventDefault();
+                $(".list-group-item").removeClass("active");
+                $(this).addClass("active");
+
+
+
+
+
+
+
+
+
+            });
+
+
+
+
 
  
 
