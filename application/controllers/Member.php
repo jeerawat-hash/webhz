@@ -170,6 +170,16 @@ class Member extends CI_Controller {
 			(SELECT ProductNum FROM ShopItemMap WHERE ItemMain = 121 AND ItemSub = 8),'0','0',GETDATE() 
 			FROM RanUser.dbo.UserInfo WHERE UserLoginState = 1
 			*/
+ 
+	 }
+	 public function additemshop()
+	 {
+
+
+
+		$this->load->view('pages/additemshop');
+
+
 
 
 	 }
