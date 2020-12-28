@@ -137,6 +137,17 @@ body {
     <div class="card-body p-5">
 
     <div class="row">
+        <div class="col-12"> 
+
+        <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>ไอเทมอื่นๆ</h1>
+        <p></p> 
+        </div> 
+        </div>
+
+    </div>
+
+    <div class="row">
 
         <div class="col-3">
         
