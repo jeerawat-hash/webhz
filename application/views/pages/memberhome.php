@@ -120,7 +120,7 @@ body {
 
         <div class="col-3 text-center"> 
 
-        <a href="#" class="btn btn-success dark" role="button" aria-pressed="true">แลกไอเทมจาก PK</a>
+        <a href="#" class="btn btn-dark" role="button" aria-pressed="true">แลกไอเทมจากแต้มPK</a>
 
         </div>
 
