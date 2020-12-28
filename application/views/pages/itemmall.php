@@ -324,7 +324,26 @@ body {
 
 
 
+              $.get("https://cac.webclient.me/api/getDataItemShopRecomment.php",function(data){  
+    
+                    var obj = JSON.parse(data);
+                    console.log(obj);
+                    var html = ""; 
 
+                    for (var i = 0; i < obj.ProductNum.length; i++) {
+                      
+                        html += '<tr>'+
+                                    '<td class="col-xs-2">แนะนำ</td>'+
+                                    '<td class="col-xs-8">'+obj.ItemName[i]+'</td>'+
+                                    '<td class="col-xs-2"><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
+                                '</tr>';
+                      
+                    }
+                    
+                    $("#TableItemDetail").html(html);
+                    
+ 
+                });
 
 
 
