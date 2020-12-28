@@ -51,7 +51,7 @@
                         <input type="text" list="itemdata" class="form-control" id="ItemNameSearch" />
                             <datalist id="itemdata">
 
-                            <option value="cloth">เครื่องแต่งกาย</option> 
+                            <!-- <option value="cloth">เครื่องแต่งกาย</option> -->
                             
                             </datalist> 
   
@@ -149,10 +149,19 @@
 
         $("#ModalFindItemToShop").find("#ItemNameSearch").on("change",function(){
 
-        alert();
-        $("#ModalFindItemToShop").find("#itemdata").empty();
-        
+            
+            
+            $.post("https://cac.webclient.me/api/getdataallitemserver.php",{
+                ItemName : "ดาบ"
+            },function(data){ 
+                $("#ModalFindItemToShop").find("#itemdata").empty();
+                //$("#ModalFindItemToShop").find("#itemdata").append();
+                var obj = JSON.parse(data);
 
+                console.log(obj);
+
+            });
+             
 
         });
 
@@ -166,7 +175,7 @@
 
 
         });
-       // https://cac.webclient.me/api/getdataallitemserver.php
+       // 
 
 
 
