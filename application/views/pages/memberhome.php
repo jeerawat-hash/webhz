@@ -303,12 +303,12 @@ body {
             UserNum : StoreID
           },function(data){
 
-            var obj = JSON.parse();
+            var obj = JSON.parse(data);
             console.log(obj);
 
             var html = "";
 
-            for (var i = 0; i < /*array.length*/3; i++) {
+            for (var i = 0; i < obj.ChaName.length; i++) {
               
               html += '<div class="col-4 mb-3">'+
                       '<div class="card ">'+
