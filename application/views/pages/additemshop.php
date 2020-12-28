@@ -173,7 +173,7 @@
                 var html = "";
                 for (var i = 0; i < obj.ItemName.length; i++) {
                     
-                    html += ' <option data-mid="'+obj.MID[i]+'" data-sid="'+obj.SID[i]+'" >'+obj.ItemName[i]+'</option>   ';
+                    html += ' <option data-mid="'+obj.MID[i]+'" data-sid="'+obj.SID[i]+'" data-name="'+obj.ItemName[i]+'" >'+obj.ItemName[i]+'</option>   ';
                     
                 }
 
@@ -193,8 +193,9 @@
    
             var mid = $("#ItemSelect option:selected").attr("data-mid");
             var sid = $("#ItemSelect option:selected").attr("data-sid");
+            var name = $("#ItemSelect option:selected").attr("data-name");
 
-            alert(mid+" "+sid);
+            alert(mid+" "+sid+" "+name);
 
 
         });
