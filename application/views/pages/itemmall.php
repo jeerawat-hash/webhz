@@ -353,9 +353,9 @@ body {
                     for (var i = 0; i < obj.ProductNum.length; i++) {
                       
                         html += '<tr>'+
-                                    '<td>เครื่องแต่งกาย</td>'+
-                                    '<td>'+obj.ItemName[i]+'</td>'+
-                                    '<td><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
+                                    '<td class="col-xs-2">เครื่องแต่งกาย</td>'+
+                                    '<td class="col-xs-6">'+obj.ItemName[i]+'</td>'+
+                                    '<td class="col-xs-2"><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
                                 '</tr>';
                       
                     }
@@ -392,9 +392,9 @@ body {
                     for (var i = 0; i < obj.ProductNum.length; i++) {
                       
                         html += '<tr>'+
-                                    '<td>อาวุธ</td>'+
-                                    '<td>'+obj.ItemName[i]+'</td>'+
-                                    '<td><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
+                                    '<td class="col-xs-2">อาวุธ</td>'+
+                                    '<td class="col-xs-6">'+obj.ItemName[i]+'</td>'+
+                                    '<td class="col-xs-2"><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
                                 '</tr>';
                       
                     }
@@ -425,9 +425,9 @@ body {
                     for (var i = 0; i < obj.ProductNum.length; i++) {
                       
                         html += '<tr>'+
-                                    '<td>สร้อย</td>'+
-                                    '<td>'+obj.ItemName[i]+'</td>'+
-                                    '<td><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
+                                    '<td class="col-xs-2">สร้อย</td>'+
+                                    '<td class="col-xs-6">'+obj.ItemName[i]+'</td>'+
+                                    '<td class="col-xs-2"><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
                                 '</tr>';
                       
                     }
@@ -461,9 +461,9 @@ body {
                     for (var i = 0; i < obj.ProductNum.length; i++) {
                       
                         html += '<tr>'+
-                                    '<td>บัตร</td>'+
-                                    '<td>'+obj.ItemName[i]+'</td>'+
-                                    '<td><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
+                                    '<td class="col-xs-2">บัตร</td>'+
+                                    '<td class="col-xs-6">'+obj.ItemName[i]+'</td>'+
+                                    '<td class="col-xs-2"><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
                                 '</tr>';
                       
                     }
@@ -498,9 +498,9 @@ body {
                     for (var i = 0; i < obj.ProductNum.length; i++) {
                       
                         html += '<tr>'+
-                                    '<td>อื่นๆ</td>'+
-                                    '<td>'+obj.ItemName[i]+'</td>'+
-                                    '<td><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
+                                    '<td class="col-xs-2">อื่นๆ</td>'+
+                                    '<td class="col-xs-6">'+obj.ItemName[i]+'</td>'+
+                                    '<td class="col-xs-2"><button type="button" class="btn btn-warning" data-pronum="'+obj.ProductNum[i]+'">ซื้อ/ข้อมูล</button></td>'+
                                 '</tr>';
                       
                     }
