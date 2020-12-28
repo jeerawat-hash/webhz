@@ -116,7 +116,7 @@
 	<div class="row">
         <div class="col-12"> 
 
-        <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://vistapointe.net/images/ran-online-wallpaper-15.jpg');" >
+        <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://www.cheathappens.com/img/walls/o_ranonline_1_6.jpg');" >
         <h1>ฝากขายไอเทมตลาดกลาง</h1>
         <p></p> 
         </div> 
