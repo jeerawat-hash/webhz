@@ -190,7 +190,7 @@ body {
         </div>
         <div class="col-9">
         
-            <table class="table">
+            <table class="table" id="TableItem">
             <thead>
                 <tr>
                     <th>หมวด</th>
@@ -198,13 +198,14 @@ body {
                     <th>ดำเนินการ</th> 
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="TableItemDetail" >
+              <!--
                 <tr>
                     <td>000000</td>
                     <td>ดาบเทพ</td>
                     <td><button type="button" class="btn btn-warning">ซื้อ/ข้อมูล</button></td> 
                 </tr>
-                 
+-->
             </tbody> 
         </table>
     
@@ -311,9 +312,29 @@ body {
                 $(".list-group-item").removeClass("active");
                 $(this).addClass("active");
 
+ 
+                $.post("https://cac.webclient.me/api/getDataItemShopCgt.php",{
+                ItemCtg : "cloth"
+                },function(data){  
+    
+                    var obj = JSON.parse(data);
+                    console.log(obj);
+                    var html = ""; 
+    
 
 
+                });
 
+
+ 
+
+/*
+                <tr>
+                    <td>000000</td>
+                    <td>ดาบเทพ</td>
+                    <td><button type="button" class="btn btn-warning">ซื้อ/ข้อมูล</button></td> 
+                </tr>
+*/
 
 
             });
@@ -323,7 +344,17 @@ body {
                 $(this).addClass("active");
 
 
+                $.post("https://cac.webclient.me/api/getDataItemShopCgt.php",{
+                ItemCtg : "weapon"
+                },function(data){  
+    
+                    var obj = JSON.parse(data);
+                    console.log(obj);
+                    var html = ""; 
+    
 
+
+                });
 
 
 
@@ -334,7 +365,17 @@ body {
                 $(".list-group-item").removeClass("active");
                 $(this).addClass("active");
 
+                $.post("https://cac.webclient.me/api/getDataItemShopCgt.php",{
+                ItemCtg : "access"
+                },function(data){  
+    
+                    var obj = JSON.parse(data);
+                    console.log(obj);
+                    var html = ""; 
+    
 
+
+                });
 
 
 
@@ -347,7 +388,17 @@ body {
                 $(".list-group-item").removeClass("active");
                 $(this).addClass("active");
 
+                $.post("https://cac.webclient.me/api/getDataItemShopCgt.php",{
+                ItemCtg : "card"
+                },function(data){  
+    
+                    var obj = JSON.parse(data);
+                    console.log(obj);
+                    var html = ""; 
+    
 
+
+                });
 
 
 
@@ -361,7 +412,17 @@ body {
 
 
 
+                $.post("https://cac.webclient.me/api/getDataItemShopCgt.php",{
+                ItemCtg : "other"
+                },function(data){  
+    
+                    var obj = JSON.parse(data);
+                    console.log(obj);
+                    var html = ""; 
+    
 
+
+                });
 
 
 
