@@ -159,7 +159,7 @@
                 console.log(obj);
                 for (var i = 0; i < obj.length; i++) {
                     
-                    $("#ModalFindItemToShop").find("#itemdata").append(' <option value="0" >'+obj.ItemName[i]+'</option> ');
+                    $("#ModalFindItemToShop").find("#itemdata").append(' <option value="0" ></option> ');
                     
                 }
                  
