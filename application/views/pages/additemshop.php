@@ -218,7 +218,7 @@
 					        	processData : false,
 					        	success : function(data){
 
-					        			console.log(data);
+					        			//console.log(data);
 					        	 		 
 										//swal("สำเร็จ !!","รายการอยู่ระหว่างดำเนินการตรวจสอบ..", "info");
                                         $("#ModalFindItemToShop").find("#Save").show();
