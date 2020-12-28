@@ -44,11 +44,13 @@
         </div>
         <div class="modal-body">
 
- 
+
+            <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        เลือกไอเทมที่ต้องการ : 
-                    </div> 
+                        <label>เลือกไอเทมที่ต้องการ : </label>
+                    </div>
+                    
                     <div class="col-6 ">
  
                         <input type="text" list="item" />
@@ -62,8 +64,32 @@
 
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>หมวดไอเทม : </label>
+                    </div>
+                    
+                    <div class="col-md-6 ">
+
+                        <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                        </select>
  
- 
+                    </div>
+                </div>
+
+            </div>
+
+        
+
+
+
+
+
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-primary" id="Save">Save</button>
