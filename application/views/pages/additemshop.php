@@ -159,7 +159,7 @@
                 var html = "";
                 for (var i = 0; i < obj.ItemName.length; i++) {
                     
-                    html += ' <option value="'+obj.ItemCode[i]+'"  >'+obj.ItemName[i]+'</option> ';
+                    html += ' <option value="'+obj.ItemName[i]+'"  >a</option> ';
                     
                 }
 
