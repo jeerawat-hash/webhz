@@ -179,7 +179,7 @@
   
             $("#ModalFindItemToShop").find("#itemdata").focusout(function(){
                 
-                alert($(this).val());
+                alert($(this).attr("data-mid"));
 
             });
 
