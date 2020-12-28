@@ -185,17 +185,57 @@
               
         });
 
-
-
-
+ 
 
         $("#ModalFindItemToShop").find("#Save").on("click",function(){
    
-            var mid = $("#ItemSelect option:selected").attr("data-mid");
-            var sid = $("#ItemSelect option:selected").attr("data-sid");
-            var name = $("#ItemSelect option:selected").attr("data-name");
-
+            var mid = $("#ModalFindItemToShop").find("#ItemSelect option:selected").attr("data-mid");
+            var sid = $("#ModalFindItemToShop").find("#ItemSelect option:selected").attr("data-sid");
+            var name = $("#ModalFindItemToShop").find("#ItemSelect option:selected").attr("data-name"); 
+            var price = $("#ModalFindItemToShop").find("#Price").val();
+            var desc = $("#ModalFindItemToShop").find("#Descript").val();
+            
             alert(mid+" "+sid+" "+name);
+
+
+            var data = new FormData();          
+				var ItemIMG = $('#ImageFile').prop('files')[0];  
+				data.append('ItemIMG', ItemIMG);   
+				data.append('MID', mid);   
+				data.append('SID', sid);   
+				data.append('Name', name);   
+				data.append('Price', price);   
+				data.append('Desc', desc);   
+					  
+				setTimeout(function(){ 
+				 $.ajax({
+					        	url:"https://cac.webclient.me/api/getAddItemToShop.php",
+					        	type:"POST",
+					        	data:data,
+					        	contentType : false,
+					        	cache : false,
+					        	processData : false,
+					        	success : function(data){
+ 
+					        			console.log(data);
+					        	 		 
+										//swal("สำเร็จ !!","รายการอยู่ระหว่างดำเนินการตรวจสอบ..", "info");
+
+
+					        	},
+					        	error : function(){
+
+
+					        	}
+					        });
+				 }, 2000);
+
+
+
+
+
+
+
 
 
         });
