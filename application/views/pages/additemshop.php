@@ -153,7 +153,7 @@
             $.post("https://cac.webclient.me/api/getdataallitemserver.php",{
                 ItemName : Item
             },function(data){ 
-                $("#ModalFindItemToShop").find("#itemdata").empty();
+                //$("#ModalFindItemToShop").find("#itemdata").empty();
  
                 var obj = JSON.parse(data);
                 console.log(obj);
