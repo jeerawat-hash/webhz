@@ -158,16 +158,14 @@
                 var obj = JSON.parse(data);
                 console.log(obj);
                 var html = "";
-                for (var i = 0; i < obj.length; i++) {
+                for (var i = 0; i < obj.ItemName.length; i++) {
                     
-                    html += ' <option value="'+i+'" >'+i+'</option> ';
+                    html += ' <option data-mid="'+obj.MID[i]+'" data-sid="'+obj.SID[i]+'"  >'+obj.ItemName[i]+'</option> ';
                     
                 }
 
-                //$("#ModalFindItemToShop").find("#itemdata").html(html);
-                 
-                var my_list=document.getElementById("itemdata");
-                    my_list.innerHTML = html;
+                $("#ModalFindItemToShop").find("#itemdata").html(html);
+                
 
 
             });
