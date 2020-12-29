@@ -520,7 +520,8 @@ body {
 
             $("#LoginModal").find("#Register").on("click",function(){
 
-                $(this).modal("hide");
+                $("#LoginModal").modal("hide");
+                
                 $("#RegisterModal").modal({backdrop: 'static', keyboard: false});
                 $("#RegisterModal").find("#Preload").hide();
 
@@ -530,7 +531,7 @@ body {
                 $(this).hide();
 
 
-              
+
 
             
             });
