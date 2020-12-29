@@ -345,7 +345,7 @@ body {
 
               var ProductNum = $(this).attr("data-pronum");
 
-              alert(ProductNum);
+              //alert(ProductNum);
 
               $("#BuyItemModal").modal("show");
 
