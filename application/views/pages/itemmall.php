@@ -404,10 +404,25 @@ body {
                 
                 var Product = $("#BuyItemModal").find("#ProductNum").val();
                 var StoreID = $("#StoreID").val();
+ 
+                //alert(Product+" "+StoreID);
+                $("#BuyItemModal").find("#Save").hide();
+                $("#BuyItemModal").find("#preload").show();
+
+                setTimeout(function(){ 
+
+                  $("#BuyItemModal").find("#Save").show();
+                  $("#BuyItemModal").find("#preload").hide();
 
 
+                  
+                  alert("Hello");
+                  
+                  
+                  
+                  
+               }, 3000);
 
-                alert(Product+" "+StoreID);
 
 
 
