@@ -72,14 +72,65 @@ body {
     </nav>
 
 
-<div class="container">
+
+
+    <div class="container">
 <div class="card border-0 shadow my-5">
     <div class="card-body p-5">
 
+    <div class="row">
+        <div class="col-12"> 
+
+        <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2015/03/20/641745/c4f825b2e617ea446f5d5058574ee733.jpg');">
+        <h1>อันดับผู้เล่น</h1>
+        <p></p> 
+        </div> 
+        </div>
+
+    </div>
+  
+    <div class="row">
+
+        <div class="col-3">
+        
+        
+        <div class="list-group">
+            <a href="#" id="menutoprich" class="list-group-item list-group-item-action">TOP 50 รวยที่สุด</a>
+            <a href="#" id="menutoppkill" class="list-group-item list-group-item-action">TOP 50 ฆ่าผู้เล่นเยอะที่สุด</a>
+            <a href="#" id="menutopgametime" class="list-group-item list-group-item-action">TOP 50 มีเวลาออนไลน์มากที่สุด</a>
+            <a href="#" id="menutopfirstp" class="list-group-item list-group-item-action">TOP 50 เลเวลตันเร็วที่สุด</a> 
+        </div>
+ 
+
+        </div>
+        <div class="col-9">
+        
+            <table class="table" id="TableTop">
+            <thead>
+                <tr> 
+                    <th >ชื่อ</th>
+                    <th >อาชีพ</th>
+                    <th >โรงเรียน</th> 
+                </tr>
+            </thead>
+            <tbody id="TableTopDetail" >
+            
+                <tr>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td> 
+                </tr>
+ 
+            </tbody> 
+        </table>
     
 
 
 
+        
+        </div>
+    
+    </div>
 
 
 
@@ -94,11 +145,49 @@ body {
 
 
 
-
-
-
   
+  <script>
+    $(function(){
 
+
+      $("#menutoprich").on("click",function(event){
+                
+                event.preventDefault();
+                $(".list-group-item").removeClass("active");
+                $(this).addClass("active");
+
+      });
+
+      $("#menutoppkill").on("click",function(event){
+                
+                event.preventDefault();
+                $(".list-group-item").removeClass("active");
+                $(this).addClass("active");
+
+      });
+
+      $("#menutopgametime").on("click",function(event){
+                
+                event.preventDefault();
+                $(".list-group-item").removeClass("active");
+                $(this).addClass("active");
+
+      });
+
+      $("#menutopfirstp").on("click",function(event){
+                
+                event.preventDefault();
+                $(".list-group-item").removeClass("active");
+                $(this).addClass("active");
+
+      });
+
+
+
+                
+
+    });
+  </script>
 
 
 
