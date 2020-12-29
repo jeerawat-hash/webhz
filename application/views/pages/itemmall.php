@@ -343,11 +343,23 @@ body {
 
             $("#TableItem").on("click",".IsBuyItem",function(){
 
-              var ProductNum = $(this).attr("data-pronum");
+              var Product = $(this).attr("data-pronum");
 
               //alert(ProductNum);
 
-              $("#BuyItemModal").modal("show");
+              $.post("https://cac.webclient.me/api/getDatatemServer.php",{
+                ProductNum : Product
+              },function(data){
+
+                var obj = JSON.parse(data);
+                console.log(obj);
+                $("#BuyItemModal").modal("show");
+
+              });
+
+
+
+             
 
 
 
