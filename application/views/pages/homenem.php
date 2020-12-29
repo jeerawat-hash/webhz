@@ -89,7 +89,7 @@ body {
                 </div>
                 <div class="col-4">
 
-                
+
 
 
                 </div>
@@ -107,13 +107,13 @@ body {
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://wallup.net/wp-content/uploads/2018/10/04/641755-ran-online-anime-mmo-rpg-fantasy-sci-fi-action-adventure-fighting-exploration-1rano-school-warrior-shooter-748x421.jpg" alt="First slide">
+                    <img class="d-block w-100" src="https://rhz.webclient.me/assets/bg/slide.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                    <img class="d-block w-100" src="https://wallup.net/wp-content/uploads/2018/10/04/641755-ran-online-anime-mmo-rpg-fantasy-sci-fi-action-adventure-fighting-exploration-1rano-school-warrior-shooter-748x421.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="https://rhz.webclient.me/assets/bg/slide.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                    <img class="d-block w-100" src="https://wallup.net/wp-content/uploads/2018/10/04/641755-ran-online-anime-mmo-rpg-fantasy-sci-fi-action-adventure-fighting-exploration-1rano-school-warrior-shooter-748x421.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="https://rhz.webclient.me/assets/bg/slide.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
