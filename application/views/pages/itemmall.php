@@ -234,7 +234,7 @@ body {
           </div>
           <div class="row">
             <div class="col-5">รายละเอียด :</div> 
-            <div class="col-7"> <font color="red" id="desc"></font> </div> 
+            <div class="col-7"> <font color="green" id="desc"></font> </div> 
           </div>
  
 
