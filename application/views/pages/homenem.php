@@ -204,13 +204,13 @@ body {
                 <table class="table" id="TableNews">
                     <thead>
                         <tr>  
-                            <th >หัวข้อ</th> 
+                            <th style="text-align:center">หัวข้อ</th> 
                         </tr>
                     </thead>
                     <tbody id="TableNewsDetail" >
                      
                         <tr> 
-                            <td></td> 
+                            <td>รอการอัพเดทรายละเอียดต่อไป</td> 
                         </tr>
         
                     </tbody> 
@@ -240,7 +240,7 @@ body {
                      
                         <tr> 
                             <td>0.01</td> 
-                            <td>-----</td> 
+                            <td>ปรับปรุงรายละเอียดการดรอปและการเกิดของบอส รวมถึงปลดระบบเควดออกและเพิ่มมอนส์เตอร์</td> 
                         </tr>
         
                     </tbody> 
