@@ -91,16 +91,24 @@ body {
                     </div>
                 </div>
                 <div class="col-4">
-
-                        <br>
-                        
+  
                         <div class="row">
                             <div class="col-6">Channel 0 PK</div>
-                            <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
+                            <div class="col-6"> <lable class = "btn btn-primary btn-lg">Online</lable></h5> </div>
                         </div>
                         <div class="row">
                             <div class="col-6">Channel 1 NonPK</div>
                             <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">ผู้เล่น </div>
+                            <div class="col-6"> 
+                                
+                            <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-6">ระบบไอเทมช็อป </div>
@@ -110,10 +118,7 @@ body {
                             <div class="col-6">ระบบฝากขายไอเทม </div>
                             <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
                         </div>
-                        <div class="row">
-                            <div class="col-6">ตลาดแลกเปลี่ยน </div>
-                            <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
-                        </div>
+                        
                         <div class="row">
                             <div class="col-6">ตาราง วอร์ </div>
                             <div class="col-6"> จ. - ศ. </div>
