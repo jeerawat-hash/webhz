@@ -526,7 +526,7 @@ body {
                 $("#RegisterModal").find("#Preload").hide();
 
             });
-            $("#LoginModal").find("#Save").on("click",function(){
+            $("#RegisterModal").find("#Save").on("click",function(){
 
                 $(this).hide();
 
