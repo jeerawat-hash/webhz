@@ -85,12 +85,58 @@ body {
 <div class="card border-0 shadow my-5">
     <div class="card-body p-5">
 
+    <div class="row">
+        <div class="col-12"> 
+
+        <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2015/03/20/641745/c4f825b2e617ea446f5d5058574ee733.jpg');">
+        <h1>การเก็บเลเวล</h1>
+        <p></p> 
+        </div> 
+        </div>
+    </div>
+   
+    <div class="row text-center">
+     
     
 
+        <h1>รอการอัพเดทรายละเอียดต่อไป</h1>
 
 
 
 
+    </div>
+ 
+
+    </div>
+    </div>
+</div>
+
+
+<div class="container">
+<div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+
+    <div class="row">
+        <div class="col-12"> 
+
+        <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2015/03/20/641745/c4f825b2e617ea446f5d5058574ee733.jpg');">
+        <h1>ข้อมูลบอส</h1>
+        <p></p> 
+        </div> 
+        </div>
+
+    </div>
+   
+    <div class="row text-center">
+     
+    
+
+        <h1>รอการอัพเดทรายละเอียดต่อไป</h1>
+
+
+
+
+    </div>
 
 
 
@@ -98,6 +144,69 @@ body {
     </div>
 </div>
 
+<div class="container">
+<div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+
+    <div class="row">
+        <div class="col-12"> 
+
+        <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2015/03/20/641745/c4f825b2e617ea446f5d5058574ee733.jpg');">
+        <h1>การผสมไอเทม</h1>
+        <p></p> 
+        </div> 
+        </div>
+
+    </div>
+   
+    <div class="row text-center">
+     
+    
+
+        <h1>รอการอัพเดทรายละเอียดต่อไป</h1>
+
+
+
+
+    </div>
+
+
+
+    </div>
+    </div>
+</div>
+
+<div class="container">
+<div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+
+    <div class="row">
+        <div class="col-12"> 
+
+        <div class="jumbotron text-center" style="margin-bottom:0 ; color:white;  background-size: cover; background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2015/03/20/641745/c4f825b2e617ea446f5d5058574ee733.jpg');">
+        <h1>กิจกรรม</h1>
+        <p></p> 
+        </div> 
+        </div>
+
+    </div>
+   
+    <div class="row text-center">
+     
+    
+
+        <h1>รอการอัพเดทรายละเอียดต่อไป</h1>
+
+
+
+
+    </div>
+
+
+
+    </div>
+    </div>
+</div>
 
 
 
