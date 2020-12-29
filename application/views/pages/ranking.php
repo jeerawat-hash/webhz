@@ -57,6 +57,9 @@ body {
                     <a class="nav-link active" href="https://rhz.webclient.me/index.php/home/rank">อันดับผู้เล่น</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link disabled" href="#">อันดับกิล</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link disabled" href="#">กิจกรรมพิเศษ</a>
                 </li>
             </ul>
