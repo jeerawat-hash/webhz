@@ -44,7 +44,7 @@ body {
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand" href="#">
     <img src="https://rhz.webclient.me/assets/bg/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
-    Bootstrap
+    Hazakura - Ran Online Ep7 Classic
   </a>
 
 
