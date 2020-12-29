@@ -225,7 +225,91 @@ body {
         <span class="sr-only">Loading...</span>
         </div>
 
+        <button type="button" class="btn btn-warning" id="Register">สมัครไอดี</button>
         <button type="button" class="btn btn-primary" id="Save">เข้าสู่ระบบ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">สมัครไอดี</h5>  
+        </button>
+      </div>
+      <div class="modal-body"> 
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-6" > 
+                    <div class="form-group"> 
+                        ไอดีเข้าใช้งาน :
+                    </div> 
+                </div>
+                <div class="col-6" > 
+                    <div class="form-group"> 
+                        <input type="text" class="form-control" id="UserName" autocomplete="off">
+                    </div> 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6" > 
+                    <div class="form-group"> 
+                        รหัสผ่าน :
+                    </div> 
+                </div>
+                <div class="col-6" > 
+                    <div class="form-group"> 
+                        <input type="Password" class="form-control" id="Password1" autocomplete="off">
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-6" > 
+                    <div class="form-group"> 
+                        ยืนยันรหัสผ่าน :
+                    </div> 
+                </div>
+                <div class="col-6" > 
+                    <div class="form-group"> 
+                        <input type="Password" class="form-control" id="Password2" autocomplete="off">
+                    </div> 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6" > 
+                    <div class="form-group"> 
+                        รหัสลบตัวละคร :
+                    </div> 
+                </div>
+                <div class="col-6" > 
+                    <div class="form-group"> 
+                        <input type="text" class="form-control" id="PassDel" autocomplete="off">
+                    </div> 
+                </div>
+            </div>
+          
+
+
+        </div>
+
+      </div>
+      <div class="modal-footer"> 
+      
+        <div class="spinner-border text-primary" role="status" id="Preload">
+        <span class="sr-only">Loading...</span>
+        </div> 
+        <button type="button" class="btn btn-primary" id="Save">บันทึก</button>
       </div>
     </div>
   </div>
@@ -430,6 +514,25 @@ body {
                 }
 
 
+            });
+
+
+
+            $("#LoginModal").find("#Register").on("click",function(){
+
+                $(this).modal("hide");
+                $("#RegisterModal").modal({backdrop: 'static', keyboard: false});
+                $("#RegisterModal").find("#Preload").hide();
+
+            });
+            $("#LoginModal").find("#Save").on("click",function(){
+
+                $(this).hide();
+
+
+              
+
+            
             });
 
 
