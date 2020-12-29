@@ -91,16 +91,10 @@ body {
                     </div>
                 </div>
                 <div class="col-4">
-
-                    <div class="row">
+ 
                         <div class="col-6">Channel 0 </div>
                         <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">Channel 1 </div>
-                        <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
-                    </div>
-
+                   
                 </div>
             </div>
 
