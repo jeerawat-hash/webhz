@@ -92,29 +92,35 @@ body {
                 </div>
                 <div class="col-4">
 
+                        <br>
+                        
                         <div class="row">
-                            <div class="col-6">Channel 0 </div>
+                            <div class="col-6">Channel 0 PK</div>
                             <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">Channel 1 </div>
+                            <div class="col-6">Channel 1 NonPK</div>
                             <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">Channel 1 </div>
+                            <div class="col-6">ระบบไอเทมช็อป </div>
                             <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">Channel 1 </div>
+                            <div class="col-6">ระบบฝากขายไอเทม </div>
                             <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">Channel 1 </div>
+                            <div class="col-6">ตลาดแลกเปลี่ยน </div>
                             <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">Channel 1 </div>
-                            <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
+                            <div class="col-6">ตาราง วอร์ </div>
+                            <div class="col-6"> จ. - ศ. </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">Tyranny </div>
+                            <div class="col-6"> ทุก 3 ชม. </div>
                         </div>
 
                 </div>
