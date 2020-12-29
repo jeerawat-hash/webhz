@@ -223,7 +223,7 @@ body {
         
 
         <div class="container">
-          
+
           <input type="text" hidden disabled value="" id="ProductNum" >
 
           <div class="row">
@@ -231,12 +231,12 @@ body {
           </div>
 
           <div class="row">
-            <div class="col-6">ราคา :</div> 
-            <div class="col-6"> <font color="red" id="price"></font>  พ้อย</div> 
+            <div class="col-5">ราคา :</div> 
+            <div class="col-7"> <font color="red" id="price"></font>  พ้อย</div> 
           </div>
           <div class="row">
-            <div class="col-2">รายละเอียด :</div> 
-            <div class="col-10"> <font color="red" id="desc"></font>  พ้อย</div> 
+            <div class="col-5">รายละเอียด :</div> 
+            <div class="col-7"> <font color="red" id="desc"></font> </div> 
           </div>
  
 
