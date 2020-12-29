@@ -403,8 +403,11 @@ body {
 
                 
                 var Product = $("#BuyItemModal").find("#ProductNum").val();
+                var StoreID = $("#StoreID").val();
 
-                alert(Product);
+
+
+                alert(Product+" "+StoreID);
 
 
 
