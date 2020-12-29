@@ -130,7 +130,11 @@ body {
                 </div>
             </div>
 
-
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>กิจกรรมพิเศษ</h1>
+                </div>
+            </div>
             <!--- Slide Show --->
             <div class="row">
                 <div class="col-12">
@@ -175,6 +179,24 @@ body {
 
 
 
+
+
+
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+<div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+ 
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>ข่าวสาร/อัพเดท</h1>
+                </div>
+            </div>
 
 
 
