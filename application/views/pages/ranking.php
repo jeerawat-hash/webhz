@@ -54,6 +54,12 @@ body {
                     <a class="nav-link" href="https://rhz.webclient.me/index.php/home">สมัครไอดี</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link " href="https://rhz.webclient.me/index.php/member/itemmall">ไอเทมช็อป</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="https://rhz.webclient.me/index.php/member">จัดการตัวละคร</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link active" href="https://rhz.webclient.me/index.php/home/rank">อันดับผู้เล่น</a>
                 </li>
                 <li class="nav-item">
@@ -68,7 +74,7 @@ body {
                     <a class="nav-link " href="https://rhz.webclient.me/index.php/home/guide">แนะนำการเล่น</a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-success my-2 my-sm-0" type="submit">ดาว์โหลดเกมส์</button>
+                  <a class="btn btn-success my-2 my-sm-0 " href="#">ดาว์โหลดเกมส์</a> 
                 </li>
             </ul>
         </div>
