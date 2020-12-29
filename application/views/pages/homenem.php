@@ -197,6 +197,57 @@ body {
                     <u><h1>ข่าวสาร/อัพเดท</h1></u>
                 </div>
             </div>
+            
+            <div class="row">
+                <div class="col-12">  
+                
+                <table class="table" id="TableNews">
+                    <thead>
+                        <tr>  
+                            <th >หัวข้อ</th> 
+                        </tr>
+                    </thead>
+                    <tbody id="TableNewsDetail" >
+                     
+                        <tr> 
+                            <td></td> 
+                        </tr>
+        
+                    </tbody> 
+                </table>
+
+                </div>
+            </div>
+
+            
+            <div class="row">
+                <div class="col-12 text-center">
+                    <u><h1>ข้อมูล Patch</h1></u>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">  
+                
+                <table class="table" id="TablePatch">
+                    <thead>
+                        <tr>  
+                            <th >หมายเลขแพช</th> 
+                            <th >รายละเอียด</th> 
+                        </tr>
+                    </thead>
+                    <tbody id="TablePatchDetail" >
+                     
+                        <tr> 
+                            <td>0.01</td> 
+                            <td>-----</td> 
+                        </tr>
+        
+                    </tbody> 
+                </table>
+
+                </div>
+            </div>
 
 
 
