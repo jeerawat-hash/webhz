@@ -85,8 +85,8 @@ body {
                 <div class="col-8">
                     <div class="jumbotron " style="color:white;  background-size: cover; background-image: url('https://www.cheathappens.com/img/walls/o_ranonline_1_6.jpg');"> >
                     <div class="container">
-                        <h2 class="display-10" style="-webkit-text-stroke: 1.5px black;">Hazakura RanOnline EP7 Classic ยินดีต้อนรับ</h2>
-                        <p class="lead" style="-webkit-text-stroke: 1.5px black;">เซิฟเวอร์เปิดให้บริการแนวเก็บเลเวลหาของในเวอร์ชั่นคลาสสิคไม่เวอร์ พร้อมมีกิจกรรมต่างๆรองรับผู้เล่นได้หลากหลายแบบด้วย 2 Channel NonPK และ FreePK.</p>
+                        <h2 class="display-10" style="-webkit-text-stroke: 1px blue;">Hazakura RanOnline EP7 Classic ยินดีต้อนรับ</h2>
+                        <p class="lead" style="-webkit-text-stroke: 1px blue;">เซิฟเวอร์เปิดให้บริการแนวเก็บเลเวลหาของในเวอร์ชั่นคลาสสิคไม่เวอร์ พร้อมมีกิจกรรมต่างๆรองรับผู้เล่นได้หลากหลายแบบด้วย 2 Channel NonPK และ FreePK.</p>
                     </div>
                     </div>
                 </div>
