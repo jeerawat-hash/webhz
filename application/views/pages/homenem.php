@@ -37,6 +37,9 @@ body {
   -o-background-size: cover;
 } 
  
+.jumbotron {
+    padding: 0rem 0rem;
+}
  </style>
  
 <body>  
