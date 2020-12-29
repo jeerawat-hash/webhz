@@ -80,10 +80,10 @@ body {
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <div class="jumbotron jumbotron-fluid">
+                    <div class="jumbotron jumbotron-fluid" style="color:white;  background-size: cover; background-image: url('https://www.cheathappens.com/img/walls/o_ranonline_1_6.jpg');">
                     <div class="container">
-                        <h1 class="display-4">Fluid jumbotron</h1>
-                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                        <h1 class="display-4">Hazakura RanOnline EP7 Classic ยินดีต้อนรับ</h1>
+                        <p class="lead">เซิฟเวอร์เปิดให้บริการแนวเก็บเลเวลหาของในเวอร์ชั่นคลาสสิคไม่เวอร์ พร้อมมีกิจกรรมต่างๆรองรับผู้เล่นได้หลากหลายแบบด้วย 2 Channel NonPK และ FreePK.</p>
                     </div>
                     </div>
                 </div>
