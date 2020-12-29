@@ -14,7 +14,8 @@ class Home extends CI_Controller {
 	{
 		
 		//$this->load->view('pages/home');
-		$this->load->view('pages/homenew');
+		//$this->load->view('pages/homenew');
+		$this->load->view('pages/homenem');
 
 	}
 	public function rank()
