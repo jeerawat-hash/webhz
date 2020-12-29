@@ -39,60 +39,37 @@ body {
  
  </style>
  
-<body> 
-<!-- Image and text -->
-<!--
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="https://rhz.webclient.me">
-    <img src="https://rhz.webclient.me/assets/bg/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
-    Hazakura - Ran Online Ep7 Classic
-  </a>
- 
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul> 
- 
-
-</nav>
--->
+<body>  
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    
-    <a class="navbar-brand" href="https://rhz.webclient.me">
-    <img src="https://rhz.webclient.me/assets/bg/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
-    Hazakura - Ran Online Ep7 Classic
-  </a>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-    </ul>
-    <span class="navbar-text">
-      Navbar text with an inline element
-    </span>
-  </div>
-</nav>
+       <a class="navbar-brand" href="https://rhz.webclient.me">
+        <img src="https://rhz.webclient.me/assets/bg/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Hazakura - Ran Online Ep7 Classic
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul  class="navbar-nav mr-auto"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#">สมัครไอดี</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">อันดับผู้เล่น</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">กิจกรรมพิเศษ</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/register') }}">แนะนำการเล่น</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">ดาว์โหลดเกมส์</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
 <div class="container">
