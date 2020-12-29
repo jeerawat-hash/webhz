@@ -524,33 +524,65 @@ body {
                 
                 $("#RegisterModal").modal({backdrop: 'static', keyboard: false});
                 $("#RegisterModal").find("#Preload").hide();
+                $("#RegisterModal").find("#Preload").hide();
 
             });
             $("#RegisterModal").find("#Save").on("click",function(){
 
                 $(this).hide();
                 $("#RegisterModal").find("#Preload").show();
+                var User = $("#UserName").val();
+                var PassA = $("#Password1").val();
+                var PassB = $("#Password2").val();
+                var Pass2 = $("#PassDel").val();
 
 
+                if (User == "") {
+                swal("กรุณาระบุข้อมูลID !!","กรุณาระบุข้อมูลใหม่", "error");
+                return false;
+                }
+                if (PassA == "") {
+                swal("กรุณาระบุข้อมูลPassword !!","กรุณาระบุข้อมูลใหม่", "error");
+                return false;
+                }
+                if (PassB == "") {
+                swal("กรุณายืนยันข้อมูลรหัสผ่านให้ตรงกัน !!","กรุณาระบุข้อมูลใหม่", "error");
+                return false;
+                }
+                if (Pass2 == "") {
+                swal("กรุณาระบุข้อมูลรหัสลบตัวละคร !!","กรุณาระบุข้อมูลใหม่", "error");
+                return false;
+                }
+
+ 
                 setTimeout(function(){ 
                   
-                  
-                  alert("Hello");
-                  $(this).show();
-                  $("#RegisterModal").find("#Preload").hide();  
-                  $("#RegisterModal").modal("hide");  
-                  
-                  
-                  
+
+                      $.post("https://cac.webclient.me/api/register.php",{
+                        Username: User, 
+                        Password: PassA, 
+                        Password2: Pass2
+                      },function(data){
+
+                        var obj = JSON.parse(data);
+
+                        if (obj.is_success == 0) {
+                            swal("ผิดพลาดรหัสซ้ำซ้อน !!","กรุณาระบุข้อมูลใหม่", "error");
+                            $("#RegisterModal").find("#Save").show();
+                            $("#RegisterModal").find("#Preload").hide();  
+                            return false;
+                        }
+
+                        swal("ลงทะเบียนสำเร็จ","", "success");
+                        $("#RegisterModal").find("#Save").show();
+                        $("#RegisterModal").find("#Preload").hide(); 
+                        $("#RegisterModal").modal("hide");  
+
+                      });
+    
+                   
                   }, 3000);
-
-
-                
-
-
-
-
-            
+ 
             });
 
 
