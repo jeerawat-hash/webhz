@@ -403,6 +403,7 @@ body {
 
                 
                 var Product = $("#BuyItemModal").find("#ProductNum").val();
+                var ItemName = $("#BuyItemModal").find("#ItemName").text();
                 var StoreID = $("#StoreID").val();
  
                 //alert(Product+" "+StoreID);
@@ -411,15 +412,38 @@ body {
 
                 setTimeout(function(){ 
 
-                  $("#BuyItemModal").find("#Save").show();
-                  $("#BuyItemModal").find("#preload").hide();
+  
+                  $.post("https://cac.webclient.me/api/addItemShopBuy.php",{
+                    ProductNum : Product,
+                    UserNum : StoreID
+                  },function(data){
+                    
 
+                        if(data == 2)
+                        {
+                          swal("ล้มเหลว","ซื้อไอเทม "+ItemName+" ไม่สำเร็จ พบความผิดปกติบางอย่างกรุณาลองใหม่ภายหลัง", "error");
+                          $("#BuyItemModal").find("#Save").show();
+                          $("#BuyItemModal").find("#preload").hide();
+                          return false;
+                        }
+                        if(data == 5)
+                        {
+                          swal("ล้มเหลว","ซื้อไอเทม "+ItemName+" ไม่สำเร็จ พ้อยของท่านไม่เพียงพอ", "error");
+                          $("#BuyItemModal").find("#Save").show();
+                          $("#BuyItemModal").find("#preload").hide();
+                          return false;
+                        }
+                        if(data == 1)
+                        {
+                          swal("สำเร็จ","ซื้อไอเทม "+ItemName+" สำเร็จ", "success");
+                          $("#BuyItemModal").modal("hide"); 
+                          $("#BuyItemModal").find("#Save").show();
+                          $("#BuyItemModal").find("#preload").hide();
+                        }
+ 
+                  }); 
 
-                  
-                  alert("Hello");
-                  
-                  
-                  
+ 
                   
                }, 3000);
 
