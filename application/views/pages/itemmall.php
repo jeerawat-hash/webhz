@@ -390,12 +390,23 @@ body {
                 $("#BuyItemModal").find("#image").attr("src",obj.ItemIco[0]);
                 $("#BuyItemModal").find("#price").text(obj.ItemPrice[0]);
                 $("#BuyItemModal").find("#desc").text(obj.ItemComment[0]);
-                $("#BuyItemModal").find("#ProductNum").text(obj.ProductNum[0]);
+                $("#BuyItemModal").find("#ProductNum").val(obj.ProductNum[0]);
  
                 $("#BuyItemModal").modal("show");
 
               }); 
               
+
+            });
+
+            $("#BuyItemModal").find("#Save").on("click",function(){
+
+                
+                var Product = $("#BuyItemModal").find("#ProductNum").val();
+
+                alert(Product);
+
+
 
             });
 
