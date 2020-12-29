@@ -62,7 +62,7 @@ body {
             </ul>
             <ul class="navbar-nav"> 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">แนะนำการเล่น</a>
+                    <a class="nav-link disabled" href="https://rhz.webclient.me/index.php/home/guide">แนะนำการเล่น</a>
                 </li>
                 <li class="nav-item">
                     <button class="btn btn-success my-2 my-sm-0" type="submit">ดาว์โหลดเกมส์</button>
