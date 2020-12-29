@@ -132,7 +132,7 @@ body {
 
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1>กิจกรรมพิเศษ</h1>
+                    <u><h1>กิจกรรมพิเศษ</h1></u>
                 </div>
             </div>
             <!--- Slide Show --->
@@ -194,7 +194,7 @@ body {
  
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1>ข่าวสาร/อัพเดท</h1>
+                    <u><h1>ข่าวสาร/อัพเดท</h1></u>
                 </div>
             </div>
 
