@@ -96,12 +96,12 @@ body {
     </div>
     <br>
     <div class="row">
-     
-    
-
-       <center> <h1>รอการอัพเดทรายละเอียดต่อไป</h1>  </center>
-
-
+      
+      <div class="col-3 mx-auto">
+          <div class="text-center">
+              รอการอัพเดทรายละเอียดต่อไป
+          </div>
+      </div>
 
 
     </div>
@@ -129,11 +129,11 @@ body {
     <br>
     <div class="row">
      
-    
-
-       <center> <h1>รอการอัพเดทรายละเอียดต่อไป</h1>  </center>
-
-
+    <div class="col-3 mx-auto">
+          <div class="text-center">
+              รอการอัพเดทรายละเอียดต่อไป
+          </div>
+      </div>
 
 
     </div>
@@ -161,11 +161,11 @@ body {
     <br>
     <div class="row">
      
-    
-
-       <center> <h1>รอการอัพเดทรายละเอียดต่อไป</h1>  </center>
-
-
+    <div class="col-3 mx-auto">
+          <div class="text-center">
+              รอการอัพเดทรายละเอียดต่อไป
+          </div>
+      </div>
 
 
     </div>
@@ -194,10 +194,11 @@ body {
     <div class="row">
      
     
-
-       <center> <h1>รอการอัพเดทรายละเอียดต่อไป</h1>  </center>
-
-
+    <div class="col-3 mx-auto">
+          <div class="text-center">
+              รอการอัพเดทรายละเอียดต่อไป
+          </div>
+      </div>
 
 
     </div>
