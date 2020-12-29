@@ -93,23 +93,23 @@ body {
                 <div class="col-4">
   
                         <div class="row">
-                            <div class="col-6">Channel 0 PK</div>
+                            <div class="col-6"><b><u>Channel 0 PK</u></b></div>
                             <div class="col-6"> <lable class = "btn btn-success btn-sm">Online</lable> </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">Channel 1 NonPK</div>
+                            <div class="col-6"><b><u>Channel 1 NonPK</u></b></div>
                             <div class="col-6">  <lable class = "btn btn-success btn-sm">Online</lable>  </div>
                         </div> 
                         <div class="row">
-                            <div class="col-6">ระบบไอเทมช็อป </div>
+                            <div class="col-6"><b><u>ระบบไอเทมช็อป</u></b></div>
                             <div class="col-6">  <lable class = "btn btn-success btn-sm">Online</lable> </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">ระบบฝากขายไอเทม </div>
+                            <div class="col-6"><b><u>ระบบฝากขายไอเทม</u></b></div>
                             <div class="col-6">  <lable class = "btn btn-success btn-sm">Online</lable> </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">ผู้เล่น </div>
+                            <div class="col-6"><b><u>ผู้เล่น</u></b></div>
                             <div class="col-6"> 
                                 
                             <div class="progress">
@@ -119,11 +119,11 @@ body {
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">ตาราง วอร์ </div>
+                            <div class="col-6"><b><u>ตาราง วอร์</u></b></div>
                             <div class="col-6"> <font color="red"> จ. - ศ. </font></div>
                         </div>
                         <div class="row">
-                            <div class="col-6">Tyranny </div>
+                            <div class="col-6"><b><u>Tyranny</u></b></div>
                             <div class="col-6"><font color="red">  ทุก 3 ชม. </font></div>
                         </div>
 
