@@ -291,9 +291,8 @@ body {
 
         }, 500);
 
-	</script>
-
-
+  </script> 
+  
     <script>
         $(function(){
           
@@ -358,7 +357,7 @@ body {
                           '<div class="card ">'+
                               '<img class="card-img-top" width="286" height="180" src="'+obj.ItemIco[i]+'" alt="Card image cap">'+
                                 '<div class="card-body">'+
-                                '<h5 class="card-title">'+obj.ItemName[i]+'</h5>'+
+                                '<h5 class="card-title"><a href="https://rhz.webclient.me/index.php/member/itemmall">'+obj.ItemName[i]+'</a></h5>'+
                                 '<p class="card-text">'+obj.ItemComment[i]+'</p>'+
                                 '</div>'+ 
                                 '<div class="card-footer">'+
