@@ -1,147 +1,112 @@
- 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8 " />  
- <link rel="Shortcut Icon" href="https://shop.ran-origin.com/favicon.ico" type="image/x-icon" /> 
+	<title>Hazakura Server Ep7 Classic ยินดีต้อนรับ</title>
+	<meta charset="UTF-8">
+	<meta name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=0' >
 
-<title>RanOnline - Hazakura ยินดีต้อนรับ</title>
-<link rel="stylesheet" type="text/css" href="https://rhz.webclient.me/assets/ccr/css/style.css" />
+<!--===============================================================================================-->	
+	 <link rel="Shortcut Icon" href="https://shop.ran-origin.com/favicon.ico" type="image/x-icon" /> 
+<!--===============================================================================================-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://rhz.webclient.me/assets/news/ticker.css">
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+<!-------- ---> 
+<!--  <script src="https://rhz.webclient.me/assets/news/ticker.js"></script> -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+	<script src="https://rhz.webclient.me/assets/Login/vendor/jquery/jquery-3.2.1.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://rhz.webclient.me/assets/Login/vendor/bootstrap/js/popper.js"></script>
 
-  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 
+    
 
-</script>
-<script> 
-$(document).ready(function(){
-
-              
- document.addEventListener('contextmenu', event => event.preventDefault());
-
-            setInterval(function(){
-              var startTime = performance.now(), check, diff;
-              for (check = 0; check < 1000; check++){
-                //console.log(check);
-                console.clear();
-              }
-              diff = performance.now() - startTime;
-              if (diff > 200){
- 
-                debugger;
-
-              }
-            }, 200); 
- 
-
-
-  $("#Quest").click(function(){
-    $("#QuestDetail").slideToggle("fast");
-  });
- 
-  $("#Level").click(function(){
-    $("#LevelDetail").slideToggle("fast");
-  });
-  $("#EventTW").click(function(){
-    $("#EventTWDetail").slideToggle("fast");
-  });
-  $("#EventSW").click(function(){
-    $("#EventSWDetail").slideToggle("fast");
-  });
- 
-
-});
-</script>
 </head>
 
-<body>
-
-    
-    <div class="container">
-    
-        <div class="navigation" style="font-size:20px; color:#fff;">
-       		 
-             <div style="margin-top:30px; margin-left:70px; float:left;" >
-            <a href="https://rhz.webclient.me/" class="navItem">หน้าแรก</a></div>
-             <div style="margin-top:30px; margin-left:70px; float:left;">
-            <a href="https://liff.line.me/1655100623-pRNmqX2D"  class="navItem">ลงทะเบียน</a></div> 
-            <div style="margin-top:30px; margin-left:70px; float:left;">
-            <a href="https://drive.google.com/file/d/1lhRkpBiC7E3K8ojtQr8vQ2ufo0Z90RZL/view?usp=sharing" target="_blank" class="navItem">ดาว์โหลด</a></div>
-            <div style="margin-top:30px; margin-left:70px; float:left;">
-            <a href="https://liff.line.me/1655100623-YNaPAD2N" target="_blank" class="navItem">ตลาดซื้อขาย</a></div>
-            <div style="margin-top:30px; margin-left:70px; float:left;">
-           	<a href="https://rhz.webclient.me/index.php/home/rank" class="navItem">สถิติผู้เล่น</a></div> 
-            <div style="margin-top:30px; margin-left:70px; float:left;">
-           	<a href="https://rhz.webclient.me/index.php/home/guide" class="navItem">แนะนำ</a></div> 
-
-            
+<style type="text/css">
+ 
+body {
+  background: url('https://rhz.webclient.me/assets/bg/bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+} 
+ 
+ </style>
+ 
+<body>  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="https://rhz.webclient.me">
+        <img src="https://rhz.webclient.me/assets/bg/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Hazakura - Ran Online Ep7 Classic
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul  class="navbar-nav mr-auto"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="https://rhz.webclient.me/index.php/home">สมัครไอดี</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="https://rhz.webclient.me/index.php/home/rank">อันดับผู้เล่น</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">กิจกรรมพิเศษ</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav"> 
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://rhz.webclient.me/index.php/home/guide">แนะนำการเล่น</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">ดาว์โหลดเกมส์</button>
+                </li>
+            </ul>
         </div>
-           
-        
-       	
-        <div style="position:absolute; margin-top:60px; margin-left:-10px;">
-        
-        <div class="leftContainerB">
-        	 
+    </nav>
 
-            <div id="Quest" class="titleBarB" style=" position:relative;">
-            <div class="titleBartitle">เควสเริ่มต้น</div></div>
-            
-            <div id="QuestDetail"  class="ContentNewsHid" >
-            <div  align="justify"  style="float:left; margin:10px;"> 
 
- 
+<div class="container">
+<div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
 
-             </div>
-            </div>
+    
 
-            <div id="Level" class="titleBarB" style=" position:relative;">
-            <div class="titleBartitle">แนวทางการเก็บเลเวล</div></div>
-            
-            <div id="LevelDetail"  class="ContentNewsHid" >
-            <div  align="justify"  style="float:left; margin:10px;"> 
 
- 
 
-             </div>
-            </div>
-            
-            <div id="EventTW" class="titleBarB" style=" position:relative;">
-            <div class="titleBartitle">กิจกรรม TyrannyWar</div></div>
-            
-            <div id="EventTWDetail"  class="ContentNewsHid" >
-            <div  align="justify"  style="float:left; margin:10px;"> 
 
- 
 
-             </div>
-            </div>
 
-            <div id="EventSW" class="titleBarB" style=" position:relative;">
-            <div class="titleBartitle">กิจกรรม SuperiorWar</div></div>
-            
-            <div id="EventSWDetail"  class="ContentNewsHid" >
-            <div  align="justify"  style="float:left; margin:10px;"> 
 
- 
 
-             </div>
-            </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
   
-           	 
-        </div>
-         
-        
-    <div style="margin-top:900px;">
-             <img src="https://rhz.webclient.me/assets/ccr/img/footer.png"/>
-             <center>
-             <div style="margin-bottom:100px; margin-top:20px; font-family:Calibri; font-size:14px; color:#FFF;">
-             All Rights Reserved Hazakura RanOnline<BR />
-             
-             </div>
-             </center>
-	</div>
-    
-</body>
-</html>
+
+
+
+
+ 
+
+
+  
+  
+
+ </body>
+
