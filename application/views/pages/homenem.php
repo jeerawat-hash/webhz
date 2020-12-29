@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Hazakura Server จัดการตัวละคร</title>
+	<title>Hazakura Server Ep7 Classic ยินดีต้อนรับ</title>
 	<meta charset="UTF-8">
 	<meta name='viewport' 
      content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
@@ -51,18 +51,18 @@ body {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul  class="navbar-nav mr-auto"> 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">สมัครไอดี</a>
+                    <a class="nav-link active" href="#">สมัครไอดี</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">อันดับผู้เล่น</a>
+                    <a class="nav-link" href="https://rhz.webclient.me/index.php/home/rank">อันดับผู้เล่น</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">กิจกรรมพิเศษ</a>
+                    <a class="nav-link disable" href="#">กิจกรรมพิเศษ</a>
                 </li>
             </ul>
             <ul class="navbar-nav"> 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/register') }}">แนะนำการเล่น</a>
+                    <a class="nav-link" href="#">แนะนำการเล่น</a>
                 </li>
                 <li class="nav-item">
                     <button class="btn btn-success my-2 my-sm-0" type="submit">ดาว์โหลดเกมส์</button>
