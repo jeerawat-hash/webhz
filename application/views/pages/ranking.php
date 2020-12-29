@@ -51,7 +51,7 @@ body {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul  class="navbar-nav mr-auto"> 
                 <li class="nav-item">
-                    <a class="nav-link" href="https://rhz.webclient.me/index.php/home">สมัครไอดี</a>
+                    <a class="nav-link" target="_blank" href="https://rhz.webclient.me/index.php/member">สมัครไอดี</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " target="_blank" href="https://rhz.webclient.me/index.php/member/itemmall">ไอเทมช็อป</a>
