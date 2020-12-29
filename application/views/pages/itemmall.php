@@ -249,10 +249,14 @@ body {
 
       </div>
       <div class="modal-footer">
-        
+
+
+      <div class="spinner-border text-success" role="status" id="preload">
+        <span class="sr-only">Loading...</span>
+      </div>
         <button type="button" class="btn btn-success" id="Save">ซื้อ</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
-        
+
       </div>
     </div>
   </div>
@@ -373,6 +377,7 @@ body {
 
               var Product = $(this).attr("data-pronum");
 
+              $("#BuyItemModal").find("#preload").hide();
               //alert(ProductNum);
 
               $.post("https://cac.webclient.me/api/getDatatemServer.php",{
@@ -381,16 +386,13 @@ body {
 
                 var obj = JSON.parse(data);
                 console.log(obj);
+
+
+
+                
                 $("#BuyItemModal").modal("show");
 
-              });
-
-
-
-             
-
-
-
+              }); 
               
 
             });
