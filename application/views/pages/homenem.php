@@ -36,10 +36,6 @@ body {
   background-size: cover;
   -o-background-size: cover;
 } 
-@media (min-width: 576px) 
-.jumbotron {
-    padding: 0rem 0rem;
-}
  
  </style>
  
@@ -83,15 +79,15 @@ body {
     
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-8">
                     <div class="jumbotron " >
                     <div class="container">
-                        <h2 class="display-1">Hazakura RanOnline EP7 Classic ยินดีต้อนรับ</h2>
+                        <h2 class="display-10">Hazakura RanOnline EP7 Classic ยินดีต้อนรับ</h2>
                         <p class="lead">เซิฟเวอร์เปิดให้บริการแนวเก็บเลเวลหาของในเวอร์ชั่นคลาสสิคไม่เวอร์ พร้อมมีกิจกรรมต่างๆรองรับผู้เล่นได้หลากหลายแบบด้วย 2 Channel NonPK และ FreePK.</p>
                     </div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-4">
 
                     <div class="row">
                         <div class="col-6">Channel 0 </div>
