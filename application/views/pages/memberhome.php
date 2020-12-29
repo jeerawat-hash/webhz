@@ -546,9 +546,15 @@ body {
                 return false;
                 }
                 if (PassB == "") {
+                swal("กรุณายืนยันข้อมูลPassword !!","กรุณาระบุข้อมูลใหม่", "error");
+                return false;
+                }
+
+                if (PassA != PassB) {
                 swal("กรุณายืนยันข้อมูลรหัสผ่านให้ตรงกัน !!","กรุณาระบุข้อมูลใหม่", "error");
                 return false;
                 }
+
                 if (Pass2 == "") {
                 swal("กรุณาระบุข้อมูลรหัสลบตัวละคร !!","กรุณาระบุข้อมูลใหม่", "error");
                 return false;
