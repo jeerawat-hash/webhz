@@ -149,6 +149,16 @@ body {
     </div>
 
     <div class="row">
+        <div class="col-12"> 
+
+        <label>ยอดพ้อยแลกเปลี่ยน : </label>
+ 				<font color="green"><label class="MoneyPoint">0</label> </font> พ้อย
+  
+        </div>
+
+    </div>
+
+    <div class="row">
 
         <div class="col-3">
         
