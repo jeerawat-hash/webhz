@@ -114,25 +114,25 @@ body {
     <div class="row">
         <div class="col-3 text-center"> 
 
-        <a href="#" class="btn btn-success active" role="button" id="exchangepoint" aria-pressed="true">แลกพ้อยเวลาออนไลน์</a>
+        <a href="#" class="btn btn-success disabled" role="button" id="exchangepoint" aria-pressed="true">แลกพ้อยเวลาออนไลน์</a>
   
         </div>
 
         <div class="col-3 text-center"> 
 
-        <a href="#" class="btn btn-dark" role="button" id="redeemPkitem" aria-pressed="true">แลกไอเทมจากแต้มPK</a>
+        <a href="#" class="btn btn-dark disabled" role="button" id="redeemPkitem" aria-pressed="true">แลกไอเทมจากแต้มPK</a>
 
         </div>
 
         <div class="col-3 text-center"> 
           
-        <a href="#" class="btn btn-danger active" role="button" id="fixchar" aria-pressed="true">แก้ตัวละครค้าง</a>
+        <a href="#" class="btn btn-danger disabled" role="button" id="fixchar" aria-pressed="true">แก้ตัวละครค้าง</a>
 
         </div>
 
         <div class="col-3 text-center"> 
           
-        <a href="#" class="btn btn-primary active" role="button" id="changepassword" aria-pressed="true">เปลี่ยนรหัสผ่าน</a>
+        <a href="#" class="btn btn-primary disabled" role="button" id="changepassword" aria-pressed="true">เปลี่ยนรหัสผ่าน</a>
 
         </div>
 
