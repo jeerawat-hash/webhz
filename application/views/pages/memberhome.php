@@ -529,9 +529,23 @@ body {
             $("#RegisterModal").find("#Save").on("click",function(){
 
                 $(this).hide();
+                $("#RegisterModal").find("#Preload").show();
 
 
-                alert();
+                setTimeout(function(){ 
+                  
+                  
+                  alert("Hello");
+                  $(this).show();
+                  $("#RegisterModal").find("#Preload").hide();  
+                  $("#RegisterModal").modal("hide");  
+                  
+                  
+                  
+                  }, 3000);
+
+
+                
 
 
 
