@@ -230,7 +230,7 @@ body {
           <br>
           <div class="row">
             <div class="col-5">ราคา :</div> 
-            <div class="col-7"> <font color="red" id="price"></font>พ้อย</div> 
+            <div class="col-7"> <font color="red" id="price"></font> พ้อย</div> 
           </div>
           <div class="row">
             <div class="col-5">รายละเอียด :</div> 
