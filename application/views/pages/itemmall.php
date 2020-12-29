@@ -214,9 +214,7 @@ body {
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <h5 class="modal-title" id="ItemName">Modal title</h5> 
         </button>
       </div>
       <div class="modal-body">
@@ -386,10 +384,13 @@ body {
 
                 var obj = JSON.parse(data);
                 console.log(obj);
-
-
-
-                
+ 
+                $("#BuyItemModal").find("#ItemName").text(obj.ItemName[0]);
+                $("#BuyItemModal").find("#image").attr("src",obj.ItemIco[0]);
+                $("#BuyItemModal").find("#price").text(obj.ItemPrice[0]);
+                $("#BuyItemModal").find("#desc").text(obj.ItemComment[0]);
+                $("#BuyItemModal").find("#ProductNum").text(obj.ProductNum[0]);
+ 
                 $("#BuyItemModal").modal("show");
 
               }); 
