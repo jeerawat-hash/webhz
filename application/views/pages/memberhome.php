@@ -539,24 +539,35 @@ body {
 
                 if (User == "") {
                 swal("กรุณาระบุข้อมูลID !!","กรุณาระบุข้อมูลใหม่", "error");
+                  $("#RegisterModal").find("#Save").show();
+                  $("#RegisterModal").find("#Preload").hide();  
+
                 return false;
                 }
                 if (PassA == "") {
                 swal("กรุณาระบุข้อมูลPassword !!","กรุณาระบุข้อมูลใหม่", "error");
+                $("#RegisterModal").find("#Save").show();
+                  $("#RegisterModal").find("#Preload").hide();
                 return false;
                 }
                 if (PassB == "") {
                 swal("กรุณายืนยันข้อมูลPassword !!","กรุณาระบุข้อมูลใหม่", "error");
+                $("#RegisterModal").find("#Save").show();
+                  $("#RegisterModal").find("#Preload").hide();
                 return false;
                 }
 
                 if (PassA != PassB) {
                 swal("กรุณายืนยันข้อมูลรหัสผ่านให้ตรงกัน !!","กรุณาระบุข้อมูลใหม่", "error");
+                $("#RegisterModal").find("#Save").show();
+                  $("#RegisterModal").find("#Preload").hide();
                 return false;
                 }
 
                 if (Pass2 == "") {
                 swal("กรุณาระบุข้อมูลรหัสลบตัวละคร !!","กรุณาระบุข้อมูลใหม่", "error");
+                $("#RegisterModal").find("#Save").show();
+                  $("#RegisterModal").find("#Preload").hide();
                 return false;
                 }
 

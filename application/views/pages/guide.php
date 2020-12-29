@@ -74,7 +74,7 @@ body {
                     <a class="nav-link active" href="https://rhz.webclient.me/index.php/home/guide">แนะนำการเล่น</a>
                 </li>
                 <li class="nav-item">
-                  <a class="btn btn-success my-2 my-sm-0 " href="#" target="_blank">ดาว์โหลดเกมส์</a> 
+                  <a class="btn btn-success my-2 my-sm-0 " href="https://drive.google.com/file/d/1lhRkpBiC7E3K8ojtQr8vQ2ufo0Z90RZL/view?usp=sharing" target="_blank">ดาว์โหลดเกมส์</a> 
                 </li>
             </ul>
         </div>
