@@ -40,7 +40,7 @@ body {
  </style>
  
 <body>  
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
        <a class="navbar-brand" href="https://rhz.webclient.me">
         <img src="https://rhz.webclient.me/assets/bg/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Hazakura - Ran Online Ep7 Classic
@@ -74,9 +74,10 @@ body {
 
 <div class="container">
 <div class="card border-0 shadow my-5">
-    <div class="card-body p-5"> 
+    <div class="card-body p-5">
 
     
+        <div class="container">
             <!--- Slide Show --->
             <div class="row">
                 <div class="col-12">
@@ -110,7 +111,14 @@ body {
             </div>
             <!--- Slide Show --->
 
- 
+
+
+
+
+
+
+        </div>
+
 
 
 
