@@ -94,12 +94,12 @@ body {
         </div> 
         </div>
     </div>
-   
-    <div class="row text-center">
+    <br>
+    <div class="row">
      
     
 
-        <h1>รอการอัพเดทรายละเอียดต่อไป</h1>
+       <center> <h1>รอการอัพเดทรายละเอียดต่อไป</h1>  </center>
 
 
 
@@ -126,12 +126,12 @@ body {
         </div>
 
     </div>
-   
-    <div class="row text-center">
+    <br>
+    <div class="row">
      
     
 
-        <h1>รอการอัพเดทรายละเอียดต่อไป</h1>
+       <center> <h1>รอการอัพเดทรายละเอียดต่อไป</h1>  </center>
 
 
 
@@ -158,12 +158,12 @@ body {
         </div>
 
     </div>
-   
-    <div class="row text-center">
+    <br>
+    <div class="row">
      
     
 
-        <h1>รอการอัพเดทรายละเอียดต่อไป</h1>
+       <center> <h1>รอการอัพเดทรายละเอียดต่อไป</h1>  </center>
 
 
 
@@ -190,12 +190,12 @@ body {
         </div>
 
     </div>
-   
+   <br>
     <div class="row">
      
     
 
-        <h1 class="text-center">รอการอัพเดทรายละเอียดต่อไป</h1>
+       <center> <h1>รอการอัพเดทรายละเอียดต่อไป</h1>  </center>
 
 
 
