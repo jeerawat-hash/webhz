@@ -94,11 +94,11 @@ body {
   
                         <div class="row">
                             <div class="col-6">Channel 0 PK</div>
-                            <div class="col-6"> <lable class = "btn btn-primary btn-lg">Online</lable></h5> </div>
+                            <div class="col-6"> <lable class = "btn btn-success btn-sm">Online</lable> </div>
                         </div>
                         <div class="row">
                             <div class="col-6">Channel 1 NonPK</div>
-                            <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
+                            <div class="col-6">  <lable class = "btn btn-success btn-sm">Online</lable>  </div>
                         </div>
                         <div class="row">
                             <div class="col-6">ผู้เล่น </div>
