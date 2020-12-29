@@ -99,6 +99,14 @@ body {
                         <div class="row">
                             <div class="col-6">Channel 1 NonPK</div>
                             <div class="col-6">  <lable class = "btn btn-success btn-sm">Online</lable>  </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col-6">ระบบไอเทมช็อป </div>
+                            <div class="col-6">  <lable class = "btn btn-success btn-sm">Online</lable> </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">ระบบฝากขายไอเทม </div>
+                            <div class="col-6">  <lable class = "btn btn-success btn-sm">Online</lable> </div>
                         </div>
                         <div class="row">
                             <div class="col-6">ผู้เล่น </div>
@@ -111,21 +119,12 @@ body {
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">ระบบไอเทมช็อป </div>
-                            <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">ระบบฝากขายไอเทม </div>
-                            <div class="col-6"> <h5><span class = "label label-success">Online</span></h5> </div>
-                        </div>
-                        
-                        <div class="row">
                             <div class="col-6">ตาราง วอร์ </div>
-                            <div class="col-6"> จ. - ศ. </div>
+                            <div class="col-6"> <font color="red"> จ. - ศ. </font></div>
                         </div>
                         <div class="row">
                             <div class="col-6">Tyranny </div>
-                            <div class="col-6"> ทุก 3 ชม. </div>
+                            <div class="col-6"><font color="red">  ทุก 3 ชม. </font></div>
                         </div>
 
                 </div>
