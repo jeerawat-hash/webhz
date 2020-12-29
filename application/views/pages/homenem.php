@@ -41,8 +41,8 @@ body {
  
 <body> 
 <!-- Image and text -->
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="https://rhz.webclient.me">
     <img src="https://rhz.webclient.me/assets/bg/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
     Hazakura - Ran Online Ep7 Classic
   </a>
