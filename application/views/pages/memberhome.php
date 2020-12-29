@@ -522,7 +522,7 @@ body {
 
                 //$("#LoginModal").modal("hide");
                 
-                $("#RegisterModal").modal({backdrop: 'static', keyboard: false});
+                $("#RegisterModal").modal();
                 $("#RegisterModal").find("#Preload").hide();
                 $("#RegisterModal").find("#Preload").hide();
 
