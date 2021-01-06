@@ -129,7 +129,7 @@ body {
                         </div>
                         <div class="row">
                             <div class="col-6"><u>ตาราง วอร์</u></div>
-                            <div class="col-6"> <font color="red"> จ. - ศ. </font></div>
+                            <div class="col-6"> <font color="red"> พุธ , ศุกร์ เสาร์ อาทิตย์ </font></div>
                         </div>
                         <div class="row">
                             <div class="col-6"><u>Tyranny</u></div>
@@ -219,7 +219,7 @@ body {
                     <tbody id="TableNewsDetail" >
                      
                         <tr> 
-                            <td>รอการอัพเดทรายละเอียดต่อไป</td> 
+                            <td>กิจกรรมพิเศษ เก็บบัตรสวัสดิการแห่งรัฐ ผสมไอเทมได้รับ บัตรปรับเรทและสร้อยมังกรทอง</td> 
                         </tr>
         
                     </tbody> 
@@ -246,7 +246,11 @@ body {
                         </tr>
                     </thead>
                     <tbody id="TablePatchDetail" >
-                     
+
+                        <tr> 
+                            <td> <font color="red">0.10b</font> </td> 
+                            <td>ปรับปรุงการดรอปไอเทมและแก้ไขปัญหาอื่นๆ</td> 
+                        </tr>
                         <tr> 
                             <td> <font color="red">0.01b</font> </td> 
                             <td>ปรับปรุงรายละเอียดการดรอปและการเกิดของบอส รวมถึงปลดระบบเควดออกและเพิ่มมอนส์เตอร์</td> 
