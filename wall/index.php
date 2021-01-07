@@ -6,11 +6,11 @@
   $data = $tw->GetTransaction();
 
   
-  print_r($data);
-  /*
+  //print_r($data);
+  
   foreach ($data["data"]["activities"] as $transfer) {
     $values = $tw->GetTransactionReport($transfer["report_id"]);
     print_r($values);
-  }*/
+  }
   
 ?>
