@@ -211,7 +211,7 @@ body {
 
                 var html = "";
 
-                for (var i = 0; i < obj.ChaLevel.length; i++) { 
+                for (var i = 0; i < obj.UserName.length; i++) { 
                     
                     html += " <tr> "+
                             "<td>"+obj.UserName[i]+" </td>"+
