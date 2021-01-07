@@ -1,32 +1,99 @@
-<?php
-	require_once 'Curl.php';
-	class TrueWallet{
-		private $url = "https://wallet.truemoney.com/user/login";
-		private $trans_history_link = "https://wallet.truemoney.com/api/transaction_history";
-		private $reportLink  = "https://wallet.truemoney.com/api/transaction_history_detail?reportID=";
-		private $curl;
-		function __construct(){
-			$this->curl = new Curl();
-		}
+<?php 
+class TrueWallet {
+    public function Request($method = 'GET', $url, $header = false, $data = false) {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'okhttp/3.8.0');
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
+        if ($header) curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+        if ($data) curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        return curl_exec($ch);
+    }
 
-		public function get_transactions($email, $password){
-			$email = str_replace('@', '%40', $email);
-			$data = "email=".$email."&password=".$password;
-			$login  = $this->curl->login($this->url, $data);
-			$trans = $this->curl->grab_page($this->trans_history_link);
+    public function GetToken($user, $pass, $type) {
+        $url = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/signin";
+        $header = array("Host: mobile-api-gateway.truemoney.com", "Content-Type: application/json");
+        $data = array("username"=>$user, "password"=>sha1($user.$pass), "type"=>$type);
+        return @json_decode($this->Request('POST', $url, $header, json_encode($data)), true)['data']['accessToken'];
+    }
+    
+    public function Logout($token) {
+        $url = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/signout/{$token}";
+        $header = array("Host: mobile-api-gateway.truemoney.com");
+         $data = array("token"=>$token);
+        return @json_decode($this->Request('POST', $url, $header, false), true);
+    }
+    
+    public function GetCurrentBalance($token) {
+        $url = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/profile/balance/{$token}";
+        $header = array("Host: mobile-api-gateway.truemoney.com");
+        return @json_decode($this->Request('GET', $url, $header, false), true)['data'];
+    }
 
-			if (strpos($trans, 'Whoops') !== false) {
-    			return 'Can not login<br>';
-			}
-			$trans_obj  = json_decode($trans);
-			$arr_trans = $trans_obj->data->activities;
-			return $arr_trans;
-		}
+    public function GetProfile($token) {
+        $url = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/profile/{$token}";
+        $header = array("Host: mobile-api-gateway.truemoney.com");
+        return @json_decode($this->Request('GET', $url, $header, false), true)['data'];
+    }
 
-		public function get_report($report_id){
-			$report = $this->curl->grab_page($this->reportLink.$report_id);
-			$json_report = json_decode($report);
-			return $json_report;
-		}
-	}
+    public function FetchActivities($token, $start, $end, $limit = 25) {
+        $url = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/user-profile-composite/v1/users/transactions/history?start_date={$start}&end_date={$end}&limit={$limit}";
+        $header = array("Host: mobile-api-gateway.truemoney.com", "Authorization: {$token}");
+        return @json_decode($this->Request('GET', $url, $header, false), true)['data']['activities'];
+    }
+
+    public function FetchTxDetail($token, $id) {
+        $url = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/user-profile-composite/v1/users/transactions/history/detail/{$id}";
+        $header = array("Host: mobile-api-gateway.truemoney.com", "Authorization: {$token}");
+        return @json_decode($this->Request('GET', $url, $header, false), true)['data'];
+    }
+
+    public function CashcardTopup($token, $cashcard) {
+        $time = time();
+        $url = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/topup/mobile/{$time}/{$token}/cashcard/{$cashcard}";
+        $header = array("Host: mobile-api-gateway.truemoney.com");
+        return @json_decode($this->Request('POST', $url, $header, true), true);
+    }
+    
+    public function CashcardBuyRequest($token, $mobile, $amount) {
+        $url = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/buy/e-pin/draft/verifyAndCreate/{$token}";
+        $data = array("recipientMobileNumber"=>$mobile,"amount"=>$amount);
+        $header = array("Host: mobile-api-gateway.truemoney.com", "Content-Type: application/json");
+        return @json_decode($this->Request('POST', $url, $header, json_encode($data)), true);
+    }
+    
+    public function CashcardBuyComfirm($token, $draft, $mobile, $otpString, $otpRefCode) {
+        $url = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/buy/e-pin/confirm/{$draft}/{$token}";
+        $data = array("mobileNumber"=>$mobile, "otpString"=>$otpString, "otpRefCode"=>$otpRefCode, "timestamp"=>time());
+        $header = array("Host: mobile-api-gateway.truemoney.com", "Content-Type: application/json");
+        return @json_decode($this->Request('PUT', $url, $header, json_encode($data)), true);
+    }
+
+    public function transaction_draft($token, $mobile, $amount) {
+        $url = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/transfer/draft-transaction/{$token}";
+        $data = array("amount"=>$amount, "mobileNumber"=>$mobile);
+        $data = json_encode($data);
+        $header = array("Host: mobile-api-gateway.truemoney.com", "Content-Type: application/json");
+        return @json_decode($this->Request('POST', $url, $header, $data), true)['data']['draftTransactionID'];      
+    }
+    
+    public function transaction_send_otp($token, $transaction_id, $personalMessage="") {
+        $url = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/transfer/draft-transaction/{$transaction_id}/send-otp/{$token}";
+        $data = array("personalMessage"=>$personalMessage);
+        $data = json_encode($data);
+        $header = array("Host: mobile-api-gateway.truemoney.com", "Content-Type: application/json");
+        return @json_decode($this->Request('PUT', $url, $header, $data), true);
+    }
+    
+    public function transaction_transfer($token, $mobile, $transaction_id, $otpString, $otpRefCode) {
+        $url = "https://mobile-api-gateway.truemoney.com/mobile-api-gateway/api/v1/transfer/transaction/{$transaction_id}/{$token}";
+        $data = array("mobileNumber"=>$mobile, "otpString"=>$otpString, "otpRefCode"=>$otpRefCode);
+        $data = json_encode($data);
+        $header = array("Host: mobile-api-gateway.truemoney.com", "Content-Type: application/json");
+        return @json_decode($this->Request('POST', $url, $header, $data), true);
+    }
+}
 ?>
