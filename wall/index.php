@@ -12,7 +12,7 @@
     
     $values = $tw->GetTransactionReport($transfer["report_id"]);
     //print_r($values);
-    echo $values["data"]["section4"]["column2"]["cell1"]["value"]."<br>";
+    echo "รายการใหม่ ".$values["data"]["ref1"]."จำนวน "." ".$values["data"]["amount"]." ".$values["data"]["section4"]["column2"]["cell1"]["value"]."<br>"; 
     
 
   }
