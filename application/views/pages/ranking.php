@@ -202,7 +202,7 @@ body {
                     for (var i = 0; i < obj.ChaLevel.length; i++) { 
                         
                         html += " <tr> "+
-                                "<td>"+obj.ChaName[i]+" LV: "+obj.ChaLevel[i]+"</td>"+
+                                "<td>"+obj.ChaName[i]+" LV: <font color='red'> "+obj.ChaLevel[i]+"</font></td>"+
                                 "<td>"+obj.Class[i]+"</td>"+
                                 "<td>"+obj.ChaSchool[i]+"</td> "+
                                 "</tr> ";
