@@ -169,7 +169,7 @@ body {
                 $("#B").text("โรงเรียน");
                 $("#C").text("ยอดเงิน");
 
-                
+
 
 
 
@@ -201,9 +201,31 @@ body {
                 $("#A").text("ไอดี");
                 $("#B").text("เวลาออนไลน์");
                 $("#C").text("จำนวนพ้อย");
+ 
+
+                $.get("https://cac.webclient.me/api/getDataTopOnline.php",function(data){
+
+                var obj = JSON.parse(data);
+ 
+                console.log(obj);
+
+                var html = "";
+
+                for (var i = 0; i < obj.ChaLevel.length; i++) { 
+                    
+                    html += " <tr> "+
+                            "<td>"+obj.UserName[i]+" </td>"+
+                            "<td>"+obj.HoursOnline[i]+"</td>"+
+                            "<td><font color='red'> "+obj.Point[i]+"</font></td> "+
+                            "</tr> ";
+
+                }
+
+                $("#TableTopDetail").html(html);
 
 
 
+                });
 
 
 
