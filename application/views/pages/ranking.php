@@ -123,13 +123,13 @@ body {
                 </tr>
             </thead>
             <tbody id="TableTopDetail" >
-            
+            <!--
                 <tr>
                     <td>--</td>
                     <td>--</td>
                     <td>--</td> 
                 </tr>
- 
+            -->
             </tbody> 
         </table>
     
@@ -188,6 +188,34 @@ body {
                 event.preventDefault();
                 $(".list-group-item").removeClass("active");
                 $(this).addClass("active");
+
+
+                $.get("https://cac.webclient.me/api/getdatatoplevel.php",function(data){
+
+                    var obj = JSON.parse(data);
+
+
+                    console.log(obj);
+
+                    var html = "";
+
+
+
+
+
+                    
+                    $("#TableTopDetail").html("");
+
+
+
+
+
+
+
+                });
+
+
+
 
       });
 
