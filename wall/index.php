@@ -6,7 +6,7 @@ error_reporting(0);
 set_time_limit(0);
 $datenow=date("Y-m-d");
 $transaction_leng=14;
-$url_api="http://tmwallet.thaighost.net/apiwallet.php";
+$url_api="https://tmwallet.thaighost.net/apiwallet.php";
 //$url_api="https://www.tmweasy.com/apiwallet.php";
 
 //-----------------------------------------config----------------------------------------------------
@@ -18,24 +18,7 @@ $tmpapi_assword="jeerawatTH2019"; // รหัสผ่าน
 $truewall_email="p.jeerawat.th@live.com"; // Email ที่ใช้กับ  App Truemoneywallet
 $truewall_phone="0616619956"; // เบอร์โทรที่ไว้รับยอดกับ True money Wallet เป็นเบอร์ที่สมัครคู่กับ Email ก่อนหน้า
 $truepassword="tmpwokE8eUYFlpyEjU8odq[sa]tExmCg6jUuRQzgW3n0rn5FjiSs[tr]"; // รหัสผ่าน ต้องนำรหัสผ่าน True money Wallet ของท่านไปเข้ารหัสความปลอดภัยที่ https://www.tmweasy.com/encode.php ก่อนแล้วนำcodeที่ได้หลังเข้ารหัสมาใส่ตรงนี้ได้เลย  รูปแบบ tmpw..................
-
-//config ฐานข้อมูล
-$sql_server="localhost";
-$sql_user="sa";
-$sql_password="jeerawatTH2019";
-$sql_database="RanUser";
-
-//ตัวคูณเครดิตรสำหรับทรูวอเลท
-$mul=1;
-
-//เชทค่าเครดิตรสำหรับบัตรทรูมันนี่ เปลี่ยนค่าหลัง = 
-$truemoney_set[50]=50;
-$truemoney_set[90]=90;
-$truemoney_set[150]=150;
-$truemoney_set[300]=300;
-$truemoney_set[500]=500;
-$truemoney_set[1000]=1000;
-
+ 
 //-----------------------------------------config----------------------------------------------------
 
 function tmtopupconnect($tmuser,$tmpassword,$trueemail,$truepassword,$ip,$session,$transactionid,$action,$ref1){
@@ -67,9 +50,7 @@ function my_ip(){
 		return $IP;
 }
 
-
-$connect_db=odbc_connect('Driver={SQL Server};Server=' .$sql_server. ';Database=' . $sql_database. ';' ,$sql_user, $sql_password) or die('ไม่สามรถเชื่อมต่อฐานข้อมูลได้');
-?>
+ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -102,8 +83,7 @@ if($_POST[send]){
 		}else{
 			//ยอดสำเร็จที่ถูกเช็คจากบัตรทรูมันนี่
 			$point=$truemoney_set[$money_total];
-		}
-		odbc_exec($connect_db,"update  set =+$point where ='$_POST[ref1]' ");
+		} 
 		echo "<p><h4 style='color:green'>เรียบร้อย</h4></p>
 		<p>จำนวนเงิน คือ $money_total บาท ได้รับ $point เครดิตร</p>
 		<p>ขอบคุณที่ใช้บริการครับ !  [ ปิดหน้านี้ได้เลย ]</p>";
