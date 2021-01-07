@@ -117,9 +117,9 @@ body {
             <table class="table" id="TableTop">
             <thead>
                 <tr> 
-                    <th >ชื่อ</th>
-                    <th >อาชีพ</th>
-                    <th >โรงเรียน</th> 
+                    <th id="A" ></th>
+                    <th id="B" ></th>
+                    <th id="C" ></th> 
                 </tr>
             </thead>
             <tbody id="TableTopDetail" >
@@ -163,7 +163,15 @@ body {
                 
                 event.preventDefault();
                 $(".list-group-item").removeClass("active");
-                $(this).addClass("active");
+                $(this).addClass("active"); 
+
+                $("#A").text("ชื่อ");
+                $("#B").text("โรงเรียน");
+                $("#C").text("ยอดเงิน");
+
+                
+
+
 
       });
 
@@ -173,6 +181,15 @@ body {
                 $(".list-group-item").removeClass("active");
                 $(this).addClass("active");
 
+                $("#A").text("ชื่อ");
+                $("#B").text("โรงเรียน");
+                $("#C").text("ฆ่าไปแล้ว");
+
+
+
+
+
+
       });
 
       $("#menutopgametime").on("click",function(event){
@@ -181,6 +198,15 @@ body {
                 $(".list-group-item").removeClass("active");
                 $(this).addClass("active");
 
+                $("#A").text("ไอดี");
+                $("#B").text("เวลาออนไลน์");
+                $("#C").text("จำนวนพ้อย");
+
+
+
+
+
+
       });
 
       $("#menutopfirstp").on("click",function(event){
@@ -188,8 +214,12 @@ body {
                 event.preventDefault();
                 $(".list-group-item").removeClass("active");
                 $(this).addClass("active");
+ 
 
-
+                $("#A").text("ชื่อ");
+                $("#B").text("อาชีพ");
+                $("#C").text("โรงเรียน");
+ 
                 $.get("https://cac.webclient.me/api/getdatatoplevel.php",function(data){
 
                     var obj = JSON.parse(data);
