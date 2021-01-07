@@ -1,4 +1,5 @@
-<?php 
+<?php
+namespace Maythiwat;
 class TrueWallet {
     public function Request($method = 'GET', $url, $header = false, $data = false) {
         $ch = curl_init();
