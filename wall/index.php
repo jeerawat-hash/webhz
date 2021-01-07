@@ -11,8 +11,8 @@
   foreach ($data["data"]["activities"] as $transfer) {
     
     $values = $tw->GetTransactionReport($transfer["report_id"]);
-    print_r($values);
-
+    //print_r($values);
+    echo $values["data"]["section4"]["column2"]["cell1"]["value"]."<br>";
     
 
   }
