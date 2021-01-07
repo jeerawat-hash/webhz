@@ -2,8 +2,11 @@
   require "TrueWalletClass.php";
   $tw = new TrueWalletClass("0616619956", "jeerawatTH2016");
   
-  print_r($tw->RequestLoginOTP());
-  print_r($tw->SubmitLoginOTP($otp_code, $phone, $otp_ref));
+  //print_r($tw->RequestLoginOTP());
+  
+  
+  //print_r($tw->SubmitLoginOTP($otp_code, $phone, $otp_ref));
+  print_r($tw->SubmitLoginOTP("966104", "0616619956", "FJXS"));
   
   $tw->setAccessToken($access_token);
   $data = $tw->GetTransaction();
@@ -11,4 +14,5 @@
     $values = $tw->GetTransactionReport($transfer["report_id"]);
     print_r($values);
   }
+  
 ?>
