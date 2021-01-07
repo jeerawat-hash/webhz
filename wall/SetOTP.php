@@ -6,6 +6,11 @@
   
   $tw->setAccessToken($access_token);
   $data = $tw->GetTransaction();
+
+
+  print_r($access_token)."<br>";
+  print_r($data)."<br>";
+
   /*
   foreach ($data["data"]["activities"] as $transfer) {
     $values = $tw->GetTransactionReport($transfer["report_id"]);
