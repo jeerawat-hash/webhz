@@ -1,5 +1,4 @@
-<?php
-ob_start();
+<?php 
 session_start();
 header("Content-type: text/html; charset=utf-8");
 set_time_limit(0);
@@ -8,8 +7,8 @@ $transaction_leng=14;
 include 'common.php';
 include 'config.php';
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta name="KeyWords" content="True money,ทรูมันนี่ ,ตัดบัตรทรู ,auto truemoney" />
 <META content="Copyright (c) 2010 thaighost.net All Rights Reserved. Tmtopup.thaighost.net V.1" name=copyright>
@@ -87,7 +86,7 @@ function loading(){
 		<INPUT TYPE="hidden" NAME="send" value="ok">
 		<INPUT TYPE="hidden" NAME="session" value="<?=$capchar_session?>">
 		<table align="center" cellpadding="0" cellspacing="0">
-			<tr bgcolor="#F4F2F7"><td colspan="2" align="center"><img src="http://tmwallet.thaighost.net/images/support.jpg"></td></tr>
+			<tr bgcolor="#F4F2F7"><td colspan="2" align="center"><img src="https://tmwallet.thaighost.net/images/support.jpg"></td></tr>
 			<tr bgcolor="#ff9900"><td align="center"><h2>Step 1</h2></td><td align="center"><p><b>โอน - เติมยอดเข้า บัญชี True Money Wallet</b></p><h2><?php echo $truewall_phone; ?></h2>
 			<p>แล้วนำเลขอ้างอิงที่ได้รับ มาใส่ใน step2</p></td></tr>
 			
@@ -95,7 +94,7 @@ function loading(){
 			<td align="center"><br><INPUT TYPE="text" NAME="ref1" placeholder="Ref1 Username" value="<?php echo $_GET[ref1]; ?>" style="width:95%;height:30px;font-size:20px"></td></tr>
 
 			<tr bgcolor="#009966"><td align="center"><br><input name="transactionid" value="" maxlength="<?php echo $transaction_leng; ?>" placeholder="เลขที่อ้างอิง" style="width:95%;height:30px;font-size:20px">
-			<div><a href="http://tmwallet.thaighost.net/images/transactionid.jpg" target="_transactionid">ตัวอย่างการดู เลขที่อ้างอิง</a></div></font>
+			<div><a href="https://tmwallet.thaighost.net/images/transactionid.jpg" target="_transactionid">ตัวอย่างการดู เลขที่อ้างอิง</a></div></font>
 			
 			<tr bgcolor="#ff0000"><td colspan="2" align="center"><BR><div id="loadvip"></div>
 			<input type="submit" value="แจ้งโอน" name="send" onClick="this.disabled=1;this.value='รอสักครู่กำลังตรวจสอบเลขบัตร...';document.forms[0].submit();loading()" style="height:30px;font-size:20px"></td></tr>
