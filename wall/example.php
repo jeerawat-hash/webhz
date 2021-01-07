@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 include_once('manager/TrueWallet.php');
 $wallet = new TrueWallet();
 //Login with your username and password.
-$username = "p.jeerawat.th@live.com";
+$username = "0616619956";
 $password = "jeerawatTH2016";
 //Logout incase your previous session still exist, no need if you only use 1 user.
 $wallet->logout();
