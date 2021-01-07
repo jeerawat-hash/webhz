@@ -274,7 +274,7 @@ body {
                     html += " <tr> "+
                             "<td>"+obj.UserName[i]+" </td>"+
                             "<td><font color='green'>"+obj.HoursOnline[i]+" </font>ชม.</td>"+
-                            "<td><font color='red'> "+obj.Point[i]+"</font></td> "+
+                            "<td><font color='red'> "+obj.Point[i]+"</font> พ้อย</td> "+
                             "</tr> ";
 
                 }
