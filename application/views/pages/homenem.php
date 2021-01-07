@@ -247,6 +247,10 @@ body {
                     </thead>
                     <tbody id="TablePatchDetail" >
 
+                         <tr> 
+                            <td> <font color="red">0.11b</font> </td> 
+                            <td>แก้ไขปัญหาเด้งออกจากเกมขณะ Logout เปลี่ยน Channel</td> 
+                        </tr>
                         <tr> 
                             <td> <font color="red">0.10b</font> </td> 
                             <td>ปรับปรุงการดรอปไอเทมและแก้ไขปัญหาอื่นๆ</td> 
