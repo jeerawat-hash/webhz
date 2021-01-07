@@ -199,17 +199,18 @@ body {
 
                     var html = "";
 
-
-
-
-
-                    
-                    $("#TableTopDetail").html("");
-
-
-
-
-
+                    for (var i = 0; i < obj.ChaLevel.length; i++) { 
+                        
+                        html += " <tr> "+
+                                "<td>"+obj.ChaName[i]+" LV: "+obj.ChaLevel[i]+"</td>"+
+                                "<td>"+obj.Class[i]+"</td>"+
+                                "<td>"+obj.ChaSchool[i]+"</td> "+
+                                "</tr> ";
+ 
+                    }
+ 
+                    $("#TableTopDetail").html(html);
+ 
 
 
                 });
