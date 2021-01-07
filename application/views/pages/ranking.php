@@ -169,6 +169,36 @@ body {
                 $("#B").text("โรงเรียน");
                 $("#C").text("ยอดเงิน");
 
+                
+
+                $.get("https://cac.webclient.me/api/getDataTopMoney.php",function(data){
+
+                var obj = JSON.parse(data);
+
+                console.log(obj);
+
+                var html = "";
+
+                for (var i = 0; i < obj.ChaName.length; i++) { 
+                    
+                    html += " <tr> "+
+                            "<td>"+obj.ChaName[i]+" </td>"+
+                            "<td>"+obj.ChaSchool[i]+" </td>"+
+                            "<td><font color='gold'> "+obj.ChaMoney[i]+"</font> เหรียญ</td> "+
+                            "</tr> ";
+
+                }
+
+                $("#TableTopDetail").html(html);
+
+
+
+                });
+
+
+
+
+
 
 
 
@@ -184,6 +214,34 @@ body {
                 $("#A").text("ชื่อ");
                 $("#B").text("โรงเรียน");
                 $("#C").text("ฆ่าไปแล้ว");
+
+ 
+                $.get("https://cac.webclient.me/api/getDataTopKills.php",function(data){
+
+                var obj = JSON.parse(data);
+
+                console.log(obj);
+
+                var html = "";
+
+                for (var i = 0; i < obj.ChaName.length; i++) { 
+                    
+                    html += " <tr> "+
+                            "<td>"+obj.ChaName[i]+" </td>"+
+                            "<td>"+obj.ChaSchool[i]+" </td>"+
+                            "<td><font color='red'> "+obj.Kills[i]+"</font></td> "+
+                            "</tr> ";
+
+                }
+
+                $("#TableTopDetail").html(html);
+
+
+
+                });
+
+
+
 
 
 
