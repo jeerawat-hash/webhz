@@ -6,6 +6,7 @@ $token = json_decode($wallet->GetToken(),true)['data']['accessToken'];
 $profile = $wallet->Profile($token);
 //$topup = $wallet->Topup('เลขบบัตรทรูมั่นนี่',$token);
 
+echo $token;
 echo $profile;
 
  ?>
