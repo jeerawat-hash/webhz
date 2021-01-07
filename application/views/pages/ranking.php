@@ -184,7 +184,7 @@ body {
                     html += " <tr> "+
                             "<td>"+obj.ChaName[i]+" </td>"+
                             "<td>"+obj.ChaSchool[i]+" </td>"+
-                            "<td><font color='gold'> "+obj.ChaMoney[i]+"</font> เหรียญ</td> "+
+                            "<td><font color='red'> "+obj.ChaMoney[i]+"</font> เหรียญ</td> "+
                             "</tr> ";
 
                 }
@@ -229,7 +229,7 @@ body {
                     html += " <tr> "+
                             "<td>"+obj.ChaName[i]+" </td>"+
                             "<td>"+obj.ChaSchool[i]+" </td>"+
-                            "<td><font color='red'> "+obj.Kills[i]+"</font></td> "+
+                            "<td><font color='red'> "+obj.Kills[i]+"</font> คน</td> "+
                             "</tr> ";
 
                 }
