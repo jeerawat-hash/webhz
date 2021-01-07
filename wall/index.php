@@ -9,8 +9,9 @@
   //print_r($data);
   
   foreach ($data["data"]["activities"] as $transfer) {
+    
     $values = $tw->GetTransactionReport($transfer["report_id"]);
-    echo json_encode($values["data"]);
+    echo json_encode($values);
 
     
 
