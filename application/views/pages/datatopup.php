@@ -394,8 +394,8 @@
 							swal("ล้มเหลว !!","กรุณาลองใหม่ภายหลัง", "error");
 							return false;
 						}
-						$("#TopUPCodeModal").find("Code").html(obj.Code);
-						$("#TopUPCodeModal").find("exampleModalLabel").text("TrueWallet QrCode");
+						$("#TopUPCodeModal").find("#Code").html(obj.Code);
+						$("#TopUPCodeModal").find("#exampleModalLabel").text("TrueWallet QrCode");
 
 						$("#TopUPModal").modal("hide");
 						$("#TopUPCodeModal").modal("show");
