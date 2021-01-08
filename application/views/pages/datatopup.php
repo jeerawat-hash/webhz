@@ -324,6 +324,21 @@
 			});
 
 
+			$.post("https://cac.webclient.me/api/getDataQRTopUp.php",{
+				UserNum : IDRAN
+				},function(data){
+ 
+					var obj = JSON.parse(data); 
+
+					console.log(obj);
+
+
+
+
+
+			});
+
+
 			}, 1000);
 
   
