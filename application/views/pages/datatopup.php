@@ -361,6 +361,13 @@
 					$("#TopUPModal").find("#SendData").show();
 					return false;
 				} 
+				if(Transcode.substring(1, 1) == 0)
+				{ 
+					swal("ล้มเหลว !!","กรุณาระบุหมายเลขอ้างอิงให้ถูกต้อง", "error");
+					$("#TopUPModal").find("#preload").hide(); 
+					$("#TopUPModal").find("#SendData").show();
+					return false;
+				} 
 
 
 				setTimeout(function(){ 
