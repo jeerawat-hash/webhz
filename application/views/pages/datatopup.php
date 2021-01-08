@@ -144,14 +144,16 @@
 				<table id="TableSale" width="100%" class="table">
 				  <thead>
 				    <tr> 
-				      <th >ลำดับ</th>
-				      <th >หลักฐาน</th>
-				      <th >ยอด</th> 
+				      <th >วันที่</th>
+				      <th >พ้อย</th>
+				      <th >รหัสอ้างอิง</th> 
 				      <th >สถานะ</th> 
 				    </tr>
 				  </thead>
 				  <tbody id="TableTopupContent">
 				    
+
+
 				  </tbody>
 				  
 				</table>
@@ -215,6 +217,48 @@
 			</div>
 	      	 <button type="button" class="btn btn-success" id="SendData" >สร้าง QRCode ชำระเงิน</button>
 	        <button type="button" class="btn btn-danger" data-dismiss="modal">ปิด</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+	
+		<!-- Modal Sale -->
+		<div class="modal fade" id="TopUPCodeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	       <font color="red"><h5 class="modal-title" id="exampleModalLabel">Modal title</h5></font> 
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+ 	
+ 			<div class="container">
+ 				<div class="row">
+ 					
+
+ 					<div  class="col-12 text-center">
+ 						 	   
+								 <img src="#" id="Code" alt="">
+							 
+ 					</div> 
+
+
+
+
+ 				</div>
+ 			</div>
+
+
+	      </div>
+	      <div class="modal-footer">  
+	        <button type="button" class="btn btn-success" data-dismiss="modal">สแกนจ่ายแล้ว</button>
 	      </div>
 	    </div>
 	  </div>
@@ -301,14 +345,46 @@
 
 				$("#TopUPModal").find("#preload").show(); 
 				$("#TopUPModal").find("#SendData").hide();
+
+				var point = $("#TopUPModal").find("#Point").val();
+
+				if(point == "")
+				{ 
+					swal("ล้มเหลว !!","กรุณาระบุยอดเงิน", "error")
+					return false;
+				}
+				if(point == 0)
+				{ 
+					swal("ล้มเหลว !!","กรุณาระบุยอดเงิน", "error")
+					return false;
+				}
+				if(point > 999)
+				{ 
+					swal("ล้มเหลว !!","สามารถเติมเงินได้ ครั้งละ 1 - 999 พ้อยเท่านั้น", "error")
+					return false;
+				}
+
+
 				setTimeout(function(){ 
 					
 					$("#TopUPModal").find("#preload").hide(); 
 					$("#TopUPModal").find("#SendData").show();
 
 
-					swal("สำเร็จ !!","....", "success");
 
+					$.post("https://cac.webclient.me/api/addDataQRTopUp.php",{
+
+						amount : point
+					
+					},function(data){
+
+						var obj = JSON.parse(data);
+						console.log(obj);
+
+					});
+
+  
+ 
 				
 				
 				
