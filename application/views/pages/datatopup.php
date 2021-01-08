@@ -131,7 +131,7 @@
 			<div class="col-6"> 
  				 
 
-				<button id="TopUPModalBTn" class="btn btn-success" style="width: 100%;">เติมเงิน</button>
+				<button id="TopUPModalBTn" class="btn btn-success" style="width: 100%;">แจ้งข้อมูลหมายเลขอ้างอิง</button>
  
 
 			</div> 
