@@ -376,7 +376,17 @@
 						TransCode : Transcode
 					
 					},function(data){
-  
+
+
+						if(data == 0)
+						{
+							$("#TopUPModal").find("#preload").hide(); 
+							$("#TopUPModal").find("#SendData").show();
+							swal("ผิดพลาด !!","ตรวจพบการใช้งานรหัสอ้างอิงนี้แล้ว", "error");
+							return false;
+
+						}
+
 							$("#TopUPModal").find("#preload").hide(); 
 							$("#TopUPModal").find("#SendData").show();
 							swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังตรวจสอบและจะเพิ่มพ้อยภายใน 5 นาที", "success");
