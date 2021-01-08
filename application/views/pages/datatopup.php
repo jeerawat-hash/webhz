@@ -385,6 +385,14 @@
 							return false;
 
 						}
+						if(data == 2)
+						{
+							$("#TopUPModal").find("#preload").hide(); 
+							$("#TopUPModal").find("#SendData").show();
+							swal("ผิดพลาด !!","รหัสยืนยันไม่ถูกต้อง", "error");
+							return false;
+
+						}
 
 							$("#TopUPModal").find("#preload").hide(); 
 							$("#TopUPModal").find("#SendData").show();
