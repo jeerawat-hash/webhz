@@ -329,11 +329,24 @@
 				},function(data){
  
 					var obj = JSON.parse(data); 
+ 
+					var html = "";
 
-					console.log(obj);
+					for (var i = 0; i < obj.CreateDate.length; i++) {
+						
 
+						html += "<tr>" +
+								"<td >"+obj.CreateDate[i]+"</td>"+
+								"<td >"+obj.PointA[i]+"</td>"+
+								"<td >"+obj.TransCode[i]+"</td>"+ 
+								"<td >"+obj.StatusA[i]+"</td> "+
+								"</tr>";
+ 
+					}
 
+					$("#TableTopupContent").html(html);
 
+ 
 
 
 			});
