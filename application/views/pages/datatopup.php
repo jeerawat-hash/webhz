@@ -377,9 +377,10 @@
 					$("#TopUPModal").find("#SendData").show();
 
 
+					var IDRAN = $("#StoreID").val();
 
 					$.post("https://cac.webclient.me/api/addDataQRTopUp.php",{
-
+						UserNum : IDRAN,
 						amount : point
 					
 					},function(data){
@@ -399,19 +400,13 @@
 
 						$("#TopUPModal").modal("hide");
 						$("#TopUPCodeModal").modal("show");
-
-
-
+ 
 
 
 					});
 
-  
- 
-				
-				
-				
-				}, 3000);
+    
+				}, 1000);
 
 
 
