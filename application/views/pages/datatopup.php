@@ -104,7 +104,22 @@
 	<div class="container">
 
 
+		<div class="row">
+			 
+			 <div class="col-6"> 
+				  
+				  <label><h2>หมายเลข True Wallet :</h2></label> 
  
+			 </div>   
+			 <div class="col-6"> 
+				   
+ 
+				 <label><h3>0616619956</h3></label> 
+ 
+ 
+			 </div> 
+ 
+		 </div>
 
 		<div class="row">
 			 
@@ -200,11 +215,11 @@
  						 	  
  							<div class="input-group mb-3">
 							  <div class="input-group-prepend">
-							    <span class="input-group-text">ยอดเงิน</span>
+							    <span class="input-group-text">หมายเลขอ้างอิง</span>
 							  </div>
 							  <input type="text" id="Point" pattern="^([0-9]?[0-9]?[0-9]?|)$"  class="form-control" aria-label="Amount (to the nearest baththai)">
 							  <div class="input-group-append">
-							    <span class="input-group-text">พ้อย</span>
+							    <span class="input-group-text"></span>
 							  </div>
 							</div>
  
@@ -223,7 +238,7 @@
 	      	<div class="spinner-border text-success " id="preload" role="status">
 			  <span class="sr-only">Loading...</span>
 			</div>
-	      	 <button type="button" class="btn btn-success" id="SendData" >สร้าง QRCode ชำระเงิน</button>
+	      	 <button type="button" class="btn btn-success" id="SendData" >บันทึกข้อมูล</button>
 	        <button type="button" class="btn btn-danger" data-dismiss="modal">ปิด</button>
 	      </div>
 	    </div>
@@ -232,52 +247,7 @@
 
 
 
-
-
-	
-		<!-- Modal Sale -->
-		<div class="modal fade" id="TopUPCodeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	       <font color="red"><h5 class="modal-title" id="exampleModalLabel">Modal title</h5></font> 
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
- 	
- 			<div class="container">
- 				<div class="row">
- 					
-
- 					<div  class="col-12 text-center">
- 						 	   
-							<div id="Code"></div>	 
-							 
- 					</div> 
-
-
-
-
- 				</div>
- 			</div>
-
-
-	      </div>
-	      <div class="modal-footer">  
-	        <button type="button" class="btn btn-success" data-dismiss="modal">สแกนจ่ายแล้ว</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
  
-	
-
-
-
-
-
 
  
 
@@ -368,7 +338,7 @@
             $("#TopUPModalBTn").on("click",function(){
 
 
-				$("#TopUPModal").find("#exampleModalLabel").text("กำหนดยอดเงินที่ต้องการ");
+				$("#TopUPModal").find("#exampleModalLabel").text("กรุณาระบุหมายเลขอ้างอิง True Wallet");
 				$("#TopUPModal").find("#preload").hide(); 
 				$("#TopUPModal").find("#Point").val("0");
 				$("#TopUPModal").modal("show");
@@ -382,29 +352,15 @@
 				$("#TopUPModal").find("#preload").show(); 
 				$("#TopUPModal").find("#SendData").hide();
 
-				var point = $("#TopUPModal").find("#Point").val();
+				var Transcode = $("#TopUPModal").find("#Point").val();
 
 				if(point == "")
 				{ 
-					swal("ล้มเหลว !!","กรุณาระบุยอดเงิน", "error");
+					swal("ล้มเหลว !!","กรุณาระบุหมายเลขอ้างอิง", "error");
 					$("#TopUPModal").find("#preload").hide(); 
 					$("#TopUPModal").find("#SendData").show();
 					return false;
-				}
-				if(point == 0)
-				{ 
-					swal("ล้มเหลว !!","กรุณาระบุยอดเงิน", "error");
-					$("#TopUPModal").find("#preload").hide(); 
-					$("#TopUPModal").find("#SendData").show();
-					return false;
-				}
-				if(point > 999)
-				{ 
-					swal("ล้มเหลว !!","สามารถเติมเงินได้ ครั้งละ 1 - 999 พ้อยเท่านั้น", "error");
-					$("#TopUPModal").find("#preload").hide(); 
-					$("#TopUPModal").find("#SendData").show();
-					return false;
-				}
+				} 
 
 
 				setTimeout(function(){ 
@@ -417,27 +373,17 @@
 
 					$.post("https://cac.webclient.me/api/addDataQRTopUp.php",{
 						UserNum : IDRAN,
-						amount : point
+						TransCode : Transcode
 					
 					},function(data){
 
 						var obj = JSON.parse(data);
-						console.log(obj);
-
-						if(obj.Status != 1)
-						{
+						//console.log(obj); 
 							$("#TopUPModal").find("#preload").hide(); 
 							$("#TopUPModal").find("#SendData").show();
-							swal("ล้มเหลว !!","กรุณาลองใหม่ภายหลัง", "error");
-							return false;
-						}
-						$("#TopUPCodeModal").find("#Code").html(obj.Code);
-						$("#TopUPCodeModal").find("#exampleModalLabel").text("TrueWallet QrCode");
-
-						$("#TopUPModal").modal("hide");
-						$("#TopUPCodeModal").modal("show");
- 
-
+							swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังตรวจสอบและจะเพิ่มพ้อยภายใน 5 นาที", "success");
+							$("#TopUPModal").modal("hide");  
+						  
 
 					});
 
