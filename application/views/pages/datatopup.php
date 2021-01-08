@@ -387,6 +387,22 @@
 						var obj = JSON.parse(data);
 						console.log(obj);
 
+						if(obj.Status != 1)
+						{
+							$("#TopUPModal").find("#preload").hide(); 
+							$("#TopUPModal").find("#SendData").show();
+							swal("ล้มเหลว !!","กรุณาลองใหม่ภายหลัง", "error");
+							return false;
+						}
+						$("#TopUPCodeModal").find("Code").attr("src",obj.Code);
+						
+						$("#TopUPModal").modal("hide");
+						$("#TopUPCodeModal").modal("show");
+
+
+
+
+
 					});
 
   
