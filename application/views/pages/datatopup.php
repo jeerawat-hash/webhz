@@ -339,8 +339,7 @@
 
 
 				$("#TopUPModal").find("#exampleModalLabel").text("กรุณาระบุหมายเลขอ้างอิง True Wallet");
-				$("#TopUPModal").find("#preload").hide(); 
-				$("#TopUPModal").find("#Point").val("0");
+				$("#TopUPModal").find("#preload").hide();  
 				$("#TopUPModal").modal("show");
 				 
 				  
