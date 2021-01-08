@@ -6,6 +6,7 @@
   $data = $tw->GetTransaction();
 
   print_r($_POST);
+  
     //print_r($data);
   /*
     $ReportCode = $_GET["code"];
