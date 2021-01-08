@@ -245,7 +245,7 @@
 
  					<div  class="col-12 text-center">
  						 	   
-								 <img src="#" id="Code" alt="">
+							<div id="Code"></div>	 
 							 
  					</div> 
 
@@ -394,8 +394,8 @@
 							swal("ล้มเหลว !!","กรุณาลองใหม่ภายหลัง", "error");
 							return false;
 						}
-						$("#TopUPCodeModal").find("Code").attr("src",obj.Code);
-						
+						$("#TopUPCodeModal").find("Code").html(obj.Code);
+
 						$("#TopUPModal").modal("hide");
 						$("#TopUPCodeModal").modal("show");
 
