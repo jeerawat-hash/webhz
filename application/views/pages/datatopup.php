@@ -350,17 +350,23 @@
 
 				if(point == "")
 				{ 
-					swal("ล้มเหลว !!","กรุณาระบุยอดเงิน", "error")
+					swal("ล้มเหลว !!","กรุณาระบุยอดเงิน", "error");
+					$("#TopUPModal").find("#preload").hide(); 
+					$("#TopUPModal").find("#SendData").show();
 					return false;
 				}
 				if(point == 0)
 				{ 
-					swal("ล้มเหลว !!","กรุณาระบุยอดเงิน", "error")
+					swal("ล้มเหลว !!","กรุณาระบุยอดเงิน", "error");
+					$("#TopUPModal").find("#preload").hide(); 
+					$("#TopUPModal").find("#SendData").show();
 					return false;
 				}
 				if(point > 999)
 				{ 
-					swal("ล้มเหลว !!","สามารถเติมเงินได้ ครั้งละ 1 - 999 พ้อยเท่านั้น", "error")
+					swal("ล้มเหลว !!","สามารถเติมเงินได้ ครั้งละ 1 - 999 พ้อยเท่านั้น", "error");
+					$("#TopUPModal").find("#preload").hide(); 
+					$("#TopUPModal").find("#SendData").show();
 					return false;
 				}
 
