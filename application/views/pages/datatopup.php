@@ -395,6 +395,7 @@
 							return false;
 						}
 						$("#TopUPCodeModal").find("Code").html(obj.Code);
+						$("#TopUPCodeModal").find("exampleModalLabel").text("TrueWallet QrCode");
 
 						$("#TopUPModal").modal("hide");
 						$("#TopUPCodeModal").modal("show");
