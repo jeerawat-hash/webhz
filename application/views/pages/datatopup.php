@@ -96,21 +96,7 @@
 	<div class="container">
 
 
-
-		<div class="row">
-			 
-			<div class="col-6"> 
- 				
- 				<label><h4>บัญชี : <font color="red">406-178417-0</font>  (SCB)</h4></label> 
-
-			</div>    
-			<div class="col-6"> 
- 				
- 				<label><h4>TrueWallet : <font color="red">0616619956</font> </h4></label> 
-
-			</div>   
-
-		</div>
+ 
 
 		<div class="row">
 			 
