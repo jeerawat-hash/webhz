@@ -5,9 +5,10 @@
   $tw->setAccessToken("766a68c1-a9ea-4983-b37d-8508e23c5741");
   $data = $tw->GetTransaction();
 
-  print_r($_POST);
+
+
     //print_r($data);
-  /*
+ 
     $ReportCode = $_GET["code"];
     
     $Status = array();
@@ -32,6 +33,6 @@
 
 
     echo json_encode($Status);
-  */
+ 
   
 ?>
