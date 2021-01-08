@@ -9,21 +9,25 @@
   //print_r($data);
   
     $ReportCode = $_GET["code"];
- 
     
+    $Status = array();
+    $Status["Status"] = "0";
+
   foreach ($data["data"]["activities"] as $transfer) {
     
-    $values = $tw->GetTransactionReport($transfer["report_id"]);
-    //print_r($values);
+    $values = $tw->GetTransactionReport($transfer["report_id"]); 
 
     if( trim($values["data"]["section4"]["column2"]["cell1"]["value"]) == $ReportCode ){
-
-        echo "รายการใหม่ ".$values["data"]["ref1"]." จำนวน "." ".$values["data"]["amount"]." ".$values["data"]["section4"]["column2"]["cell1"]["value"]."<br>"; 
+ 
+        $Status["Status"] = "1";
+        $Status["From"] = $values["data"]["ref1"];
+        $Status["Amount"] = $values["data"]["amount"];
+        $Status["TransID"] = $values["data"]["section4"]["column2"]["cell1"]["value"];
+         
+        //echo "รายการใหม่ ".$values["data"]["ref1"]." จำนวน "." ".$values["data"]["amount"]." ".$values["data"]["section4"]["column2"]["cell1"]["value"]."<br>"; 
 
     }
-
-    //echo "รายการใหม่ ".$values["data"]["ref1"]." จำนวน "." ".$values["data"]["amount"]." ".$values["data"]["section4"]["column2"]["cell1"]["value"]."<br>"; 
-    
+ 
   }
 
   
