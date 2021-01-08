@@ -30,6 +30,8 @@
  
   }
 
+
+    echo json_encode($Status);
   
   
 ?>
