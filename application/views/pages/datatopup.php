@@ -186,7 +186,7 @@
  				<div class="row">
  					
 
- 					<div  class="col-6">
+ 					<div  class="col-12">
  						 	  
  							<div class="input-group mb-3">
 							  <div class="input-group-prepend">
@@ -199,17 +199,7 @@
 							</div>
  
 
- 					</div>
- 					<div  class="col-6">
- 						 	  
-
- 							<div class="custom-file">
-							    <input accept='image/*' type="file" class="custom-file-input" id="SlipIMG">
-							    <label id="ItemIMGLB" class="custom-file-label" for="customFile">เลือกภาพ</label>
-							  </div>
- 
-
- 					</div>
+ 					</div> 
 
 
 
@@ -223,7 +213,7 @@
 	      	<div class="spinner-border text-success " id="preload" role="status">
 			  <span class="sr-only">Loading...</span>
 			</div>
-	      	 <button type="button" class="btn btn-success" id="SendData" >ส่งข้อมูล</button>
+	      	 <button type="button" class="btn btn-success" id="SendData" >สร้าง QRCode ชำระเงิน</button>
 	        <button type="button" class="btn btn-danger" data-dismiss="modal">ปิด</button>
 	      </div>
 	    </div>
@@ -273,13 +263,7 @@
 		$(function(){
 
  
-      
-            //console.log(profile.displayName);
-            //console.log(profile.pictureUrl);
-            //console.log(profile.userId);
-            //var Line = profile.userId;
-
-            //console.log(Line);
+       
             //swal("สำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
  			
 			setInterval(function(){ 
@@ -304,16 +288,37 @@
             $("#TopUPModalBTn").on("click",function(){
 
 
-				$("#TopUPModal").find("#exampleModalLabel").text("ยันยันข้อมูลเติมเงิน");
-				$("#TopUPModal").find("#preload").hide();
-				$("#TopUPModal").find("#SlipIMG").val("");
-				$("#TopUPModal").find("#ItemIMGLB").text("เลือกภาพ");
+				$("#TopUPModal").find("#exampleModalLabel").text("กำหนดยอดเงินที่ต้องการ");
+				$("#TopUPModal").find("#preload").hide(); 
 				$("#TopUPModal").find("#Point").val("0");
-            	$("#TopUPModal").modal("show");
- 
+				$("#TopUPModal").modal("show");
+				 
 				  
             });
 
+			$("#TopUPModal").find("#SendData").on("click",function(){
+
+
+				$("#TopUPModal").find("#preload").show(); 
+				$("#TopUPModal").find("#SendData").hide();
+				setTimeout(function(){ 
+					
+					$("#TopUPModal").find("#preload").hide(); 
+					$("#TopUPModal").find("#SendData").show();
+
+
+					swal("สำเร็จ !!","....", "success");
+
+				
+				
+				
+				}, 3000);
+
+
+
+
+
+			});
  
 
 
