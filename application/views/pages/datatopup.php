@@ -68,6 +68,10 @@
   </div>
 </nav>
 
+
+<input type="text" readonly hidden id="StoreID" value="<?php echo $UserNum; ?>">
+
+
 <!--
 <div class="ticker-container">
   <div class="ticker-caption">
@@ -277,71 +281,39 @@
 
  
 
- 
-    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+  
       <script>
- 
-        function runApp() {
-          liff.getProfile().then(profile => {
+		
+		$(function(){
+
  
       
             //console.log(profile.displayName);
             //console.log(profile.pictureUrl);
             //console.log(profile.userId);
-            var Line = profile.userId;
+            //var Line = profile.userId;
 
             //console.log(Line);
             //swal("สำเร็จ !!","ระบบกำลังปิดหน้าลงทะเบียน....", "success");
  			
-            setInterval(function(){ 
-  
- 					$.post("https://cac.webclient.me/api/getDataUserPointFromLine.php",{
-							LineID : Line
-						},function(data){
-  	
-  							//console.log(data);
-  							var objectMoney = JSON.parse(data);
-  							//console.log(objectMoney.Point);
-							$(".MoneyPoint").text(objectMoney.Point);
-					});
-  
-
-			}, 1000);
-
- 
-
 			setInterval(function(){ 
-  
- 					$.post("https://cac.webclient.me/api/getDataStatusTopup.php",{
-							LineID : Line
-						},function(data){
-  	  
-							var obj = JSON.parse(data);
- 
- 
-  							var html = "";
 
-  							for (var i = 0; i < obj.ID.length; i++) {
+			var IDRAN = $("#StoreID").val();
+			$.post("https://cac.webclient.me/api/getDataUserPointFromUserNum.php",{
+				UserNum : IDRAN
+				},function(data){
 
+					//console.log(data);
+					var objectMoney = JSON.parse(data);
+					//console.log(objectMoney.Point);
+				$(".MoneyPoint").text(objectMoney.Point);
+			});
 
-  								html += "<tr> "+
-									      "<td >"+obj.ID[i]+"</td>"+
-									      "<td > <a target='_blank' href='"+obj.TopUpIMG[i]+"'><img src='"+obj.TopUpIMG[i]+"' width='10%'></a> </td>"+
-									      "<td >"+obj.Point[i]+" <font color='red'>พ้อย</font></td> "+
-									      "<td >"+obj.StatusTXT[i]+"</td> "+
-									    "</tr>";
-  							}
-
-  							$("#TableTopupContent").html(html);
- 
-							
-					});
-  
 
 			}, 1000);
 
-
-
+  
+ 
 
             $("#TopUPModalBTn").on("click",function(){
 
@@ -356,113 +328,14 @@
 				  
             });
 
-
-
-            $("#TopUPModal").find("#SendData").on("click",function(){
-
-
-
-
-
-
-				var data = new FormData();          
-				var ItemIMG = $('#SlipIMG').prop('files')[0]; 
-				var Point = $("#TopUPModal").find("#Point").val();
-				data.append('SlipIMG', ItemIMG);  
-				data.append('Point', Point);  
-				data.append('LineID', Line);  
-					 
- 				
- 				$("#TopUPModal").find("#preload").show();
-				$("#TopUPModal").find("#SendData").hide();
-
-
-				if (Point <= 0) {
-
-					$("#TopUPModal").find("#preload").hide(); 
-					$("#TopUPModal").find("#SendData").show();
-					swal("ผิดพลาด !!","กรุณาระบุยอดพ้อย", "error");
-					return false;
-
-				}
-
-
-
-
-
-				setTimeout(function(){ 
-				 $.ajax({
-					        	url:"https://cac.webclient.me/api/addReciptTopup.php",
-					        	type:"POST",
-					        	data:data,
-					        	contentType : false,
-					        	cache : false,
-					        	processData : false,
-					        	success : function(data){
- 
-					        			//console.log(data);
-					        	 		
-					        			if (data == 0) {
-					        				$("#TopUPModal").find("#preload").hide(); 
-											$("#TopUPModal").find("#SendData").show();
-											swal("ผิดพลาด !!","กรุณาอัพโหลดหลักฐาน", "error");
-					        				return false;
-					        			}
-
-
-					 	 				$("#TopUPModal").find("#preload").hide(); 
-										$("#TopUPModal").find("#SendData").show();
-            							$("#TopUPModal").modal("hide");
-
-
-										swal("สำเร็จ !!","รายการอยู่ระหว่างดำเนินการตรวจสอบ..", "info");
-
-
-					        	},
-					        	error : function(){
-
-
-					        	}
-					        });
-				 }, 2000);
-
-
-
-
-            });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
  
 
- 
- 
-          }).catch(err => console.error(err));
-        }
-        liff.init({ liffId: "1655100623-4LqV1zJ2" }, () => {
-          if (liff.isLoggedIn()) {
-            runApp();
 
-          } else {
-            liff.login();
-          }
-        }, err => console.error(err.code, error.message));
+
+
+
+		});
+ 
   </script>
 
   
