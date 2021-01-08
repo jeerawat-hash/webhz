@@ -354,7 +354,7 @@
 
 				var Transcode = $("#TopUPModal").find("#Point").val();
 
-				if(point == "")
+				if(Transcode == "")
 				{ 
 					swal("ล้มเหลว !!","กรุณาระบุหมายเลขอ้างอิง", "error");
 					$("#TopUPModal").find("#preload").hide(); 
