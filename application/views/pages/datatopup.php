@@ -65,6 +65,14 @@
  
 
     </ul> 
+	<form class="form-inline my-2 my-lg-0"> 
+
+		<span class="navbar-text">
+		
+		</span>
+		<a class="btn btn-lg btn-warning" href="https://rhz.webclient.me/index.php/member/signout"  >ออกจากระบบ</a>
+
+		</form>
   </div>
 </nav>
 
