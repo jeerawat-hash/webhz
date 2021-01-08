@@ -273,7 +273,53 @@
 
 			  }
 			}, 200); 
-  	*/
+	  */
+	  
+
+	  setInterval(function(){ 
+
+		var StoreID = $("#StoreID").val();
+
+
+		if(StoreID == "null"){
+
+		swal("Alert","กรุณาเข้าสู่ระบบก่อนใช้งาน", "warning");
+		location.href = 'https://rhz.webclient.me/index.php/member/signout';
+
+		}
+
+
+		if (StoreID != "") {
+
+			$.post("https://cac.webclient.me/api/getDataIsLogin.php",{
+				UserNum : StoreID
+			},function(data){
+
+					////console.log(data);
+					
+						if (data == 1) {
+		
+						swal("Alert","ตรวจพบการ Login ภายในเกมกรุณาออกจากเกมก่อนใช้งานระบบ", "warning");
+						
+						setTimeout(function(){ 
+							
+							location.href = 'https://rhz.webclient.me/index.php/member/signout';
+						
+						}, 3000);
+
+						
+
+					} 
+
+
+		});
+
+
+
+		}
+
+
+		}, 500);
 
 	</script>
 
