@@ -376,9 +376,7 @@
 						TransCode : Transcode
 					
 					},function(data){
-
-						var obj = JSON.parse(data);
-						//console.log(obj); 
+  
 							$("#TopUPModal").find("#preload").hide(); 
 							$("#TopUPModal").find("#SendData").show();
 							swal("บันทึกข้อมูลสำเร็จ !!","ระบบกำลังตรวจสอบและจะเพิ่มพ้อยภายใน 5 นาที", "success");
