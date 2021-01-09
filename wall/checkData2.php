@@ -7,7 +7,7 @@
 
 
 
-    //print_r($data);
+    print_r($data);
  
     //$ReportCode = $_GET["code"];
     
